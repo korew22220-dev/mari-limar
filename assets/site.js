@@ -1,0 +1,59 @@
+(() => {
+  const panel = document.querySelector('#panel, #mobile-panel');
+  const opener = document.querySelector('#open, #open-menu');
+  const closer = document.querySelector('#close, #close-menu');
+  opener.setAttribute('aria-controls', panel.id);
+  opener.setAttribute('aria-expanded', 'false');
+  const setMenu = (open) => {
+    panel.classList.toggle('open', open);
+    panel.setAttribute('aria-hidden', String(!open));
+    opener.setAttribute('aria-expanded', String(open));
+    document.body.style.overflow = open ? 'hidden' : '';
+    (open ? closer : opener).focus();
+  };
+  opener.onclick = () => setMenu(true);
+  closer.onclick = () => setMenu(false);
+  panel.querySelectorAll('a').forEach(a => a.onclick = () => setMenu(false));
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && panel.classList.contains('open')) setMenu(false);
+    if (e.key !== 'Tab') return;
+    const modal = panel.classList.contains('open') ? panel : document.querySelector('#project-dialog.open');
+    if (!modal) return;
+    const nodes = [...modal.querySelectorAll('a[href],button:not([disabled]),select,[tabindex="0"]')];
+    const first = nodes[0], last = nodes[nodes.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+  const reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries => entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    }), {threshold: .08});
+    reveals.forEach(e => io.observe(e));
+  } else reveals.forEach(e => e.classList.add('visible'));
+  document.querySelectorAll('.catalog-tab').forEach(btn => btn.addEventListener('click', () => {
+    document.querySelectorAll('.catalog-tab').forEach(b => {
+      b.classList.toggle('active', b === btn); b.setAttribute('aria-pressed', String(b === btn));
+    });
+    document.querySelectorAll('.model-card').forEach(card => {
+      card.hidden = btn.dataset.filter !== 'all' && card.dataset.collection !== btn.dataset.filter;
+    });
+    const selector = document.getElementById('model-selector');
+    if (selector) selector.value = 'all';
+  }));
+  const selector = document.getElementById('model-selector');
+  if (selector) selector.addEventListener('change', () => {
+    document.querySelectorAll('.catalog-tab').forEach(b => {
+      const active = b.dataset.filter === 'all';
+      b.classList.toggle('active', active); b.setAttribute('aria-pressed', String(active));
+    });
+    document.querySelectorAll('.model-card').forEach((card, i) => card.hidden = selector.value !== 'all' && String(i) !== selector.value);
+  });
+  const video = document.querySelector('video');
+  if (video) {
+    video.muted = true;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (reduced.matches) { video.pause(); video.removeAttribute('autoplay'); }
+    else video.play().catch(() => { /* Native poster remains visible if autoplay is blocked. */ });
+  }
+})();
