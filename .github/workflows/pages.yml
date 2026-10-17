@@ -1,4 +1,4 @@
-name: Publish MARLI LIMAR
+name: Publish MARI LIMAR
 on:
   push:
     branches: [main]

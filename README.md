@@ -1,17 +1,17 @@
-# MARLI LIMAR — публикация и обновление
+# MARI LIMAR — публикация и обновление
 
-Сайт опубликован: https://korew22220-dev.github.io/marli-limar/
+Сайт опубликован: https://korew22220-dev.github.io/mari-limar/
 
-Репозиторий: https://github.com/korew22220-dev/marli-limar
+Репозиторий: https://github.com/korew22220-dev/mari-limar
 
-Первый успешный деплой: https://github.com/korew22220-dev/marli-limar/actions/runs/39063908325
+Первый успешный деплой: https://github.com/korew22220-dev/mari-limar/actions/runs/39063908325
 
 ## Публикация на GitHub Pages
 
-1. Создать публичный репозиторий `marli-limar` в аккаунте `korew22220-dev`.
+1. Создать публичный репозиторий `mari-limar` в аккаунте `korew22220-dev`.
 2. Загрузить содержимое этого каталога в корень ветки `main`, включая `.github/workflows/pages.yml`. Не загружать ZIP вместо файлов. Убедиться, что `index.html` находится в корне.
 3. В Settings → Pages выбрать Source → GitHub Actions.
-4. В Actions запустить `Publish MARLI LIMAR` (Run workflow) либо внести следующий коммит в `main`.
+4. В Actions запустить `Publish MARI LIMAR` (Run workflow) либо внести следующий коммит в `main`.
 5. Дождаться успешного задания Deploy. Открыть адрес из результата задания. До этого публикация не подтверждена.
 6. Проверить каждую страницу, меню, фильтры и видео на телефоне, планшете и компьютере; проверить отсутствие ошибок загрузки.
 
