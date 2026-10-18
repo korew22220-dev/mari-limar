@@ -22,3 +22,5 @@ html[data-ml-theme=dark] .ml-theme-toggle{background:#29241f;color:#f0e9df;borde
 html[data-ml-theme=dark] .model-select select{background:#25211d;color:#f0e9df}
 html[data-ml-theme=dark] :is(.person-placeholder,.marina-preview-art,.map-placeholder){background:linear-gradient(140deg,#443a30,#302b26 65%,#514437);color:#e7dbca}
 @media(max-width:600px){.ml-theme-toggle{right:12px;bottom:max(12px,env(safe-area-inset-bottom));min-height:46px;padding:11px 15px;font-size:11px}footer,.footer{padding-bottom:85px}}
+html[data-ml-theme=dark] .ml-compare__note{color:#c8bfb3}
+html[data-ml-theme=dark] p[style*="color:#806f60"],html[data-ml-theme=dark] p[style*="color:#73675a"]{color:#c8bfb3!important}
