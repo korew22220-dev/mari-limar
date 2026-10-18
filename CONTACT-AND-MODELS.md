@@ -65,3 +65,15 @@ Escape/outside click and exposes its expanded state. Mobile fields use 16px text
 a single-column layout, safe-area spacing and constrained scrolling. Reduced
 motion adds no animation. Unsupported dialog/disabled JavaScript keep native
 links to Contacts, where the existing messenger/phone links remain available.
+
+## Published browser verification
+
+On the live HTTPS site in Chrome (1363 × 936): clicked a catalog model and
+verified its photo/details; opened cost enquiry with the Luna model prefilled;
+prepared both Telegram and WhatsApp messages with disposable test inputs;
+verified clipboard success, edit/back and native Escape close; opened/closed
+the floating contact panel and original menu. No real messenger message was
+sent. The page width stays within the viewport and the model image loads.
+
+Mobile layout rules are inspected and tested structurally; physical iOS/Android
+and actual mobile viewport rendering have not been verified in this browser.
