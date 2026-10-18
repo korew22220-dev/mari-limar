@@ -10,4 +10,4 @@ Source: `Генеральный Каталог РИМИ 2024 Современн�
 | Каждый сантиметр имеет значение | Шика | 58 | 116–117 | 394 |
 | Важна каждая деталь | Арона | 70 | 140–141 | 435 |
 
-Assets use `rimi-<model>-2024.webp` plus 640w and 960w derivatives. They contain the complete source photographs without PDF page numbers or text. Existing CSS object-fit handles presentation cropping. All sources decode and preserve image proportions. These three models are absent from the existing ten-model catalog and five-model homepage gallery. The hero, catalog, filters and all other photographs remain unchanged.
+Assets use `rimi-<model>-2024.webp` plus 640w and 960w derivatives. They contain the complete source photographs without PDF page numbers or text. Existing CSS object-fit handles presentation cropping. All sources decode and preserve image proportions. These three models were not part of the initial ten-model selection or the five-model homepage gallery. They now also have cards in the expanded complete catalog. The hero, catalog, filters and all other photographs remain unchanged.

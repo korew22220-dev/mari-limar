@@ -1,0 +1,562 @@
+[
+  {
+    "collection": "modern",
+    "slug": "primavera",
+    "name": "Примавера",
+    "description": "Волнообразная фрезеровка и рельефные фасады",
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "title_pdf_page": 48,
+    "photo_pdf_page": 49,
+    "xref": 365,
+    "native_dimensions": [
+      2693,
+      1521
+    ],
+    "sizes": [
+      {
+        "width": 640,
+        "height": 361,
+        "path": "assets/rimi-catalog-primavera-640w.webp",
+        "bytes": 33356
+      },
+      {
+        "width": 960,
+        "height": 542,
+        "path": "assets/rimi-catalog-primavera-960w.webp",
+        "bytes": 69568
+      },
+      {
+        "width": 1280,
+        "height": 723,
+        "path": "assets/rimi-catalog-primavera-1280w.webp",
+        "bytes": 117664
+      }
+    ],
+    "variant_of": null
+  },
+  {
+    "collection": "modern",
+    "slug": "shika",
+    "name": "Шика",
+    "description": "Матовые рамочные фасады и интегрированная ручка",
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "title_pdf_page": 58,
+    "photo_pdf_page": 59,
+    "xref": 397,
+    "native_dimensions": [
+      2693,
+      1521
+    ],
+    "sizes": [
+      {
+        "width": 640,
+        "height": 361,
+        "path": "assets/rimi-catalog-shika-640w.webp",
+        "bytes": 28606
+      },
+      {
+        "width": 960,
+        "height": 542,
+        "path": "assets/rimi-catalog-shika-960w.webp",
+        "bytes": 52476
+      },
+      {
+        "width": 1280,
+        "height": 723,
+        "path": "assets/rimi-catalog-shika-1280w.webp",
+        "bytes": 85098
+      }
+    ],
+    "variant_of": null
+  },
+  {
+    "collection": "modern",
+    "slug": "florida",
+    "name": "Флорида",
+    "description": "Минималистичная геометрия и фрезерованная ручка J",
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "title_pdf_page": 62,
+    "photo_pdf_page": 64,
+    "xref": 413,
+    "native_dimensions": [
+      2232,
+      1521
+    ],
+    "sizes": [
+      {
+        "width": 640,
+        "height": 436,
+        "path": "assets/rimi-catalog-florida-640w.webp",
+        "bytes": 49466
+      },
+      {
+        "width": 960,
+        "height": 654,
+        "path": "assets/rimi-catalog-florida-960w.webp",
+        "bytes": 101134
+      },
+      {
+        "width": 1280,
+        "height": 872,
+        "path": "assets/rimi-catalog-florida-1280w.webp",
+        "bytes": 170472
+      }
+    ],
+    "variant_of": null
+  },
+  {
+    "collection": "modern",
+    "slug": "arona",
+    "name": "Арона",
+    "description": "Чёткие линии и фасады без выступающих ручек",
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "title_pdf_page": 70,
+    "photo_pdf_page": 71,
+    "xref": 438,
+    "native_dimensions": [
+      2693,
+      1521
+    ],
+    "sizes": [
+      {
+        "width": 640,
+        "height": 361,
+        "path": "assets/rimi-catalog-arona-640w.webp",
+        "bytes": 30760
+      },
+      {
+        "width": 960,
+        "height": 542,
+        "path": "assets/rimi-catalog-arona-960w.webp",
+        "bytes": 58224
+      },
+      {
+        "width": 1280,
+        "height": 723,
+        "path": "assets/rimi-catalog-arona-1280w.webp",
+        "bytes": 94908
+      }
+    ],
+    "variant_of": null
+  },
+  {
+    "collection": "modern",
+    "slug": "magna",
+    "name": "Магна",
+    "description": "Матовая эмаль, рельефные фактуры и врезная ручка",
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "title_pdf_page": 76,
+    "photo_pdf_page": 77,
+    "xref": 460,
+    "native_dimensions": [
+      2692,
+      1521
+    ],
+    "sizes": [
+      {
+        "width": 640,
+        "height": 362,
+        "path": "assets/rimi-catalog-magna-640w.webp",
+        "bytes": 28016
+      },
+      {
+        "width": 960,
+        "height": 542,
+        "path": "assets/rimi-catalog-magna-960w.webp",
+        "bytes": 51608
+      },
+      {
+        "width": 1280,
+        "height": 723,
+        "path": "assets/rimi-catalog-magna-1280w.webp",
+        "bytes": 83002
+      }
+    ],
+    "variant_of": null
+  },
+  {
+    "collection": "modern",
+    "slug": "miami",
+    "name": "Майами",
+    "description": "Светлая эмаль и стеклянные витрины",
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "title_pdf_page": 81,
+    "photo_pdf_page": 82,
+    "xref": 478,
+    "native_dimensions": [
+      2693,
+      1521
+    ],
+    "sizes": [
+      {
+        "width": 640,
+        "height": 361,
+        "path": "assets/rimi-catalog-miami-640w.webp",
+        "bytes": 19608
+      },
+      {
+        "width": 960,
+        "height": 542,
+        "path": "assets/rimi-catalog-miami-960w.webp",
+        "bytes": 34444
+      },
+      {
+        "width": 1280,
+        "height": 723,
+        "path": "assets/rimi-catalog-miami-1280w.webp",
+        "bytes": 52680
+      }
+    ],
+    "variant_of": null
+  },
+  {
+    "collection": "modern",
+    "slug": "miami-curved",
+    "name": "Майами — радиусные фасады",
+    "description": "Криволинейные фасады и остров с открытыми нишами",
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "title_pdf_page": 85,
+    "photo_pdf_page": 86,
+    "xref": 492,
+    "native_dimensions": [
+      2693,
+      1521
+    ],
+    "sizes": [
+      {
+        "width": 640,
+        "height": 361,
+        "path": "assets/rimi-catalog-miami-curved-640w.webp",
+        "bytes": 16898
+      },
+      {
+        "width": 960,
+        "height": 542,
+        "path": "assets/rimi-catalog-miami-curved-960w.webp",
+        "bytes": 34522
+      },
+      {
+        "width": 1280,
+        "height": 723,
+        "path": "assets/rimi-catalog-miami-curved-1280w.webp",
+        "bytes": 58354
+      }
+    ],
+    "variant_of": "miami"
+  },
+  {
+    "collection": "modern",
+    "slug": "ora",
+    "name": "Ора",
+    "description": "Минимализм в матовой или глянцевой отделке",
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "title_pdf_page": 96,
+    "photo_pdf_page": 98,
+    "xref": 531,
+    "native_dimensions": [
+      2693,
+      1521
+    ],
+    "sizes": [
+      {
+        "width": 640,
+        "height": 361,
+        "path": "assets/rimi-catalog-ora-640w.webp",
+        "bytes": 22468
+      },
+      {
+        "width": 960,
+        "height": 542,
+        "path": "assets/rimi-catalog-ora-960w.webp",
+        "bytes": 43936
+      },
+      {
+        "width": 1280,
+        "height": 723,
+        "path": "assets/rimi-catalog-ora-1280w.webp",
+        "bytes": 76168
+      }
+    ],
+    "variant_of": null
+  },
+  {
+    "collection": "modern",
+    "slug": "kristali",
+    "name": "Кристали",
+    "description": "Стеклянные фасады и строгая геометрия",
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "title_pdf_page": 100,
+    "photo_pdf_page": 101,
+    "xref": 540,
+    "native_dimensions": [
+      2693,
+      1521
+    ],
+    "sizes": [
+      {
+        "width": 640,
+        "height": 361,
+        "path": "assets/rimi-catalog-kristali-640w.webp",
+        "bytes": 33302
+      },
+      {
+        "width": 960,
+        "height": 542,
+        "path": "assets/rimi-catalog-kristali-960w.webp",
+        "bytes": 62986
+      },
+      {
+        "width": 1280,
+        "height": 723,
+        "path": "assets/rimi-catalog-kristali-1280w.webp",
+        "bytes": 100180
+      }
+    ],
+    "variant_of": null
+  },
+  {
+    "collection": "modern",
+    "slug": "kanti",
+    "name": "Канти",
+    "description": "Тонкая рамка фасадов и лаконичные пропорции",
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "title_pdf_page": 105,
+    "photo_pdf_page": 106,
+    "xref": 560,
+    "native_dimensions": [
+      2693,
+      1521
+    ],
+    "sizes": [
+      {
+        "width": 640,
+        "height": 361,
+        "path": "assets/rimi-catalog-kanti-640w.webp",
+        "bytes": 39884
+      },
+      {
+        "width": 960,
+        "height": 542,
+        "path": "assets/rimi-catalog-kanti-960w.webp",
+        "bytes": 76730
+      },
+      {
+        "width": 1280,
+        "height": 723,
+        "path": "assets/rimi-catalog-kanti-1280w.webp",
+        "bytes": 125858
+      }
+    ],
+    "variant_of": null
+  },
+  {
+    "collection": "modern",
+    "slug": "nizza",
+    "name": "Ницца",
+    "description": "Профиль GOLA и широкий выбор отделок",
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "title_pdf_page": 115,
+    "photo_pdf_page": 118,
+    "xref": 602,
+    "native_dimensions": [
+      2692,
+      1521
+    ],
+    "sizes": [
+      {
+        "width": 640,
+        "height": 362,
+        "path": "assets/rimi-catalog-nizza-640w.webp",
+        "bytes": 27372
+      },
+      {
+        "width": 960,
+        "height": 542,
+        "path": "assets/rimi-catalog-nizza-960w.webp",
+        "bytes": 56538
+      },
+      {
+        "width": 1280,
+        "height": 723,
+        "path": "assets/rimi-catalog-nizza-1280w.webp",
+        "bytes": 98098
+      }
+    ],
+    "variant_of": null
+  },
+  {
+    "collection": "modern",
+    "slug": "time",
+    "name": "Тайм",
+    "description": "Древесные декоры, стекло и профиль GOLA",
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "title_pdf_page": 124,
+    "photo_pdf_page": 125,
+    "xref": 626,
+    "native_dimensions": [
+      2878,
+      1625
+    ],
+    "sizes": [
+      {
+        "width": 640,
+        "height": 361,
+        "path": "assets/rimi-catalog-time-640w.webp",
+        "bytes": 33056
+      },
+      {
+        "width": 960,
+        "height": 542,
+        "path": "assets/rimi-catalog-time-960w.webp",
+        "bytes": 62080
+      },
+      {
+        "width": 1280,
+        "height": 723,
+        "path": "assets/rimi-catalog-time-1280w.webp",
+        "bytes": 100928
+      }
+    ],
+    "variant_of": null
+  },
+  {
+    "collection": "classic",
+    "slug": "barona",
+    "name": "Барона",
+    "description": "Резные карнизы и декоративная патина",
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
+    "title_pdf_page": 45,
+    "photo_pdf_page": 46,
+    "xref": 288,
+    "native_dimensions": [
+      3107,
+      1755
+    ],
+    "sizes": [
+      {
+        "width": 640,
+        "height": 362,
+        "path": "assets/rimi-catalog-barona-640w.webp",
+        "bytes": 37892
+      },
+      {
+        "width": 960,
+        "height": 542,
+        "path": "assets/rimi-catalog-barona-960w.webp",
+        "bytes": 75748
+      },
+      {
+        "width": 1280,
+        "height": 723,
+        "path": "assets/rimi-catalog-barona-1280w.webp",
+        "bytes": 124744
+      }
+    ],
+    "variant_of": null
+  },
+  {
+    "collection": "classic",
+    "slug": "devenport",
+    "name": "Девенпорт",
+    "description": "Портал, витражи и резной декор",
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
+    "title_pdf_page": 51,
+    "photo_pdf_page": 52,
+    "xref": 310,
+    "native_dimensions": [
+      3107,
+      1755
+    ],
+    "sizes": [
+      {
+        "width": 640,
+        "height": 362,
+        "path": "assets/rimi-catalog-devenport-640w.webp",
+        "bytes": 36948
+      },
+      {
+        "width": 960,
+        "height": 542,
+        "path": "assets/rimi-catalog-devenport-960w.webp",
+        "bytes": 69854
+      },
+      {
+        "width": 1280,
+        "height": 723,
+        "path": "assets/rimi-catalog-devenport-1280w.webp",
+        "bytes": 113300
+      }
+    ],
+    "variant_of": null
+  },
+  {
+    "collection": "classic",
+    "slug": "nikol",
+    "name": "Николь",
+    "description": "Неоклассика и спокойная палитра фасадов",
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
+    "title_pdf_page": 58,
+    "photo_pdf_page": 59,
+    "xref": 335,
+    "native_dimensions": [
+      3107,
+      1755
+    ],
+    "sizes": [
+      {
+        "width": 640,
+        "height": 362,
+        "path": "assets/rimi-catalog-nikol-640w.webp",
+        "bytes": 24758
+      },
+      {
+        "width": 960,
+        "height": 542,
+        "path": "assets/rimi-catalog-nikol-960w.webp",
+        "bytes": 43960
+      },
+      {
+        "width": 1280,
+        "height": 723,
+        "path": "assets/rimi-catalog-nikol-1280w.webp",
+        "bytes": 69518
+      }
+    ],
+    "variant_of": null
+  },
+  {
+    "collection": "classic",
+    "slug": "avenue",
+    "name": "Авеню",
+    "description": "Рамочные фасады и открытые стеллажи «Шейд»",
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
+    "title_pdf_page": 67,
+    "photo_pdf_page": 69,
+    "xref": 370,
+    "native_dimensions": [
+      3107,
+      1755
+    ],
+    "sizes": [
+      {
+        "width": 640,
+        "height": 362,
+        "path": "assets/rimi-catalog-avenue-640w.webp",
+        "bytes": 57372
+      },
+      {
+        "width": 960,
+        "height": 542,
+        "path": "assets/rimi-catalog-avenue-960w.webp",
+        "bytes": 114810
+      },
+      {
+        "width": 1280,
+        "height": 723,
+        "path": "assets/rimi-catalog-avenue-1280w.webp",
+        "bytes": 193086
+      }
+    ],
+    "variant_of": null
+  }
+]
