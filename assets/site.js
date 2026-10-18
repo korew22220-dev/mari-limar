@@ -24,7 +24,9 @@
     panel.setAttribute('aria-hidden', String(!open));
     opener.setAttribute('aria-expanded', String(open));
     document.body.style.overflow = open ? 'hidden' : previousOverflow;
-    (open ? closer : opener).focus();
+    requestAnimationFrame(() => {
+      if (panel.classList.contains('open') === open) (open ? closer : opener).focus({preventScroll:true});
+    });
   };
   opener.onclick = () => setMenu(true);
   closer.onclick = () => setMenu(false);
