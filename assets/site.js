@@ -70,7 +70,7 @@
     });
     document.querySelectorAll('.model-card').forEach((card, i) => card.hidden = selector.value !== 'all' && String(i) !== selector.value);
   });
-  const video = document.querySelector('video');
+  const video = document.querySelector('video:not([data-kitchen-hero-video])');
   if (video) {
     video.muted = true;
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');

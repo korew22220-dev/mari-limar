@@ -16,7 +16,7 @@ test('every homepage photograph has local responsive candidates and accurate wid
 });
 test('hero video pauses offscreen, hidden and reduced motion, then resumes without resetting time',()=>{
  const source=fs.readFileSync(path.join(root,'assets/site.js'),'utf8');
- const videoBlock=source.slice(source.indexOf("  const video = document.querySelector('video');"),source.lastIndexOf('})();'));
+ const videoBlock=source.slice(source.indexOf("  const video = document.querySelector("),source.lastIndexOf('})();'));
  let plays=0,pauses=0,observer;const documentEvents={},windowEvents={};
  const video={currentTime:12,muted:false,play(){plays++;return Promise.resolve();},pause(){pauses++;}};
  const reduced={matches:false,addEventListener(n,cb){this.change=cb;}};

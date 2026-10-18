@@ -1,0 +1,34 @@
+/* Only the Kitchens hero owns these media layers. Existing content stays above them. */
+.kh-video-hero { background: #11171e; }
+.kh-video-hero__poster,
+.kh-video-hero__video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.kh-video-hero__poster { z-index: 0; }
+.kh-video-hero__poster img,
+.kh-video-hero__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.kh-video-hero__video { z-index: 0; opacity: 0; }
+.kh-video-hero--playing .kh-video-hero__video { opacity: 1; }
+.kh-video-hero::after {
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(90deg, #080a0c40, transparent 85%),
+              linear-gradient(0deg, #080a0c99, transparent 72%);
+}
+/* The horizontal film needs a wider window on portrait tablets. */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .kh-video-hero { height: 640px; min-height: 640px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kh-video-hero .kh-video-hero__video { display: none; }
+}

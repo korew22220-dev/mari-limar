@@ -33,7 +33,7 @@ function filters(){
  const select={value:'all',addEventListener(n,cb){this.change=cb;}};
  const document={querySelectorAll:s=>s==='.catalog-tab'?buttons:nodes,getElementById:()=>select};
  const source=fs.readFileSync(path.join(root,'assets/site.js'),'utf8');
- const start=source.indexOf("  document.querySelectorAll('.catalog-tab')");const end=source.indexOf("  const video = document.querySelector('video');");
+ const start=source.indexOf("  document.querySelectorAll('.catalog-tab')");const end=source.indexOf("  const video = document.querySelector(");
  vm.runInNewContext(source.slice(start,end),{document});return {buttons,nodes,select};
 }
 test('existing filters handle all 26 cards; dropdown selects each card and resets correctly',()=>{
