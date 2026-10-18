@@ -1,0 +1,25 @@
+/* Progressive enhancement: content remains visible until an animation actually runs.
+   Existing geometry, colours, menu, video and button hover styles are untouched. */
+html body main .reveal{opacity:1;transform:none;transition:none}
+.pm-curtain{position:fixed;inset:0;z-index:2147483000;display:grid;place-items:center;background:#070707;color:#f0e9df;opacity:0;visibility:hidden;pointer-events:none;transition:opacity 360ms cubic-bezier(.76,0,.24,1),visibility 360ms;isolation:isolate}
+.pm-curtain[hidden]{display:none!important}
+.pm-curtain__brand{display:flex;flex-direction:column;align-items:center;gap:16px;padding:30px;text-align:center;opacity:0;transition:opacity 240ms ease-out 90ms}
+.pm-curtain__name{font:500 clamp(26px,4.2vw,58px)/1.2 Manrope,Arial,sans-serif;letter-spacing:.2em;white-space:nowrap}
+.pm-curtain__caption{font:400 clamp(8px,1vw,11px)/1.6 Manrope,Arial,sans-serif;letter-spacing:.36em}
+html.pm-exit .pm-curtain,html.pm-arrival .pm-curtain{visibility:visible;opacity:1;pointer-events:auto}
+html.pm-exit .pm-curtain__brand,html.pm-arrival .pm-curtain__brand{opacity:1}
+/* The stored arrival marker is set by the small synchronous script in <head>.
+   This visible-only override prevents a light flash before DOMContentLoaded. */
+html.pm-arrival .pm-curtain[hidden]{display:grid!important}
+html.pm-arrival .pm-curtain,html.pm-arrival .pm-curtain__brand{transition:none}
+html.pm-enter .pm-curtain{visibility:visible;opacity:0;pointer-events:none;transition:opacity 460ms cubic-bezier(.76,0,.24,1)}
+html.pm-enter .pm-curtain__brand{opacity:1;transition:none}
+html.pm-vt::view-transition-group(root){animation-duration:360ms;animation-timing-function:cubic-bezier(.76,0,.24,1)}
+html.pm-vt::view-transition-old(root){animation:pm-old 360ms cubic-bezier(.76,0,.24,1) both;mix-blend-mode:normal}
+html.pm-vt::view-transition-new(root){animation:pm-new 360ms cubic-bezier(.76,0,.24,1) both;mix-blend-mode:normal}
+/* The API animates the cover snapshot; CSS handles the identical fallback. */
+html.pm-vt.pm-exit .pm-curtain,html.pm-vt.pm-exit .pm-curtain__brand{transition:none}
+@keyframes pm-old{to{opacity:0}}
+@keyframes pm-new{from{opacity:0}to{opacity:1}}
+@media(max-width:650px){.pm-curtain{transition-duration:280ms}.pm-curtain__brand{gap:12px}html.pm-enter .pm-curtain{transition-duration:360ms}html.pm-vt::view-transition-group(root){animation-duration:280ms}html.pm-vt::view-transition-old(root),html.pm-vt::view-transition-new(root){animation-duration:280ms}}
+@media(prefers-reduced-motion:reduce){.pm-curtain,html.pm-arrival .pm-curtain[hidden]{display:none!important}html body main .reveal{opacity:1;transform:none;transition:none}html.pm-vt::view-transition-group(root),html.pm-vt::view-transition-old(root),html.pm-vt::view-transition-new(root){animation:none}}
