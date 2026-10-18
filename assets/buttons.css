@@ -1,0 +1,26 @@
+/* Shared controls. Header navigation and the drawer retain their own design. */
+html:root body .ml-button.ml-button,
+html:root body .ml-theme-toggle.ml-theme-toggle{
+ display:inline-flex;align-items:center;justify-content:center;gap:9px;
+ box-sizing:border-box;min-height:50px;max-width:100%;padding:13px 24px;
+ border:1px solid #b5a087;border-radius:999px;background:#e1d1b9;color:#211d19;
+ font-family:Manrope,Arial,sans-serif;font-size:12px;font-weight:600;line-height:1.5;
+ letter-spacing:.06em;text-transform:uppercase;text-align:center;text-decoration:none;
+ white-space:normal;vertical-align:middle;cursor:pointer;box-shadow:none;
+ transition:background-color .2s,color .2s,border-color .2s;
+}
+html:root body .ml-button.ml-button:hover,
+html:root body .ml-theme-toggle.ml-theme-toggle:hover{
+ background:#c9b8a2;color:#171714;border-color:#aa9275;transform:none;box-shadow:none;
+}
+html:root body .ml-button.ml-button:focus-visible,
+html:root body .ml-theme-toggle.ml-theme-toggle:focus-visible{
+ outline:2px solid #b29874;outline-offset:4px;
+}
+/* Filters use the same shape and typography, with a clear selected state. */
+html:root body .ml-button.ml-button[aria-pressed=false]{background:transparent;color:inherit;border-color:#998975}
+html:root body .ml-button.ml-button[aria-pressed=false]:hover{background:#e1d1b9;color:#211d19;border-color:#b5a087}
+html:root body .ml-button.ml-button[aria-pressed=true]{background:#e1d1b9;color:#211d19;border-color:#b5a087}
+html:root body .ml-button.ml-button:disabled{opacity:.45;cursor:not-allowed}
+@media(max-width:600px){html:root body .ml-button.ml-button,html:root body .ml-theme-toggle.ml-theme-toggle{min-height:48px;padding:12px 20px;font-size:11px}}
+@media(prefers-reduced-motion:reduce){html:root body .ml-button.ml-button,html:root body .ml-theme-toggle.ml-theme-toggle{transition:none}}
