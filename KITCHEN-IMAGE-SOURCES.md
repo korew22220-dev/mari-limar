@@ -1,6 +1,6 @@
 # Editorial kitchen photographs
 
-The three images replacing generic editorial references in `kitchens.html` were extracted directly from the supplied RIMI 2024 modern collection PDF. No furniture was generated or modified. Existing section layout and text are retained.
+The three images replacing generic editorial references in `kitchens.html` were extracted directly from the supplied RIMI 2024 modern collection PDF. No furniture was generated or modified. Existing section layout is retained. Descriptions now match the pictured fronts of Primavera, island layout of Shika, and worktop, hob and bar area of Arona. No unverified worktop material or performance specifications are asserted.
 
 Source: `Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf`.
 
