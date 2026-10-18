@@ -4,15 +4,31 @@
   const closer = document.querySelector('#close, #close-menu');
   opener.setAttribute('aria-controls', panel.id);
   opener.setAttribute('aria-expanded', 'false');
+  const backdrop = document.querySelector('.ml-drawer-backdrop');
+  let previousOverflow = '';
+  let inactive = [];
+  panel.inert = true;
   const setMenu = (open) => {
+    if (open === panel.classList.contains('open')) return;
+    if (open) {
+      previousOverflow = document.body.style.overflow;
+      inactive = [...document.body.children].filter(el => el !== panel && el !== backdrop && !['SCRIPT','STYLE'].includes(el.tagName)).map(el => [el, el.inert]);
+      inactive.forEach(([el]) => { el.inert = true; });
+    } else {
+      inactive.forEach(([el, value]) => { el.inert = value; });
+      inactive = [];
+    }
+    panel.inert = !open;
+    backdrop.classList.toggle('open', open);
     panel.classList.toggle('open', open);
     panel.setAttribute('aria-hidden', String(!open));
     opener.setAttribute('aria-expanded', String(open));
-    document.body.style.overflow = open ? 'hidden' : '';
+    document.body.style.overflow = open ? 'hidden' : previousOverflow;
     (open ? closer : opener).focus();
   };
   opener.onclick = () => setMenu(true);
   closer.onclick = () => setMenu(false);
+  backdrop.onclick = () => setMenu(false);
   panel.querySelectorAll('a').forEach(a => a.onclick = () => setMenu(false));
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape' && panel.classList.contains('open')) setMenu(false);
