@@ -54,7 +54,8 @@ test('five original photographs, fifteen fixed markers, no editor, valid catalog
   assert.match(html,new RegExp(`src="assets/${slug}\\.webp"`));
   assert.ok(fs.existsSync(path.join(root,'assets',slug+'.webp')));
   assert.ok(fs.readFileSync(path.join(root,'kitchens.html'),'utf8').includes(`id="model-${slug}"`));
-  assert.ok(html.includes(`href="kitchens.html#model-${slug}"`));
+  assert.ok(html.includes(`href="kitchen-${slug}.html"`));
+  assert.ok(fs.existsSync(path.join(root,`kitchen-${slug}.html`)));
  }
  assert.doesNotMatch(source,/localStorage\.|editHotspots|exportHotspots/);
 });

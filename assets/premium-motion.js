@@ -7,7 +7,7 @@
   var key='mari-limar-motion-transfer-v1';
   var reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
   var mobile=window.matchMedia('(max-width: 650px)');
-  var pages=new Set(['index.html','kitchens.html','architecture-design.html','portfolio.html','expertise.html','about.html','contacts.html','blog.html','blog-kitchen-planning.html','blog-interior-materials.html','blog-furniture-architecture.html','blog-furniture-check.html']);
+  var pages=new Set(["kitchen-arona.html","kitchen-avenue.html","kitchen-barona.html","kitchen-devenport.html","kitchen-esenta.html","kitchen-fabiana.html","kitchen-ferrata.html","kitchen-florida.html","kitchen-kanti.html","kitchen-konkretta.html","kitchen-kristali.html","kitchen-lange.html","kitchen-luna.html","kitchen-magna.html","kitchen-maranella.html","kitchen-miami-curved.html","kitchen-miami.html","kitchen-monticelli.html","kitchen-nikol.html","kitchen-nizza.html","kitchen-novara.html","kitchen-ora.html","kitchen-primavera.html","kitchen-progma.html","kitchen-shika.html","kitchen-time.html"].concat(['index.html','kitchens.html','architecture-design.html','portfolio.html','expertise.html','about.html','contacts.html','blog.html','blog-kitchen-planning.html','blog-interior-materials.html','blog-furniture-architecture.html','blog-furniture-check.html']));
   var arrival=false, busy=false, curtain=null, observer=null, transfer=null;
   var navigationTimer=0, recoveryTimer=0, arrivalTimer=0;
   var running=new Set();

@@ -1,0 +1,632 @@
+[
+  {
+    "slug": "luna",
+    "name": "Луна",
+    "collection": "modern",
+    "subtitle": "Контурный свет и гладкие фасады",
+    "description": "В модели «Луна» профиль со встроенной подсветкой становится частью композиции кухни. Свет подчёркивает контуры, а гладкие фасады и открывание без накладных ручек сохраняют чистую геометрию.",
+    "features": [
+      "Профиль со встроенным световым потоком",
+      "Гладкие фасады",
+      "Открывание без накладных ручек"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 2,
+    "source_printed_pages": "4–5",
+    "image": {
+      "alt": "Кухня РИМИ Луна",
+      "loading": "lazy",
+      "src": "assets/luna.webp",
+      "width": "1492",
+      "height": "842",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "ferrata",
+    "name": "Феррата",
+    "collection": "modern",
+    "subtitle": "Графика чёрного и золотого",
+    "description": "В «Феррате» золотистый профиль GOLA сочетается с чёрными открытыми элементами. Профиль и цоколь создают акценты, а открытые секции дополняют закрытое хранение. В каталоге модель представлена в сочетаниях разных отделок и фактур.",
+    "features": [
+      "Интегрированная система GOLA",
+      "Золотистые профиль и цоколь",
+      "Чёрные открытые элементы"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 7,
+    "source_printed_pages": "14–15",
+    "image": {
+      "alt": "Кухня РИМИ Феррата",
+      "loading": "lazy",
+      "src": "assets/ferrata.webp",
+      "width": "1492",
+      "height": "842",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "progma",
+    "name": "Прогма",
+    "collection": "modern",
+    "subtitle": "Ровные фасады и древесные декоры",
+    "description": "«Прогма» строится на простых линиях и ровных фасадах. В каталоге для модели предложены эмалевые отделки в сочетании с древесными декорами: их можно использовать для спокойной композиции или выразительного контраста.",
+    "features": [
+      "Ровные фасады",
+      "Эмалевые отделки",
+      "Сочетания с древесными декорами"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 15,
+    "source_printed_pages": "30–31",
+    "image": {
+      "alt": "Кухня РИМИ Прогма",
+      "loading": "lazy",
+      "src": "assets/progma.webp",
+      "width": "1492",
+      "height": "842",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "konkretta",
+    "name": "Конкретта",
+    "collection": "modern",
+    "subtitle": "Геометрия и встроенная ручка",
+    "description": "Особенность «Конкретты» — ручка, встроенная в створку с рамочным фасадом. Древесные элементы объединяют витрины, открытое хранение системы TOUCH и столешницу в цельную композицию.",
+    "features": [
+      "Рамочный фасад со встроенной ручкой",
+      "Открытое хранение TOUCH",
+      "Древесные элементы в композиции"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 21,
+    "source_printed_pages": "42–43",
+    "image": {
+      "alt": "Кухня РИМИ Конкретта",
+      "loading": "lazy",
+      "src": "assets/konkretta.webp",
+      "width": "1492",
+      "height": "842",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "esenta",
+    "name": "Эсента",
+    "collection": "modern",
+    "subtitle": "Стекло и акцентные ниши",
+    "description": "В «Эсенте» остеклённые фасады в алюминиевом профиле сочетаются с акцентными нишами. Подсветка выделяет глубину витрин и открытых секций. В каталоге показаны разные цветовые решения модели.",
+    "features": [
+      "Остеклённые фасады в алюминиевом профиле",
+      "Акцентные ниши",
+      "Подсветка витрин и открытых секций"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 27,
+    "source_printed_pages": "54–55",
+    "image": {
+      "alt": "Кухня РИМИ Эсента",
+      "loading": "lazy",
+      "src": "assets/esenta.webp",
+      "width": "1492",
+      "height": "842",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "novara",
+    "name": "Новара",
+    "collection": "modern",
+    "subtitle": "Простые линии и глубина цвета",
+    "description": "«Новара» сочетает простые формы с интегрированной ручкой. Сочетание эмали и стекла придаёт фасадам глубину цвета, а отсутствие выступающей фурнитуры поддерживает лаконичный облик кухни.",
+    "features": [
+      "Интегрированная ручка",
+      "Сочетание эмали и стекла",
+      "Лаконичная геометрия"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 40,
+    "source_printed_pages": "80–81",
+    "image": {
+      "alt": "Кухня РИМИ Новара",
+      "loading": "lazy",
+      "src": "assets/novara.webp",
+      "width": "1492",
+      "height": "842",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "primavera",
+    "name": "Примавера",
+    "collection": "modern",
+    "subtitle": "Волнообразный рельеф",
+    "description": "Главный элемент «Примаверы» — фасады с волнообразной фрезеровкой. Рельеф создаёт игру света и тени. Разная глубина фрезеровки позволяет сделать рисунок более выраженным или спокойным.",
+    "features": [
+      "Волнообразная фрезеровка",
+      "Рельефные фасады",
+      "Разная глубина рисунка"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 48,
+    "source_printed_pages": "96–97",
+    "image": {
+      "alt": "Кухня РИМИ Примавера",
+      "loading": "lazy",
+      "src": "assets/rimi-catalog-primavera-1280w.webp",
+      "srcset": "assets/rimi-catalog-primavera-640w.webp 640w, assets/rimi-catalog-primavera-960w.webp 960w, assets/rimi-catalog-primavera-1280w.webp 1280w",
+      "sizes": "(max-width: 750px) 88vw, 43vw",
+      "width": "1280",
+      "height": "723",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "shika",
+    "name": "Шика",
+    "collection": "modern",
+    "subtitle": "Тонкая рамка и матовая эмаль",
+    "description": "Фасады «Шики» выполнены из МДФ толщиной 22 мм с тонкой рамкой и шелковисто-матовой эмалью. Интегрированная ручка остаётся незаметной в общей композиции. В каталоге предусмотрены различные варианты окраски.",
+    "features": [
+      "МДФ 22 мм",
+      "Шелковисто-матовая эмаль",
+      "Интегрированная ручка"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 58,
+    "source_printed_pages": "116–117",
+    "image": {
+      "alt": "Кухня РИМИ Шика",
+      "loading": "lazy",
+      "src": "assets/rimi-catalog-shika-1280w.webp",
+      "srcset": "assets/rimi-catalog-shika-640w.webp 640w, assets/rimi-catalog-shika-960w.webp 960w, assets/rimi-catalog-shika-1280w.webp 1280w",
+      "sizes": "(max-width: 750px) 88vw, 43vw",
+      "width": "1280",
+      "height": "723",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "florida",
+    "name": "Флорида",
+    "collection": "modern",
+    "subtitle": "Минимализм для кухни-гостиной",
+    "description": "«Флорида» задумана как часть общего пространства кухни, столовой и гостиной. Её отличает ручка J, выфрезерованная по всей ширине фасада. Строгие линии сочетаются с небольшим количеством декоративных деталей.",
+    "features": [
+      "Ручка J по ширине фасада",
+      "Геометричные линии",
+      "Лаконичная отделка"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 62,
+    "source_printed_pages": "124–125",
+    "image": {
+      "alt": "Кухня РИМИ Флорида",
+      "loading": "lazy",
+      "src": "assets/rimi-catalog-florida-1280w.webp",
+      "srcset": "assets/rimi-catalog-florida-640w.webp 640w, assets/rimi-catalog-florida-960w.webp 960w, assets/rimi-catalog-florida-1280w.webp 1280w",
+      "sizes": "(max-width: 750px) 88vw, 43vw",
+      "width": "1280",
+      "height": "872",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "arona",
+    "name": "Арона",
+    "collection": "modern",
+    "subtitle": "Чёткие линии и удобное хранение",
+    "description": "«Арона» объединяет чёткую геометрию фасадов и столешниц с открыванием без выступающих ручек. В описании модели предусмотрены ящики полного выдвижения, которые открывают доступ ко всему содержимому.",
+    "features": [
+      "Без выступающих ручек",
+      "Ящики полного выдвижения",
+      "Чёткая геометрия фасадов и столешниц"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 70,
+    "source_printed_pages": "140–141",
+    "image": {
+      "alt": "Кухня РИМИ Арона",
+      "loading": "lazy",
+      "src": "assets/rimi-catalog-arona-1280w.webp",
+      "srcset": "assets/rimi-catalog-arona-640w.webp 640w, assets/rimi-catalog-arona-960w.webp 960w, assets/rimi-catalog-arona-1280w.webp 1280w",
+      "sizes": "(max-width: 750px) 88vw, 43vw",
+      "width": "1280",
+      "height": "723",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "magna",
+    "name": "Магна",
+    "collection": "modern",
+    "subtitle": "Матовая эмаль и рельефные текстуры",
+    "description": "В каталожной композиции «Магны» гладкие матовые поверхности сочетаются с рельефными текстурами. Нижние шкафы отделаны с двух сторон шелковисто-матовой эмалью, верхние фасады — покрытием HPL. Образ дополняет врезная ручка.",
+    "features": [
+      "Шелковисто-матовая эмаль",
+      "Покрытие HPL верхних фасадов",
+      "Врезная ручка"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 76,
+    "source_printed_pages": "152–153",
+    "image": {
+      "alt": "Кухня РИМИ Магна",
+      "loading": "lazy",
+      "src": "assets/rimi-catalog-magna-1280w.webp",
+      "srcset": "assets/rimi-catalog-magna-640w.webp 640w, assets/rimi-catalog-magna-960w.webp 960w, assets/rimi-catalog-magna-1280w.webp 1280w",
+      "sizes": "(max-width: 750px) 88vw, 43vw",
+      "width": "1280",
+      "height": "723",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "miami",
+    "name": "Майами",
+    "collection": "modern",
+    "subtitle": "Стеклянные фасады и цвет",
+    "description": "В модели «Майами» верхние шкафы со стеклянными фасадами обрамляют пространство хранения. В каталожной версии образ дополняют металлизированный оттенок эмали и стеклянные полки. Для модели представлена широкая цветовая палитра.",
+    "features": [
+      "Стеклянные фасады верхних шкафов",
+      "Стеклянные полки",
+      "Выбор цветовых решений"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 81,
+    "source_printed_pages": "162–163",
+    "image": {
+      "alt": "Кухня РИМИ Майами",
+      "loading": "lazy",
+      "src": "assets/rimi-catalog-miami-1280w.webp",
+      "srcset": "assets/rimi-catalog-miami-640w.webp 640w, assets/rimi-catalog-miami-960w.webp 960w, assets/rimi-catalog-miami-1280w.webp 1280w",
+      "sizes": "(max-width: 750px) 88vw, 43vw",
+      "width": "1280",
+      "height": "723",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "miami-curved",
+    "name": "Майами — радиусные фасады",
+    "collection": "modern",
+    "subtitle": "Плавные линии острова",
+    "description": "Этот вариант «Майами» отличается криволинейными фасадами и эмалевой отделкой. Столешница плавно переходит в остров, объединяя части кухни в одну композицию. Компактные ниши добавляют открытое хранение.",
+    "features": [
+      "Радиусные фасады",
+      "Эмалевая отделка",
+      "Остров с компактными нишами"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 85,
+    "source_printed_pages": "170–171",
+    "image": {
+      "alt": "Кухня РИМИ Майами — радиусные фасады",
+      "loading": "lazy",
+      "src": "assets/rimi-catalog-miami-curved-1280w.webp",
+      "srcset": "assets/rimi-catalog-miami-curved-640w.webp 640w, assets/rimi-catalog-miami-curved-960w.webp 960w, assets/rimi-catalog-miami-curved-1280w.webp 1280w",
+      "sizes": "(max-width: 750px) 88vw, 43vw",
+      "width": "1280",
+      "height": "723",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "ora",
+    "name": "Ора",
+    "collection": "modern",
+    "subtitle": "Спокойная геометрия",
+    "description": "«Ора» — модель с лаконичной геометрией и минимумом декоративных деталей. В каталоге предусмотрены матовая и глянцевая отделки в различных цветах. Цвет и характер поверхности помогают выбрать настроение кухни.",
+    "features": [
+      "Минималистичный дизайн",
+      "Матовая или глянцевая отделка",
+      "Различные цветовые решения"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 96,
+    "source_printed_pages": "192–193",
+    "image": {
+      "alt": "Кухня РИМИ Ора",
+      "loading": "lazy",
+      "src": "assets/rimi-catalog-ora-1280w.webp",
+      "srcset": "assets/rimi-catalog-ora-640w.webp 640w, assets/rimi-catalog-ora-960w.webp 960w, assets/rimi-catalog-ora-1280w.webp 1280w",
+      "sizes": "(max-width: 750px) 88vw, 43vw",
+      "width": "1280",
+      "height": "723",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "kristali",
+    "name": "Кристали",
+    "collection": "modern",
+    "subtitle": "Стекло и чистота линий",
+    "description": "В основе «Кристали» — стеклянные фасады с глянцевой поверхностью. Прямые линии и плоские поверхности формируют строгую геометрию; накладные ручки в этой композиции отсутствуют.",
+    "features": [
+      "Стеклянные фасады",
+      "Глянцевая поверхность",
+      "Без накладных ручек"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 100,
+    "source_printed_pages": "200–201",
+    "image": {
+      "alt": "Кухня РИМИ Кристали",
+      "loading": "lazy",
+      "src": "assets/rimi-catalog-kristali-1280w.webp",
+      "srcset": "assets/rimi-catalog-kristali-640w.webp 640w, assets/rimi-catalog-kristali-960w.webp 960w, assets/rimi-catalog-kristali-1280w.webp 1280w",
+      "sizes": "(max-width: 750px) 88vw, 43vw",
+      "width": "1280",
+      "height": "723",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "kanti",
+    "name": "Канти",
+    "collection": "modern",
+    "subtitle": "Рамка в современном интерьере",
+    "description": "Тонкая рамка фасадов «Канти» сочетает классические пропорции с современной геометрией. Простые формы позволяют вписать модель как в сдержанный классический интерьер, так и в современное пространство.",
+    "features": [
+      "Тонкая рамка фасадов",
+      "Чёткая геометрия",
+      "Сочетание классических и современных пропорций"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 105,
+    "source_printed_pages": "210–211",
+    "image": {
+      "alt": "Кухня РИМИ Канти",
+      "loading": "lazy",
+      "src": "assets/rimi-catalog-kanti-1280w.webp",
+      "srcset": "assets/rimi-catalog-kanti-640w.webp 640w, assets/rimi-catalog-kanti-960w.webp 960w, assets/rimi-catalog-kanti-1280w.webp 1280w",
+      "sizes": "(max-width: 750px) 88vw, 43vw",
+      "width": "1280",
+      "height": "723",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "nizza",
+    "name": "Ницца",
+    "collection": "modern",
+    "subtitle": "Профиль GOLA и выбор покрытий",
+    "description": "«Ницца» отличается встроенным алюминиевым профилем GOLA и отсутствием накладных ручек. В каталоге представлены фасады с акриловым, глянцевым или матовым пластиковым покрытием, в том числе с древесными декорами.",
+    "features": [
+      "Алюминиевый профиль GOLA",
+      "Без накладных ручек",
+      "Акриловые и пластиковые покрытия"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 115,
+    "source_printed_pages": "230–231",
+    "image": {
+      "alt": "Кухня РИМИ Ницца",
+      "loading": "lazy",
+      "src": "assets/rimi-catalog-nizza-1280w.webp",
+      "srcset": "assets/rimi-catalog-nizza-640w.webp 640w, assets/rimi-catalog-nizza-960w.webp 960w, assets/rimi-catalog-nizza-1280w.webp 1280w",
+      "sizes": "(max-width: 750px) 88vw, 43vw",
+      "width": "1280",
+      "height": "723",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "time",
+    "name": "Тайм",
+    "collection": "modern",
+    "subtitle": "Древесные фактуры и стекло",
+    "description": "В «Тайме» фасады с древесной фактурой сочетаются со стеклом в алюминиевой рамке и профилем GOLA. Индустриальный характер модели поддерживают рациональная планировка и выразительные материалы.",
+    "features": [
+      "Древесные фактуры фасадов",
+      "Стекло в алюминиевой рамке",
+      "Профиль GOLA"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 124,
+    "source_printed_pages": "248–249",
+    "image": {
+      "alt": "Кухня РИМИ Тайм",
+      "loading": "lazy",
+      "src": "assets/rimi-catalog-time-1280w.webp",
+      "srcset": "assets/rimi-catalog-time-640w.webp 640w, assets/rimi-catalog-time-960w.webp 960w, assets/rimi-catalog-time-1280w.webp 1280w",
+      "sizes": "(max-width: 750px) 88vw, 43vw",
+      "width": "1280",
+      "height": "723",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "monticelli",
+    "name": "Монтичели",
+    "collection": "classic",
+    "subtitle": "Английская классика в деталях",
+    "description": "Фасады «Монтичели» выполнены из МДФ толщиной 24 мм со сложной фрезеровкой. Пилястры с объёмным декором и карнизы с подкарнизником поддерживают классический характер модели. За витринами использован контрастный древесный декор.",
+    "features": [
+      "МДФ 24 мм",
+      "Пилястры и карнизы",
+      "Контрастный древесный декор за витринами"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
+    "source_pdf_page": 2,
+    "source_printed_pages": "4–5",
+    "image": {
+      "alt": "Кухня РИМИ Монтичели",
+      "loading": "lazy",
+      "src": "assets/monticelli.webp",
+      "width": "1492",
+      "height": "842",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "fabiana",
+    "name": "Фабиана",
+    "collection": "classic",
+    "subtitle": "Сдержанная классика",
+    "description": "«Фабиана» соединяет простую геометрию с четырёхуровневым фасадом. Скрытая интегрированная ручка сохраняет чистые линии, а пропорции модели сочетают классические мотивы с современным исполнением.",
+    "features": [
+      "Четырёхуровневый фасад",
+      "Скрытая интегрированная ручка",
+      "Лаконичные геометрические формы"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
+    "source_pdf_page": 15,
+    "source_printed_pages": "30–31",
+    "image": {
+      "alt": "Кухня РИМИ Фабиана",
+      "loading": "lazy",
+      "src": "assets/fabiana.webp",
+      "width": "1492",
+      "height": "842",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "lange",
+    "name": "Ланже",
+    "collection": "classic",
+    "subtitle": "Геометрия ар-деко",
+    "description": "«Ланже» сочетает глянцевые фасады со стеклом с фрезеровкой. Декоративные пилястры с ромбообразным рисунком поддерживают эстетику ар-деко и делают геометрию главным акцентом модели.",
+    "features": [
+      "Глянцевые фасады",
+      "Стекло с фрезеровкой",
+      "Пилястры с ромбообразным рисунком"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
+    "source_pdf_page": 22,
+    "source_printed_pages": "44–45",
+    "image": {
+      "alt": "Кухня РИМИ Ланже",
+      "loading": "lazy",
+      "src": "assets/lange.webp",
+      "width": "1492",
+      "height": "842",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "maranella",
+    "name": "Маранелла",
+    "collection": "classic",
+    "subtitle": "Классическая модульная композиция",
+    "description": "«Маранелла» — модульная система с индивидуальными элементами и открытыми полками. В каталоге её отличают сложные фасады, декоративные пилястры и вытяжка с формой, вдохновлённой капотом автомобиля Ferrari.",
+    "features": [
+      "Модульная система",
+      "Декоративные пилястры",
+      "Открытые полки и выразительная вытяжка"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
+    "source_pdf_page": 34,
+    "source_printed_pages": "68–69",
+    "image": {
+      "alt": "Кухня РИМИ Маранелла",
+      "loading": "lazy",
+      "src": "assets/maranella.webp",
+      "width": "1492",
+      "height": "842",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "barona",
+    "name": "Барона",
+    "collection": "classic",
+    "subtitle": "Декор итальянской классики",
+    "description": "В «Бароне» классические формы сочетаются с высокими резными карнизами и тщательно проработанным декором. В каталожном описании предусмотрена патина, нанесённая вручную.",
+    "features": [
+      "Высокие резные карнизы",
+      "Классический декор",
+      "Ручное нанесение патины"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
+    "source_pdf_page": 45,
+    "source_printed_pages": "90–91",
+    "image": {
+      "alt": "Кухня РИМИ Барона",
+      "loading": "lazy",
+      "src": "assets/rimi-catalog-barona-1280w.webp",
+      "srcset": "assets/rimi-catalog-barona-640w.webp 640w, assets/rimi-catalog-barona-960w.webp 960w, assets/rimi-catalog-barona-1280w.webp 1280w",
+      "sizes": "(max-width: 750px) 88vw, 43vw",
+      "width": "1280",
+      "height": "723",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "devenport",
+    "name": "Девенпорт",
+    "collection": "classic",
+    "subtitle": "Портал, витражи и резной декор",
+    "description": "«Девенпорт» отличается порталом с фактурным панно, витражами с классической раскладкой и резными элементами. В каталоге для фасадов предусмотрены традиционная окраска или отделка экомембраной.",
+    "features": [
+      "Портал с фактурным панно",
+      "Витражи с классической раскладкой",
+      "Окраска или экомембрана"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
+    "source_pdf_page": 51,
+    "source_printed_pages": "102–103",
+    "image": {
+      "alt": "Кухня РИМИ Девенпорт",
+      "loading": "lazy",
+      "src": "assets/rimi-catalog-devenport-1280w.webp",
+      "srcset": "assets/rimi-catalog-devenport-640w.webp 640w, assets/rimi-catalog-devenport-960w.webp 960w, assets/rimi-catalog-devenport-1280w.webp 1280w",
+      "sizes": "(max-width: 750px) 88vw, 43vw",
+      "width": "1280",
+      "height": "723",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "nikol",
+    "name": "Николь",
+    "collection": "classic",
+    "subtitle": "Неоклассика в спокойной палитре",
+    "description": "«Николь» предлагает современное прочтение неоклассики. Для фасадов в каталоге предусмотрены матовая и полуматовая эмаль либо PET-мембрана. Спокойные оттенки позволяют сочетать кухню с яркими или нейтральными деталями интерьера.",
+    "features": [
+      "Неоклассические формы",
+      "Матовая или полуматовая эмаль",
+      "Вариант отделки PET-мембраной"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
+    "source_pdf_page": 58,
+    "source_printed_pages": "116–117",
+    "image": {
+      "alt": "Кухня РИМИ Николь",
+      "loading": "lazy",
+      "src": "assets/rimi-catalog-nikol-1280w.webp",
+      "srcset": "assets/rimi-catalog-nikol-640w.webp 640w, assets/rimi-catalog-nikol-960w.webp 960w, assets/rimi-catalog-nikol-1280w.webp 1280w",
+      "sizes": "(max-width: 750px) 88vw, 43vw",
+      "width": "1280",
+      "height": "723",
+      "decoding": "async"
+    }
+  },
+  {
+    "slug": "avenue",
+    "name": "Авеню",
+    "collection": "classic",
+    "subtitle": "Рамочные фасады и открытые стеллажи",
+    "description": "«Авеню» сочетает прямые рамочные фасады с открытыми стеллажами «Шейд». Стеллажи представлены как настенные полки, части модулей и самостоятельные высокие конструкции.",
+    "features": [
+      "Прямые рамочные фасады",
+      "Открытые стеллажи «Шейд»",
+      "Настенные и высокие конструкции"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
+    "source_pdf_page": 67,
+    "source_printed_pages": "134–135",
+    "image": {
+      "alt": "Кухня РИМИ Авеню",
+      "loading": "lazy",
+      "src": "assets/rimi-catalog-avenue-1280w.webp",
+      "srcset": "assets/rimi-catalog-avenue-640w.webp 640w, assets/rimi-catalog-avenue-960w.webp 960w, assets/rimi-catalog-avenue-1280w.webp 1280w",
+      "sizes": "(max-width: 750px) 88vw, 43vw",
+      "width": "1280",
+      "height": "723",
+      "decoding": "async"
+    }
+  }
+]
