@@ -1,0 +1,24 @@
+/* Site-wide optional palette; photographs and video keep their original colours. */
+.ml-theme-toggle{position:fixed;right:max(20px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom));z-index:45;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 19px;border:1px solid #b5a48e;border-radius:999px;background:#f3efe8;color:#211d19;box-shadow:0 4px 24px #0002;font:500 12px/1.4 Manrope,Arial,sans-serif;cursor:pointer}
+.ml-theme-toggle svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.5;flex-shrink:0}
+.ml-theme-toggle:focus-visible{outline:3px solid #b29874;outline-offset:4px}
+.ml-theme-toggle:hover{box-shadow:0 6px 26px #0004}
+html[data-ml-theme=dark]{color-scheme:dark;--cream:#1b1917;--ink:#f0e9df;--taupe:#302b26;--line:#eee3d033;--sand:#c9b8a2;--olive:#c6ad8e;--gold:#c5a980;--dark:#141210;--deep:#141210;--panel:#24201c}
+html[data-ml-theme=dark] body{background:#1b1917;color:#f0e9df}
+html[data-ml-theme=dark] :is(.projects,.expertise,.marina-preview,.feature.alt,.catalog,.arch-values,.soft-section,.studio-note,.contact-map-section,.port-policy,.furniture-architecture){background:#25211d;color:#f0e9df}
+html[data-ml-theme=dark] .contact{background:#302b26;color:#f0e9df}
+html[data-ml-theme=dark] :is(.expertise-lead,.expertise-item p,.port-meta p,.count,.empty,.blog-empty,.contact-disclaimer){color:#c8bfb3}
+html[data-ml-theme=dark] :is(.expertise-item>span,.arch-value .num,.step small,.concept-card b,.filter-title,.fa-points strong,.blog-meta,.contact-option>span:first-child){color:#c5ad90}
+html[data-ml-theme=dark] :is(.btn,.action-button-light,.service-button){color:#211d19}
+html[data-ml-theme=dark] :is(.btn.dark,.action-button-dark,.contact-link){background:#e1d1b9;color:#211d19;border-color:#e1d1b9}
+html[data-ml-theme=dark] :is(.btn.dark,.action-button-dark,.contact-link):hover{background:transparent;color:#f0e9df;border-color:#c5ad90}
+html[data-ml-theme=dark] .btn:not(.dark):hover{color:#fff}
+html[data-ml-theme=dark] .circle-arrow:hover{color:#211d19}
+html[data-ml-theme=dark] :is(.catalog-tab,.filter,.blog-filter button,.port-card button){color:#eee5d8;border-color:#9b8974;background:transparent}
+html[data-ml-theme=dark] :is(.catalog-tab.active,.catalog-tab:hover,.filter[aria-pressed=true],.filter:hover,.blog-filter button[aria-pressed=true],.blog-filter button:hover,.port-card button:hover){background:#e1d1b9;color:#211d19;border-color:#e1d1b9}
+html[data-ml-theme=dark] :is(.steps,.step,.concept-card,.model-info,.expertise-item,.expertise,.contact-option){border-color:#eee3d033}
+html[data-ml-theme=dark] .dialog-inner{background:#25211d;color:#f0e9df}
+html[data-ml-theme=dark] .ml-theme-toggle{background:#29241f;color:#f0e9df;border-color:#9b8974;box-shadow:0 4px 24px #0006}
+html[data-ml-theme=dark] .model-select select{background:#25211d;color:#f0e9df}
+html[data-ml-theme=dark] :is(.person-placeholder,.marina-preview-art,.map-placeholder){background:linear-gradient(140deg,#443a30,#302b26 65%,#514437);color:#e7dbca}
+@media(max-width:600px){.ml-theme-toggle{right:12px;bottom:max(12px,env(safe-area-inset-bottom));min-height:46px;padding:11px 15px;font-size:11px}footer,.footer{padding-bottom:85px}}
