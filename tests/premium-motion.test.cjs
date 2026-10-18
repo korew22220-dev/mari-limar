@@ -65,11 +65,11 @@ test('arrival marker only matches its destination and expires safely',()=>{
  const marker={path:'/mari-limar/index.html',search:'',time:Date.now()};const h=harness({marker});assert.ok(h.rootClasses.has('pm-arrival'));h.frames();assert.ok(h.rootClasses.has('pm-enter'));h.run(520);assert.equal(h.rootClasses.size,0);
  for(const patch of [{path:'/mari-limar/about.html'},{time:Date.now()-10000},{search:'?different'}])assert.equal(harness({marker:{...marker,...patch}}).rootClasses.has('pm-arrival'),false);
 });
-test('scroll content animates only once, excluded comparison and offscreen images stay intact',()=>{
+test('text animates once; all photos remain immediately visible and are never observed',()=>{
  const h=harness({targets:[{tagName:'H2'},{tagName:'IMG',complete:true},{tagName:'IMG',excluded:true},{tagName:'P',top:900,bottom:1000}]});
  // complete is a DOM property, not an HTML attribute.
  h.nodes.forEach(n=>{n.complete=true;});
- const entries=h.nodes.map(target=>({target,isIntersecting:true}));h.io.cb(entries);assert.equal(h.animations.length,2);assert.equal(h.animations[1].frames[0].transform,'scale(1.06)');h.io.cb(entries);assert.equal(h.animations.length,2);
+ const entries=h.nodes.map(target=>({target,isIntersecting:true}));h.io.cb(entries.filter(e=>h.io.targets.has(e.target)));assert.equal(h.animations.length,1);assert.equal(h.io.targets.has(h.nodes[1]),false);assert.equal(h.io.targets.has(h.nodes[2]),false);h.io.cb(entries.filter(e=>h.io.targets.has(e.target)));assert.equal(h.animations.length,1);
  h.reduced.matches=true;h.reduced.onchange();assert.ok(h.animations.every(a=>a.cancelled));
 });
 test('mobile timing is shorter and a changed preference preserves accepted navigation',()=>{const h=harness({mobile:true});h.click('https://studio.test/mari-limar/about.html');h.reduced.matches=true;h.reduced.onchange();h.run(300);assert.equal(h.navigations.length,1);});

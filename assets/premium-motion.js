@@ -73,17 +73,12 @@
     return rect.bottom>0&&rect.top<window.innerHeight;
   }
   function play(element,kind,delay){
-    if(reduced.matches||typeof element.animate!=='function'||!isVisible(element))return;
+    if(element.tagName==='IMG'||reduced.matches||typeof element.animate!=='function'||!isVisible(element))return;
     var small=mobile.matches;
-    var duration=kind==='photo'?(small?780:1120):kind==='heading'?(small?720:960):(small?520:700);
+    var duration=kind==='heading'?(small?720:960):(small?520:700);
     var distance=kind==='heading'?(small?22:34):(small?14:22);
     var frames;
-    if(kind==='photo')frames=[
-      {opacity:0,transform:'scale(1.06)',clipPath:'inset(100% 3% 3% 3%)'},
-      {opacity:1,offset:.4},
-      {opacity:1,transform:'scale(1)',clipPath:'inset(0% 0% 0% 0%)'}
-    ];
-    else if(kind==='heading')frames=[{opacity:0,transform:'translateY('+distance+'px)',clipPath:'inset(100% 0 0 0)'},{opacity:1,transform:'translateY(0)',clipPath:'inset(0% 0 0 0)'}];
+    if(kind==='heading')frames=[{opacity:0,transform:'translateY('+distance+'px)',clipPath:'inset(100% 0 0 0)'},{opacity:1,transform:'translateY(0)',clipPath:'inset(0% 0 0 0)'}];
     else frames=[{opacity:0,transform:'translateY('+distance+'px)'},{opacity:1,transform:'translateY(0)'}];
     try{
       var animation=element.animate(frames,{duration:duration,delay:delay,easing:'cubic-bezier(.16,1,.3,1)',fill:'both'});
@@ -95,31 +90,27 @@
     if(reduced.matches||!('IntersectionObserver' in window)||!Element.prototype.animate)return;
     var main=document.querySelector('main');
     if(!main)return;
-    var targets=main.querySelectorAll('.overline,.eyebrow,h1,h2,h3,p,img,.ml-button');
-    var ranks={label:0,heading:100,copy:220,photo:320,button:420};
+    var targets=main.querySelectorAll('.overline,.eyebrow,h1,h2,h3,p,.ml-button');
+    var ranks={label:0,heading:100,copy:220,button:320};
     var targetsData=new WeakMap();
     var cardSelector='.ml-direction,.ml-kitchen-preview,.blog-card,.ml-journal-card,.model-card,.port-card,.concept-card,.arch-value,.step,.expertise-item,.contact-option';
     observer=new IntersectionObserver(function(entries){
       entries.forEach(function(entry){
         if(!entry.isIntersecting)return;
         var el=entry.target;
-        // Hidden filters, modal photos, and initially unloaded lazy images stay intact.
+        // Hidden filters and modal controls stay intact; photos are never observed.
         if(el.closest('[hidden]'))return;
         observer.unobserve(el);
         if(seen.has(el))return;
         seen.add(el);
         var data=targetsData.get(el);
-        if(el.tagName==='IMG'&&!el.complete){
-          el.addEventListener('load',function(){play(el,data.kind,0);},{once:true});
-          return;
-        }
         play(el,data.kind,data.delay);
       });
     },{threshold:.08,rootMargin:'0px 0px -3% 0px'});
     targets.forEach(function(el){
-      if(el.closest('.ml-compare,.dialog')||(el.tagName==='IMG'&&el.closest('.hero'))||el.classList.contains('sr-only')||el.closest('.sr-only'))return;
+      if(el.tagName==='IMG'||el.closest('.ml-compare,.dialog')||el.classList.contains('sr-only')||el.closest('.sr-only'))return;
       if(el.tagName==='P'&&el.querySelector('.ml-button'))return;
-      var kind=el.tagName==='IMG'?'photo':/^H[1-3]$/.test(el.tagName)?'heading':el.classList.contains('ml-button')?'button':el.matches('.overline,.eyebrow')?'label':'copy';
+      var kind=/^H[1-3]$/.test(el.tagName)?'heading':el.classList.contains('ml-button')?'button':el.matches('.overline,.eyebrow')?'label':'copy';
       var card=el.closest(cardSelector),index=0;
       if(card&&card.parentElement)index=Math.max(0,[...card.parentElement.children].filter(function(x){return x.matches(cardSelector);}).indexOf(card));
       // Stagger columns, without accumulating seconds of delay in long catalogues.
