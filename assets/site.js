@@ -28,6 +28,9 @@
       if (panel.classList.contains('open') === open) (open ? closer : opener).focus({preventScroll:true});
     });
   };
+  panel.addEventListener('transitionend', e => {
+    if (e.target === panel && panel.classList.contains('open') && !panel.contains(document.activeElement)) closer.focus({preventScroll:true});
+  });
   opener.onclick = () => setMenu(true);
   closer.onclick = () => setMenu(false);
   backdrop.onclick = () => setMenu(false);
