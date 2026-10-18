@@ -1,0 +1,55 @@
+/* Homepage spacing: keep the established visual language with less empty area. */
+body.ml-home main>.section,body.ml-home main>.dark-section{padding-block:88px}
+.ml-home .display{margin-block:28px}
+/* Shared heading, then balanced image and text columns. */
+.ml-home .studio-intro>.display{max-width:1150px;margin:28px 0 38px;font-size:clamp(40px,5.3vw,82px)}
+.ml-home .studio-intro .intro-grid{align-items:center;gap:6%}
+.ml-home .studio-intro .intro-grid>div{min-width:0}
+.ml-home .studio-intro .intro-photo{display:block;width:100%;height:clamp(320px,32vw,470px);margin:0;object-fit:cover}
+.ml-home .studio-intro .intro-copy{padding-top:0}
+.ml-home .studio-intro .intro-copy p{max-width:520px;margin:0 0 18px}
+.ml-home .studio-intro .action-button{margin-top:10px}
+/* Bring content groups closer without compressing controls or body text. */
+.ml-home .projects-head .display{margin-bottom:38px}
+.ml-home .project:nth-child(2){margin-top:60px}
+.ml-home .project img{height:clamp(360px,36vw,520px)}
+.ml-home .project:nth-child(2) img{height:clamp(320px,29vw,420px)}
+.ml-home .services{margin-top:32px}
+.ml-home .statement{height:560px}
+.ml-home .expertise-details{padding-top:28px}
+.ml-home .expertise-item{padding-block:22px}
+.ml-home .marina-preview-grid{margin-top:28px}
+.ml-home .marina-preview-art{height:360px}
+.ml-home .furniture img{height:520px}
+.ml-home .contact{padding-top:88px;padding-bottom:48px}
+.ml-home .contact-bottom{padding-top:38px}
+.ml-home .contact-link{margin-bottom:30px}
+@media(max-width:900px){
+  body.ml-home main>.section,body.ml-home main>.dark-section{padding-block:64px}
+  .ml-home .studio-intro>.display{margin:24px 0 30px}
+  .ml-home .studio-intro .intro-grid{gap:28px}
+  .ml-home .studio-intro .intro-photo{height:auto;aspect-ratio:3/2}
+  .ml-home .project:nth-child(2){margin-top:40px}
+  .ml-home .project img{height:380px}
+  .ml-home .project:nth-child(2) img{height:320px}
+  .ml-home .statement{height:460px}
+  .ml-home .expertise-details{padding-top:0}
+  .ml-home .furniture img{height:440px}
+  .ml-home .contact{padding-top:64px}
+}
+@media(max-width:600px){
+  body.ml-home main>.section,body.ml-home main>.dark-section{padding-block:52px}
+  .ml-home .display{margin-block:24px}
+  .ml-home .studio-intro>.display{font-size:clamp(38px,10vw,60px);margin:24px 0 28px}
+  .ml-home .studio-intro .intro-grid{gap:24px}
+  .ml-home .projects-head .display{margin-bottom:24px}
+  .ml-home .project-grid{gap:36px}
+  .ml-home .project:nth-child(2){margin-top:0}
+  .ml-home .project img,.ml-home .project:nth-child(2) img{height:auto;aspect-ratio:4/3}
+  .ml-home .services{margin-top:26px}
+  .ml-home .statement{height:390px}
+  .ml-home .marina-preview-art{height:260px}
+  .ml-home .furniture img{height:360px}
+  .ml-home .contact{padding-top:52px;padding-bottom:36px}
+  .ml-home .contact-bottom{padding-top:28px}
+}
