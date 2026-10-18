@@ -8,11 +8,18 @@
   var reduced=matchMedia('(prefers-reduced-motion: reduce)');
   var reasons=new Set(['offscreen']);
   var active=0, timer=0, scrollTimer=0, touchTimer=0, selected=null;
+  var nearby=false, navigation=0;
+  function warm(index){
+   var img=slides[(index+slides.length)%slides.length].querySelector('img');
+   img.loading='eager';
+   if(img.complete&&img.naturalWidth&&img.decode)img.decode().catch(function(){});
+  }
+  function warmNeighbours(){if(nearby){warm(active);warm(active+1);}}
   var play=gallery.querySelector('.kg-play');
   function stop(){clearTimeout(timer);timer=0;}
   function schedule(){
    stop();
-   if(!reduced.matches&&!document.hidden&&!reasons.size)timer=setTimeout(function(){go((active+1)%slides.length);},4700);
+   if(!reduced.matches&&!document.hidden&&!reasons.size)timer=setTimeout(function(){go((active+1)%slides.length,true);},4700);
   }
   function pause(reason){reasons.add(reason);stop();}
   function resume(reason){reasons.delete(reason);schedule();}
@@ -29,14 +36,35 @@
    slides.forEach(function(slide,i){slide.classList.toggle('kg-active',i===active);});
    gallery.querySelector('.kg-count').textContent=String(active+1).padStart(2,'0')+' / '+String(slides.length).padStart(2,'0');
    gallery.querySelector('.kg-progress span').style.width=((active+1)/slides.length*100)+'%';
+   warmNeighbours();
   }
   function targetLeft(slide){return track.scrollLeft+slide.getBoundingClientRect().left-track.getBoundingClientRect().left;}
-  function go(index){
+  function go(index,automatic){
    closeDetails(false);
    index=(index+slides.length)%slides.length;
-   setActive(index);
-   track.scrollTo({left:targetLeft(slides[index]),behavior:reduced.matches?'auto':'smooth'});
-   schedule();
+   var token=++navigation;
+   var img=slides[index].querySelector('img');
+   function show(ready){
+    if(token!==navigation)return;
+    if(automatic&&(document.hidden||reduced.matches||Array.from(reasons).some(function(reason){return reason!=='loading';}))){resume('loading');return;}
+    resume('loading');
+    if(!ready)return;
+    setActive(index);
+    track.scrollTo({left:targetLeft(slides[index]),behavior:reduced.matches?'auto':'smooth'});
+    schedule();
+   }
+   warm(index);
+   if(img.complete&&img.naturalWidth){show(true);return;}
+   pause('loading');
+   function loaded(){
+    cleanup();
+    if(img.decode)img.decode().catch(function(){}).then(function(){show(true);});
+    else show(true);
+   }
+   function failed(){cleanup();show(false);}
+   function cleanup(){img.removeEventListener('load',loaded);img.removeEventListener('error',failed);}
+   img.addEventListener('load',loaded,{once:true});
+   img.addEventListener('error',failed,{once:true});
   }
   function settled(){
    clearTimeout(scrollTimer);
@@ -87,7 +115,7 @@
   gallery.addEventListener('pointerleave',function(event){if(event.pointerType==='mouse'||event.pointerType==='pen')resume('hover');});
   gallery.addEventListener('focusin',function(event){if(event.target.matches(':focus-visible'))pause('focus');});
   gallery.addEventListener('focusout',function(){requestAnimationFrame(function(){if(!gallery.contains(document.activeElement))resume('focus');});});
-  track.addEventListener('touchstart',function(){clearTimeout(touchTimer);pause('touch');},{passive:true});
+  track.addEventListener('touchstart',function(){++navigation;resume('loading');clearTimeout(touchTimer);pause('touch');},{passive:true});
   track.addEventListener('touchend',function(){touchTimer=setTimeout(function(){resume('touch');},400);},{passive:true});
   track.addEventListener('touchcancel',function(){resume('touch');},{passive:true});
   track.addEventListener('scroll',function(){pause('scroll');clearTimeout(scrollTimer);scrollTimer=setTimeout(settled,180);},{passive:true});
@@ -99,7 +127,11 @@
   if('IntersectionObserver' in window){
    var visibility=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting)resume('offscreen');else pause('offscreen');});},{threshold:.28});
    visibility.observe(gallery);
-  }else resume('offscreen');
+   var preparation=new IntersectionObserver(function(entries){
+    if(entries.some(function(entry){return entry.isIntersecting;})){nearby=true;warmNeighbours();preparation.disconnect();}
+   },{rootMargin:'900px 0px'});
+   preparation.observe(gallery);
+  }else{nearby=true;warmNeighbours();resume('offscreen');}
   // Keep the same model aligned after rotation/resizing, without altering any marker coordinates.
   var width=track.clientWidth;
   if('ResizeObserver' in window)new ResizeObserver(function(){

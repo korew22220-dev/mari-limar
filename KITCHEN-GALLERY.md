@@ -19,10 +19,19 @@ Images, model links and native scrolling remain available if JavaScript fails. I
 
 ## Validation
 
-Run `node --test tests/*.test.cjs` (16 tests including existing premium-motion tests). Separate source comparison verified every marker title, full description and percentage against the attachment. All five model anchors and image files exist. The homepage outside this component and its asset includes is byte-identical to the base revision.
+Run `node --test tests/*.test.cjs` (20 tests including existing premium-motion tests). Separate source comparison verified every marker title, full description and percentage against the attachment. All five model anchors and image files exist. The homepage outside this component and its asset includes is byte-identical to the base revision.
 
 These are source and deterministic event/timer checks, not a browser rendering or physical touch-device test. Managed browser preview was unavailable in this environment. Before approving production, inspect the private preview at desktop, tablet and phone widths, swipe all five models, open all 15 points, select card text, test each close method, hover/leave, background the tab, leave/reenter the viewport, and enable reduced motion. Confirm the page has no horizontal overflow.
 
 ## Preview and publishing
 
 The supplied private preview link is a separate test Site. Open `/#kitchens` to jump to the component. It does not change GitHub Pages. The GitHub branch contains the production-ready source changes for review; merging and production deployment require separate approval.
+
+
+## Loading and scrolling follow-up
+
+- Added 640 px and 960 px responsive WebP derivatives of the ten unique homepage photos; original photos remain available for larger screens. The ten 640 px derivatives total 397,332 bytes versus 2,231,242 bytes for their originals (82% less); the 960 px set totals 748,352 bytes (66% less). These are file-weight measurements, not network-speed or Core Web Vitals measurements. Browser selection depends on CSS width and screen pixel density.
+- All homepage image elements use `srcset` and `sizes`; derivatives retain full frames. Marker percentage coordinates and all descriptive content remain unchanged.
+- A separate 900 px proximity observer starts loading the active and next gallery images ahead of arrival. Arrows/autoplay wait for a cold image to load instead of showing an empty frame. Autoplay still respects hover, reduced motion, visibility and interaction while a request is pending; failed image requests leave navigation usable.
+- The hero video pauses while outside the viewport or in a hidden tab and resumes at the same time position on return. Its source, visual settings and poster are unchanged.
+- Added loading/error/race tests and responsive-source/video lifecycle checks. All 20 Node tests pass. No browser/network performance trace is available in this environment, so smoothness and real-device loading times still require verification in the updated preview.

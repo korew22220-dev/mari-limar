@@ -11,6 +11,7 @@ function harness(){
  class E{
   constructor(kind){this.kind=kind;this.events={};this.attrs={};this.style={};this.hidden=true;this.dataset={};this.classList={add(){},toggle(){}};}
   addEventListener(n,f){(this.events[n]??=[]).push(f);}
+  removeEventListener(n,f){this.events[n]=(this.events[n]||[]).filter(fn=>fn!==f);}
   fire(n,extra={}){for(const f of this.events[n]||[])f({target:this,...extra});}
   closest(s){return s.split(',').some(x=>x.trim()===this.kind)?this:null;}
   getAttribute(n){return this.attrs[n];}setAttribute(n,v){this.attrs[n]=v;}
@@ -20,7 +21,7 @@ function harness(){
  track.scrollLeft=0;track.clientWidth=1200;track.getBoundingClientRect=()=>({left:0});
  track.scrollTo=({left})=>{track.scrollLeft=left;};
  const slides=Array.from({length:5},(_,i)=>{
-  const el=new E('.kg-slide');el.getBoundingClientRect=()=>({left:i*1022-track.scrollLeft});return el;
+  const el=new E('.kg-slide');el.getBoundingClientRect=()=>({left:i*1022-track.scrollLeft});el.img=new E();el.img.complete=true;el.img.naturalWidth=1492;el.querySelector=()=>el.img;return el;
  });
  const cards=slides.map((_,i)=>{
   const el=new E('.kg-detail');el.id='card'+i;el.title=new E();el.body=new E();
@@ -37,13 +38,13 @@ function harness(){
  const doc=new E();doc.querySelectorAll=()=>[gallery];doc.getElementById=id=>cards.find(c=>c.id===id);doc.hidden=false;
  const win=new E();win.IntersectionObserver=true;
  const reduced={matches:false,addEventListener(n,fn){this.change=fn;}};
- class IO{constructor(fn){observer=fn;}observe(){}}
+ class IO{constructor(fn,options){if(!options.rootMargin)observer=fn;}observe(){}disconnect(){}}
  class RO{constructor(fn){this.fn=fn;}observe(){}}
  vm.runInNewContext(source,{document:doc,window:win,matchMedia:()=>reduced,IntersectionObserver:IO,ResizeObserver:RO,requestAnimationFrame:fn=>fn(),setTimeout:(fn,ms)=>{timers.set(++seq,{fn,ms});return seq;},clearTimeout:id=>timers.delete(id)});
  const pending=()=>[...timers.values()].some(t=>t.ms===4700);
  const run=ms=>{for(const [id,t] of [...timers])if(t.ms===ms){timers.delete(id);t.fn();}};
  const click=el=>{el.fire('click');gallery.fire('click',{target:el});doc.fire('click',{target:el});};
- return {gallery,track,count,prev,next,play,cards,dots,close,doc,reduced,win,pending,run,click,visible:v=>observer([{isIntersecting:v}])};
+ return {slides,gallery,track,count,prev,next,play,cards,dots,close,doc,reduced,win,pending,run,click,visible:v=>observer([{isIntersecting:v}])};
 }
 test('five original photographs, fifteen fixed markers, no editor, valid catalog links',()=>{
  const positions=['55.43,42.06','89.13,41.55','34.2,74.19','49.96,63.84','9.96,34.11','89.29,46.85','54.64,38.13','90.07,32.16','35.94,61.33','27.06,58.88','78.19,21.8','60.9,42.17','68.75,39.18','10.56,56.86','46.9,50.66'];
@@ -84,4 +85,16 @@ test('arrows, keyboard and native swipe scroll update the model',()=>{
  const h=harness();h.visible(true);h.click(h.next);assert.equal(h.count.textContent,'02 / 05');h.click(h.prev);assert.equal(h.count.textContent,'01 / 05');
  h.doc.activeElement=h.track;h.doc.fire('keydown',{target:h.track,key:'ArrowLeft',preventDefault(){}});assert.equal(h.count.textContent,'05 / 05');
  h.track.fire('touchstart');assert.ok(!h.pending());h.track.scrollLeft=2044;h.track.fire('scroll');h.track.fire('touchend');h.run(180);assert.equal(h.count.textContent,'03 / 05');assert.ok(!h.pending());h.run(400);assert.ok(h.pending());
+});
+
+test('a cold slide loads before navigation, and loading errors do not trap controls',()=>{
+ const h=harness();h.visible(true);h.slides[1].img.complete=false;h.slides[1].img.naturalWidth=0;
+ h.click(h.next);assert.equal(h.count.textContent,'01 / 05');assert.equal(h.slides[1].img.loading,'eager');assert.ok(!h.pending());
+ h.slides[1].img.fire('error');assert.equal(h.count.textContent,'01 / 05');assert.ok(h.pending());
+ h.click(h.next);h.slides[1].img.fire('load');assert.equal(h.count.textContent,'02 / 05');
+});
+test('late automatic image loading respects hover and touch cancellation',()=>{
+ const h=harness();h.visible(true);h.slides[1].img.complete=false;h.slides[1].img.naturalWidth=0;
+ h.run(4700);h.gallery.fire('pointerenter',{pointerType:'mouse'});h.slides[1].img.fire('load');assert.equal(h.count.textContent,'01 / 05');
+ h.gallery.fire('pointerleave',{pointerType:'mouse'});h.click(h.next);h.track.fire('touchstart');h.slides[1].img.fire('load');assert.equal(h.count.textContent,'01 / 05');
 });
