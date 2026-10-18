@@ -74,7 +74,22 @@
   if (video) {
     video.muted = true;
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
-    if (reduced.matches) { video.pause(); video.removeAttribute('autoplay'); }
-    else video.play().catch(() => { /* Native poster remains visible if autoplay is blocked. */ });
+    let inView = true;
+    const updateVideo = () => {
+      if (document.hidden || reduced.matches || !inView) video.pause();
+      else video.play().catch(() => { /* Native poster remains visible if autoplay is blocked. */ });
+    };
+    if ('IntersectionObserver' in window) {
+      const visibility = new IntersectionObserver(entries => {
+        inView = entries[0].isIntersecting;
+        updateVideo();
+      }, {threshold: 0});
+      visibility.observe(video);
+    }
+    document.addEventListener('visibilitychange', updateVideo);
+    window.addEventListener('pagehide', () => video.pause());
+    window.addEventListener('pageshow', updateVideo);
+    reduced.addEventListener('change', updateVideo);
+    updateVideo();
   }
 })();
