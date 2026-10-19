@@ -3,7 +3,7 @@ html:root body .ml-button.ml-button,
 html:root body .ml-theme-toggle.ml-theme-toggle{
  display:inline-flex;align-items:center;justify-content:center;gap:9px;
  box-sizing:border-box;min-height:50px;max-width:100%;padding:13px 24px;
- border:1px solid #64869F;border-radius:999px;background:#183F63;color:#FFFFFF;
+ border:1px solid #7C8186;border-radius:999px;background:#C4C8CB;color:#211D19;
  font-family:Manrope,Arial,sans-serif;font-size:12px;font-weight:600;line-height:1.5;
  letter-spacing:.06em;text-transform:uppercase;text-align:center;text-decoration:none;
  white-space:normal;vertical-align:middle;cursor:pointer;box-shadow:none;
@@ -11,16 +11,16 @@ html:root body .ml-theme-toggle.ml-theme-toggle{
 }
 html:root body .ml-button.ml-button:hover,
 html:root body .ml-theme-toggle.ml-theme-toggle:hover{
- background:#245579;color:#FFFFFF;border-color:#7C9CB4;transform:none;box-shadow:none;
+ background:#AFB4B8;color:#211D19;border-color:#696F75;transform:none;box-shadow:none;
 }
 html:root body .ml-button.ml-button:focus-visible,
 html:root body .ml-theme-toggle.ml-theme-toggle:focus-visible{
- outline:2px solid #5687AB;outline-offset:4px;
+ outline:2px solid #73797F;outline-offset:4px;
 }
 /* Filters use the same shape and typography, with a clear selected state. */
-html:root body .ml-button.ml-button[aria-pressed=false]{background:transparent;color:inherit;border-color:#64869F}
-html:root body .ml-button.ml-button[aria-pressed=false]:hover{background:#183F63;color:#FFFFFF;border-color:#64869F}
-html:root body .ml-button.ml-button[aria-pressed=true]{background:#183F63;color:#FFFFFF;border-color:#64869F}
+html:root body .ml-button.ml-button[aria-pressed=false]{background:transparent;color:inherit;border-color:#7C8186}
+html:root body .ml-button.ml-button[aria-pressed=false]:hover{background:#C4C8CB;color:#211D19;border-color:#7C8186}
+html:root body .ml-button.ml-button[aria-pressed=true]{background:#C4C8CB;color:#211D19;border-color:#7C8186}
 html:root body .ml-button.ml-button:disabled{opacity:.45;cursor:not-allowed}
 @media(max-width:600px){html:root body .ml-button.ml-button,html:root body .ml-theme-toggle.ml-theme-toggle{min-height:48px;padding:12px 20px;font-size:11px}}
 @media(prefers-reduced-motion:reduce){html:root body .ml-button.ml-button,html:root body .ml-theme-toggle.ml-theme-toggle{transition:none}}
