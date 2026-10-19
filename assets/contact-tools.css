@@ -53,3 +53,13 @@ html[data-ml-theme=dark] .ml-lead-dialog .ml-lead-error{color:#f4b5a9}
  html:root body .ml-contact-fab.ml-button{width:52px;min-height:52px;padding:13px}
 }
 @media(prefers-reduced-motion:reduce){.ml-contact-tools *,.ml-lead-dialog *{scroll-behavior:auto;transition:none!important}}
+/* The studio's verified statement replaces the missing portrait placeholder. */
+.ml-marina-statement{margin:0;align-self:center;padding:clamp(28px,5vw,64px);background:#e5dccc;color:#211d19}
+.ml-marina-statement blockquote{margin:0 0 30px;font:400 clamp(28px,3.1vw,44px)/1.3 Manrope,Arial,sans-serif;letter-spacing:-.025em;text-wrap:balance}
+.ml-marina-statement figcaption{font-size:16px;line-height:1.6}
+.ml-marina-statement figcaption span{display:block;font-size:14px}
+html[data-ml-theme=dark] .ml-marina-statement{background:#201d1a;color:#f0e9df}
+
+.ml-lead-trap{position:absolute!important;width:1px!important;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.ml-lead-dialog [hidden]{display:none!important}
+#ml-lead-delivered h3{font-size:28px;line-height:1.3;font-weight:400}

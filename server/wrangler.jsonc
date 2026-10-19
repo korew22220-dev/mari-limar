@@ -1,0 +1,8 @@
+{
+  "name": "mari-limar-enquiries",
+  "main": "telegram-worker.mjs",
+  "compatibility_date": "2026-10-19",
+  "vars": {
+    "ALLOWED_ORIGINS": "https://korew22220-dev.github.io"
+  }
+}

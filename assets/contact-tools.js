@@ -1,4 +1,4 @@
-/* Local enquiry preparation: only the visitor sends the message in their messenger. */
+/* Direct server delivery when configured; messenger preparation remains the fallback. */
 (function () {
  'use strict';
  var phone='79184029932';
@@ -24,17 +24,28 @@
  var preview=document.getElementById('ml-lead-message'),chat=document.getElementById('ml-lead-open-chat');
  var copyStatus=document.getElementById('ml-lead-copy-status'),phoneStatus=document.getElementById('ml-lead-phone-error');
  var previousFocus=null,previousOverflow='',model='',context='',outsidePointer=false;
+ var direct=window.MariEnquiry,endpoint=form.dataset.mlEndpoint||'',useDirect=!!(direct&&direct.configured(endpoint)),sending=false;
+ var submitButton=document.getElementById('ml-lead-submit'),sendError=document.getElementById('ml-lead-send-error'),fallbackButton=document.getElementById('ml-lead-fallback'),delivered=document.getElementById('ml-lead-delivered');
+ function directMode(){
+  if(!direct||!direct.configured(endpoint))return;
+  document.getElementById('ml-lead-intro').textContent=useDirect?'Оставьте имя и телефон — студия получит заявку и свяжется с вами.':'Заполните форму и выберите мессенджер. Сообщение вы отправите в открывшемся чате.';
+  fields.channel.closest('label').hidden=useDirect;
+  document.getElementById('ml-lead-channel-hint').hidden=useDirect;
+  submitButton.textContent=useDirect?'Отправить заявку':'Подготовить обращение';
+ }
+ if(fallbackButton)fallbackButton.addEventListener('click',function(){useDirect=false;directMode();sendError.hidden=true;fallbackButton.hidden=true;});
+ var doneButton=document.getElementById('ml-lead-done');if(doneButton)doneButton.addEventListener('click',function(){dialog.close();});
  tools.hidden=false;
  function setTray(open,restore){tray.hidden=!open;fab.setAttribute('aria-expanded',String(open));if(!open&&restore)fab.focus({preventScroll:true});}
  function channelHint(){document.getElementById('ml-lead-channel-hint').textContent=fields.channel.value==='telegram'?'Для Telegram скопируйте готовый текст и вставьте его в чат.':'В WhatsApp текст обращения подставится автоматически.';}
- function edit(){form.hidden=false;ready.hidden=true;copyStatus.textContent='';}
+ function edit(){form.hidden=false;ready.hidden=true;if(delivered)delivered.hidden=true;copyStatus.textContent='';}
  function openForm(trigger){
   if(typeof dialog.showModal!=='function')return false;
   previousFocus=tools.contains(trigger)?fab:trigger;model=trigger.dataset.mlModel||'';context=trigger.dataset.mlContext||document.title.replace(/ — MARI LIMAR$/,'');
   fields.topic.value=topics[trigger.dataset.mlLead]?trigger.dataset.mlLead:'project';
   contextNode.textContent=model||context;contextNode.hidden=!contextNode.textContent;
   document.getElementById('ml-lead-title').textContent=fields.topic.value==='cost'?'Рассчитаем вашу кухню':fields.topic.value==='visit'?'Встретимся в шоуруме':fields.topic.value==='expertise'?'Обсудим экспертизу мебели':'Обсудим вашу задачу';
-  edit();channelHint();setTray(false,false);
+  edit();channelHint();directMode();setTray(false,false);
   if(!dialog.open){previousOverflow=document.body.style.overflow;dialog.showModal();document.body.style.overflow='hidden';}
   fields.name.focus({preventScroll:true});
   return true;
@@ -56,14 +67,26 @@
  fields.channel.addEventListener('change',channelHint);
  fields.name.addEventListener('input',function(){fields.name.setCustomValidity('');});
  fields.phone.addEventListener('input',function(){fields.phone.setCustomValidity('');fields.phone.removeAttribute('aria-invalid');phoneStatus.textContent='';});
- form.addEventListener('submit',function(event){
+ form.addEventListener('submit',async function(event){
   event.preventDefault();
+  if(sending)return;
   fields.name.setCustomValidity(fields.name.value.trim()?'':'Укажите ваше имя.');
   if(!fields.name.reportValidity())return;
   var error=phoneError(fields.phone.value);fields.phone.setCustomValidity(error);phoneStatus.textContent=error;
   if(error){fields.phone.setAttribute('aria-invalid','true');fields.phone.focus();fields.phone.reportValidity();return;}
   if(!form.reportValidity())return;
-  var message=formatEnquiry({name:fields.name.value,phone:fields.phone.value,topic:fields.topic.value,comment:fields.comment.value,model:model,context:context,source:location.origin+location.pathname});
+  var data={name:fields.name.value,phone:fields.phone.value,topic:fields.topic.value,comment:fields.comment.value,model:model,context:context,source:location.origin+location.pathname,website:form.elements.namedItem('website')?.value||''};
+  if(useDirect){
+   sending=true;submitButton.disabled=true;submitButton.textContent='Отправляем…';form.setAttribute('aria-busy','true');sendError.hidden=true;fallbackButton.hidden=true;
+   try{
+    await direct.send(endpoint,data);
+    form.hidden=true;ready.hidden=true;delivered.hidden=false;
+    document.getElementById('ml-lead-delivered-title').focus({preventScroll:true});
+   }catch(error){sendError.textContent=error.message;sendError.hidden=false;fallbackButton.hidden=false;}
+   finally{sending=false;submitButton.disabled=false;form.removeAttribute('aria-busy');directMode();}
+   return;
+  }
+  var message=formatEnquiry(data);
   var links=messageLinks(message),telegram=fields.channel.value==='telegram';
   preview.value=message;chat.href=telegram?links.telegram:links.whatsapp;chat.textContent=telegram?'Открыть Telegram':'Открыть WhatsApp';
   document.getElementById('ml-lead-ready-hint').textContent=telegram?'Скопируйте текст, откройте Telegram и отправьте его в чат студии.':'Откройте WhatsApp и отправьте подготовленное сообщение в чат студии.';

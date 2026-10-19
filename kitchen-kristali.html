@@ -8,7 +8,7 @@
 
 <script src="assets/premium-motion.js?v=models-1"></script>
 <link rel="stylesheet" href="assets/kitchen-model.css?v=1">
-<link rel="stylesheet" href="assets/contact-tools.css?v=1">
+<link rel="stylesheet" href="assets/contact-tools.css?v=2">
 </head><body><div class="pm-curtain" aria-hidden="true" hidden><div class="pm-curtain__brand"><span class="pm-curtain__name">MARI LIMAR</span><span class="pm-curtain__caption">DESIGN &amp; ARCHITECTURE</span></div></div>
 <header class="head"><a class="brand" href="index.html">MARI LIMAR<small>DESIGN &amp; ARCHITECTURE</small></a><nav class="nav"><a href="index.html">Главная</a><a class="current" href="kitchens.html" aria-current="page">Кухни</a><a href="architecture-design.html">Архитектура и дизайн</a><a href="portfolio.html">Портфолио</a><a href="expertise.html">Экспертиза</a><a href="about.html">О студии</a><a href="contacts.html">Контакты</a><a href="blog.html">Блог</a></nav><button aria-label="Открыть меню" class="menu-btn" id="open">МЕНЮ</button></header><div class="ml-drawer-backdrop" aria-hidden="true"></div><div class="panel ml-drawer" id="panel" role="dialog" aria-modal="true" aria-label="Навигация" aria-hidden="true"><div class="ml-drawer__top"><span class="ml-drawer__title">MARI LIMAR / Меню</span><button class="ml-drawer__close" id="close" aria-label="Закрыть меню"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg></button></div><nav class="ml-drawer__nav" aria-label="Основные разделы"><a href="index.html">Главная</a><a href="kitchens.html" aria-current="page">Кухни</a><a href="architecture-design.html">Архитектура и дизайн</a><a href="portfolio.html">Портфолио</a><a href="expertise.html">Экспертиза мебели</a><a href="about.html">О студии</a><a href="contacts.html">Контакты</a><a href="blog.html">Блог</a></nav><div class="ml-drawer__bottom"><a class="ml-drawer__contact" href="contacts.html"><span class="ml-drawer__contact-icon" aria-hidden="true">↗</span>Обсудить проект</a><a class="ml-drawer-phone" href="tel:+78002017767">8 800 201-77-67</a><a class="ml-drawer-address" href="https://2gis.ru/sochi/geo/70030077012113905" target="_blank" rel="noopener">Сочи, Виноградная, 2/3Б<br><span>1 этаж · вход с ул. Красноармейская</span></a><p class="ml-drawer__signature">Архитектура · Интерьеры · Кухни</p></div></div>
 <main class="ml-kitchen-model">
@@ -19,7 +19,7 @@
 <section class="ml-model-request" aria-labelledby="model-request"><div><div class="overline">Ваша кухня</div><h2 id="model-request">Обсудим модель «Кристали»<br>для вашего пространства.</h2><p>Расскажите о планировке и пожеланиях. Стоимость зависит от размеров, отделок и комплектации; актуальные варианты уточним при обсуждении проекта.</p></div><div class="ml-model-actions"><a class="ml-button" href="contacts.html#request" data-ml-lead="cost" data-ml-model="Кухня «Кристали»" data-ml-context="Кухня «Кристали»" data-no-transition>Рассчитать кухню</a><a class="ml-button" href="contacts.html#request" data-ml-lead="project" data-ml-model="Кухня «Кристали»" data-ml-context="Кухня «Кристали»" data-no-transition>Обсудить проект</a><a class="ml-button" href="contacts.html#request" data-ml-lead="visit" data-ml-model="Кухня «Кристали»" data-ml-context="Кухня «Кристали»" data-no-transition>Встретиться в шоуруме</a><a href="kitchens.html#model-kristali" class="ml-model-back">← Все коллекции кухонь</a></div></section>
 </main><footer><a class="brand" href="index.html">MARI LIMAR<small>DESIGN &amp; ARCHITECTURE</small></a><span>MARI LIMAR / Студия</span><a href="index.html">На главную</a></footer>
 <script src="assets/site.js?v=kitchen-video-1" defer></script><script src="assets/contact-journal.js" defer></script>
-<!-- Shared enquiry dialog. No form data is submitted to the static host. -->
+<!-- Shared enquiry dialog. Direct delivery is enabled only after a server endpoint is configured. -->
 <dialog class="ml-lead-dialog" id="ml-lead-dialog" aria-labelledby="ml-lead-title" aria-describedby="ml-lead-intro">
  <div class="ml-lead-shell">
   <button class="ml-lead-close ml-button" type="button" data-ml-lead-close aria-label="Закрыть форму"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
@@ -27,7 +27,7 @@
   <h2 id="ml-lead-title">Обсудим вашу задачу</h2>
   <p id="ml-lead-intro">Заполните форму и выберите мессенджер. Сообщение вы отправите в открывшемся чате.</p>
   <p class="ml-lead-context" id="ml-lead-context" hidden></p>
-  <form id="ml-lead-form" method="dialog">
+  <form id="ml-lead-form" method="dialog" data-ml-endpoint="">
    <div class="ml-lead-fields">
     <label for="ml-lead-name">Ваше имя<input id="ml-lead-name" name="name" autocomplete="given-name" required maxlength="80" autofocus></label>
     <label for="ml-lead-phone">Номер телефона<input id="ml-lead-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="30" placeholder="+7 (___) ___-__-__" aria-describedby="ml-lead-phone-error"><span class="ml-lead-error" id="ml-lead-phone-error" aria-live="polite"></span></label>
@@ -36,8 +36,16 @@
    <label for="ml-lead-comment">Пожелания, если есть<textarea id="ml-lead-comment" name="comment" rows="3" maxlength="1500" placeholder="Размеры помещения, стиль, вопросы по проекту"></textarea></label>
    <label for="ml-lead-channel">Мессенджер<select id="ml-lead-channel" name="channel"><option value="whatsapp">WhatsApp</option><option value="telegram">Telegram</option></select></label>
    <p class="ml-lead-hint" id="ml-lead-channel-hint">В WhatsApp текст обращения подставится автоматически.</p>
-   <button class="ml-button ml-lead-submit" type="submit">Подготовить обращение</button>
+   <label class="ml-lead-trap" aria-hidden="true">Оставьте поле пустым<input name="website" tabindex="-1" autocomplete="off"></label>
+   <p id="ml-lead-send-error" class="ml-lead-error" role="alert" hidden></p>
+   <button id="ml-lead-fallback" class="ml-lead-edit" type="button" hidden>Написать через мессенджер</button>
+   <button class="ml-button ml-lead-submit" id="ml-lead-submit" type="submit">Подготовить обращение</button>
   </form>
+  <section id="ml-lead-delivered" hidden aria-labelledby="ml-lead-delivered-title">
+   <h3 id="ml-lead-delivered-title" tabindex="-1">Заявка отправлена</h3>
+   <p>Студия получила вашу заявку в Telegram. Мы свяжемся с вами по указанному номеру.</p>
+   <button class="ml-button" type="button" id="ml-lead-done">Закрыть</button>
+  </section>
   <section class="ml-lead-ready" id="ml-lead-ready" aria-labelledby="ml-lead-ready-title" hidden>
    <h3 id="ml-lead-ready-title" tabindex="-1">Обращение готово</h3>
    <p id="ml-lead-ready-hint"></p>
@@ -59,5 +67,6 @@
  <button class="ml-button ml-contact-fab" id="ml-contact-fab" type="button" aria-label="Связаться со студией" aria-expanded="false" aria-controls="ml-contact-tray"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8Z"/><path d="M8 11h8m-8 4h5"/></svg><span>Связаться</span></button>
 </aside>
 
-<script src="assets/contact-tools.js?v=1" defer></script>
+<script src="assets/direct-enquiry.js?v=1" defer></script>
+<script src="assets/contact-tools.js?v=2" defer></script>
 </body></html>

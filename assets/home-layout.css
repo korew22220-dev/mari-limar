@@ -1,4 +1,22 @@
 /* Homepage spacing: keep the established visual language with less empty area. */
+/* A readable offer and one primary action over every video frame. */
+.ml-home .hero-inner{bottom:14%;max-width:1050px}
+.ml-home .hero:after{background:linear-gradient(90deg,rgba(16,13,11,.64),rgba(16,13,11,.28) 68%,rgba(16,13,11,.12))}
+.ml-home .hero h1.ml-home-title{font-family:Manrope,Arial,sans-serif;font-size:clamp(42px,5.8vw,80px);font-weight:400;line-height:1.08;letter-spacing:-.035em;margin:0 0 28px;max-width:100%;text-wrap:balance}
+.ml-home .ml-home-title em{font-family:Italiana,Georgia,serif;font-weight:400;font-style:normal;letter-spacing:-.025em}
+.ml-home .hero-bottom{display:block}
+.ml-home .hero-bottom p{font-size:clamp(16px,1.4vw,19px);font-weight:400;line-height:1.7;max-width:550px;margin:0 0 30px}
+.ml-home .hero .ml-hero-actions{display:flex;flex-direction:row;align-items:center;flex-wrap:wrap;gap:16px 28px}
+.ml-home .ml-hero-secondary{display:inline-flex;align-items:center;gap:12px;min-height:50px;color:#fff;font-size:15px;text-decoration:underline;text-underline-offset:6px}
+.ml-home .ml-hero-secondary:focus-visible{outline:2px solid #e1d1b9;outline-offset:5px}
+@media(max-width:650px){
+ .ml-home .hero{height:100svh;min-height:640px;max-height:900px}
+ .ml-home .hero-inner{left:7%;right:7%;bottom:16%}
+ .ml-home .hero h1.ml-home-title{font-size:clamp(36px,8.4vw,52px);line-height:1.12;margin-bottom:24px}
+ .ml-home .hero-bottom p{font-size:16px;max-width:34ch;margin-bottom:24px}
+ .ml-home .hero-side{display:none}
+}
+@media(max-height:600px) and (min-width:651px){.ml-home .hero-inner{bottom:16%}.ml-home .hero h1.ml-home-title{font-size:44px;margin-bottom:18px}.ml-home .hero-bottom p{margin-bottom:18px}}
 body.ml-home main>.section,body.ml-home main>.dark-section{padding-block:88px}
 .ml-home .display{margin-block:28px}
 /* Shared heading, then balanced image and text columns. */

@@ -32,7 +32,7 @@ test('all HTML routes include one accessible form, one contact widget and native
   const s=fs.readFileSync(path.join(root,name),'utf8');
   assert.equal((s.match(/id="ml-lead-dialog"/g)||[]).length,1,name);
   assert.equal((s.match(/id="ml-contact-tools"/g)||[]).length,1,name);
-  assert.ok(s.includes('assets/contact-tools.js?v=1'));assert.ok(s.includes('assets/contact-tools.css?v=1'));
+  assert.match(s,/assets\/contact-tools\.js\?v=\d+/);assert.match(s,/assets\/contact-tools\.css\?v=\d+/);
   assert.ok(s.includes('<dialog class="ml-lead-dialog"'));
   assert.ok(s.includes('aria-labelledby="ml-lead-title"'));assert.ok(s.includes('method="dialog"'));
   assert.ok(s.includes('href="contacts.html#request" data-ml-lead='));

@@ -1,4 +1,4 @@
-<!-- Shared enquiry dialog. No form data is submitted to the static host. -->
+<!-- Shared enquiry dialog. Direct delivery is enabled only after a server endpoint is configured. -->
 <dialog class="ml-lead-dialog" id="ml-lead-dialog" aria-labelledby="ml-lead-title" aria-describedby="ml-lead-intro">
  <div class="ml-lead-shell">
   <button class="ml-lead-close ml-button" type="button" data-ml-lead-close aria-label="Закрыть форму"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
@@ -6,7 +6,7 @@
   <h2 id="ml-lead-title">Обсудим вашу задачу</h2>
   <p id="ml-lead-intro">Заполните форму и выберите мессенджер. Сообщение вы отправите в открывшемся чате.</p>
   <p class="ml-lead-context" id="ml-lead-context" hidden></p>
-  <form id="ml-lead-form" method="dialog">
+  <form id="ml-lead-form" method="dialog" data-ml-endpoint="">
    <div class="ml-lead-fields">
     <label for="ml-lead-name">Ваше имя<input id="ml-lead-name" name="name" autocomplete="given-name" required maxlength="80" autofocus></label>
     <label for="ml-lead-phone">Номер телефона<input id="ml-lead-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="30" placeholder="+7 (___) ___-__-__" aria-describedby="ml-lead-phone-error"><span class="ml-lead-error" id="ml-lead-phone-error" aria-live="polite"></span></label>
@@ -15,8 +15,16 @@
    <label for="ml-lead-comment">Пожелания, если есть<textarea id="ml-lead-comment" name="comment" rows="3" maxlength="1500" placeholder="Размеры помещения, стиль, вопросы по проекту"></textarea></label>
    <label for="ml-lead-channel">Мессенджер<select id="ml-lead-channel" name="channel"><option value="whatsapp">WhatsApp</option><option value="telegram">Telegram</option></select></label>
    <p class="ml-lead-hint" id="ml-lead-channel-hint">В WhatsApp текст обращения подставится автоматически.</p>
-   <button class="ml-button ml-lead-submit" type="submit">Подготовить обращение</button>
+   <label class="ml-lead-trap" aria-hidden="true">Оставьте поле пустым<input name="website" tabindex="-1" autocomplete="off"></label>
+   <p id="ml-lead-send-error" class="ml-lead-error" role="alert" hidden></p>
+   <button id="ml-lead-fallback" class="ml-lead-edit" type="button" hidden>Написать через мессенджер</button>
+   <button class="ml-button ml-lead-submit" id="ml-lead-submit" type="submit">Подготовить обращение</button>
   </form>
+  <section id="ml-lead-delivered" hidden aria-labelledby="ml-lead-delivered-title">
+   <h3 id="ml-lead-delivered-title" tabindex="-1">Заявка отправлена</h3>
+   <p>Студия получила вашу заявку в Telegram. Мы свяжемся с вами по указанному номеру.</p>
+   <button class="ml-button" type="button" id="ml-lead-done">Закрыть</button>
+  </section>
   <section class="ml-lead-ready" id="ml-lead-ready" aria-labelledby="ml-lead-ready-title" hidden>
    <h3 id="ml-lead-ready-title" tabindex="-1">Обращение готово</h3>
    <p id="ml-lead-ready-hint"></p>

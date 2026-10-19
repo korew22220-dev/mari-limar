@@ -5,7 +5,7 @@ const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const root=path.join(__dirname,'..');
 const {formatEnquiry,messageLinks,phoneError}=require('../assets/contact-tools.js');
 const code=fs.readFileSync(path.join(root,'assets/contact-tools.js'),'utf8');
-function harness({clipboard=true,native=true}={}){
+function harness({clipboard=true,native=true,direct=null,endpoint=''}={}){
  const nodes={},docHandlers={},winHandlers={};let copied='',active;
  class Node{
   constructor(id){this.id=id;this.listeners={};this.dataset={};this.attrs={};this.hidden=false;this.value='';this.error='';this.isConnected=true;this.textContent='';nodes[id]=this;}
@@ -17,15 +17,16 @@ function harness({clipboard=true,native=true}={}){
   closest(s){return s==='[data-ml-lead]'&&this.dataset.mlLead?this:null;}
   contains(target){return this===target||target.parent===this;}
  }
- for(const id of ['ml-lead-dialog','ml-lead-form','ml-contact-tools','ml-contact-fab','ml-contact-tray','ml-lead-context','ml-lead-ready','ml-lead-message','ml-lead-open-chat','ml-lead-copy-status','ml-lead-phone-error','ml-lead-title','ml-lead-channel-hint','ml-lead-ready-hint','ml-lead-ready-title','ml-lead-copy','ml-lead-edit','close'])new Node(id);
+ for(const id of ['ml-lead-dialog','ml-lead-form','ml-contact-tools','ml-contact-fab','ml-contact-tray','ml-lead-context','ml-lead-ready','ml-lead-message','ml-lead-open-chat','ml-lead-copy-status','ml-lead-phone-error','ml-lead-title','ml-lead-channel-hint','ml-lead-ready-hint','ml-lead-ready-title','ml-lead-copy','ml-lead-edit','ml-lead-submit','ml-lead-send-error','ml-lead-fallback','ml-lead-delivered','ml-lead-delivered-title','ml-lead-done','ml-lead-intro','channel-label','close'])new Node(id);
  const fields={};for(const name of ['name','phone','topic','comment','channel'])fields[name]=new Node(name);
  fields.name.value='Саша';fields.phone.value='+7 (918) 123-45-67';fields.channel.value='whatsapp';
  const dialog=nodes['ml-lead-dialog'];dialog.open=false;dialog.querySelector=()=>nodes.close;dialog.getBoundingClientRect=()=>({left:20,top:20,right:350,bottom:700});
  if(native)dialog.showModal=()=>{dialog.open=true;};dialog.close=()=>{dialog.open=false;dialog.fire('close');};
- const form=nodes['ml-lead-form'];form.elements={namedItem:n=>fields[n]};form.reportValidity=()=>Object.values(fields).every(n=>!n.error);
+ fields.channel.closest=()=>nodes['channel-label'];
+ const form=nodes['ml-lead-form'];form.dataset.mlEndpoint=endpoint;form.elements={namedItem:n=>fields[n]};form.reportValidity=()=>Object.values(fields).every(n=>!n.error);
  nodes['ml-contact-tray'].hidden=true;
  const document={title:'Кухни — MARI LIMAR',body:{style:{overflow:'auto'}},getElementById:id=>nodes[id],addEventListener:(n,fn)=>{(docHandlers[n]??=[]).push(fn);}};
- const window={addEventListener:(n,fn)=>winHandlers[n]=fn};
+ const window={MariEnquiry:direct,addEventListener:(n,fn)=>winHandlers[n]=fn};
  const navigator=clipboard?{clipboard:{writeText:async s=>{copied=s;}}}:{};
  vm.runInNewContext(code,{document,window,navigator,location:{origin:'https://example.com',pathname:'/kitchen-luna.html'}});
  async function click(target,options={}){const e={target,button:0,defaultPrevented:false,preventDefault(){this.defaultPrevented=true;},...options};for(const fn of docHandlers.click)await fn(e);return e;}
@@ -89,4 +90,24 @@ test('modified clicks and browsers without dialog support retain native fallback
 test('pagehide closes transient UI and restores scroll for browser history',async()=>{
  const h=harness();await h.click(h.trigger());h.lifecycle('pagehide');
  assert.equal(h.dialog.open,false);assert.equal(h.document.body.style.overflow,'auto');assert.ok(h.nodes['ml-contact-tray'].hidden);
+});
+
+test('direct delivery waits for acknowledgement and blocks duplicate submits',async()=>{
+ let release,calls=0;
+ const direct={configured:()=>true,send:()=>{calls++;return new Promise(r=>release=r);}};
+ const h=harness({direct,endpoint:'https://worker.example/enquiry'});
+ await h.click(h.trigger());const sending=h.nodes['ml-lead-form'].fire('submit');
+ assert.equal(h.nodes['ml-lead-submit'].disabled,true);assert.equal(h.nodes['ml-lead-form'].hidden,false);
+ await h.nodes['ml-lead-form'].fire('submit');assert.equal(calls,1);
+ release({ok:true});await sending;
+ assert.equal(h.nodes['ml-lead-delivered'].hidden,false);assert.equal(h.nodes['ml-lead-form'].hidden,true);assert.equal(h.active(),h.nodes['ml-lead-delivered-title']);
+ assert.equal(h.nodes['ml-lead-submit'].disabled,false);
+});
+test('failed delivery preserves the draft and offers working messenger recovery',async()=>{
+ const direct={configured:()=>true,send:async()=>{throw new Error('Нет подтверждения отправки');}};
+ const h=harness({direct,endpoint:'https://worker.example/enquiry'});await h.click(h.trigger());
+ h.fields.comment.value='Остров и встроенная техника';await h.nodes['ml-lead-form'].fire('submit');
+ assert.equal(h.nodes['ml-lead-form'].hidden,false);assert.equal(h.nodes['ml-lead-send-error'].hidden,false);assert.equal(h.fields.comment.value,'Остров и встроенная техника');
+ await h.nodes['ml-lead-fallback'].fire('click');await h.nodes['ml-lead-form'].fire('submit');
+ assert.equal(h.nodes['ml-lead-ready'].hidden,false);assert.match(h.nodes['ml-lead-message'].value,/Остров и встроенная техника/);
 });
