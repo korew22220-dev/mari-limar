@@ -26,7 +26,7 @@ DNS, routes, other pages or existing assets are changed.
 Four Pexels photographs, downloaded from their official free-download links.
 Source IDs/authors/license URLs and generated image dimensions are recorded in
 `ARCHITECTURE-IMAGE-SOURCES.json`. The facade is by Sasha Tonik, listed by the
-source as Moscow, Russia. Three classical interior photographs are by Max
+source as Moscow, Russia. Three contemporary interior photographs are by Max
 Vakhtbovych. No claim is made that the interiors are in Russia or that any of these
 references are MARI LIMAR projects. Visible reference labels and source credits
 are retained on the page. No AI image generation or semantic photo editing is used.

@@ -41,32 +41,32 @@
   },
   {
     "slug": "living",
-    "id": "7045712",
+    "id": "6958137",
     "author": "Max Vakhtbovych",
-    "url": "https://www.pexels.com/photo/classic-spacious-lounge-with-sofa-and-glass-table-with-vase-7045712/",
-    "alt": "Двусветная гостиная с камином, деревянным полом и классической мебелью",
+    "url": "https://www.pexels.com/photo/interior-of-modern-apartment-with-couch-and-counter-6958137/",
+    "alt": "Современная гостиная с деревянными панелями, встроенной мебелью и светлым диваном",
     "original_size": [
       7360,
       4912
     ],
     "variants": [
       {
-        "path": "assets/architecture-living-640w.webp",
+        "path": "assets/architecture-modern-living-640w.webp",
         "width": 640,
         "height": 427,
-        "bytes": 42750
+        "bytes": 25530
       },
       {
-        "path": "assets/architecture-living-1200w.webp",
+        "path": "assets/architecture-modern-living-1200w.webp",
         "width": 1200,
         "height": 801,
-        "bytes": 119314
+        "bytes": 66300
       },
       {
-        "path": "assets/architecture-living-1920w.webp",
+        "path": "assets/architecture-modern-living-1920w.webp",
         "width": 1920,
         "height": 1281,
-        "bytes": 251778
+        "bytes": 142544
       }
     ],
     "license": "https://www.pexels.com/license/",
@@ -74,32 +74,32 @@
   },
   {
     "slug": "dining",
-    "id": "7045716",
+    "id": "6958149",
     "author": "Max Vakhtbovych",
-    "url": "https://www.pexels.com/photo/classic-dining-room-with-brown-shiny-table-and-soft-chairs-7045716/",
-    "alt": "Столовая с деревянным столом, мягкими стульями и большими окнами",
+    "url": "https://www.pexels.com/photo/kitchen-counter-near-soft-couch-6958149/",
+    "alt": "Открытая кухня-гостиная с белым островом, деревянной отделкой и подвесными светильниками",
     "original_size": [
-      7340,
-      4899
+      7360,
+      4912
     ],
     "variants": [
       {
-        "path": "assets/architecture-dining-640w.webp",
+        "path": "assets/architecture-modern-dining-640w.webp",
         "width": 640,
         "height": 427,
-        "bytes": 42652
+        "bytes": 23882
       },
       {
-        "path": "assets/architecture-dining-1200w.webp",
+        "path": "assets/architecture-modern-dining-1200w.webp",
         "width": 1200,
         "height": 801,
-        "bytes": 113576
+        "bytes": 60518
       },
       {
-        "path": "assets/architecture-dining-1920w.webp",
+        "path": "assets/architecture-modern-dining-1920w.webp",
         "width": 1920,
         "height": 1281,
-        "bytes": 235688
+        "bytes": 127568
       }
     ],
     "license": "https://www.pexels.com/license/",
@@ -107,32 +107,32 @@
   },
   {
     "slug": "detail",
-    "id": "7045703",
+    "id": "6958151",
     "author": "Max Vakhtbovych",
-    "url": "https://www.pexels.com/photo/spacious-lounge-with-large-windows-and-cozy-armchairs-with-table-7045703/",
-    "alt": "Два классических кресла у панорамного окна со светлым текстилем",
+    "url": "https://www.pexels.com/photo/comfortable-couch-near-wooden-cupboards-6958151/",
+    "alt": "Деревянные панели, встроенные тёмные полки и мягкий диван в современном интерьере",
     "original_size": [
       7360,
       4912
     ],
     "variants": [
       {
-        "path": "assets/architecture-detail-640w.webp",
+        "path": "assets/architecture-modern-detail-640w.webp",
         "width": 640,
         "height": 427,
-        "bytes": 53782
+        "bytes": 24552
       },
       {
-        "path": "assets/architecture-detail-1200w.webp",
+        "path": "assets/architecture-modern-detail-1200w.webp",
         "width": 1200,
         "height": 801,
-        "bytes": 150922
+        "bytes": 62752
       },
       {
-        "path": "assets/architecture-detail-1920w.webp",
+        "path": "assets/architecture-modern-detail-1920w.webp",
         "width": 1920,
         "height": 1281,
-        "bytes": 320018
+        "bytes": 134118
       }
     ],
     "license": "https://www.pexels.com/license/",
