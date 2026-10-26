@@ -51,24 +51,25 @@
     "usage": "Visual concept only; not an executed MARI LIMAR project or RIMI product photograph",
     "variants": [
       {
-        "path": "assets/architecture-graphite-living-640w.webp",
+        "path": "assets/architecture-graphite-living-v2-640w.webp",
         "width": 640,
         "height": 427,
-        "bytes": 69752
+        "bytes": 68612
       },
       {
-        "path": "assets/architecture-graphite-living-1200w.webp",
+        "path": "assets/architecture-graphite-living-v2-1200w.webp",
         "width": 1200,
         "height": 800,
-        "bytes": 225036
+        "bytes": 210730
       },
       {
-        "path": "assets/architecture-graphite-living-1536w.webp",
+        "path": "assets/architecture-graphite-living-v2-1536w.webp",
         "width": 1536,
         "height": 1024,
-        "bytes": 351854
+        "bytes": 317302
       }
-    ]
+    ],
+    "revision": "Approved revision: remove dining group and terrace seating; retain two island stools"
   },
   {
     "slug": "dining",
