@@ -41,101 +41,95 @@
   },
   {
     "slug": "living",
-    "id": "6958137",
-    "author": "Max Vakhtbovych",
-    "url": "https://www.pexels.com/photo/interior-of-modern-apartment-with-couch-and-counter-6958137/",
-    "alt": "Современная гостиная с деревянными панелями, встроенной мебелью и светлым диваном",
+    "type": "AI-generated concept visualization",
+    "generator": "imagegen built-in",
     "original_size": [
-      7360,
-      4912
+      1536,
+      1024
     ],
+    "alt": "Гостиная с графитовым диваном, каменным столом и открытой кухней с тёплой подсветкой",
+    "usage": "Visual concept only; not an executed MARI LIMAR project or RIMI product photograph",
     "variants": [
       {
-        "path": "assets/architecture-modern-living-640w.webp",
+        "path": "assets/architecture-graphite-living-640w.webp",
         "width": 640,
         "height": 427,
-        "bytes": 25530
+        "bytes": 69752
       },
       {
-        "path": "assets/architecture-modern-living-1200w.webp",
+        "path": "assets/architecture-graphite-living-1200w.webp",
         "width": 1200,
-        "height": 801,
-        "bytes": 66300
+        "height": 800,
+        "bytes": 225036
       },
       {
-        "path": "assets/architecture-modern-living-1920w.webp",
-        "width": 1920,
-        "height": 1281,
-        "bytes": 142544
+        "path": "assets/architecture-graphite-living-1536w.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 351854
       }
-    ],
-    "license": "https://www.pexels.com/license/",
-    "usage": "Visual reference only; not a MARI LIMAR project"
+    ]
   },
   {
     "slug": "dining",
-    "id": "6958149",
-    "author": "Max Vakhtbovych",
-    "url": "https://www.pexels.com/photo/kitchen-counter-near-soft-couch-6958149/",
-    "alt": "Открытая кухня-гостиная с белым островом, деревянной отделкой и подвесными светильниками",
+    "type": "AI-generated concept visualization",
+    "generator": "imagegen built-in",
     "original_size": [
-      7360,
-      4912
+      1536,
+      1024
     ],
+    "alt": "Графитовая кухня с каменным островом, деревянными вставками и скрытой подсветкой",
+    "usage": "Visual concept only; not an executed MARI LIMAR project or RIMI product photograph",
     "variants": [
       {
-        "path": "assets/architecture-modern-dining-640w.webp",
+        "path": "assets/architecture-graphite-dining-640w.webp",
         "width": 640,
         "height": 427,
-        "bytes": 23882
+        "bytes": 57320
       },
       {
-        "path": "assets/architecture-modern-dining-1200w.webp",
+        "path": "assets/architecture-graphite-dining-1200w.webp",
         "width": 1200,
-        "height": 801,
-        "bytes": 60518
+        "height": 800,
+        "bytes": 162904
       },
       {
-        "path": "assets/architecture-modern-dining-1920w.webp",
-        "width": 1920,
-        "height": 1281,
-        "bytes": 127568
+        "path": "assets/architecture-graphite-dining-1536w.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 241692
       }
-    ],
-    "license": "https://www.pexels.com/license/",
-    "usage": "Visual reference only; not a MARI LIMAR project"
+    ]
   },
   {
     "slug": "detail",
-    "id": "6958151",
-    "author": "Max Vakhtbovych",
-    "url": "https://www.pexels.com/photo/comfortable-couch-near-wooden-cupboards-6958151/",
-    "alt": "Деревянные панели, встроенные тёмные полки и мягкий диван в современном интерьере",
+    "type": "AI-generated concept visualization",
+    "generator": "imagegen built-in",
     "original_size": [
-      7360,
-      4912
+      1536,
+      1024
     ],
+    "alt": "Каменный журнальный стол, фактурный диван и камин в тёмной современной гостиной",
+    "usage": "Visual concept only; not an executed MARI LIMAR project or RIMI product photograph",
     "variants": [
       {
-        "path": "assets/architecture-modern-detail-640w.webp",
+        "path": "assets/architecture-graphite-detail-640w.webp",
         "width": 640,
         "height": 427,
-        "bytes": 24552
+        "bytes": 74334
       },
       {
-        "path": "assets/architecture-modern-detail-1200w.webp",
+        "path": "assets/architecture-graphite-detail-1200w.webp",
         "width": 1200,
-        "height": 801,
-        "bytes": 62752
+        "height": 800,
+        "bytes": 229872
       },
       {
-        "path": "assets/architecture-modern-detail-1920w.webp",
-        "width": 1920,
-        "height": 1281,
-        "bytes": 134118
+        "path": "assets/architecture-graphite-detail-1536w.webp",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 339114
       }
-    ],
-    "license": "https://www.pexels.com/license/",
-    "usage": "Visual reference only; not a MARI LIMAR project"
+    ]
   }
 ]

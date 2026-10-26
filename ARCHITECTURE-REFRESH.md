@@ -23,11 +23,10 @@ DNS, routes, other pages or existing assets are changed.
 
 ## Images
 
-Four Pexels photographs, downloaded from their official free-download links.
+The hero facade is a Pexels photograph downloaded from its official free-download link.
 Source IDs/authors/license URLs and generated image dimensions are recorded in
 `ARCHITECTURE-IMAGE-SOURCES.json`. The facade is by Sasha Tonik, listed by the
-source as Moscow, Russia. Three contemporary interior photographs are by Max
-Vakhtbovych. No claim is made that the interiors are in Russia or that any of these
+source as Moscow, Russia. The three gallery interiors are AI-generated contemporary graphite concepts based on client-supplied style references, clearly labeled on the page. No claim is made that the interiors are in Russia or that any of these
 references are MARI LIMAR projects. Visible reference labels and source credits
 are retained on the page. No AI image generation or semantic photo editing is used.
 
