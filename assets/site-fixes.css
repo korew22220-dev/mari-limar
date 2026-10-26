@@ -7,3 +7,12 @@
 @media(max-width:1200px){.head .nav{display:none}}
 @media(max-width:600px){.panel,.mobile-panel{padding-top:90px;gap:16px}.panel a,.mobile-panel a{font-size:clamp(22px,6vw,32px)}.model-info{flex-wrap:wrap}.hero-content h1{overflow-wrap:anywhere}.hero-row{flex-wrap:wrap}.brand{flex-shrink:0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* Keep the original navigation available throughout the page. */
+html{scroll-padding-top:calc(var(--ml-header-height,88px) + 16px)}
+html body .head{position:fixed;top:0;left:0;right:0;z-index:50;transition:background-color .22s ease,border-color .22s ease}
+html body .head.ml-header-scrolled{background:#0a0a0af5;color:#f3efe8;border-bottom-color:#ffffff26}
+html body .head.ml-header-scrolled :is(.brand,.nav a,.menu-btn){color:#f3efe8}
+html body .head.ml-header-scrolled .menu-btn{border-color:#ffffff7f}
+@media(max-width:900px){html{--ml-header-height:75px}}
+@media(prefers-reduced-motion:reduce){html body .head{transition:none}}

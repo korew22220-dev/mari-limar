@@ -1,4 +1,23 @@
 (() => {
+  const header = document.querySelector('.head');
+  if (header) {
+    let scrollFrame = 0;
+    const syncHeader = () => {
+      header.classList.toggle('ml-header-scrolled', window.scrollY > 24);
+      scrollFrame = 0;
+    };
+    const syncHeaderHeight = () => {
+      document.documentElement.style.setProperty('--ml-header-height', header.getBoundingClientRect().height + 'px');
+    };
+    window.addEventListener('scroll', () => {
+      if (!scrollFrame) scrollFrame = requestAnimationFrame(syncHeader);
+    }, {passive:true});
+    window.addEventListener('pageshow', syncHeader);
+    window.addEventListener('resize', syncHeaderHeight, {passive:true});
+    if ('ResizeObserver' in window) new ResizeObserver(syncHeaderHeight).observe(header);
+    syncHeaderHeight();
+    syncHeader();
+  }
   const panel = document.querySelector('#panel, #mobile-panel');
   const opener = document.querySelector('#open, #open-menu');
   const closer = document.querySelector('#close, #close-menu');
