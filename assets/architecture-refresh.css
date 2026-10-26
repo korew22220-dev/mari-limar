@@ -1,0 +1,120 @@
+/* Architecture page only. Existing navigation, buttons and shared interactions remain intact. */
+.ml-architecture-page{--arch-width:1320px;--arch-rule:#99897566}
+.ml-architecture-page .arch-section,.ml-architecture-page .arch-section-inner{width:min(var(--arch-width),86%);margin-inline:auto}
+.ml-architecture-page .arch-section{padding-block:72px}
+.ml-architecture-page main p{font-size:15px;font-weight:300;line-height:1.85}
+.ml-architecture-page .display{font-size:clamp(38px,4.6vw,68px);line-height:1.08;letter-spacing:-.045em;margin:24px 0}
+.ml-architecture-page .arch-hero{height:82svh;min-height:680px;max-height:900px;background:var(--dark,#1b1816)}
+.ml-architecture-page .arch-hero-visual{position:absolute;inset:0 0 0 auto;width:48%;overflow:hidden}
+.ml-architecture-page .arch-hero-visual img{width:100%;height:100%;object-fit:cover;object-position:50% 35%;filter:none}
+.ml-architecture-page .arch-hero::after{pointer-events:none;background:linear-gradient(180deg,#000a,transparent 28%),linear-gradient(90deg,#1b1816 45%,#1b181600 62%)}
+.ml-architecture-page .arch-hero .hero-content{left:7%;right:auto;width:43%;bottom:12%}
+.ml-architecture-page .arch-hero h1{font:400 clamp(54px,5.8vw,94px)/1.04 Italiana,Georgia,serif;letter-spacing:-.035em;margin:30px 0}
+.ml-architecture-page .arch-hero .eyebrow{font-size:10px;line-height:1.8;letter-spacing:.17em;max-width:460px}
+.ml-architecture-page .arch-hero .hero-row{display:block}
+.ml-architecture-page .arch-hero .hero-row p{max-width:440px;font-size:16px;line-height:1.85}
+.ml-architecture-page .arch-hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:18px 26px;margin-top:28px}
+.ml-architecture-page .arch-secondary-link{display:inline-flex;align-items:center;min-height:44px;font:400 12px/1.6 Manrope,Arial,sans-serif;text-decoration:underline;text-underline-offset:6px}
+.ml-architecture-page .arch-hero-caption{position:absolute;z-index:2;right:3%;bottom:24px;color:white;font-size:10px;letter-spacing:.06em;background:#1119;padding:9px 13px;border-radius:999px;max-width:42%;line-height:1.5}
+.ml-architecture-page .arch-intro{display:grid;grid-template-columns:1.15fr .85fr;gap:9%;align-items:start}
+.ml-architecture-page .arch-intro-copy p{max-width:610px;margin:20px 0 0}
+.ml-architecture-page .arch-principles{display:grid;gap:23px;padding-top:8px}
+.ml-architecture-page .arch-principles article{border-top:1px solid var(--arch-rule);padding-top:16px}
+.ml-architecture-page .arch-principles span{font-size:10px;letter-spacing:.13em;color:inherit;opacity:.7}
+.ml-architecture-page .arch-principles h3{font-weight:400;font-size:24px;letter-spacing:-.025em;margin:10px 0 6px}
+.ml-architecture-page .arch-principles p{font-size:13px;line-height:1.75;margin:0;max-width:420px}
+.ml-architecture-page .arch-directions{display:grid;grid-template-columns:1fr 1fr;gap:8%;padding-top:0}
+.ml-architecture-page .arch-directions article{border-top:1px solid var(--arch-rule);padding-top:28px;scroll-margin-top:28px;min-width:0}
+.ml-architecture-page .arch-directions h2{font-weight:300;font-size:clamp(30px,3vw,45px);line-height:1.18;letter-spacing:-.035em;margin:24px 0 18px}
+.ml-architecture-page .arch-directions h2 em{font:400 1.12em Italiana,Georgia,serif}
+.ml-architecture-page .arch-directions p{margin:0;max-width:590px;font-size:14px}
+.ml-architecture-page .arch-gallery{padding:64px 0;background:var(--dark,#1b1816);color:#f4eee7}
+.ml-architecture-page .arch-gallery-heading{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:32px}
+.ml-architecture-page .arch-gallery-heading .display{margin-bottom:0}
+.ml-architecture-page .arch-gallery-heading p{font-size:12px;line-height:1.7;max-width:290px;margin:0 0 3px;opacity:.8}
+.ml-architecture-page .arch-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 24px}
+.ml-architecture-page .arch-photo-grid figure{margin:0;min-width:0;overflow:hidden}
+.ml-architecture-page .arch-photo-grid .arch-photo-wide{grid-column:1/-1}
+.ml-architecture-page .arch-photo-grid img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;display:block;outline:1px solid #ffffff1a;outline-offset:-1px}
+.ml-architecture-page .arch-photo-grid .arch-photo-wide img{aspect-ratio:2/1;object-position:50% 51%}
+.ml-architecture-page .arch-photo-grid figcaption{font-size:10px;line-height:1.65;letter-spacing:.1em;text-transform:uppercase;padding:13px 0 0;color:#d9cec0}
+.ml-architecture-page .arch-gallery-bottom{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:30px}
+.ml-architecture-page .arch-gallery-bottom .arch-reference-note{font-size:11px;line-height:1.8;max-width:470px;margin:0;opacity:.8}
+.ml-architecture-page .arch-photo-credits{font-size:11px;line-height:1.8;margin-top:20px;max-width:600px}
+.ml-architecture-page .arch-photo-credits summary{cursor:pointer;min-height:44px;display:list-item;list-style-position:inside;padding-block:12px;text-decoration:underline;text-underline-offset:4px}
+.ml-architecture-page .arch-photo-credits ul{padding:0 0 0 18px;margin:8px 0}
+.ml-architecture-page .arch-photo-credits a{display:inline-block;padding:5px 0;text-decoration:underline;text-underline-offset:3px}
+.ml-architecture-page .ml-compare{padding:64px max(7%,calc((100% - var(--arch-width))/2));}
+.ml-architecture-page .ml-compare__heading{font-size:clamp(35px,4.6vw,64px);max-width:900px;margin-bottom:18px}
+.ml-architecture-page .ml-compare__hint{margin-bottom:26px;font-size:13px}
+.ml-architecture-page .ml-compare__frame{max-width:var(--arch-width);margin-inline:auto}
+.ml-architecture-page .process{padding-top:0}
+.ml-architecture-page .process .steps{margin-top:32px;gap:24px}
+.ml-architecture-page .process .step{min-width:0}
+.ml-architecture-page .process .step>span{font-size:12px;opacity:.65}
+.ml-architecture-page .process .step h3{font-size:21px;margin:20px 0 10px}
+.ml-architecture-page .process .step p{font-size:13px;margin:0;line-height:1.8}
+.ml-architecture-page .arch-contact{display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:7%;border-top:1px solid var(--arch-rule);padding-top:54px;padding-bottom:64px}
+.ml-architecture-page .arch-contact .display{margin:22px 0}
+.ml-architecture-page .arch-contact p{max-width:570px;margin-bottom:0}
+.ml-architecture-page .arch-contact .cta-actions{display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:16px}
+.ml-architecture-page footer{padding:40px 7% 110px;gap:24px}
+.ml-architecture-page :is(.arch-secondary-link,.arch-photo-credits summary,.arch-photo-credits a):focus-visible{outline:2px solid #b29874;outline-offset:4px}
+html[data-ml-theme=dark] .ml-architecture-page .arch-hero::after{background:linear-gradient(180deg,#000a,transparent 28%),linear-gradient(90deg,#030303 45%,#03030300 62%)}
+@media(max-width:1050px) and (min-width:701px){
+ .ml-architecture-page .arch-hero{min-height:660px;max-height:760px}
+ .ml-architecture-page .arch-hero h1{font-size:clamp(45px,6.5vw,66px)}
+ .ml-architecture-page .arch-hero .hero-content{width:44%}
+ .ml-architecture-page .arch-hero .hero-row p{font-size:14px}
+ .ml-architecture-page .arch-hero-actions{gap:8px 16px}
+ .ml-architecture-page .arch-intro{gap:6%}
+}
+@media(max-width:700px){
+ .ml-architecture-page .arch-section,.ml-architecture-page .arch-section-inner{width:88%}
+ .ml-architecture-page .arch-section{padding-block:44px}
+ .ml-architecture-page main p{font-size:14px}
+ .ml-architecture-page .arch-hero{min-height:620px;height:82svh;max-height:760px}
+ .ml-architecture-page .arch-hero-visual{width:100%;inset:0}
+ .ml-architecture-page .arch-hero-visual img{object-position:50% 35%}
+ .ml-architecture-page .arch-hero::after,html[data-ml-theme=dark] .ml-architecture-page .arch-hero::after{background:linear-gradient(180deg,#000b,transparent 30%),linear-gradient(0deg,#000d 4%,#0005 70%,#0001)}
+ .ml-architecture-page .arch-hero .hero-content{width:88%;left:6%;right:6%;bottom:11%}
+ .ml-architecture-page .arch-hero h1{font-size:clamp(45px,11.5vw,70px);margin:24px 0;line-height:1.08}
+ .ml-architecture-page .arch-hero .hero-row p{font-size:14px;max-width:440px}
+ .ml-architecture-page .arch-hero .eyebrow{font-size:9px;max-width:340px}
+ .ml-architecture-page .arch-hero-actions{margin-top:22px;gap:8px 18px}
+ .ml-architecture-page .arch-hero-caption{font-size:8px;right:6%;bottom:16px;max-width:75%;padding:6px 9px}
+ .ml-architecture-page .arch-intro,.ml-architecture-page .arch-directions,.ml-architecture-page .arch-contact{grid-template-columns:1fr;gap:30px}
+ .ml-architecture-page .arch-intro-copy p{margin-top:16px}
+ .ml-architecture-page .arch-principles{gap:18px;padding-top:0}
+ .ml-architecture-page .arch-principles article{display:grid;grid-template-columns:85px 1fr;gap:4px 16px;align-items:baseline}
+ .ml-architecture-page .arch-principles span{grid-column:1/-1;font-size:9px}
+ .ml-architecture-page .arch-principles h3{font-size:20px;margin:6px 0}
+ .ml-architecture-page .arch-principles p{font-size:12px}
+ .ml-architecture-page .arch-directions{padding-top:0;gap:26px}
+ .ml-architecture-page .arch-directions article{padding-top:24px}
+ .ml-architecture-page .arch-directions h2{font-size:32px;margin:18px 0 14px}
+ .ml-architecture-page .arch-gallery{padding-block:44px}
+ .ml-architecture-page .arch-gallery-heading{display:block;margin-bottom:25px}
+ .ml-architecture-page .arch-gallery-heading p{margin-top:16px;max-width:320px}
+ .ml-architecture-page .arch-photo-grid{gap:20px 12px}
+ .ml-architecture-page .arch-photo-grid .arch-photo-wide img{aspect-ratio:4/3}
+ .ml-architecture-page .arch-photo-grid img{aspect-ratio:4/5;object-position:50% 50%}
+ .ml-architecture-page .arch-photo-grid figcaption{font-size:8px;letter-spacing:.04em;padding-top:9px}
+ .ml-architecture-page .arch-gallery-bottom{display:block;margin-top:24px}
+ .ml-architecture-page .arch-gallery-bottom .ml-button{margin-top:20px}
+ .ml-architecture-page .arch-photo-credits{font-size:10px}
+ .ml-architecture-page .ml-compare{padding:44px 6%}
+ .ml-architecture-page .ml-compare__heading{font-size:35px}
+ .ml-architecture-page .ml-compare__hint{font-size:12px;margin-bottom:20px}
+ .ml-architecture-page .process{padding-top:0}
+ .ml-architecture-page .process .steps{display:grid;grid-template-columns:1fr 1fr;gap:24px 18px}
+ .ml-architecture-page .process .step{padding-top:18px;padding-bottom:20px}
+ .ml-architecture-page .process .step h3{font-size:18px;margin-top:14px}
+ .ml-architecture-page .process .step p{font-size:12px}
+ .ml-architecture-page .arch-contact{padding-top:40px}
+ .ml-architecture-page .arch-contact .cta-actions{align-items:flex-start;gap:12px}
+ .ml-architecture-page .arch-contact .display{margin-top:18px}
+ .ml-architecture-page footer{padding:35px 6% 100px;align-items:flex-start}
+ .ml-architecture-page footer .brand{max-width:100%}
+}
+@media(prefers-reduced-motion:reduce){.ml-architecture-page main{scroll-behavior:auto}}

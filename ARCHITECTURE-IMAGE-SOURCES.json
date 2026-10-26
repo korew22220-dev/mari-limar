@@ -1,0 +1,141 @@
+[
+  {
+    "slug": "residence",
+    "id": "12353503",
+    "author": "Sasha Tonik",
+    "url": "https://www.pexels.com/photo/exterior-design-of-a-white-house-12353503/",
+    "location": "Moscow, Russia",
+    "alt": "Светлый неоклассический фасад с коваными балконами и озеленением",
+    "original_size": [
+      3024,
+      4032
+    ],
+    "variants": [
+      {
+        "path": "assets/architecture-residence-480w.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 85892
+      },
+      {
+        "path": "assets/architecture-residence-800w.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 205084
+      },
+      {
+        "path": "assets/architecture-residence-1200w.webp",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 394824
+      },
+      {
+        "path": "assets/architecture-residence-1600w.webp",
+        "width": 1600,
+        "height": 2133,
+        "bytes": 617542
+      }
+    ],
+    "license": "https://www.pexels.com/license/",
+    "usage": "Visual reference only; not a MARI LIMAR project"
+  },
+  {
+    "slug": "living",
+    "id": "7045712",
+    "author": "Max Vakhtbovych",
+    "url": "https://www.pexels.com/photo/classic-spacious-lounge-with-sofa-and-glass-table-with-vase-7045712/",
+    "alt": "Двусветная гостиная с камином, деревянным полом и классической мебелью",
+    "original_size": [
+      7360,
+      4912
+    ],
+    "variants": [
+      {
+        "path": "assets/architecture-living-640w.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 42750
+      },
+      {
+        "path": "assets/architecture-living-1200w.webp",
+        "width": 1200,
+        "height": 801,
+        "bytes": 119314
+      },
+      {
+        "path": "assets/architecture-living-1920w.webp",
+        "width": 1920,
+        "height": 1281,
+        "bytes": 251778
+      }
+    ],
+    "license": "https://www.pexels.com/license/",
+    "usage": "Visual reference only; not a MARI LIMAR project"
+  },
+  {
+    "slug": "dining",
+    "id": "7045716",
+    "author": "Max Vakhtbovych",
+    "url": "https://www.pexels.com/photo/classic-dining-room-with-brown-shiny-table-and-soft-chairs-7045716/",
+    "alt": "Столовая с деревянным столом, мягкими стульями и большими окнами",
+    "original_size": [
+      7340,
+      4899
+    ],
+    "variants": [
+      {
+        "path": "assets/architecture-dining-640w.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 42652
+      },
+      {
+        "path": "assets/architecture-dining-1200w.webp",
+        "width": 1200,
+        "height": 801,
+        "bytes": 113576
+      },
+      {
+        "path": "assets/architecture-dining-1920w.webp",
+        "width": 1920,
+        "height": 1281,
+        "bytes": 235688
+      }
+    ],
+    "license": "https://www.pexels.com/license/",
+    "usage": "Visual reference only; not a MARI LIMAR project"
+  },
+  {
+    "slug": "detail",
+    "id": "7045703",
+    "author": "Max Vakhtbovych",
+    "url": "https://www.pexels.com/photo/spacious-lounge-with-large-windows-and-cozy-armchairs-with-table-7045703/",
+    "alt": "Два классических кресла у панорамного окна со светлым текстилем",
+    "original_size": [
+      7360,
+      4912
+    ],
+    "variants": [
+      {
+        "path": "assets/architecture-detail-640w.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 53782
+      },
+      {
+        "path": "assets/architecture-detail-1200w.webp",
+        "width": 1200,
+        "height": 801,
+        "bytes": 150922
+      },
+      {
+        "path": "assets/architecture-detail-1920w.webp",
+        "width": 1920,
+        "height": 1281,
+        "bytes": 320018
+      }
+    ],
+    "license": "https://www.pexels.com/license/",
+    "usage": "Visual reference only; not a MARI LIMAR project"
+  }
+]
