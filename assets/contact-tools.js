@@ -15,6 +15,7 @@
  }
  function messageLinks(message){return {whatsapp:'https://wa.me/'+phone+'?text='+encodeURIComponent(message),telegram:'https://t.me/+'+phone};}
  if(typeof module==='object'&&module.exports)module.exports={formatEnquiry:formatEnquiry,messageLinks:messageLinks,phoneError:phoneError};
+ if(typeof window!=='undefined')window.MariLead={formatEnquiry:formatEnquiry,messageLinks:messageLinks,phoneError:phoneError};
  if(typeof document==='undefined')return;
  var dialog=document.getElementById('ml-lead-dialog'),form=document.getElementById('ml-lead-form');
  var tools=document.getElementById('ml-contact-tools'),fab=document.getElementById('ml-contact-fab'),tray=document.getElementById('ml-contact-tray');
@@ -102,3 +103,4 @@
  document.getElementById('ml-lead-edit').addEventListener('click',function(){edit();fields.name.focus({preventScroll:true});});
  window.addEventListener('pagehide',function(){setTray(false,false);if(dialog.open)dialog.close();});
 })();
+
