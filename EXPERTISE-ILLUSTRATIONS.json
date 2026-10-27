@@ -1,0 +1,35 @@
+{
+  "type": "generated illustrative scenes, not inspection records",
+  "items": [
+    {
+      "slug": "manufacture",
+      "source": "exec-6a154f81-78b5-4655-b2f5-2b9a5e5b91b8.png",
+      "alt": "Проверка геометрии мебельного соединения угольником"
+    },
+    {
+      "slug": "materials",
+      "source": "exec-1b82ba88-40a0-4821-8038-33d09fdc786f.png",
+      "alt": "Образцы графитового, деревянного и светлого мебельных покрытий"
+    },
+    {
+      "slug": "assembly",
+      "source": "exec-3b550a5a-bd44-47cd-afa3-f9998ca886d0.png",
+      "alt": "Открытый ящик с направляющей и креплениями крупным планом"
+    },
+    {
+      "slug": "order",
+      "source": "exec-cfd9b85b-f6a3-4ee9-8663-a0652baa6433.png",
+      "alt": "Эскиз мебели, линейка и образец деревянной отделки"
+    },
+    {
+      "slug": "defects",
+      "source": "exec-d871e2ba-7870-4221-9c73-07b882ec8686.png",
+      "alt": "Фотофиксация скола на кромке мебельного фасада"
+    },
+    {
+      "slug": "report",
+      "source": "exec-55310d90-8bef-403c-b019-3950fccd4278.png",
+      "alt": "Документы, ручка и образец мебельного материала"
+    }
+  ]
+}

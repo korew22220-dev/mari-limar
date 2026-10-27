@@ -1,4 +1,4 @@
-/* Trial component: uses the same validation, message and links as the shared form. */
+/* Shared inline component: topic and context may be supplied by the page. */
 (() => {
   'use strict';
   const form = document.getElementById('pf-request-form');
@@ -33,7 +33,7 @@
     phoneError.textContent = error;
     if (error) { phone.setAttribute('aria-invalid', 'true'); phone.reportValidity(); phone.focus(); return; }
     if (!form.reportValidity()) return;
-    message.value = api.formatEnquiry({name:name.value, phone:phone.value, comment:fields.namedItem('comment').value, topic:'project', context:'Портфолио — обсуждение проекта', model:'', source:location.origin + location.pathname});
+    message.value = api.formatEnquiry({name:name.value, phone:phone.value, comment:fields.namedItem('comment').value, topic:form.dataset.leadTopic || 'project', context:form.dataset.leadContext || 'Портфолио — обсуждение проекта', model:'', source:location.origin + location.pathname});
     const links = api.messageLinks(message.value);
     const telegram = fields.namedItem('channel').value === 'telegram';
     chat.href = telegram ? links.telegram : links.whatsapp;
@@ -59,3 +59,4 @@
     }
   });
 })();
+
