@@ -1,0 +1,119 @@
+{
+  "type": "AI-generated illustrative concepts",
+  "not_completed_projects": true,
+  "new_images": [
+    {
+      "slug": "residence",
+      "source": "exec-a014d232-7b35-4212-8c02-b95e68767bbd.png"
+    },
+    {
+      "slug": "entrance",
+      "source": "exec-f393c34a-8460-4027-97b0-5ed2e304ab51.png"
+    },
+    {
+      "slug": "bedroom",
+      "source": "exec-216c6c6e-ffac-4d3c-b4ea-0246fe25943c.png"
+    },
+    {
+      "slug": "light-kitchen",
+      "source": "exec-eef1b7a8-7096-40db-8162-9059c46e4f64.png"
+    }
+  ],
+  "reused_approved_images": [
+    "architecture-graphite-living-v2",
+    "architecture-graphite-dining",
+    "architecture-graphite-detail"
+  ],
+  "projects": [
+    {
+      "title": "Дом в ландшафте",
+      "category": "architecture",
+      "status": "concept",
+      "kind": "Архитектура",
+      "label": "Концепция · ИИ",
+      "base": "portfolio-residence",
+      "description": "Горизонтальные объёмы, светлый камень и деревянные подшивки объединены с садом. Панорамное остекление связывает внутреннее пространство с ландшафтом.",
+      "alt": "Современный двухэтажный дом с каменным фасадом, панорамными окнами и садом",
+      "image": "assets/portfolio-residence-1536w.webp",
+      "srcset": "assets/portfolio-residence-640w.webp 640w, assets/portfolio-residence-1200w.webp 1200w, assets/portfolio-residence-1536w.webp 1536w",
+      "width": 1536,
+      "height": 1024,
+      "disclosure": "Иллюстративная концепция, созданная с помощью ИИ. Не является реализованным проектом MARI LIMAR или фотографией продукции РИМИ."
+    },
+    {
+      "title": "Гостиная с камином",
+      "category": "interior",
+      "status": "visualization",
+      "kind": "Дизайн интерьеров",
+      "label": "ИИ-визуализация",
+      "base": "architecture-graphite-living-v2",
+      "description": "Графитовый диван и низкий каменный стол формируют жилую зону. Дерево, камин и скрытая подсветка добавляют тепла, а проход к окнам остаётся свободным.",
+      "alt": "Графитовая гостиная с камином, каменным столом и открытой кухней",
+      "image": "assets/architecture-graphite-living-v2-1536w.webp",
+      "srcset": "assets/architecture-graphite-living-v2-640w.webp 640w, assets/architecture-graphite-living-v2-1200w.webp 1200w, assets/architecture-graphite-living-v2-1536w.webp 1536w",
+      "width": 1536,
+      "height": 1024,
+      "disclosure": "Иллюстративная концепция, созданная с помощью ИИ. Не является реализованным проектом MARI LIMAR или фотографией продукции РИМИ."
+    },
+    {
+      "title": "Графит и дерево",
+      "category": "kitchen",
+      "status": "visualization",
+      "kind": "Кухни",
+      "label": "ИИ-визуализация",
+      "base": "architecture-graphite-dining",
+      "description": "Матовые графитовые фасады сочетаются с тёмным камнем и деревянной вставкой острова. Подсветка подчёркивает рабочую поверхность и глубину материалов.",
+      "alt": "Графитовая кухня с каменным островом и тёплой подсветкой деревянной вставки",
+      "image": "assets/architecture-graphite-dining-1536w.webp",
+      "srcset": "assets/architecture-graphite-dining-640w.webp 640w, assets/architecture-graphite-dining-1200w.webp 1200w, assets/architecture-graphite-dining-1536w.webp 1536w",
+      "width": 1536,
+      "height": 1024,
+      "disclosure": "Иллюстративная концепция, созданная с помощью ИИ. Не является реализованным проектом MARI LIMAR или фотографией продукции РИМИ."
+    },
+    {
+      "title": "Тихое пространство",
+      "category": "interior",
+      "status": "visualization",
+      "kind": "Дизайн интерьеров",
+      "label": "ИИ-визуализация",
+      "base": "portfolio-bedroom",
+      "description": "Мягкое изголовье, льняной текстиль и деревянные панели задают спокойный характер спальни. Встроенное хранение и световые акценты поддерживают цельную композицию.",
+      "alt": "Современная спальня с мягкой кроватью, деревянными панелями и большим окном",
+      "image": "assets/portfolio-bedroom-1536w.webp",
+      "srcset": "assets/portfolio-bedroom-640w.webp 640w, assets/portfolio-bedroom-1200w.webp 1200w, assets/portfolio-bedroom-1536w.webp 1536w",
+      "width": 1536,
+      "height": 1024,
+      "disclosure": "Иллюстративная концепция, созданная с помощью ИИ. Не является реализованным проектом MARI LIMAR или фотографией продукции РИМИ."
+    },
+    {
+      "title": "Линия входа",
+      "category": "architecture",
+      "status": "concept",
+      "kind": "Архитектура",
+      "label": "Концепция · ИИ",
+      "base": "portfolio-entrance",
+      "description": "Каменные ступени, деревянный экран и плоский навес формируют входную группу. Локальный свет выделяет рельеф камня и путь к двери.",
+      "alt": "Входная группа современного дома с каменными ступенями и деревянным экраном",
+      "image": "assets/portfolio-entrance-1536w.webp",
+      "srcset": "assets/portfolio-entrance-640w.webp 640w, assets/portfolio-entrance-1200w.webp 1200w, assets/portfolio-entrance-1536w.webp 1536w",
+      "width": 1536,
+      "height": 1024,
+      "disclosure": "Иллюстративная концепция, созданная с помощью ИИ. Не является реализованным проектом MARI LIMAR или фотографией продукции РИМИ."
+    },
+    {
+      "title": "Светлый камень",
+      "category": "kitchen",
+      "status": "visualization",
+      "kind": "Кухни",
+      "label": "ИИ-визуализация",
+      "base": "portfolio-light-kitchen",
+      "description": "Светлый каменный остров, тёплое дерево и ровные фасады создают спокойную кухонную композицию. Два посадочных места оставляют рабочую зону свободной.",
+      "alt": "Светлая современная кухня с каменным островом, деревянной нишей и двумя стульями",
+      "image": "assets/portfolio-light-kitchen-1536w.webp",
+      "srcset": "assets/portfolio-light-kitchen-640w.webp 640w, assets/portfolio-light-kitchen-1200w.webp 1200w, assets/portfolio-light-kitchen-1536w.webp 1536w",
+      "width": 1536,
+      "height": 1024,
+      "disclosure": "Иллюстративная концепция, созданная с помощью ИИ. Не является реализованным проектом MARI LIMAR или фотографией продукции РИМИ."
+    }
+  ]
+}
