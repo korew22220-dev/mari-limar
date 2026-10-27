@@ -1,0 +1,19 @@
+{
+  "illustrations": [
+    {
+      "slug": "hinge",
+      "source": "exec-5c8b3026-e5df-4cf4-9cc0-bf33ec9fdb58.png",
+      "type": "generated illustrative detail; not a real inspection record"
+    },
+    {
+      "slug": "drawer",
+      "source": "exec-c2ab9473-11d1-48e9-a7bc-74e352a34966.png",
+      "type": "generated illustrative detail; not a real inspection record"
+    }
+  ],
+  "editorial_sources": [
+    "https://zpp.rospotrebnadzor.ru/news/federal/198228",
+    "https://www.09.rospotrebnadzor.ru/node/9168"
+  ],
+  "scope": "No accreditation, judicial-expert status, fixed price, deadlines or case outcomes claimed."
+}
