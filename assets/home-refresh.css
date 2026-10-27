@@ -35,7 +35,7 @@ body.ml-home.ml-home-refresh main>.section,body.ml-home.ml-home-refresh main>.da
 .ml-home-refresh .hm-expertise{display:grid;grid-template-columns:1fr 1fr;gap:6%;align-items:center;background:#e8e1d7}
 html[data-ml-theme=dark] .ml-home-refresh .hm-expertise{background:#101010}
 .ml-home-refresh .hm-expertise-image{margin:0;min-width:0}
-.ml-home-refresh .hm-expertise-image img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;outline:1px solid var(--hm-line);outline-offset:-1px}
+.ml-home-refresh .hm-expertise-image img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;outline:1px solid var(--hm-line);outline-offset:-1px}
 .ml-home-refresh .hm-expertise-image figcaption{font-size:11px;color:var(--hm-muted);line-height:1.7;margin-top:13px}
 .ml-home-refresh .hm-expertise-copy{min-width:0}
 .ml-home-refresh .hm-expertise-copy .display{font-size:clamp(36px,4.1vw,60px)}
