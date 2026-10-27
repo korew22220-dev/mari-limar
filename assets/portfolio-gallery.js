@@ -23,7 +23,7 @@
     empty.hidden = visible > 0;
     empty.style.display = visible ? 'none' : 'block';
     document.getElementById('empty-description').textContent = status === 'realized'
-      ? 'Фотографии реализованных объектов пока не опубликованы. В подборке доступны концепции и ИИ-визуализации.'
+      ? 'Фотографии реализованных объектов пока не опубликованы. В подборке доступны концепции и визуализации.'
       : 'Для этого сочетания направления и статуса пока нет материалов. Попробуйте изменить фильтры.';
   }
   categories.forEach(button => button.addEventListener('click', () => { category = button.dataset.category; applyFilters(); }));
@@ -76,3 +76,4 @@
   document.getElementById('dialog-enquiry').addEventListener('click', () => closeProject(false));
   applyFilters();
 })();
+
