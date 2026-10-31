@@ -4181,142 +4181,1548 @@
     "slug": "monticelli",
     "name": "Монтичели",
     "collection": "classic",
-    "subtitle": "Английская классика в деталях",
-    "description": "Фасады «Монтичели» выполнены из МДФ толщиной 24 мм со сложной фрезеровкой. Пилястры с объёмным декором и карнизы с подкарнизником поддерживают классический характер модели. За витринами использован контрастный древесный декор.",
+    "subtitle": "Английская классика и рельефные фасады",
+    "description": "«Монтичели» создана с участием итальянских дизайнеров и обращается к английской классике. Фасады из МДФ толщиной 24 мм дополнены сложной фрезеровкой, пилястрами и карнизами. Витрины со стеклом Stopsol и ромбовидной гравировкой сочетаются с каминной группой и островом. Доступны матовая и полуглянцевая эмаль, золотистая или серебристая патина.",
     "features": [
-      "МДФ 24 мм",
-      "Пилястры и карнизы",
-      "Контрастный древесный декор за витринами"
+      "Фасады из МДФ, 24 мм",
+      "Рельефные пилястры и карнизы",
+      "Стекло Stopsol с гравировкой",
+      "Эмаль с возможностью нанесения патины"
     ],
     "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
     "source_pdf_page": 2,
     "source_printed_pages": "4–5",
     "image": {
       "alt": "Кухня РИМИ Монтичели",
-      "loading": "lazy",
-      "src": "assets/monticelli.webp",
-      "width": "1492",
-      "height": "842",
-      "decoding": "async"
-    }
+      "src": "assets/kitchens-classic/rimi-ac76dcc2725c65d2-1600w.webp",
+      "srcset": "assets/kitchens-classic/rimi-ac76dcc2725c65d2-560w.webp 560w, assets/kitchens-classic/rimi-ac76dcc2725c65d2-1600w.webp 1600w",
+      "width": "1600",
+      "height": "896",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/klassicheskie_kukhni/767/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-classic/rimi-ac76dcc2725c65d2-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-ac76dcc2725c65d2-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 32814
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-ac76dcc2725c65d2-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 206022
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-eda7e38e86d04f89-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-eda7e38e86d04f89-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 34224
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-eda7e38e86d04f89-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 209254
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-b58a4983da356c14-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-b58a4983da356c14-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 34596
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-b58a4983da356c14-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 204870
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-e72adabe96d84397-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-e72adabe96d84397-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 32662
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-e72adabe96d84397-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 195730
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-68d6c7f10196fff1-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-68d6c7f10196fff1-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 33296
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-68d6c7f10196fff1-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 226706
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-dd091455029ab38d-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-dd091455029ab38d-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 28870
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-dd091455029ab38d-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 178308
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-2e63cbee17733da5-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-2e63cbee17733da5-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 24374
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-2e63cbee17733da5-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 206378
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-51a560d224e16c33-1536w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-51a560d224e16c33-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 49500
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-51a560d224e16c33-1536w.webp",
+            "width": 1536,
+            "height": 1728,
+            "bytes": 269272
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-569f14bcf1adb254-1536w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-569f14bcf1adb254-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 40098
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-569f14bcf1adb254-1536w.webp",
+            "width": 1536,
+            "height": 1728,
+            "bytes": 213792
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-0bc356de62210b44-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-0bc356de62210b44-560w.webp",
+            "width": 560,
+            "height": 420,
+            "bytes": 30792
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-0bc356de62210b44-1600w.webp",
+            "width": 1600,
+            "height": 1200,
+            "bytes": 165612
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-a18b277cc2dd0edd-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-a18b277cc2dd0edd-560w.webp",
+            "width": 560,
+            "height": 240,
+            "bytes": 27278
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-a18b277cc2dd0edd-1600w.webp",
+            "width": 1600,
+            "height": 685,
+            "bytes": 161788
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-f08b4b219ad009b7-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-f08b4b219ad009b7-560w.webp",
+            "width": 560,
+            "height": 240,
+            "bytes": 28654
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-f08b4b219ad009b7-1600w.webp",
+            "width": 1600,
+            "height": 685,
+            "bytes": 164066
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-760a99d9df6caadb-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-760a99d9df6caadb-560w.webp",
+            "width": 560,
+            "height": 240,
+            "bytes": 15664
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-760a99d9df6caadb-1600w.webp",
+            "width": 1600,
+            "height": 685,
+            "bytes": 83578
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "fabiana",
     "name": "Фабиана",
     "collection": "classic",
-    "subtitle": "Сдержанная классика",
-    "description": "«Фабиана» соединяет простую геометрию с четырёхуровневым фасадом. Скрытая интегрированная ручка сохраняет чистые линии, а пропорции модели сочетают классические мотивы с современным исполнением.",
+    "subtitle": "Многоступенчатый фасад и скрытая ручка",
+    "description": "«Фабиана» соединяет классический рисунок мебели с современными деталями. Многоступенчатый фасад дополнен скрытой интегрированной ручкой. Декоративные элементы позволяют менять характер композиции: от более сдержанного до выразительного, с индустриальными акцентами.",
     "features": [
-      "Четырёхуровневый фасад",
+      "Многоступенчатый рисунок фасада",
       "Скрытая интегрированная ручка",
-      "Лаконичные геометрические формы"
+      "Разные сочетания декоративных элементов"
     ],
     "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
     "source_pdf_page": 15,
     "source_printed_pages": "30–31",
     "image": {
       "alt": "Кухня РИМИ Фабиана",
-      "loading": "lazy",
-      "src": "assets/fabiana.webp",
-      "width": "1492",
-      "height": "842",
-      "decoding": "async"
-    }
+      "src": "assets/kitchens-classic/rimi-16e465cf4ba81b4e-1600w.webp",
+      "srcset": "assets/kitchens-classic/rimi-16e465cf4ba81b4e-560w.webp 560w, assets/kitchens-classic/rimi-16e465cf4ba81b4e-1600w.webp 1600w",
+      "width": "1600",
+      "height": "896",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/klassicheskie_kukhni/766/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-classic/rimi-16e465cf4ba81b4e-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-16e465cf4ba81b4e-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 30428
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-16e465cf4ba81b4e-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 180558
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-920f7f502a619c07-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-920f7f502a619c07-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 29920
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-920f7f502a619c07-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 193802
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-3a84c0348e0b2b9f-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-3a84c0348e0b2b9f-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 16524
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-3a84c0348e0b2b9f-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 62482
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-b43a453729860c37-1536w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-b43a453729860c37-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 64318
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-b43a453729860c37-1536w.webp",
+            "width": 1536,
+            "height": 1728,
+            "bytes": 373538
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-30beeb6fe306b9d0-1080w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-30beeb6fe306b9d0-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 53736
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-30beeb6fe306b9d0-1080w.webp",
+            "width": 1080,
+            "height": 1215,
+            "bytes": 127084
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-344198124176e746-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-344198124176e746-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 24282
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-344198124176e746-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 136182
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-1bde0b5804de94c5-1080w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-1bde0b5804de94c5-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 38714
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-1bde0b5804de94c5-1080w.webp",
+            "width": 1080,
+            "height": 1215,
+            "bytes": 133156
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-7abf6c3374a4e3b0-1536w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-7abf6c3374a4e3b0-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 31134
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-7abf6c3374a4e3b0-1536w.webp",
+            "width": 1536,
+            "height": 1728,
+            "bytes": 241268
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-29b054fff430aaef-1536w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-29b054fff430aaef-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 35104
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-29b054fff430aaef-1536w.webp",
+            "width": 1536,
+            "height": 1728,
+            "bytes": 263614
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-d39ca7098677d0fb-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-d39ca7098677d0fb-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 23390
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-d39ca7098677d0fb-1600w.webp",
+            "width": 1600,
+            "height": 894,
+            "bytes": 151760
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-69b202024218317e-1536w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-69b202024218317e-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 48376
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-69b202024218317e-1536w.webp",
+            "width": 1536,
+            "height": 1728,
+            "bytes": 339292
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-4fb4dd30ec4af57c-1536w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-4fb4dd30ec4af57c-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 59272
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-4fb4dd30ec4af57c-1536w.webp",
+            "width": 1536,
+            "height": 1728,
+            "bytes": 411852
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-8807b64a4a04c96d-1536w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-8807b64a4a04c96d-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 36618
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-8807b64a4a04c96d-1536w.webp",
+            "width": 1536,
+            "height": 1728,
+            "bytes": 243472
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "lange",
     "name": "Ланже",
     "collection": "classic",
-    "subtitle": "Геометрия ар-деко",
-    "description": "«Ланже» сочетает глянцевые фасады со стеклом с фрезеровкой. Декоративные пилястры с ромбообразным рисунком поддерживают эстетику ар-деко и делают геометрию главным акцентом модели.",
+    "subtitle": "Глянец, стекло и геометрия ар-деко",
+    "description": "Образ «Ланже» отсылает к голливудскому ар-деко. Глянцевые фасады дополнены стеклом с фрезеровкой Ланже, а декоративные пилястры — ромбовидным рисунком. Блики и чёткая геометрия подчёркивают отделку, сохраняя цельность композиции.",
     "features": [
       "Глянцевые фасады",
-      "Стекло с фрезеровкой",
-      "Пилястры с ромбообразным рисунком"
+      "Стекло с фрезеровкой Ланже",
+      "Пилястры с ромбовидным рисунком"
     ],
     "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
     "source_pdf_page": 22,
     "source_printed_pages": "44–45",
     "image": {
       "alt": "Кухня РИМИ Ланже",
-      "loading": "lazy",
-      "src": "assets/lange.webp",
-      "width": "1492",
-      "height": "842",
-      "decoding": "async"
-    }
+      "src": "assets/kitchens-classic/rimi-e2d622247b01b694-1600w.webp",
+      "srcset": "assets/kitchens-classic/rimi-e2d622247b01b694-560w.webp 560w, assets/kitchens-classic/rimi-e2d622247b01b694-1600w.webp 1600w",
+      "width": "1600",
+      "height": "928",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/klassicheskie_kukhni/777/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-classic/rimi-e2d622247b01b694-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-e2d622247b01b694-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 34648
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-e2d622247b01b694-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 211028
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-ca2ff5e089c8cd9d-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-ca2ff5e089c8cd9d-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 29856
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-ca2ff5e089c8cd9d-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 172596
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-3db551fb4a75c1d0-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-3db551fb4a75c1d0-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 35564
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-3db551fb4a75c1d0-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 221712
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-1f18e2205efe0db1-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-1f18e2205efe0db1-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 31600
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-1f18e2205efe0db1-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 185224
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-4564fd8c7e49acf0-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-4564fd8c7e49acf0-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 23862
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-4564fd8c7e49acf0-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 139070
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-75acf5ce2e302915-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-75acf5ce2e302915-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 33584
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-75acf5ce2e302915-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 185948
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-ec25f6b57c262377-1536w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-ec25f6b57c262377-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 45252
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-ec25f6b57c262377-1536w.webp",
+            "width": 1536,
+            "height": 1728,
+            "bytes": 225172
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-a39ab7899fbd5243-1536w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-a39ab7899fbd5243-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 27966
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-a39ab7899fbd5243-1536w.webp",
+            "width": 1536,
+            "height": 1728,
+            "bytes": 144806
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-f94436b105eb2918-1536w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-f94436b105eb2918-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 60126
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-f94436b105eb2918-1536w.webp",
+            "width": 1536,
+            "height": 1728,
+            "bytes": 352358
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-dadf8fb5b6955d7d-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-dadf8fb5b6955d7d-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 34706
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-dadf8fb5b6955d7d-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 248888
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-e25aeca5d6c762e7-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-e25aeca5d6c762e7-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 30762
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-e25aeca5d6c762e7-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 195698
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-80b385f58fe7a6dc-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-80b385f58fe7a6dc-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 32064
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-80b385f58fe7a6dc-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 211114
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-5d9fc2cc78eecc1d-1536w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-5d9fc2cc78eecc1d-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 55358
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-5d9fc2cc78eecc1d-1536w.webp",
+            "width": 1536,
+            "height": 1728,
+            "bytes": 356298
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-877e19efdcdb075e-1536w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-877e19efdcdb075e-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 45668
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-877e19efdcdb075e-1536w.webp",
+            "width": 1536,
+            "height": 1728,
+            "bytes": 297230
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-566a76ee607f3d92-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-566a76ee607f3d92-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 29298
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-566a76ee607f3d92-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 194014
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-8a61c8e22c5bdf38-1536w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-8a61c8e22c5bdf38-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 41982
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-8a61c8e22c5bdf38-1536w.webp",
+            "width": 1536,
+            "height": 1728,
+            "bytes": 227602
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-41cf074bbf4a7706-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-41cf074bbf4a7706-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 29126
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-41cf074bbf4a7706-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 170776
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-d64af66c714a9555-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-d64af66c714a9555-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 45678
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-d64af66c714a9555-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 298140
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "maranella",
     "name": "Маранелла",
     "collection": "classic",
-    "subtitle": "Классическая модульная композиция",
-    "description": "«Маранелла» — модульная система с индивидуальными элементами и открытыми полками. В каталоге её отличают сложные фасады, декоративные пилястры и вытяжка с формой, вдохновлённой капотом автомобиля Ferrari.",
+    "subtitle": "Выразительный декор и отделка ANTIQ",
+    "description": "В «Маранелле» классические формы сочетаются с выразительными декоративными элементами. Вдохновением для очертаний коллекции послужил автомобиль Ferrari Maranello. Отделка ANTIQ подчёркивает рельеф деталей и поддерживает выразительный характер мебели.",
     "features": [
-      "Модульная система",
-      "Декоративные пилястры",
-      "Открытые полки и выразительная вытяжка"
+      "Классические формы",
+      "Разнообразие декоративных элементов",
+      "Отделка ANTIQ"
     ],
     "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
     "source_pdf_page": 34,
     "source_printed_pages": "68–69",
     "image": {
       "alt": "Кухня РИМИ Маранелла",
-      "loading": "lazy",
-      "src": "assets/maranella.webp",
-      "width": "1492",
-      "height": "842",
-      "decoding": "async"
-    }
+      "src": "assets/kitchens-classic/rimi-b3a1ed74eec1635a-1600w.webp",
+      "srcset": "assets/kitchens-classic/rimi-b3a1ed74eec1635a-560w.webp 560w, assets/kitchens-classic/rimi-b3a1ed74eec1635a-1600w.webp 1600w",
+      "width": "1600",
+      "height": "929",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/klassicheskie_kukhni/772/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-classic/rimi-b3a1ed74eec1635a-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-b3a1ed74eec1635a-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 22148
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-b3a1ed74eec1635a-1600w.webp",
+            "width": 1600,
+            "height": 929,
+            "bytes": 131146
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-86a6053a58ecd29d-1137w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-86a6053a58ecd29d-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 46256
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-86a6053a58ecd29d-1137w.webp",
+            "width": 1137,
+            "height": 1280,
+            "bytes": 166440
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-8ec6fb12b330e10e-1137w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-8ec6fb12b330e10e-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 37728
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-8ec6fb12b330e10e-1137w.webp",
+            "width": 1137,
+            "height": 1280,
+            "bytes": 105992
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-0ef1d5bb7a688f6b-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-0ef1d5bb7a688f6b-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 28732
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-0ef1d5bb7a688f6b-1600w.webp",
+            "width": 1600,
+            "height": 929,
+            "bytes": 167114
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-e109df3d0b713f6f-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-e109df3d0b713f6f-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 23662
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-e109df3d0b713f6f-1600w.webp",
+            "width": 1600,
+            "height": 929,
+            "bytes": 142128
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-bce39f58ff5ae840-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-bce39f58ff5ae840-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 26166
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-bce39f58ff5ae840-1600w.webp",
+            "width": 1600,
+            "height": 929,
+            "bytes": 144016
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-f814846721f543fd-1137w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-f814846721f543fd-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 36586
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-f814846721f543fd-1137w.webp",
+            "width": 1137,
+            "height": 1280,
+            "bytes": 136574
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-f655a1932c162723-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-f655a1932c162723-560w.webp",
+            "width": 560,
+            "height": 344,
+            "bytes": 22684
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-f655a1932c162723-1600w.webp",
+            "width": 1600,
+            "height": 984,
+            "bytes": 131462
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-7c2b882ace19c6fb-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-7c2b882ace19c6fb-560w.webp",
+            "width": 560,
+            "height": 312,
+            "bytes": 18626
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-7c2b882ace19c6fb-1600w.webp",
+            "width": 1600,
+            "height": 891,
+            "bytes": 115478
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-8cc63485917fd8ea-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-8cc63485917fd8ea-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 25310
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-8cc63485917fd8ea-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 154378
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-a7527863e55f070f-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-a7527863e55f070f-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 22982
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-a7527863e55f070f-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 155548
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-3a398669443f1217-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-3a398669443f1217-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 37070
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-3a398669443f1217-1600w.webp",
+            "width": 1600,
+            "height": 1800,
+            "bytes": 262910
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-f68c00f5c594e227-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-f68c00f5c594e227-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 31374
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-f68c00f5c594e227-1600w.webp",
+            "width": 1600,
+            "height": 1800,
+            "bytes": 198636
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-0aba2029520dc680-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-0aba2029520dc680-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 27380
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-0aba2029520dc680-1600w.webp",
+            "width": 1600,
+            "height": 1800,
+            "bytes": 187692
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "barona",
     "name": "Барона",
     "collection": "classic",
-    "subtitle": "Декор итальянской классики",
-    "description": "В «Бароне» классические формы сочетаются с высокими резными карнизами и тщательно проработанным декором. В каталожном описании предусмотрена патина, нанесённая вручную.",
+    "subtitle": "Итальянская классика с ручной патиной",
+    "description": "«Барона» предлагает современное прочтение итальянской классики. Традиционные формы дополняют высокие резные карнизы и декоративные детали. Патина наносится вручную и подчёркивает рельеф отделки. Композицию адаптируем под планировку и выбранную бытовую технику.",
     "features": [
       "Высокие резные карнизы",
-      "Классический декор",
-      "Ручное нанесение патины"
+      "Классический декоративный рисунок",
+      "Патина ручного нанесения"
     ],
     "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
     "source_pdf_page": 45,
     "source_printed_pages": "90–91",
     "image": {
       "alt": "Кухня РИМИ Барона",
-      "loading": "lazy",
-      "src": "assets/rimi-catalog-barona-1280w.webp",
-      "srcset": "assets/rimi-catalog-barona-640w.webp 640w, assets/rimi-catalog-barona-960w.webp 960w, assets/rimi-catalog-barona-1280w.webp 1280w",
-      "sizes": "(max-width: 750px) 88vw, 43vw",
-      "width": "1280",
-      "height": "723",
-      "decoding": "async"
-    }
+      "src": "assets/kitchens-classic/rimi-3decae3a0ff6e576-1600w.webp",
+      "srcset": "assets/kitchens-classic/rimi-3decae3a0ff6e576-560w.webp 560w, assets/kitchens-classic/rimi-3decae3a0ff6e576-1600w.webp 1600w",
+      "width": "1600",
+      "height": "895",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/klassicheskie_kukhni/776/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-classic/rimi-3decae3a0ff6e576-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-3decae3a0ff6e576-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 24828
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-3decae3a0ff6e576-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 141782
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-c4066f715f52d96c-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-c4066f715f52d96c-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 17762
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-c4066f715f52d96c-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 110504
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-8903c190b9ba93b5-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-8903c190b9ba93b5-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 23700
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-8903c190b9ba93b5-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 143650
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-40aace803ad73993-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-40aace803ad73993-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 17832
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-40aace803ad73993-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 106832
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-45e19b279af9370a-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-45e19b279af9370a-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 23470
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-45e19b279af9370a-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 129746
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-71eb139da31f40c2-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-71eb139da31f40c2-560w.webp",
+            "width": 560,
+            "height": 379,
+            "bytes": 21210
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-71eb139da31f40c2-1600w.webp",
+            "width": 1600,
+            "height": 1083,
+            "bytes": 122902
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "devenport",
     "name": "Девенпорт",
     "collection": "classic",
-    "subtitle": "Портал, витражи и резной декор",
-    "description": "«Девенпорт» отличается порталом с фактурным панно, витражами с классической раскладкой и резными элементами. В каталоге для фасадов предусмотрены традиционная окраска или отделка экомембраной.",
+    "subtitle": "Викторианские мотивы и резной декор",
+    "description": "«Девенпорт» сочетает выразительный портал, фактурное панно, колонны и резные декоративные элементы. Витражи имеют классическую раскладку. Фасады могут быть окрашены или отделаны экомембраной; золотистая или серебристая патина наносится вручную.",
     "features": [
-      "Портал с фактурным панно",
+      "Окраска фасадов или экомембрана",
+      "Портал, колонны и капители",
       "Витражи с классической раскладкой",
-      "Окраска или экомембрана"
+      "Золотистая или серебристая патина"
     ],
     "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
     "source_pdf_page": 51,
     "source_printed_pages": "102–103",
     "image": {
       "alt": "Кухня РИМИ Девенпорт",
-      "loading": "lazy",
-      "src": "assets/rimi-catalog-devenport-1280w.webp",
-      "srcset": "assets/rimi-catalog-devenport-640w.webp 640w, assets/rimi-catalog-devenport-960w.webp 960w, assets/rimi-catalog-devenport-1280w.webp 1280w",
-      "sizes": "(max-width: 750px) 88vw, 43vw",
-      "width": "1280",
-      "height": "723",
-      "decoding": "async"
-    }
+      "src": "assets/kitchens-classic/rimi-ec6969d7f987aaca-1600w.webp",
+      "srcset": "assets/kitchens-classic/rimi-ec6969d7f987aaca-560w.webp 560w, assets/kitchens-classic/rimi-ec6969d7f987aaca-1600w.webp 1600w",
+      "width": "1600",
+      "height": "895",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/klassicheskie_kukhni/775/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-classic/rimi-ec6969d7f987aaca-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-ec6969d7f987aaca-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 24890
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-ec6969d7f987aaca-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 136200
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-928d0030c6159d08-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-928d0030c6159d08-560w.webp",
+            "width": 560,
+            "height": 403,
+            "bytes": 34854
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-928d0030c6159d08-1600w.webp",
+            "width": 1600,
+            "height": 1152,
+            "bytes": 182972
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-f509ac2b65f99c65-1138w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-f509ac2b65f99c65-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 55540
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-f509ac2b65f99c65-1138w.webp",
+            "width": 1138,
+            "height": 1280,
+            "bytes": 174974
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-0499dff1f9857894-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-0499dff1f9857894-560w.webp",
+            "width": 560,
+            "height": 420,
+            "bytes": 31916
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-0499dff1f9857894-1600w.webp",
+            "width": 1600,
+            "height": 1199,
+            "bytes": 187208
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-3b205e1a414c3ada-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-3b205e1a414c3ada-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 29820
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-3b205e1a414c3ada-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 166490
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-02d9bf29648464b7-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-02d9bf29648464b7-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 32034
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-02d9bf29648464b7-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 184876
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-f1044ba3403de837-1138w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-f1044ba3403de837-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 56752
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-f1044ba3403de837-1138w.webp",
+            "width": 1138,
+            "height": 1280,
+            "bytes": 179282
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-3fca7562e594eb91-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-3fca7562e594eb91-560w.webp",
+            "width": 560,
+            "height": 385,
+            "bytes": 21602
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-3fca7562e594eb91-1600w.webp",
+            "width": 1600,
+            "height": 1101,
+            "bytes": 106594
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "tivoli",
+    "name": "Тиволи",
+    "collection": "classic",
+    "subtitle": "Вогнутый фасад и фрезерованный молдинг",
+    "description": "У «Тиволи» фасады из МДФ имеют вогнутую поверхность, которая создаёт рамочный рисунок. Фрезерованный молдинг подчёркивает геометрию дверей. Внутреннее хранение и рабочие поверхности продумываются вместе с внешним оформлением, чтобы кухня оставалась удобной каждый день.",
+    "features": [
+      "Фасады из МДФ с вогнутой поверхностью",
+      "Рамочный рисунок",
+      "Декоративный фрезерованный молдинг"
+    ],
+    "source_page": "https://rimi-mebel.ru/catalog/klassicheskie_kukhni/778/",
+    "image": {
+      "alt": "Кухня РИМИ Тиволи",
+      "src": "assets/kitchens-classic/rimi-0d2a3b4ac807068c-1600w.webp",
+      "srcset": "assets/kitchens-classic/rimi-0d2a3b4ac807068c-560w.webp 560w, assets/kitchens-classic/rimi-0d2a3b4ac807068c-1600w.webp 1600w",
+      "width": "1600",
+      "height": "980",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "gallery": [
+      {
+        "image": "assets/kitchens-classic/rimi-0d2a3b4ac807068c-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-0d2a3b4ac807068c-560w.webp",
+            "width": 560,
+            "height": 343,
+            "bytes": 21982
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-0d2a3b4ac807068c-1600w.webp",
+            "width": 1600,
+            "height": 980,
+            "bytes": 127194
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-32c6404a4663f0a2-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-32c6404a4663f0a2-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 23262
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-32c6404a4663f0a2-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 133932
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-4f41167db48dd491-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-4f41167db48dd491-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 28422
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-4f41167db48dd491-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 159194
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-283ca77e9c5f35f9-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-283ca77e9c5f35f9-560w.webp",
+            "width": 560,
+            "height": 343,
+            "bytes": 23764
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-283ca77e9c5f35f9-1600w.webp",
+            "width": 1600,
+            "height": 980,
+            "bytes": 143056
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-68f42037426a4c5f-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-68f42037426a4c5f-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 23586
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-68f42037426a4c5f-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 146326
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-922bc5729661e3f1-1536w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-922bc5729661e3f1-560w.webp",
+            "width": 560,
+            "height": 672,
+            "bytes": 34176
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-922bc5729661e3f1-1536w.webp",
+            "width": 1536,
+            "height": 1843,
+            "bytes": 231700
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-cb4c9e8eba2eac32-1536w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-cb4c9e8eba2eac32-560w.webp",
+            "width": 560,
+            "height": 634,
+            "bytes": 31166
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-cb4c9e8eba2eac32-1536w.webp",
+            "width": 1536,
+            "height": 1739,
+            "bytes": 205648
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-classic/rimi-2b7c3d149adea8db-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-classic/rimi-2b7c3d149adea8db-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 14622
+          },
+          {
+            "path": "assets/kitchens-classic/rimi-2b7c3d149adea8db-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 116754
+          }
+        ]
+      }
+    ]
   }
 ]

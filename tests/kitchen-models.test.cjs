@@ -5,8 +5,8 @@ const fs=require('node:fs'),path=require('node:path');
 const root=path.join(__dirname,'..');
 const models=JSON.parse(fs.readFileSync(path.join(root,'KITCHEN-MODELS.json'),'utf8'));
 const catalog=fs.readFileSync(path.join(root,'kitchens.html'),'utf8');
-test('all 26 catalog cards have unique keyboard-native links to their own static details',()=>{
- assert.equal(models.length,26);assert.equal(new Set(models.map(m=>m.slug)).size,26);
+test('all 27 catalog cards have unique keyboard-native links to their own static details',()=>{
+ assert.equal(models.length,27);assert.equal(new Set(models.map(m=>m.slug)).size,27);
  for(const m of models){
   const card=catalog.match(new RegExp('<article class="model-card" id="model-'+m.slug+'"[\\s\\S]*?</article>'))[0];
   assert.ok(card.includes('class="ml-kitchen-link" href="kitchen-'+m.slug+'.html"'));
@@ -22,7 +22,7 @@ test('each model page uses its actual photo, sourced description, all features a
   assert.ok(s.includes(m.description));for(const feature of m.features)assert.ok(s.includes('<li>'+feature+'</li>'));
   assert.equal((s.match(/data-ml-model=/g)||[]).length,4);
   for(const intent of ['cost','project','visit'])assert.ok(s.includes('data-ml-lead="'+intent+'"'));
-  assert.ok(s.includes('kitchens.html#model-'+m.slug));if(m.source_page){assert.match(m.source_page,/rimi-mebel\.ru\/catalog\/sovremennye_kukhni\//);assert.ok(s.includes('data-wd-carousel'));assert.equal((s.match(/class="wd-carousel-slide"/g)||[]).length,m.gallery.length);}else{assert.ok(m.source_pdf_page>0);assert.ok(s.includes('с. '+m.source_printed_pages));}
+  assert.ok(s.includes('kitchens.html#model-'+m.slug));if(m.source_page){assert.match(m.source_page,/rimi-mebel\.ru\/catalog\/(sovremennye_kukhni|klassicheskie_kukhni)\//);assert.ok(s.includes('data-wd-carousel'));assert.equal((s.match(/class="wd-carousel-slide"/g)||[]).length,m.gallery.length);}else{assert.ok(m.source_pdf_page>0);assert.ok(s.includes('с. '+m.source_printed_pages));}
   assert.doesNotMatch(s,/\d[\d ]*\s*[₽]/);
  }
 });
