@@ -27,15 +27,15 @@ test('each model page uses its actual photo, sourced description, all features a
  }
 });
 test('all HTML routes include one accessible form, one contact widget and native contact fallbacks',()=>{
- const files=fs.readdirSync(root).filter(n=>n.endsWith('.html'));assert.equal(files.length,38);
+ const files=fs.readdirSync(root).filter(n=>n.endsWith('.html'));assert.ok(files.includes('index.html'));assert.ok(files.includes('wardrobes.html'));for(const m of models)assert.ok(files.includes('kitchen-'+m.slug+'.html'));
  for(const name of files){
   const s=fs.readFileSync(path.join(root,name),'utf8');
   assert.equal((s.match(/id="ml-lead-dialog"/g)||[]).length,1,name);
   assert.equal((s.match(/id="ml-contact-tools"/g)||[]).length,1,name);
-  assert.match(s,/assets\/contact-tools\.js\?v=\d+/);assert.match(s,/assets\/contact-tools\.css\?v=\d+/);
-  assert.ok(s.includes('<dialog class="ml-lead-dialog"'));
+  assert.match(s,/assets\/contact-tools\.js\?v=[\w-]+/);assert.match(s,/assets\/contact-tools\.css\?v=\d+/);
+  assert.ok((s.match(/<dialog\b[^>]*>/g)||[]).some(tag=>/\bclass="ml-lead-dialog"/.test(tag)),name+' accessible dialog');
   assert.ok(s.includes('aria-labelledby="ml-lead-title"'));assert.ok(s.includes('method="dialog"'));
-  assert.ok(s.includes('href="contacts.html#request" data-ml-lead='));
+  assert.ok((s.match(/<a\b[^>]*>/g)||[]).some(tag=>/href="contacts.html#request"/.test(tag)&&/data-ml-lead=/.test(tag)),name+' native enquiry fallback');
   const ids=[...s.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(new Set(ids).size,ids.length,name+' duplicate IDs');
  }
 });

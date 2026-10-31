@@ -48,7 +48,8 @@ function harness(){
 }
 test('five original photographs, fifteen fixed markers, no editor, valid catalog links',()=>{
  const positions=['55.43,42.06','89.13,41.55','34.2,74.19','49.96,63.84','9.96,34.11','89.29,46.85','54.64,38.13','90.07,32.16','35.94,61.33','27.06,58.88','78.19,21.8','60.9,42.17','68.75,39.18','10.56,56.86','46.9,50.66'];
- assert.deepEqual([...html.matchAll(/class="kg-dot" style="left:([0-9.]+)%;top:([0-9.]+)%"/g)].map(m=>m[1]+','+m[2]),positions);
+ const markerTags=(html.match(/<button\b[^>]*>/g)||[]).filter(tag=>/class="kg-dot"/.test(tag));
+ assert.deepEqual(markerTags.map(tag=>{const style=tag.match(/\bstyle="([^"]*)"/)[1];return style.match(/left:([0-9.]+)%/)[1]+','+style.match(/top:([0-9.]+)%/)[1];}),positions);
  assert.equal((html.match(/class="kg-dot"/g)||[]).length,15);
  for(const slug of ['luna','ferrata','progma','monticelli','lange']){
   assert.match(html,new RegExp(`src="assets/${slug}\\.webp"`));

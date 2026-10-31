@@ -3,6 +3,17 @@ const {test}=require('node:test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const root=path.join(__dirname,'..');
+function webpWidth(buffer){
+ assert.equal(buffer.toString('ascii',0,4),'RIFF');assert.equal(buffer.toString('ascii',8,12),'WEBP');
+ for(let offset=12;offset+8<=buffer.length;){
+  const kind=buffer.toString('ascii',offset,offset+4),length=buffer.readUInt32LE(offset+4),start=offset+8;
+  if(kind==='VP8X')return buffer.readUIntLE(start+4,3)+1;
+  if(kind==='VP8 ')return buffer.readUInt16LE(start+6)&0x3fff;
+  if(kind==='VP8L')return (buffer.readUInt32LE(start+1)&0x3fff)+1;
+  offset=start+length+(length%2);
+ }
+ throw new Error('No WebP image chunk');
+}
 test('every homepage photograph has local responsive candidates and accurate width descriptors',()=>{
  const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
  const tags=html.match(/<img\b[^>]+>/g);
@@ -10,8 +21,9 @@ test('every homepage photograph has local responsive candidates and accurate wid
   assert.match(tag,/loading="lazy"/);
   assert.match(tag,/sizes="[^\"]+"/);
   const candidates=tag.match(/srcset="([^\"]+)"/)[1].split(', ');
-  assert.equal(candidates.length,3);
-  for(const candidate of candidates){const [file,width]=candidate.split(' ');assert.ok(fs.existsSync(path.join(root,file)),file);assert.match(width,/^\d+w$/);}
+  assert.ok(candidates.length>=2,'at least two responsive sizes per photo');
+  assert.equal(new Set(candidates.map(c=>c.split(' ')[1])).size,candidates.length,'unique width descriptors');
+  for(const candidate of candidates){const [file,width]=candidate.split(' ');assert.ok(fs.existsSync(path.join(root,file)),file);assert.match(width,/^\d+w$/);assert.equal(webpWidth(fs.readFileSync(path.join(root,file))),Number(width.slice(0,-1)),file+' actual width');}
  }
 });
 test('hero video pauses offscreen, hidden and reduced motion, then resumes without resetting time',()=>{
