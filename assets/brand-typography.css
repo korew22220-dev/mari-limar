@@ -1,0 +1,14 @@
+/* Approved Jost + reconstructed vector wordmark. All font files are local. */
+@font-face{font-family:Jost;src:url('fonts/jost-400.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:Jost;src:url('fonts/jost-500.ttf') format('truetype');font-style:normal;font-weight:500;font-display:swap}
+body,body *{font-family:Jost,Arial,sans-serif!important}
+body{font-weight:400}
+body :is(button,.ml-button,.menu-btn){font-weight:500}
+html body .brand{display:inline-flex;align-items:center;flex-shrink:0;line-height:1;letter-spacing:0}
+html body .ml-logo{display:block;width:238px;aspect-ratio:656/184;background-color:currentColor;-webkit-mask:url('marli-limart-logo.svg') center/contain no-repeat;mask:url('marli-limart-logo.svg') center/contain no-repeat;flex-shrink:0}
+html body .footer .ml-logo{width:210px}
+html body .ml-drawer__title .ml-logo{width:220px;color:#f3efe8}
+html body .pm-curtain__brand .ml-logo{width:clamp(250px,42vw,580px);color:#f3efe8}
+@media(max-width:1380px){html body .head .nav{display:none}}
+@media(max-width:700px){html body .head .ml-logo{width:190px}html body .footer .ml-logo{width:190px}html body .ml-drawer__title .ml-logo{width:200px}}
+@media(max-width:360px){html body .head .ml-logo{width:164px}}
