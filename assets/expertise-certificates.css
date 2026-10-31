@@ -1,14 +1,7 @@
-/* Original certificate scans remain uncropped and open at full resolution. */
-.ml-expertise-page .ex-certificates{border-top:1px solid var(--ex-line)}
-.ml-expertise-page .ex-certificates-intro{max-width:760px;color:var(--ex-muted);margin-bottom:32px;line-height:1.8}
-.ml-expertise-page .ex-certificates-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px}
-.ml-expertise-page .ex-certificate{min-width:0;display:flex;flex-direction:column;border:1px solid var(--ex-line)}
-.ml-expertise-page .ex-certificate-image{display:flex;align-items:center;justify-content:center;background:#fff;padding:20px;aspect-ratio:1/1.25;overflow:hidden}
+/* Compact certificate photos within the existing service introduction. */
+.ml-expertise-page .ex-certificates{display:grid;grid-template-columns:repeat(2,minmax(0,150px));gap:22px;margin-top:26px;max-width:322px}
+.ml-expertise-page .ex-certificate{margin:0;min-width:0}
+.ml-expertise-page .ex-certificate-image{display:block;aspect-ratio:600/864;background:#fff}
 .ml-expertise-page .ex-certificate-image img{display:block;width:100%;height:100%;object-fit:contain;filter:none}
-.ml-expertise-page .ex-certificate-copy{padding:28px;display:flex;flex-direction:column;align-items:flex-start;flex:1}
-.ml-expertise-page .ex-certificate-number{font-size:11px;letter-spacing:.1em;color:var(--ex-muted)}
-.ml-expertise-page .ex-certificate h3{font-size:clamp(23px,2.1vw,30px);font-weight:400;line-height:1.25;margin:18px 0}
-.ml-expertise-page .ex-certificate p{font-size:14px;line-height:1.8;margin:0 0 20px}
-.ml-expertise-page .ex-certificate .ex-certificate-validity{font-size:13px;color:var(--ex-muted)}
-.ml-expertise-page .ex-certificate .ml-button{margin-top:auto}
-@media(max-width:700px){.ml-expertise-page .ex-certificates-grid{grid-template-columns:1fr;gap:28px}.ml-expertise-page .ex-certificate-copy{padding:24px}.ml-expertise-page .ex-certificate-image{padding:16px}}
+.ml-expertise-page .ex-certificate figcaption{font-size:12px;line-height:1.5;color:var(--ex-muted);margin-top:9px}
+@media(max-width:380px){.ml-expertise-page .ex-certificates{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
