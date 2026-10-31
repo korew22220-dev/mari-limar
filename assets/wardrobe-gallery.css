@@ -24,3 +24,26 @@
 .ml-wardrobes-page .wd-hero h1{margin:0;font-size:clamp(44px,8vw,110px);line-height:1.1}
 .ml-wardrobes-page .wd-intro{padding-top:64px}
 @media(max-width:700px){.ml-wardrobes-page .wd-hero{min-height:400px}.ml-wardrobes-page .wd-hero>img{object-position:43% center}.ml-wardrobes-page .wd-intro{padding-top:40px}.ml-wardrobes-page .wd-model h3{min-height:0}}
+
+/* Catalog cards open local model pages. */
+.ml-wardrobes-page .wd-model-page-link{display:flex;flex-direction:column;height:100%;color:inherit;text-decoration:none}
+.ml-wardrobes-page .wd-model-page-link>img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.ml-wardrobes-page .wd-model-page-link h3{margin:20px 0 12px;min-height:2.5em}
+.ml-wardrobes-page .wd-card-description{color:var(--ab-muted);font-size:15px;line-height:1.7;margin:0 0 18px;min-height:3.4em}
+.ml-wardrobes-page .wd-model-more{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--ab-line);padding:12px 0;font-size:14px;margin-top:auto;min-height:44px}
+.ml-wardrobes-page .wd-model-grid{align-items:stretch}
+.ml-wardrobes-page .wd-model-page-link:focus-visible{outline:2px solid currentColor;outline-offset:6px}
+.ml-wardrobes-page .wd-model-page-link:hover .wd-model-more{text-decoration:underline;text-underline-offset:5px}
+.wd-detail-page .wd-product{padding-top:calc(var(--ml-header-height,90px) + 40px)}
+.wd-back{display:inline-block;color:inherit;margin-bottom:30px;text-decoration:underline;text-underline-offset:5px}
+.wd-product-layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:5vw;align-items:start}
+.wd-product-cover{position:sticky;top:calc(var(--ml-header-height,90px) + 24px);background:var(--ab-soft)}
+.wd-product-cover img{display:block;width:100%;height:auto}
+.ml-wardrobes-page .wd-product-info h1{font-size:clamp(36px,4.5vw,68px);margin:18px 0 24px;letter-spacing:-.035em}
+.wd-product-description{font-size:17px;line-height:1.8;margin:0 0 26px}
+.wd-specs{margin:0 0 24px}.wd-specs>div{display:grid;grid-template-columns:110px 1fr;gap:18px;border-top:1px solid var(--ab-line);padding:14px 0;font-size:14px;line-height:1.65}.wd-specs dt{color:var(--ab-muted)}.wd-specs dd{margin:0}
+.wd-product-note{color:var(--ab-muted);font-size:13px;line-height:1.7;margin-bottom:24px}
+.wd-product-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start}
+.ml-wardrobes-page .wd-product-photos .wd-photo-link img{height:auto;aspect-ratio:auto;object-fit:contain}
+@media(max-width:900px){.wd-product-layout{grid-template-columns:1fr;gap:32px}.wd-product-cover{position:static}.ml-wardrobes-page .wd-product-info h1{font-size:clamp(36px,7vw,60px)}}
+@media(max-width:700px){.ml-wardrobes-page .wd-model-page-link h3{min-height:0}.wd-product-photos{grid-template-columns:1fr;gap:18px}.ml-wardrobes-page .wd-card-description{min-height:0}.wd-specs>div{grid-template-columns:90px 1fr;gap:14px}}
