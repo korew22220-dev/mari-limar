@@ -1,153 +1,982 @@
 {
-  "source_page": "https://rimi-mebel.ru/catalog/garderoby/787/",
-  "model": "Фасад Примавера",
-  "manufacturer": "РИМИ",
-  "usage": "wardrobes.html catalog gallery",
-  "images": [
+  "catalog_url": "https://rimi-mebel.ru/catalog/garderoby/",
+  "models": [
     {
-      "index": 1,
-      "url": "https://rimi-mebel.ru/upload/iblock/284/pfnqxq450t26pd73oum9z74c7lk6p9om.jpg",
-      "size": [
-        1920,
-        960
-      ],
-      "variants": [
+      "id": "1213",
+      "name": "Нео LONG",
+      "source_page": "https://rimi-mebel.ru/catalog/garderoby/1213/",
+      "images": [
         {
-          "path": "assets/wardrobes/rimi-primavera-01-640w.webp",
-          "width": 640,
-          "height": 320,
-          "bytes": 39130
+          "original_url": "https://rimi-mebel.ru/upload/iblock/fcc/jve33bly5lt4u023cgoic2arwdwpq2ug.jpg",
+          "original_size": [
+            1920,
+            960
+          ],
+          "sha256": "392cda74cdc7b0a7e5fbc923f96274ef7d2944e14ba7e073154097897fbacf98",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-392cda74cdc7b0-640w.webp",
+              "width": 640,
+              "height": 320,
+              "bytes": 17466
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-392cda74cdc7b0-1600w.webp",
+              "width": 1600,
+              "height": 800,
+              "bytes": 101160
+            }
+          ]
         },
         {
-          "path": "assets/wardrobes/rimi-primavera-01-1200w.webp",
-          "width": 1200,
-          "height": 600,
-          "bytes": 114058
-        },
-        {
-          "path": "assets/wardrobes/rimi-primavera-01-1920w.webp",
-          "width": 1920,
-          "height": 960,
-          "bytes": 256226
+          "original_url": "https://rimi-mebel.ru/upload/iblock/efc/wydcaueympkv9q4lu7n1w4ara1d3vev5.jpg",
+          "original_size": [
+            1536,
+            1920
+          ],
+          "sha256": "4f8b7c49a01841752e629801f682957ebcc3cb04b21b4283e83ed1fd2d3ce4cd",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-4f8b7c49a01841-640w.webp",
+              "width": 640,
+              "height": 800,
+              "bytes": 14998
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-4f8b7c49a01841-1536w.webp",
+              "width": 1536,
+              "height": 1920,
+              "bytes": 99752
+            }
+          ]
         }
-      ],
-      "caption": "Общий вид гардеробной"
+      ]
     },
     {
-      "index": 2,
-      "url": "https://rimi-mebel.ru/upload/iblock/314/afxwg60e6s40e8vyavqkwe5cvqt5md4g.jpg",
-      "size": [
-        1920,
-        960
-      ],
-      "variants": [
+      "id": "1214",
+      "name": "Система OPEN",
+      "source_page": "https://rimi-mebel.ru/catalog/garderoby/1214/",
+      "images": [
         {
-          "path": "assets/wardrobes/rimi-primavera-02-640w.webp",
-          "width": 640,
-          "height": 320,
-          "bytes": 34708
+          "original_url": "https://rimi-mebel.ru/upload/iblock/a87/xtj6gq9jc14e4tkm5rmp74a1eq99k598.jpg",
+          "original_size": [
+            1920,
+            1477
+          ],
+          "sha256": "4efed65981e42410ebe74661a35b14e42a92a29e296767df768cb1a2e5146593",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-4efed65981e424-640w.webp",
+              "width": 640,
+              "height": 492,
+              "bytes": 27296
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-4efed65981e424-1600w.webp",
+              "width": 1600,
+              "height": 1231,
+              "bytes": 169642
+            }
+          ]
         },
         {
-          "path": "assets/wardrobes/rimi-primavera-02-1200w.webp",
-          "width": 1200,
-          "height": 600,
-          "bytes": 102352
+          "original_url": "https://rimi-mebel.ru/upload/iblock/d4e/duge9ywjry0muo31prv2fklv7e7lo2sl.jpg",
+          "original_size": [
+            1920,
+            1477
+          ],
+          "sha256": "293154c0a348377def56895ced4e584133183bf384189c29d855f8b81b0a9840",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-293154c0a34837-640w.webp",
+              "width": 640,
+              "height": 492,
+              "bytes": 24766
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-293154c0a34837-1600w.webp",
+              "width": 1600,
+              "height": 1231,
+              "bytes": 143546
+            }
+          ]
         },
         {
-          "path": "assets/wardrobes/rimi-primavera-02-1920w.webp",
-          "width": 1920,
-          "height": 960,
-          "bytes": 228578
+          "original_url": "https://rimi-mebel.ru/upload/iblock/489/ux9ymzik6dfgt67464el5960uykd30yg.jpg",
+          "original_size": [
+            1920,
+            1477
+          ],
+          "sha256": "4f488f02b59e6b906fe1d3a644eccb2f854f0c6be5a5d3d2300f59d13af5afb0",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-4f488f02b59e6b-640w.webp",
+              "width": 640,
+              "height": 492,
+              "bytes": 31442
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-4f488f02b59e6b-1600w.webp",
+              "width": 1600,
+              "height": 1231,
+              "bytes": 179516
+            }
+          ]
         }
-      ],
-      "caption": "Открытые секции и подсветка"
+      ]
     },
     {
-      "index": 3,
-      "url": "https://rimi-mebel.ru/upload/iblock/5cc/w74jaugnow4a4oj0cu7ytvekw15lq57y.jpg",
-      "size": [
-        1920,
-        960
-      ],
-      "variants": [
+      "id": "787",
+      "name": "Фасад Примавера",
+      "source_page": "https://rimi-mebel.ru/catalog/garderoby/787/",
+      "images": [
         {
-          "path": "assets/wardrobes/rimi-primavera-03-640w.webp",
-          "width": 640,
-          "height": 320,
-          "bytes": 28490
+          "original_url": "https://rimi-mebel.ru/upload/iblock/284/pfnqxq450t26pd73oum9z74c7lk6p9om.jpg",
+          "original_size": [
+            1920,
+            960
+          ],
+          "sha256": "02919b43f50739dc7a70e28dc3fba52e3ed5d80d26241ac32042ccd17435ca2a",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-primavera-01-640w.webp",
+              "width": 640,
+              "height": 320,
+              "bytes": 39130
+            },
+            {
+              "path": "assets/wardrobes/rimi-primavera-01-1200w.webp",
+              "width": 1200,
+              "height": 600,
+              "bytes": 114058
+            },
+            {
+              "path": "assets/wardrobes/rimi-primavera-01-1920w.webp",
+              "width": 1920,
+              "height": 960,
+              "bytes": 256226
+            }
+          ]
         },
         {
-          "path": "assets/wardrobes/rimi-primavera-03-1200w.webp",
-          "width": 1200,
-          "height": 600,
-          "bytes": 82506
+          "original_url": "https://rimi-mebel.ru/upload/iblock/314/afxwg60e6s40e8vyavqkwe5cvqt5md4g.jpg",
+          "original_size": [
+            1920,
+            960
+          ],
+          "sha256": "bb5816ccfd51a3c2ede650b14343cdd27b9673134029524ec47f41cde78a0cb2",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-primavera-02-640w.webp",
+              "width": 640,
+              "height": 320,
+              "bytes": 34708
+            },
+            {
+              "path": "assets/wardrobes/rimi-primavera-02-1200w.webp",
+              "width": 1200,
+              "height": 600,
+              "bytes": 102352
+            },
+            {
+              "path": "assets/wardrobes/rimi-primavera-02-1920w.webp",
+              "width": 1920,
+              "height": 960,
+              "bytes": 228578
+            }
+          ]
         },
         {
-          "path": "assets/wardrobes/rimi-primavera-03-1920w.webp",
-          "width": 1920,
-          "height": 960,
-          "bytes": 183578
+          "original_url": "https://rimi-mebel.ru/upload/iblock/5cc/w74jaugnow4a4oj0cu7ytvekw15lq57y.jpg",
+          "original_size": [
+            1920,
+            960
+          ],
+          "sha256": "9fef03e22f1717a7bf228972419bbc7d69cb4d992b23d7d6550d431f5dd8f8d3",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-primavera-03-640w.webp",
+              "width": 640,
+              "height": 320,
+              "bytes": 28490
+            },
+            {
+              "path": "assets/wardrobes/rimi-primavera-03-1200w.webp",
+              "width": 1200,
+              "height": 600,
+              "bytes": 82506
+            },
+            {
+              "path": "assets/wardrobes/rimi-primavera-03-1920w.webp",
+              "width": 1920,
+              "height": 960,
+              "bytes": 183578
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/e2a/vrgf81e4n31nlhbv5j8yneva92bpd2ni.jpg",
+          "original_size": [
+            1920,
+            1920
+          ],
+          "sha256": "23a0ed59a5db217e5046eda49933db0a499021a0667b0a05eafc7d75c9c0b348",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-primavera-04-640w.webp",
+              "width": 640,
+              "height": 640,
+              "bytes": 34178
+            },
+            {
+              "path": "assets/wardrobes/rimi-primavera-04-1200w.webp",
+              "width": 1200,
+              "height": 1200,
+              "bytes": 86984
+            },
+            {
+              "path": "assets/wardrobes/rimi-primavera-04-1920w.webp",
+              "width": 1920,
+              "height": 1920,
+              "bytes": 185680
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/f40/sccwga89carq9xo7gny1szkv5gvktmwc.jpg",
+          "original_size": [
+            1920,
+            1920
+          ],
+          "sha256": "3982a17c44abebf0e62cca784504fc618668ac8be180c05d72ba0c787e4239fc",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-primavera-05-640w.webp",
+              "width": 640,
+              "height": 640,
+              "bytes": 54988
+            },
+            {
+              "path": "assets/wardrobes/rimi-primavera-05-1200w.webp",
+              "width": 1200,
+              "height": 1200,
+              "bytes": 156924
+            },
+            {
+              "path": "assets/wardrobes/rimi-primavera-05-1920w.webp",
+              "width": 1920,
+              "height": 1920,
+              "bytes": 316966
+            }
+          ]
         }
-      ],
-      "caption": "Композиция со стеклянными перегородками"
+      ]
     },
     {
-      "index": 4,
-      "url": "https://rimi-mebel.ru/upload/iblock/e2a/vrgf81e4n31nlhbv5j8yneva92bpd2ni.jpg",
-      "size": [
-        1920,
-        1920
-      ],
-      "variants": [
+      "id": "785",
+      "name": "Фасад Канти",
+      "source_page": "https://rimi-mebel.ru/catalog/garderoby/785/",
+      "images": [
         {
-          "path": "assets/wardrobes/rimi-primavera-04-640w.webp",
-          "width": 640,
-          "height": 640,
-          "bytes": 34178
+          "original_url": "https://rimi-mebel.ru/upload/iblock/796/y3c66rxnuup9zadhwlk0yjeqoa0ojvnd.jpg",
+          "original_size": [
+            1920,
+            1127
+          ],
+          "sha256": "517e284e803d28c85d6dc124e56b6993fc8349ba80f73f38dd20a162790d5663",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-517e284e803d28-640w.webp",
+              "width": 640,
+              "height": 376,
+              "bytes": 35426
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-517e284e803d28-1600w.webp",
+              "width": 1600,
+              "height": 939,
+              "bytes": 161668
+            }
+          ]
         },
         {
-          "path": "assets/wardrobes/rimi-primavera-04-1200w.webp",
-          "width": 1200,
-          "height": 1200,
-          "bytes": 86984
-        },
-        {
-          "path": "assets/wardrobes/rimi-primavera-04-1920w.webp",
-          "width": 1920,
-          "height": 1920,
-          "bytes": 185680
+          "original_url": "https://rimi-mebel.ru/upload/iblock/559/queg07czkl8yl2puex0o8u4kf0qiacrq.jpg",
+          "original_size": [
+            1920,
+            1035
+          ],
+          "sha256": "5ac394401201f8aba1740cdc3f75ba8ae00a33143189815d41f4501848017b5a",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-5ac394401201f8-640w.webp",
+              "width": 640,
+              "height": 345,
+              "bytes": 27882
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-5ac394401201f8-1600w.webp",
+              "width": 1600,
+              "height": 862,
+              "bytes": 130180
+            }
+          ]
         }
-      ],
-      "caption": "Фасады и выдвижной ящик"
+      ]
     },
     {
-      "index": 5,
-      "url": "https://rimi-mebel.ru/upload/iblock/f40/sccwga89carq9xo7gny1szkv5gvktmwc.jpg",
-      "size": [
-        1920,
-        1920
-      ],
-      "variants": [
+      "id": "786",
+      "name": "Фасад Прогма",
+      "source_page": "https://rimi-mebel.ru/catalog/garderoby/786/",
+      "images": [
         {
-          "path": "assets/wardrobes/rimi-primavera-05-640w.webp",
-          "width": 640,
-          "height": 640,
-          "bytes": 54988
+          "original_url": "https://rimi-mebel.ru/upload/iblock/dce/nok5b1xbf93n9gtbo5i21qi2gnvz2w7r.jpg",
+          "original_size": [
+            1920,
+            1129
+          ],
+          "sha256": "a33f91088280c403a8cff2c67850cec89d1cfeedb6b5f72166727b1aa190edf0",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-a33f91088280c4-640w.webp",
+              "width": 640,
+              "height": 376,
+              "bytes": 35300
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-a33f91088280c4-1600w.webp",
+              "width": 1600,
+              "height": 941,
+              "bytes": 153760
+            }
+          ]
         },
         {
-          "path": "assets/wardrobes/rimi-primavera-05-1200w.webp",
-          "width": 1200,
-          "height": 1200,
-          "bytes": 156924
+          "original_url": "https://rimi-mebel.ru/upload/iblock/783/hk71q7dk9ntjmwa509mg5okgzl2gl0km.jpg",
+          "original_size": [
+            1536,
+            1920
+          ],
+          "sha256": "8dae14052d1a88a29b7b2aac8640bab5edcdd09f8540bbde148b5666bc84d363",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-8dae14052d1a88-640w.webp",
+              "width": 640,
+              "height": 800,
+              "bytes": 48160
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-8dae14052d1a88-1536w.webp",
+              "width": 1536,
+              "height": 1920,
+              "bytes": 243520
+            }
+          ]
         },
         {
-          "path": "assets/wardrobes/rimi-primavera-05-1920w.webp",
-          "width": 1920,
-          "height": 1920,
-          "bytes": 316966
+          "original_url": "https://rimi-mebel.ru/upload/iblock/06e/kflxainnb48s7s4214qxnk8j56kx1mlv.jpg",
+          "original_size": [
+            1920,
+            1200
+          ],
+          "sha256": "640f5b6899101870d28f33c2bbd981a69b94608e35336a146a722fe4d609fec7",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-640f5b68991018-640w.webp",
+              "width": 640,
+              "height": 400,
+              "bytes": 29050
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-640f5b68991018-1600w.webp",
+              "width": 1600,
+              "height": 1000,
+              "bytes": 137062
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/170/rqv5gsqpt1y04chluomyd29byt24echb.jpg",
+          "original_size": [
+            1920,
+            1200
+          ],
+          "sha256": "1fb1c6e19792c092a8a50e95ff4ab3047bf867bafef2d58e185d9f5f2ae6fe43",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-1fb1c6e19792c0-640w.webp",
+              "width": 640,
+              "height": 400,
+              "bytes": 30002
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-1fb1c6e19792c0-1600w.webp",
+              "width": 1600,
+              "height": 1000,
+              "bytes": 149524
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/4bf/tq1z5kqurs3yz9s05vc8s1j5b51e8ly7.jpg",
+          "original_size": [
+            1536,
+            1920
+          ],
+          "sha256": "8c2d14ac96ecd2be1d8e7367af2975855cea6e4d8aba65cf367db46d258bc749",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-8c2d14ac96ecd2-640w.webp",
+              "width": 640,
+              "height": 800,
+              "bytes": 55758
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-8c2d14ac96ecd2-1536w.webp",
+              "width": 1536,
+              "height": 1920,
+              "bytes": 289254
+            }
+          ]
         }
-      ],
-      "caption": "Внутреннее наполнение"
+      ]
+    },
+    {
+      "id": "788",
+      "name": "Фасад Новара",
+      "source_page": "https://rimi-mebel.ru/catalog/garderoby/788/",
+      "images": [
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/76c/z5s5w0khnfoolbt1sp82kdgfk7lnk3pg.jpg",
+          "original_size": [
+            1920,
+            1011
+          ],
+          "sha256": "8b8ffe00dfdf90568765a4ee98f06146457981b8b4daf62ec72022f6794ccfc6",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-8b8ffe00dfdf90-640w.webp",
+              "width": 640,
+              "height": 337,
+              "bytes": 18140
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-8b8ffe00dfdf90-1600w.webp",
+              "width": 1600,
+              "height": 842,
+              "bytes": 102466
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/2b4/3s38rm2c2sw3o9hkdi0md8ar4i6zuus1.jpg",
+          "original_size": [
+            1345,
+            1920
+          ],
+          "sha256": "b7e3ee982e3e3b74f275ef24f19d768b81aa3986153d52847b755e63d046a380",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-b7e3ee982e3e3b-640w.webp",
+              "width": 640,
+              "height": 914,
+              "bytes": 21646
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-b7e3ee982e3e3b-1345w.webp",
+              "width": 1345,
+              "height": 1920,
+              "bytes": 97066
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/d98/xykocugp1h1ono7pkir3nossl0mslnum.jpg",
+          "original_size": [
+            1345,
+            1920
+          ],
+          "sha256": "86d3ee1742d9f660ec7f8d119820b93998c51ee0c7c2704628561f8e8fb3e151",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-86d3ee1742d9f6-640w.webp",
+              "width": 640,
+              "height": 914,
+              "bytes": 14304
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-86d3ee1742d9f6-1345w.webp",
+              "width": 1345,
+              "height": 1920,
+              "bytes": 54692
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/b4a/awhth0etj7jfltfdmyx1mkhhato2ox23.jpg",
+          "original_size": [
+            1345,
+            1920
+          ],
+          "sha256": "8bf997eef46854e853af85b8a3581dbd7411075df7d4d37db74093010f6ee436",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-8bf997eef46854-640w.webp",
+              "width": 640,
+              "height": 914,
+              "bytes": 28630
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-8bf997eef46854-1345w.webp",
+              "width": 1345,
+              "height": 1920,
+              "bytes": 132394
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/d3f/wmkyf9gy3ufvlku735dnh2ce606f2bui.jpg",
+          "original_size": [
+            1345,
+            1920
+          ],
+          "sha256": "6c213803a1e590c02d1fc4e46b4991ede5b99c05dc063c6c0caba8d1d8469b89",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-6c213803a1e590-640w.webp",
+              "width": 640,
+              "height": 914,
+              "bytes": 26882
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-6c213803a1e590-1345w.webp",
+              "width": 1345,
+              "height": 1920,
+              "bytes": 125316
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/f53/vuv1q5a5gs5yy1098lpcryxuy3dzpvwf.jpg",
+          "original_size": [
+            1345,
+            1920
+          ],
+          "sha256": "fc95ed13517237d58b329297339c07f4e67fafb0da9afa171a0e3c5563298bb9",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-fc95ed13517237-640w.webp",
+              "width": 640,
+              "height": 914,
+              "bytes": 24612
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-fc95ed13517237-1345w.webp",
+              "width": 1345,
+              "height": 1920,
+              "bytes": 99920
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/a48/myab6wd92c7uj5nl39f844azofjk67tm.jpg",
+          "original_size": [
+            1345,
+            1920
+          ],
+          "sha256": "7393026fccaa8d0fc410f1a2bb00269671dfdcb8bd542d2ed64d58954cfdf6be",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-7393026fccaa8d-640w.webp",
+              "width": 640,
+              "height": 914,
+              "bytes": 21806
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-7393026fccaa8d-1345w.webp",
+              "width": 1345,
+              "height": 1920,
+              "bytes": 82102
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/922/g2jexww2yjfekdeuohg8z8ey8zj91874.jpg",
+          "original_size": [
+            1345,
+            1920
+          ],
+          "sha256": "211c893ccb88e932b41ed3986fcca7dcfd10548559b579cb437da05a3be80b2c",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-211c893ccb88e9-640w.webp",
+              "width": 640,
+              "height": 914,
+              "bytes": 22706
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-211c893ccb88e9-1345w.webp",
+              "width": 1345,
+              "height": 1920,
+              "bytes": 102582
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "784",
+      "name": "Фасад Флорида",
+      "source_page": "https://rimi-mebel.ru/catalog/garderoby/784/",
+      "images": [
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/f33/1801jhfvkl0sb24dqfh2m1283y4cmut6.jpg",
+          "original_size": [
+            1920,
+            1372
+          ],
+          "sha256": "a36db6a5bef631662f1c00ad35adce170813a75edaa15a91af2ca261e7e1fce6",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-a36db6a5bef631-640w.webp",
+              "width": 640,
+              "height": 457,
+              "bytes": 24874
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-a36db6a5bef631-1600w.webp",
+              "width": 1600,
+              "height": 1143,
+              "bytes": 137498
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/87d/acx21qfx6swoir2q2h31gs2qili5tlrq.jpg",
+          "original_size": [
+            1920,
+            1372
+          ],
+          "sha256": "5a497a300923ff0934a62313b0fbfdcb5c7da0bb2937c57a19f9e2e8889d16dc",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-5a497a300923ff-640w.webp",
+              "width": 640,
+              "height": 457,
+              "bytes": 28086
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-5a497a300923ff-1600w.webp",
+              "width": 1600,
+              "height": 1143,
+              "bytes": 168372
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/dee/q15skfjyymvo6fzcjrc7frl670tlutmk.jpg",
+          "original_size": [
+            1536,
+            1920
+          ],
+          "sha256": "2d2467b302c0bdfda53a62d0be499dd68e49b49f855189e715035c383cbffb46",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-2d2467b302c0bd-640w.webp",
+              "width": 640,
+              "height": 800,
+              "bytes": 33198
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-2d2467b302c0bd-1536w.webp",
+              "width": 1536,
+              "height": 1920,
+              "bytes": 192796
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/39b/gexz9kz3katwmst3upgof5hxt9xb9mky.jpg",
+          "original_size": [
+            1536,
+            1920
+          ],
+          "sha256": "2cd3674b1460bb63a0bcc72cc8abe4ed680722a757066a128af366c0fb2e3e5d",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-2cd3674b1460bb-640w.webp",
+              "width": 640,
+              "height": 800,
+              "bytes": 34602
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-2cd3674b1460bb-1536w.webp",
+              "width": 1536,
+              "height": 1920,
+              "bytes": 214604
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1207",
+      "name": "Фасад Прогма с ручкой",
+      "source_page": "https://rimi-mebel.ru/catalog/garderoby/1207/",
+      "images": [
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/335/fetok9jgg7oxxil6o9gcq3wvbb24d1xi.jpg",
+          "original_size": [
+            1920,
+            1152
+          ],
+          "sha256": "c69bd36f618d082120e98a115292674618775e340dc89aa98b237648d5e3e17f",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-c69bd36f618d08-640w.webp",
+              "width": 640,
+              "height": 384,
+              "bytes": 23140
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-c69bd36f618d08-1600w.webp",
+              "width": 1600,
+              "height": 960,
+              "bytes": 114794
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/5f3/x620qw7hbz03el3iz1vwpzwcmnmsjb5w.jpg",
+          "original_size": [
+            1600,
+            1920
+          ],
+          "sha256": "101daff9b0f7dde9fcbc98dac72baea48b7adb429f132bf6b6f3a6488ae67114",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-101daff9b0f7dd-640w.webp",
+              "width": 640,
+              "height": 768,
+              "bytes": 31844
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-101daff9b0f7dd-1600w.webp",
+              "width": 1600,
+              "height": 1920,
+              "bytes": 170280
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/c29/no844jlbddo5pcekl480722tvih4r9s7.jpg",
+          "original_size": [
+            1600,
+            1920
+          ],
+          "sha256": "ef06bb52fdcab1c50784ab18f0ec9aaf62a2e2bc31398b83f65754655b4c812e",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-ef06bb52fdcab1-640w.webp",
+              "width": 640,
+              "height": 768,
+              "bytes": 23822
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-ef06bb52fdcab1-1600w.webp",
+              "width": 1600,
+              "height": 1920,
+              "bytes": 107824
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/d07/cu7589fvwpmjwjtvon2kd7k06hm317n9.jpg",
+          "original_size": [
+            1600,
+            1920
+          ],
+          "sha256": "04b4bd97a67d12d17ab5a7fd1c9b72f9bae75c9c752b5da0f2712e6d424f9194",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-04b4bd97a67d12-640w.webp",
+              "width": 640,
+              "height": 768,
+              "bytes": 21294
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-04b4bd97a67d12-1600w.webp",
+              "width": 1600,
+              "height": 1920,
+              "bytes": 73208
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "789",
+      "name": "Барона",
+      "source_page": "https://rimi-mebel.ru/catalog/garderoby/789/",
+      "images": [
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/4ae/cbjboenybbiciebglc89pm795so44z1n.jpg",
+          "original_size": [
+            1920,
+            1477
+          ],
+          "sha256": "313101e21adcec042a60e0117e64394d5c8574efa704c985667684d953cb7c10",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-313101e21adcec-640w.webp",
+              "width": 640,
+              "height": 492,
+              "bytes": 27728
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-313101e21adcec-1600w.webp",
+              "width": 1600,
+              "height": 1231,
+              "bytes": 185142
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/0d4/y9rjy4g770gm7l4dxn1po68086gowsde.jpg",
+          "original_size": [
+            1680,
+            1292
+          ],
+          "sha256": "0d7300308cb29a45a6c9366ab3ffb3f1e5dc8444bc61b74f47240314b1669d2c",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-0d7300308cb29a-640w.webp",
+              "width": 640,
+              "height": 492,
+              "bytes": 16078
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-0d7300308cb29a-1600w.webp",
+              "width": 1600,
+              "height": 1230,
+              "bytes": 85348
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/665/fjuu558tsthhq4p9200u7lvj383hn57n.jpg",
+          "original_size": [
+            1680,
+            1680
+          ],
+          "sha256": "5c7383ab6f6131bea7c7c54ad5c2596cf4af3b83d28315197b2b439fd8e73570",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-5c7383ab6f6131-640w.webp",
+              "width": 640,
+              "height": 640,
+              "bytes": 7392
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-5c7383ab6f6131-1600w.webp",
+              "width": 1600,
+              "height": 1600,
+              "bytes": 55148
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/f6f/onv85n1kfpaj39zv32fgpszumq6e08ly.jpg",
+          "original_size": [
+            1680,
+            2400
+          ],
+          "sha256": "192852ecb3e37d83e5d97c0be9f6bf8dde6e8446e07f7e20767456801a39ad04",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-192852ecb3e37d-640w.webp",
+              "width": 640,
+              "height": 914,
+              "bytes": 41310
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-192852ecb3e37d-1600w.webp",
+              "width": 1600,
+              "height": 2286,
+              "bytes": 234634
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/909/heo7efv3gq8lmdeix007lqp7sl9dnmfm.jpg",
+          "original_size": [
+            1680,
+            1292
+          ],
+          "sha256": "94af4902f09a790d9d53329eb4035b18dca1342f44d88d2e42d9744b2cb16f57",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-94af4902f09a79-640w.webp",
+              "width": 640,
+              "height": 492,
+              "bytes": 16078
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-94af4902f09a79-1600w.webp",
+              "width": 1600,
+              "height": 1230,
+              "bytes": 85348
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "791",
+      "name": "Ланже",
+      "source_page": "https://rimi-mebel.ru/catalog/garderoby/791/",
+      "images": [
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/0b8/3zv3h1bmzs6rbco1ow2dpavv4sl0a1bp.jpg",
+          "original_size": [
+            1920,
+            1477
+          ],
+          "sha256": "e9d68256ae15208ba68a2f1d55cd741c58516c6465fb8106c06b3c4c8c110251",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-e9d68256ae1520-640w.webp",
+              "width": 640,
+              "height": 492,
+              "bytes": 24538
+            },
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-e9d68256ae1520-1600w.webp",
+              "width": 1600,
+              "height": 1231,
+              "bytes": 183800
+            }
+          ]
+        },
+        {
+          "original_url": "https://rimi-mebel.ru/upload/iblock/817/t9vircfu3qvyhbofpebyc18tcb7rxtsv.jpg",
+          "original_size": [
+            523,
+            635
+          ],
+          "sha256": "e577036bfea11f32071327825a3ef8d4a3e02e29ce7a4aa49b5323d8a4977775",
+          "variants": [
+            {
+              "path": "assets/wardrobes/rimi-wardrobe-e577036bfea11f-523w.webp",
+              "width": 523,
+              "height": 635,
+              "bytes": 20864
+            }
+          ]
+        }
+      ]
     }
-  ]
+  ],
+  "unique_photos": 40,
+  "model_count": 10,
+  "total_model_photos": 40
 }
