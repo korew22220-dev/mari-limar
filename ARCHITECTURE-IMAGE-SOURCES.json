@@ -37,7 +37,8 @@
       }
     ],
     "license": "https://www.pexels.com/license/",
-    "usage": "Visual reference only; not a MARI LIMAR project"
+    "usage": "Visual reference only; not a MARI LIMAR project",
+    "hero_status": "Replaced by customer-interior-hero-20261031; retained as historical source record."
   },
   {
     "slug": "living",
@@ -132,5 +133,43 @@
         "bytes": 339114
       }
     ]
+  },
+  {
+    "slug": "customer-interior-hero-20261031",
+    "type": "customer-supplied visualization",
+    "usage": "architecture-design.html hero",
+    "uploaded_filename": "Gemini_Generated_Image_khvt94khvt94khvt.jpeg",
+    "original_size": [
+      2048,
+      1472
+    ],
+    "alt": "Визуализация современного интерьера: графитовая кухня, открытые стеллажи, обеденная зона и лестница",
+    "variants": [
+      {
+        "path": "assets/architecture-interior-hero-20261031-480w.webp",
+        "width": 480,
+        "height": 345,
+        "bytes": 22596
+      },
+      {
+        "path": "assets/architecture-interior-hero-20261031-800w.webp",
+        "width": 800,
+        "height": 575,
+        "bytes": 49738
+      },
+      {
+        "path": "assets/architecture-interior-hero-20261031-1200w.webp",
+        "width": 1200,
+        "height": 862,
+        "bytes": 91140
+      },
+      {
+        "path": "assets/architecture-interior-hero-20261031-1600w.webp",
+        "width": 1600,
+        "height": 1150,
+        "bytes": 151354
+      }
+    ],
+    "note": "Provided by user for the hero. Not labelled as a completed studio project."
   }
 ]
