@@ -1,7 +1,7 @@
 /* Homepage spacing: keep the established visual language with less empty area. */
 /* A readable offer and one primary action over every video frame. */
 .ml-home .hero-inner{bottom:14%;max-width:1050px}
-.ml-home .hero:after{background:linear-gradient(90deg,rgba(16,13,11,.64),rgba(16,13,11,.28) 68%,rgba(16,13,11,.12))}
+.ml-home .hero:after{content:none;display:none;background:none}
 .ml-home .hero h1.ml-home-title{font-family:Manrope,Arial,sans-serif;font-size:clamp(42px,5.8vw,80px);font-weight:400;line-height:1.08;letter-spacing:-.035em;margin:0 0 28px;max-width:100%;text-wrap:balance}
 .ml-home .ml-home-title em{font-family:Italiana,Georgia,serif;font-weight:400;font-style:normal;letter-spacing:-.025em}
 .ml-home .hero-bottom{display:block}
