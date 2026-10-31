@@ -4,11 +4,11 @@
 .ml-architecture-page .arch-section{padding-block:72px}
 .ml-architecture-page main p{font-size:15px;font-weight:300;line-height:1.85}
 .ml-architecture-page .display{font-size:clamp(38px,4.6vw,68px);line-height:1.08;letter-spacing:-.045em;margin:24px 0}
-.ml-architecture-page .arch-hero{height:82svh;min-height:680px;max-height:900px;background:var(--dark,#1b1816)}
-.ml-architecture-page .arch-hero-visual{position:absolute;inset:0 0 0 auto;width:48%;overflow:hidden}
-.ml-architecture-page .arch-hero-visual img{width:100%;height:100%;object-fit:cover;object-position:50% 35%;filter:none}
-.ml-architecture-page .arch-hero::after{pointer-events:none;background:linear-gradient(180deg,#000a,transparent 28%),linear-gradient(90deg,#1b1816 45%,#1b181600 62%)}
-.ml-architecture-page .arch-hero .hero-content{left:7%;right:auto;width:43%;bottom:12%}
+.ml-architecture-page .arch-hero{height:100svh;min-height:0;max-height:none;background:var(--dark,#1b1816)}
+.ml-architecture-page .arch-hero-visual{position:absolute;inset:0;width:100%;overflow:hidden}
+.ml-architecture-page .arch-hero-visual img{width:100%;height:100%;object-fit:cover;object-position:center;filter:none}
+.ml-architecture-page .arch-hero::after{content:none;display:none}
+.ml-architecture-page .arch-hero .hero-content{left:7%;right:auto;width:min(760px,86%);bottom:12%;text-shadow:0 2px 14px #0009}
 .ml-architecture-page .arch-hero h1{font:400 clamp(54px,5.8vw,94px)/1.04 Italiana,Georgia,serif;letter-spacing:-.035em;margin:30px 0}
 .ml-architecture-page .arch-hero .eyebrow{font-size:10px;line-height:1.8;letter-spacing:.17em;max-width:460px}
 .ml-architecture-page .arch-hero .hero-row{display:block}
@@ -60,11 +60,11 @@
 .ml-architecture-page .arch-contact .cta-actions{display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:16px}
 .ml-architecture-page footer{padding:40px 7% 110px;gap:24px}
 .ml-architecture-page :is(.arch-secondary-link,.arch-photo-credits summary,.arch-photo-credits a):focus-visible{outline:2px solid #b29874;outline-offset:4px}
-html[data-ml-theme=dark] .ml-architecture-page .arch-hero::after{background:linear-gradient(180deg,#000a,transparent 28%),linear-gradient(90deg,#030303 45%,#03030300 62%)}
+
 @media(max-width:1050px) and (min-width:701px){
- .ml-architecture-page .arch-hero{min-height:660px;max-height:760px}
+ .ml-architecture-page .arch-hero{height:100svh;min-height:0;max-height:none}
  .ml-architecture-page .arch-hero h1{font-size:clamp(45px,6.5vw,66px)}
- .ml-architecture-page .arch-hero .hero-content{width:44%}
+ .ml-architecture-page .arch-hero .hero-content{width:min(680px,86%)}
  .ml-architecture-page .arch-hero .hero-row p{font-size:14px}
  .ml-architecture-page .arch-hero-actions{gap:8px 16px}
  .ml-architecture-page .arch-intro{gap:6%}
@@ -73,10 +73,10 @@ html[data-ml-theme=dark] .ml-architecture-page .arch-hero::after{background:line
  .ml-architecture-page .arch-section,.ml-architecture-page .arch-section-inner{width:88%}
  .ml-architecture-page .arch-section{padding-block:44px}
  .ml-architecture-page main p{font-size:14px}
- .ml-architecture-page .arch-hero{min-height:620px;height:82svh;max-height:760px}
+ .ml-architecture-page .arch-hero{min-height:0;height:100svh;max-height:none}
  .ml-architecture-page .arch-hero-visual{width:100%;inset:0}
- .ml-architecture-page .arch-hero-visual img{object-position:50% 35%}
- .ml-architecture-page .arch-hero::after,html[data-ml-theme=dark] .ml-architecture-page .arch-hero::after{background:linear-gradient(180deg,#000b,transparent 30%),linear-gradient(0deg,#000d 4%,#0005 70%,#0001)}
+ .ml-architecture-page .arch-hero-visual img{object-position:center}
+
  .ml-architecture-page .arch-hero .hero-content{width:88%;left:6%;right:6%;bottom:11%}
  .ml-architecture-page .arch-hero h1{font-size:clamp(45px,11.5vw,70px);margin:24px 0;line-height:1.08}
  .ml-architecture-page .arch-hero .hero-row p{font-size:14px;max-width:440px}
@@ -118,3 +118,5 @@ html[data-ml-theme=dark] .ml-architecture-page .arch-hero::after{background:line
  .ml-architecture-page footer .brand{max-width:100%}
 }
 @media(prefers-reduced-motion:reduce){.ml-architecture-page main{scroll-behavior:auto}}
+
+@media(max-height:620px) and (min-width:701px){.ml-architecture-page .arch-hero .hero-content{bottom:8%}.ml-architecture-page .arch-hero h1{font-size:48px;margin:16px 0}.ml-architecture-page .arch-hero .hero-row p{font-size:14px;line-height:1.5}.ml-architecture-page .arch-hero-actions{margin-top:18px}}
