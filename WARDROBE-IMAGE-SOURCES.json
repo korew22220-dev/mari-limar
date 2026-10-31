@@ -1,0 +1,153 @@
+{
+  "source_page": "https://rimi-mebel.ru/catalog/garderoby/787/",
+  "model": "Фасад Примавера",
+  "manufacturer": "РИМИ",
+  "usage": "wardrobes.html catalog gallery",
+  "images": [
+    {
+      "index": 1,
+      "url": "https://rimi-mebel.ru/upload/iblock/284/pfnqxq450t26pd73oum9z74c7lk6p9om.jpg",
+      "size": [
+        1920,
+        960
+      ],
+      "variants": [
+        {
+          "path": "assets/wardrobes/rimi-primavera-01-640w.webp",
+          "width": 640,
+          "height": 320,
+          "bytes": 39130
+        },
+        {
+          "path": "assets/wardrobes/rimi-primavera-01-1200w.webp",
+          "width": 1200,
+          "height": 600,
+          "bytes": 114058
+        },
+        {
+          "path": "assets/wardrobes/rimi-primavera-01-1920w.webp",
+          "width": 1920,
+          "height": 960,
+          "bytes": 256226
+        }
+      ],
+      "caption": "Общий вид гардеробной"
+    },
+    {
+      "index": 2,
+      "url": "https://rimi-mebel.ru/upload/iblock/314/afxwg60e6s40e8vyavqkwe5cvqt5md4g.jpg",
+      "size": [
+        1920,
+        960
+      ],
+      "variants": [
+        {
+          "path": "assets/wardrobes/rimi-primavera-02-640w.webp",
+          "width": 640,
+          "height": 320,
+          "bytes": 34708
+        },
+        {
+          "path": "assets/wardrobes/rimi-primavera-02-1200w.webp",
+          "width": 1200,
+          "height": 600,
+          "bytes": 102352
+        },
+        {
+          "path": "assets/wardrobes/rimi-primavera-02-1920w.webp",
+          "width": 1920,
+          "height": 960,
+          "bytes": 228578
+        }
+      ],
+      "caption": "Открытые секции и подсветка"
+    },
+    {
+      "index": 3,
+      "url": "https://rimi-mebel.ru/upload/iblock/5cc/w74jaugnow4a4oj0cu7ytvekw15lq57y.jpg",
+      "size": [
+        1920,
+        960
+      ],
+      "variants": [
+        {
+          "path": "assets/wardrobes/rimi-primavera-03-640w.webp",
+          "width": 640,
+          "height": 320,
+          "bytes": 28490
+        },
+        {
+          "path": "assets/wardrobes/rimi-primavera-03-1200w.webp",
+          "width": 1200,
+          "height": 600,
+          "bytes": 82506
+        },
+        {
+          "path": "assets/wardrobes/rimi-primavera-03-1920w.webp",
+          "width": 1920,
+          "height": 960,
+          "bytes": 183578
+        }
+      ],
+      "caption": "Композиция со стеклянными перегородками"
+    },
+    {
+      "index": 4,
+      "url": "https://rimi-mebel.ru/upload/iblock/e2a/vrgf81e4n31nlhbv5j8yneva92bpd2ni.jpg",
+      "size": [
+        1920,
+        1920
+      ],
+      "variants": [
+        {
+          "path": "assets/wardrobes/rimi-primavera-04-640w.webp",
+          "width": 640,
+          "height": 640,
+          "bytes": 34178
+        },
+        {
+          "path": "assets/wardrobes/rimi-primavera-04-1200w.webp",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 86984
+        },
+        {
+          "path": "assets/wardrobes/rimi-primavera-04-1920w.webp",
+          "width": 1920,
+          "height": 1920,
+          "bytes": 185680
+        }
+      ],
+      "caption": "Фасады и выдвижной ящик"
+    },
+    {
+      "index": 5,
+      "url": "https://rimi-mebel.ru/upload/iblock/f40/sccwga89carq9xo7gny1szkv5gvktmwc.jpg",
+      "size": [
+        1920,
+        1920
+      ],
+      "variants": [
+        {
+          "path": "assets/wardrobes/rimi-primavera-05-640w.webp",
+          "width": 640,
+          "height": 640,
+          "bytes": 54988
+        },
+        {
+          "path": "assets/wardrobes/rimi-primavera-05-1200w.webp",
+          "width": 1200,
+          "height": 1200,
+          "bytes": 156924
+        },
+        {
+          "path": "assets/wardrobes/rimi-primavera-05-1920w.webp",
+          "width": 1920,
+          "height": 1920,
+          "bytes": 316966
+        }
+      ],
+      "caption": "Внутреннее наполнение"
+    }
+  ]
+}

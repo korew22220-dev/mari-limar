@@ -1,0 +1,11 @@
+/* Catalog imagery: preserve full compositions and distinguish it from studio projects. */
+.ml-wardrobes-page .wd-gallery-note{max-width:740px;color:var(--ab-muted);margin-bottom:30px}
+.ml-wardrobes-page .wd-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px}
+.ml-wardrobes-page .wd-photo{margin:0;min-width:0}
+.ml-wardrobes-page .wd-photo-wide{grid-column:1/-1}
+.ml-wardrobes-page .wd-photo-link{display:block;background:var(--ab-soft);cursor:zoom-in}
+.ml-wardrobes-page .wd-photo img{display:block;width:100%;height:auto;object-fit:contain}
+.ml-wardrobes-page .wd-photo figcaption{font-size:12px;line-height:1.6;color:var(--ab-muted);margin-top:10px}
+.ml-wardrobes-page .wd-gallery-source{font-size:12px;margin:28px 0 0;color:var(--ab-muted)}
+.ml-wardrobes-page .wd-gallery-source a{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:700px){.ml-wardrobes-page .wd-photo-grid{grid-template-columns:1fr;gap:24px}}
