@@ -47,3 +47,23 @@
 .ml-wardrobes-page .wd-product-photos .wd-photo-link img{height:auto;aspect-ratio:auto;object-fit:contain}
 @media(max-width:900px){.wd-product-layout{grid-template-columns:1fr;gap:32px}.wd-product-cover{position:static}.ml-wardrobes-page .wd-product-info h1{font-size:clamp(36px,7vw,60px)}}
 @media(max-width:700px){.ml-wardrobes-page .wd-model-page-link h3{min-height:0}.wd-product-photos{grid-template-columns:1fr;gap:18px}.ml-wardrobes-page .wd-card-description{min-height:0}.wd-specs>div{grid-template-columns:90px 1fr;gap:14px}}
+
+/* The complete model gallery sits beside its description. */
+.wd-carousel{min-width:0;background:transparent}
+.wd-product-layout>*{min-width:0}
+.wd-carousel-track{display:flex;width:100%;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:thin;background:var(--ab-soft);border-radius:0}
+.wd-carousel-slide{flex:0 0 100%;min-width:0;scroll-snap-align:start;scroll-snap-stop:always}
+.wd-carousel-slide .wd-photo-link{width:100%;aspect-ratio:4/3;height:min(65svh,560px);display:flex;align-items:center;justify-content:center}
+.ml-wardrobes-page .wd-carousel-slide .wd-photo-link img{width:100%;height:100%;aspect-ratio:auto;object-fit:contain}
+.wd-carousel-controls{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:12px}
+.wd-carousel-controls button{display:grid;place-items:center;width:48px;height:44px;border:1px solid var(--ab-line);background:transparent;color:inherit;font:inherit;font-size:22px;cursor:pointer}
+.wd-carousel-counter{font-size:13px;font-variant-numeric:tabular-nums;color:var(--ab-muted)}
+.wd-carousel-thumbs{position:relative;display:flex;gap:10px;overflow-x:auto;scrollbar-width:thin;padding:4px 2px 8px;margin-top:12px;overscroll-behavior-x:contain}
+.wd-carousel-thumb{flex:0 0 76px;box-sizing:border-box;width:76px;height:60px;padding:2px;border:1px solid transparent;background:var(--ab-soft);cursor:pointer;opacity:.55}
+.wd-product-cover .wd-carousel-thumb img{display:block;width:100%;height:100%;object-fit:cover}
+.wd-carousel-thumb[aria-current="true"]{border-color:currentColor;opacity:1}
+.wd-carousel-thumb:hover{opacity:1}
+.wd-carousel button:focus-visible,.wd-carousel-track:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+.wd-carousel-controls[hidden],.wd-carousel-thumbs[hidden]{display:none}
+@media(max-width:900px){.wd-carousel-slide .wd-photo-link{height:min(60svh,520px)}}
+@media(max-width:700px){.wd-carousel-slide .wd-photo-link{height:auto;aspect-ratio:4/3}.wd-carousel-thumb{flex-basis:68px;width:68px;height:54px}}
