@@ -22,7 +22,7 @@ test('each model page uses its actual photo, sourced description, all features a
   assert.ok(s.includes(m.description));for(const feature of m.features)assert.ok(s.includes('<li>'+feature+'</li>'));
   assert.equal((s.match(/data-ml-model=/g)||[]).length,4);
   for(const intent of ['cost','project','visit'])assert.ok(s.includes('data-ml-lead="'+intent+'"'));
-  assert.ok(s.includes('kitchens.html#model-'+m.slug));assert.ok(m.source_pdf_page>0);assert.ok(s.includes('с. '+m.source_printed_pages));
+  assert.ok(s.includes('kitchens.html#model-'+m.slug));if(m.source_page){assert.match(m.source_page,/rimi-mebel\.ru\/catalog\/sovremennye_kukhni\//);assert.ok(s.includes('data-wd-carousel'));assert.equal((s.match(/class="wd-carousel-slide"/g)||[]).length,m.gallery.length);}else{assert.ok(m.source_pdf_page>0);assert.ok(s.includes('с. '+m.source_printed_pages));}
   assert.doesNotMatch(s,/\d[\d ]*\s*[₽]/);
  }
 });

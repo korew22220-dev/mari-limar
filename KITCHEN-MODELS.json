@@ -4,438 +4,4178 @@
     "name": "Луна",
     "collection": "modern",
     "subtitle": "Контурный свет и гладкие фасады",
-    "description": "В модели «Луна» профиль со встроенной подсветкой становится частью композиции кухни. Свет подчёркивает контуры, а гладкие фасады и открывание без накладных ручек сохраняют чистую геометрию.",
+    "description": "В коллекции «Луна» свет встроен в профиль и подчёркивает контуры кухни. Гладкие фасады открываются с помощью профильной ручки, отделка которой согласована со световым профилем. Композиция сохраняет чистые линии без выступающих ручек.",
     "features": [
-      "Профиль со встроенным световым потоком",
-      "Гладкие фасады",
-      "Открывание без накладных ручек"
+      "Профиль со встроенным светом",
+      "Гладкая поверхность фасадов",
+      "Профильная ручка без выступающих деталей"
     ],
     "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
     "source_pdf_page": 2,
     "source_printed_pages": "4–5",
     "image": {
       "alt": "Кухня РИМИ Луна",
-      "loading": "lazy",
-      "src": "assets/luna.webp",
-      "width": "1492",
-      "height": "842",
-      "decoding": "async"
-    }
+      "src": "assets/kitchens-modern/rimi-36caebb12acac35c-1600w.webp",
+      "srcset": "assets/kitchens-modern/rimi-36caebb12acac35c-560w.webp 560w, assets/kitchens-modern/rimi-36caebb12acac35c-1600w.webp 1600w",
+      "width": "1600",
+      "height": "928",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/sovremennye_kukhni/1510/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-modern/rimi-36caebb12acac35c-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-36caebb12acac35c-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 23318
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-36caebb12acac35c-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 157462
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-b545efa6f05013e4-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-b545efa6f05013e4-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 26778
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-b545efa6f05013e4-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 163366
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-ee2c669dffdb80ab-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-ee2c669dffdb80ab-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 15568
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-ee2c669dffdb80ab-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 75800
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-ecc7a69ebfb4b787-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-ecc7a69ebfb4b787-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 39870
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-ecc7a69ebfb4b787-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 304182
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-5d40805cd6731128-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-5d40805cd6731128-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 6544
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-5d40805cd6731128-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 31150
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-e20ee28814f9e548-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-e20ee28814f9e548-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 25984
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-e20ee28814f9e548-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 185336
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-2de7976fadfe7594-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-2de7976fadfe7594-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 19362
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-2de7976fadfe7594-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 138532
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-0f6c2322bc2f8fb0-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-0f6c2322bc2f8fb0-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 28410
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-0f6c2322bc2f8fb0-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 151894
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-dee3590d6bf9c8d5-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-dee3590d6bf9c8d5-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 26156
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-dee3590d6bf9c8d5-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 195334
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "ferrata",
     "name": "Феррата",
     "collection": "modern",
-    "subtitle": "Графика чёрного и золотого",
-    "description": "В «Феррате» золотистый профиль GOLA сочетается с чёрными открытыми элементами. Профиль и цоколь создают акценты, а открытые секции дополняют закрытое хранение. В каталоге модель представлена в сочетаниях разных отделок и фактур.",
+    "subtitle": "Золотистый профиль и открытые секции",
+    "description": "В «Феррате» золотистые профиль GOLA и цоколь сочетаются с чёрными открытыми элементами. Контраст деталей подчёркивает геометрию кухни, а открытые секции дополняют закрытые шкафы. Разные материалы и фактуры позволяют менять характер композиции.",
     "features": [
-      "Интегрированная система GOLA",
+      "Интегрированная ручка GOLA",
       "Золотистые профиль и цоколь",
-      "Чёрные открытые элементы"
+      "Чёрные открытые элементы хранения"
     ],
     "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
     "source_pdf_page": 7,
     "source_printed_pages": "14–15",
     "image": {
       "alt": "Кухня РИМИ Феррата",
-      "loading": "lazy",
-      "src": "assets/ferrata.webp",
-      "width": "1492",
-      "height": "842",
-      "decoding": "async"
-    }
+      "src": "assets/kitchens-modern/rimi-153a5498a4204a16-1600w.webp",
+      "srcset": "assets/kitchens-modern/rimi-153a5498a4204a16-560w.webp 560w, assets/kitchens-modern/rimi-153a5498a4204a16-1600w.webp 1600w",
+      "width": "1600",
+      "height": "928",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/sovremennye_kukhni/748/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-modern/rimi-153a5498a4204a16-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-153a5498a4204a16-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 27502
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-153a5498a4204a16-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 199082
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-038e3dc4e155f031-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-038e3dc4e155f031-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 27216
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-038e3dc4e155f031-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 198244
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-b0c0d0ff9e2d7b49-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-b0c0d0ff9e2d7b49-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 26142
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-b0c0d0ff9e2d7b49-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 169552
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-b1f6f3fd9c5dbc9a-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-b1f6f3fd9c5dbc9a-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 27770
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-b1f6f3fd9c5dbc9a-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 215714
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-600ad802b7d47a3a-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-600ad802b7d47a3a-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 18826
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-600ad802b7d47a3a-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 150912
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-05c4428a0db37a83-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-05c4428a0db37a83-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 31556
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-05c4428a0db37a83-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 208764
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-9bd2548d2d160c23-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-9bd2548d2d160c23-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 49224
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-9bd2548d2d160c23-1600w.webp",
+            "width": 1600,
+            "height": 1800,
+            "bytes": 377506
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-7c51d61d378051f5-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-7c51d61d378051f5-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 36664
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-7c51d61d378051f5-1600w.webp",
+            "width": 1600,
+            "height": 1800,
+            "bytes": 357842
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-9a8631ccb772f6ae-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-9a8631ccb772f6ae-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 31204
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-9a8631ccb772f6ae-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 243782
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-4179ad550c6df2a6-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-4179ad550c6df2a6-560w.webp",
+            "width": 560,
+            "height": 631,
+            "bytes": 46272
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-4179ad550c6df2a6-1600w.webp",
+            "width": 1600,
+            "height": 1802,
+            "bytes": 391132
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-16b8fcd8485942e9-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-16b8fcd8485942e9-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 27722
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-16b8fcd8485942e9-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 182386
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "progma",
     "name": "Прогма",
     "collection": "modern",
-    "subtitle": "Ровные фасады и древесные декоры",
-    "description": "«Прогма» строится на простых линиях и ровных фасадах. В каталоге для модели предложены эмалевые отделки в сочетании с древесными декорами: их можно использовать для спокойной композиции или выразительного контраста.",
+    "subtitle": "Современная коллекция с итальянским участием",
+    "description": "«Прогма» — современная коллекция, созданная в сотрудничестве с итальянскими мастерами. В описании производителя акцент сделан на материалах, комплектующих и сочетании функциональности с индивидуальным оформлением кухни. Планировку и отделку подбираем под ваш интерьер.",
     "features": [
-      "Ровные фасады",
-      "Эмалевые отделки",
-      "Сочетания с древесными декорами"
+      "Современное направление дизайна",
+      "Разработка с участием итальянских мастеров",
+      "Индивидуальный подбор композиции"
     ],
     "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
     "source_pdf_page": 15,
     "source_printed_pages": "30–31",
     "image": {
       "alt": "Кухня РИМИ Прогма",
-      "loading": "lazy",
-      "src": "assets/progma.webp",
-      "width": "1492",
-      "height": "842",
-      "decoding": "async"
-    }
-  },
-  {
-    "slug": "konkretta",
-    "name": "Конкретта",
-    "collection": "modern",
-    "subtitle": "Геометрия и встроенная ручка",
-    "description": "Особенность «Конкретты» — ручка, встроенная в створку с рамочным фасадом. Древесные элементы объединяют витрины, открытое хранение системы TOUCH и столешницу в цельную композицию.",
-    "features": [
-      "Рамочный фасад со встроенной ручкой",
-      "Открытое хранение TOUCH",
-      "Древесные элементы в композиции"
-    ],
-    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
-    "source_pdf_page": 21,
-    "source_printed_pages": "42–43",
-    "image": {
-      "alt": "Кухня РИМИ Конкретта",
-      "loading": "lazy",
-      "src": "assets/konkretta.webp",
-      "width": "1492",
-      "height": "842",
-      "decoding": "async"
-    }
-  },
-  {
-    "slug": "esenta",
-    "name": "Эсента",
-    "collection": "modern",
-    "subtitle": "Стекло и акцентные ниши",
-    "description": "В «Эсенте» остеклённые фасады в алюминиевом профиле сочетаются с акцентными нишами. Подсветка выделяет глубину витрин и открытых секций. В каталоге показаны разные цветовые решения модели.",
-    "features": [
-      "Остеклённые фасады в алюминиевом профиле",
-      "Акцентные ниши",
-      "Подсветка витрин и открытых секций"
-    ],
-    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
-    "source_pdf_page": 27,
-    "source_printed_pages": "54–55",
-    "image": {
-      "alt": "Кухня РИМИ Эсента",
-      "loading": "lazy",
-      "src": "assets/esenta.webp",
-      "width": "1492",
-      "height": "842",
-      "decoding": "async"
-    }
-  },
-  {
-    "slug": "novara",
-    "name": "Новара",
-    "collection": "modern",
-    "subtitle": "Простые линии и глубина цвета",
-    "description": "«Новара» сочетает простые формы с интегрированной ручкой. Сочетание эмали и стекла придаёт фасадам глубину цвета, а отсутствие выступающей фурнитуры поддерживает лаконичный облик кухни.",
-    "features": [
-      "Интегрированная ручка",
-      "Сочетание эмали и стекла",
-      "Лаконичная геометрия"
-    ],
-    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
-    "source_pdf_page": 40,
-    "source_printed_pages": "80–81",
-    "image": {
-      "alt": "Кухня РИМИ Новара",
-      "loading": "lazy",
-      "src": "assets/novara.webp",
-      "width": "1492",
-      "height": "842",
-      "decoding": "async"
-    }
+      "src": "assets/kitchens-modern/rimi-b141989f5db4f479-1600w.webp",
+      "srcset": "assets/kitchens-modern/rimi-b141989f5db4f479-560w.webp 560w, assets/kitchens-modern/rimi-b141989f5db4f479-1600w.webp 1600w",
+      "width": "1600",
+      "height": "1001",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/sovremennye_kukhni/756/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-modern/rimi-b141989f5db4f479-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-b141989f5db4f479-560w.webp",
+            "width": 560,
+            "height": 350,
+            "bytes": 27444
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-b141989f5db4f479-1600w.webp",
+            "width": 1600,
+            "height": 1001,
+            "bytes": 201300
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-d518fb3cfe649d8a-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-d518fb3cfe649d8a-560w.webp",
+            "width": 560,
+            "height": 350,
+            "bytes": 26512
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-d518fb3cfe649d8a-1600w.webp",
+            "width": 1600,
+            "height": 1001,
+            "bytes": 175044
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-ea06270fd89b39ec-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-ea06270fd89b39ec-560w.webp",
+            "width": 560,
+            "height": 400,
+            "bytes": 27646
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-ea06270fd89b39ec-1600w.webp",
+            "width": 1600,
+            "height": 1143,
+            "bytes": 187854
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-1adb01f682b5aa1a-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-1adb01f682b5aa1a-560w.webp",
+            "width": 560,
+            "height": 560,
+            "bytes": 37970
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-1adb01f682b5aa1a-1600w.webp",
+            "width": 1600,
+            "height": 1600,
+            "bytes": 297216
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-699a03e749943607-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-699a03e749943607-560w.webp",
+            "width": 560,
+            "height": 700,
+            "bytes": 36136
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-699a03e749943607-1600w.webp",
+            "width": 1600,
+            "height": 2000,
+            "bytes": 221552
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-1a4f1710038f7dcc-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-1a4f1710038f7dcc-560w.webp",
+            "width": 560,
+            "height": 560,
+            "bytes": 32080
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-1a4f1710038f7dcc-1600w.webp",
+            "width": 1600,
+            "height": 1600,
+            "bytes": 203472
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-d73840be643a2e74-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-d73840be643a2e74-560w.webp",
+            "width": 560,
+            "height": 700,
+            "bytes": 40028
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-d73840be643a2e74-1600w.webp",
+            "width": 1600,
+            "height": 2000,
+            "bytes": 329564
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-bff9e5f8c40318c8-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-bff9e5f8c40318c8-560w.webp",
+            "width": 560,
+            "height": 800,
+            "bytes": 27274
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-bff9e5f8c40318c8-1600w.webp",
+            "width": 1600,
+            "height": 2286,
+            "bytes": 174144
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-bc4feee69c8e7688-1400w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-bc4feee69c8e7688-560w.webp",
+            "width": 560,
+            "height": 800,
+            "bytes": 19698
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-bc4feee69c8e7688-1400w.webp",
+            "width": 1400,
+            "height": 2000,
+            "bytes": 166028
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-f15d126f07076861-1400w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-f15d126f07076861-560w.webp",
+            "width": 560,
+            "height": 800,
+            "bytes": 24410
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-f15d126f07076861-1400w.webp",
+            "width": 1400,
+            "height": 2000,
+            "bytes": 102432
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-cd40e44b374c6e99-1400w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-cd40e44b374c6e99-560w.webp",
+            "width": 560,
+            "height": 800,
+            "bytes": 34988
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-cd40e44b374c6e99-1400w.webp",
+            "width": 1400,
+            "height": 2000,
+            "bytes": 158446
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-28b8f7e065c162ab-1400w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-28b8f7e065c162ab-560w.webp",
+            "width": 560,
+            "height": 800,
+            "bytes": 29554
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-28b8f7e065c162ab-1400w.webp",
+            "width": 1400,
+            "height": 2000,
+            "bytes": 148028
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-fb674297c8f319d1-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-fb674297c8f319d1-560w.webp",
+            "width": 560,
+            "height": 800,
+            "bytes": 26412
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-fb674297c8f319d1-1600w.webp",
+            "width": 1600,
+            "height": 2286,
+            "bytes": 186830
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-280971c76f9eefa6-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-280971c76f9eefa6-560w.webp",
+            "width": 560,
+            "height": 800,
+            "bytes": 18772
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-280971c76f9eefa6-1600w.webp",
+            "width": 1600,
+            "height": 2286,
+            "bytes": 207516
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-a190ce65c38560f8-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-a190ce65c38560f8-560w.webp",
+            "width": 560,
+            "height": 800,
+            "bytes": 34298
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-a190ce65c38560f8-1600w.webp",
+            "width": 1600,
+            "height": 2286,
+            "bytes": 241420
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-26c1da3be2a717b0-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-26c1da3be2a717b0-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 23194
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-26c1da3be2a717b0-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 122218
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-3e3f837810c1bbc5-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-3e3f837810c1bbc5-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 27018
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-3e3f837810c1bbc5-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 161614
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-dcfb21637cc1d4ef-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-dcfb21637cc1d4ef-560w.webp",
+            "width": 560,
+            "height": 373,
+            "bytes": 31128
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-dcfb21637cc1d4ef-1600w.webp",
+            "width": 1600,
+            "height": 1067,
+            "bytes": 190788
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-2cc0fef513eb8ac6-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-2cc0fef513eb8ac6-560w.webp",
+            "width": 560,
+            "height": 560,
+            "bytes": 25768
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-2cc0fef513eb8ac6-1600w.webp",
+            "width": 1600,
+            "height": 1600,
+            "bytes": 235218
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-76462bdc77a68045-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-76462bdc77a68045-560w.webp",
+            "width": 560,
+            "height": 560,
+            "bytes": 22488
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-76462bdc77a68045-1600w.webp",
+            "width": 1600,
+            "height": 1600,
+            "bytes": 170832
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "primavera",
     "name": "Примавера",
     "collection": "modern",
-    "subtitle": "Волнообразный рельеф",
-    "description": "Главный элемент «Примаверы» — фасады с волнообразной фрезеровкой. Рельеф создаёт игру света и тени. Разная глубина фрезеровки позволяет сделать рисунок более выраженным или спокойным.",
+    "subtitle": "Волнообразный рельеф и реечная фрезеровка",
+    "description": "Главный акцент «Примаверы» — рельефные фасады с волнообразной и реечной фрезеровкой. Свет и блики выявляют рисунок поверхности. Алюминиевые фасады Elegance добавляют композиции визуальную лёгкость и позволяют сочетать разные фактуры.",
     "features": [
       "Волнообразная фрезеровка",
-      "Рельефные фасады",
-      "Разная глубина рисунка"
+      "Реечный рисунок фасадов",
+      "Алюминиевые фасады Elegance"
     ],
     "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
     "source_pdf_page": 48,
     "source_printed_pages": "96–97",
     "image": {
       "alt": "Кухня РИМИ Примавера",
-      "loading": "lazy",
-      "src": "assets/rimi-catalog-primavera-1280w.webp",
-      "srcset": "assets/rimi-catalog-primavera-640w.webp 640w, assets/rimi-catalog-primavera-960w.webp 960w, assets/rimi-catalog-primavera-1280w.webp 1280w",
-      "sizes": "(max-width: 750px) 88vw, 43vw",
-      "width": "1280",
-      "height": "723",
-      "decoding": "async"
-    }
-  },
-  {
-    "slug": "shika",
-    "name": "Шика",
-    "collection": "modern",
-    "subtitle": "Тонкая рамка и матовая эмаль",
-    "description": "Фасады «Шики» выполнены из МДФ толщиной 22 мм с тонкой рамкой и шелковисто-матовой эмалью. Интегрированная ручка остаётся незаметной в общей композиции. В каталоге предусмотрены различные варианты окраски.",
-    "features": [
-      "МДФ 22 мм",
-      "Шелковисто-матовая эмаль",
-      "Интегрированная ручка"
-    ],
-    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
-    "source_pdf_page": 58,
-    "source_printed_pages": "116–117",
-    "image": {
-      "alt": "Кухня РИМИ Шика",
-      "loading": "lazy",
-      "src": "assets/rimi-catalog-shika-1280w.webp",
-      "srcset": "assets/rimi-catalog-shika-640w.webp 640w, assets/rimi-catalog-shika-960w.webp 960w, assets/rimi-catalog-shika-1280w.webp 1280w",
-      "sizes": "(max-width: 750px) 88vw, 43vw",
-      "width": "1280",
-      "height": "723",
-      "decoding": "async"
-    }
-  },
-  {
-    "slug": "florida",
-    "name": "Флорида",
-    "collection": "modern",
-    "subtitle": "Минимализм для кухни-гостиной",
-    "description": "«Флорида» задумана как часть общего пространства кухни, столовой и гостиной. Её отличает ручка J, выфрезерованная по всей ширине фасада. Строгие линии сочетаются с небольшим количеством декоративных деталей.",
-    "features": [
-      "Ручка J по ширине фасада",
-      "Геометричные линии",
-      "Лаконичная отделка"
-    ],
-    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
-    "source_pdf_page": 62,
-    "source_printed_pages": "124–125",
-    "image": {
-      "alt": "Кухня РИМИ Флорида",
-      "loading": "lazy",
-      "src": "assets/rimi-catalog-florida-1280w.webp",
-      "srcset": "assets/rimi-catalog-florida-640w.webp 640w, assets/rimi-catalog-florida-960w.webp 960w, assets/rimi-catalog-florida-1280w.webp 1280w",
-      "sizes": "(max-width: 750px) 88vw, 43vw",
-      "width": "1280",
-      "height": "872",
-      "decoding": "async"
-    }
-  },
-  {
-    "slug": "arona",
-    "name": "Арона",
-    "collection": "modern",
-    "subtitle": "Чёткие линии и удобное хранение",
-    "description": "«Арона» объединяет чёткую геометрию фасадов и столешниц с открыванием без выступающих ручек. В описании модели предусмотрены ящики полного выдвижения, которые открывают доступ ко всему содержимому.",
-    "features": [
-      "Без выступающих ручек",
-      "Ящики полного выдвижения",
-      "Чёткая геометрия фасадов и столешниц"
-    ],
-    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
-    "source_pdf_page": 70,
-    "source_printed_pages": "140–141",
-    "image": {
-      "alt": "Кухня РИМИ Арона",
-      "loading": "lazy",
-      "src": "assets/rimi-catalog-arona-1280w.webp",
-      "srcset": "assets/rimi-catalog-arona-640w.webp 640w, assets/rimi-catalog-arona-960w.webp 960w, assets/rimi-catalog-arona-1280w.webp 1280w",
-      "sizes": "(max-width: 750px) 88vw, 43vw",
-      "width": "1280",
-      "height": "723",
-      "decoding": "async"
-    }
+      "src": "assets/kitchens-modern/rimi-f58bdd7a1a3e5c7f-1600w.webp",
+      "srcset": "assets/kitchens-modern/rimi-f58bdd7a1a3e5c7f-560w.webp 560w, assets/kitchens-modern/rimi-f58bdd7a1a3e5c7f-1600w.webp 1600w",
+      "width": "1600",
+      "height": "978",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/sovremennye_kukhni/763/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-modern/rimi-f58bdd7a1a3e5c7f-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-f58bdd7a1a3e5c7f-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 24306
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-f58bdd7a1a3e5c7f-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 159018
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-351573606c091184-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-351573606c091184-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 17398
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-351573606c091184-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 94608
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-c75fdd60a7d1d210-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-c75fdd60a7d1d210-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 15530
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-c75fdd60a7d1d210-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 98226
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-65191f8a31e7011c-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-65191f8a31e7011c-560w.webp",
+            "width": 560,
+            "height": 560,
+            "bytes": 18520
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-65191f8a31e7011c-1600w.webp",
+            "width": 1600,
+            "height": 1600,
+            "bytes": 91988
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-88bd32ff1bd00948-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-88bd32ff1bd00948-560w.webp",
+            "width": 560,
+            "height": 280,
+            "bytes": 18072
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-88bd32ff1bd00948-1600w.webp",
+            "width": 1600,
+            "height": 800,
+            "bytes": 98436
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-26b87efbb6132a71-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-26b87efbb6132a71-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 29424
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-26b87efbb6132a71-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 179002
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-b05b2ed2787186d9-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-b05b2ed2787186d9-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 17982
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-b05b2ed2787186d9-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 102278
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-c0d0530f5140ca8a-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-c0d0530f5140ca8a-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 38926
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-c0d0530f5140ca8a-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 277016
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-fdfefff9d4ec4b07-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-fdfefff9d4ec4b07-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 15004
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-fdfefff9d4ec4b07-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 72806
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-c44dd43c43d6246e-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-c44dd43c43d6246e-560w.webp",
+            "width": 560,
+            "height": 560,
+            "bytes": 26124
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-c44dd43c43d6246e-1600w.webp",
+            "width": 1600,
+            "height": 1600,
+            "bytes": 140102
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "magna",
     "name": "Магна",
     "collection": "modern",
-    "subtitle": "Матовая эмаль и рельефные текстуры",
-    "description": "В каталожной композиции «Магны» гладкие матовые поверхности сочетаются с рельефными текстурами. Нижние шкафы отделаны с двух сторон шелковисто-матовой эмалью, верхние фасады — покрытием HPL. Образ дополняет врезная ручка.",
+    "subtitle": "Матовая эмаль и рельефные фактуры",
+    "description": "В показанной композиции «Магна» нижние фасады покрыты с обеих сторон матовой зелёной эмалью, а верхние выполнены с отделкой HPL. Врезная ручка поддерживает ровный рисунок кухни. Петли Salice обеспечивают плавное закрывание дверей.",
     "features": [
-      "Шелковисто-матовая эмаль",
-      "Покрытие HPL верхних фасадов",
-      "Врезная ручка"
+      "Двусторонняя матовая эмаль нижних фасадов",
+      "Верхние фасады с отделкой HPL",
+      "Врезная ручка и петли Salice"
     ],
     "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
     "source_pdf_page": 76,
     "source_printed_pages": "152–153",
     "image": {
       "alt": "Кухня РИМИ Магна",
-      "loading": "lazy",
-      "src": "assets/rimi-catalog-magna-1280w.webp",
-      "srcset": "assets/rimi-catalog-magna-640w.webp 640w, assets/rimi-catalog-magna-960w.webp 960w, assets/rimi-catalog-magna-1280w.webp 1280w",
-      "sizes": "(max-width: 750px) 88vw, 43vw",
-      "width": "1280",
-      "height": "723",
-      "decoding": "async"
-    }
+      "src": "assets/kitchens-modern/rimi-acce74734c47a440-1600w.webp",
+      "srcset": "assets/kitchens-modern/rimi-acce74734c47a440-560w.webp 560w, assets/kitchens-modern/rimi-acce74734c47a440-1600w.webp 1600w",
+      "width": "1600",
+      "height": "928",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/sovremennye_kukhni/1517/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-modern/rimi-acce74734c47a440-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-acce74734c47a440-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 19788
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-acce74734c47a440-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 99582
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-50d5877e34ea243f-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-50d5877e34ea243f-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 18778
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-50d5877e34ea243f-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 97592
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-32e1a7aaba60dd28-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-32e1a7aaba60dd28-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 21948
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-32e1a7aaba60dd28-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 116616
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-b4e3ae846f85bd18-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-b4e3ae846f85bd18-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 14446
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-b4e3ae846f85bd18-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 79122
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-991e7dc2f5cb68ad-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-991e7dc2f5cb68ad-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 3356
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-991e7dc2f5cb68ad-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 14172
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-719d5d7ed3940d9b-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-719d5d7ed3940d9b-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 16794
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-719d5d7ed3940d9b-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 84108
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-2af943efd594a2e0-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-2af943efd594a2e0-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 15278
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-2af943efd594a2e0-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 71670
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "arona",
+    "name": "Арона",
+    "collection": "modern",
+    "subtitle": "Чёткая геометрия и полное выдвижение",
+    "description": "«Арона» сочетает чёткие линии с фасадами без выступающих ручек. Ящики полного выдвижения открывают доступ ко всему содержимому. Материалы фасадов и столешниц подбираются в общей композиции кухни.",
+    "features": [
+      "Фасады без выступающих ручек",
+      "Ящики полного выдвижения",
+      "Чёткая геометрия композиции"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 70,
+    "source_printed_pages": "140–141",
+    "image": {
+      "alt": "Кухня РИМИ Арона",
+      "src": "assets/kitchens-modern/rimi-202344ec4f97d8f9-1600w.webp",
+      "srcset": "assets/kitchens-modern/rimi-202344ec4f97d8f9-560w.webp 560w, assets/kitchens-modern/rimi-202344ec4f97d8f9-1600w.webp 1600w",
+      "width": "1600",
+      "height": "928",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/sovremennye_kukhni/1518/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-modern/rimi-202344ec4f97d8f9-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-202344ec4f97d8f9-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 19468
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-202344ec4f97d8f9-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 101670
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-07534f47f7cdbade-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-07534f47f7cdbade-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 21924
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-07534f47f7cdbade-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 115878
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-c9607d957c88cd92-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-c9607d957c88cd92-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 20634
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-c9607d957c88cd92-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 101768
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-b5a8dee0e84bd2df-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-b5a8dee0e84bd2df-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 29572
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-b5a8dee0e84bd2df-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 161174
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-3a8f839f3798db2d-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-3a8f839f3798db2d-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 15190
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-3a8f839f3798db2d-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 87570
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-dba9b663ee7bce15-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-dba9b663ee7bce15-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 7332
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-dba9b663ee7bce15-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 31250
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-ea8c9fe4bc07dc78-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-ea8c9fe4bc07dc78-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 6680
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-ea8c9fe4bc07dc78-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 34696
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-73c7c97fe39362ec-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-73c7c97fe39362ec-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 5568
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-73c7c97fe39362ec-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 21186
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "konkretta",
+    "name": "Конкретта",
+    "collection": "modern",
+    "subtitle": "Рамочный фасад со встроенной ручкой",
+    "description": "В «Конкретте» ручка встроена в створку рамочного фасада. Дерево объединяет витрины, открытые элементы системы TOUCH и столешницу. Для фасадов доступна шпонированная отделка, которая добавляет интерьеру древесную фактуру.",
+    "features": [
+      "Ручка в створке рамочного фасада",
+      "Открытые элементы TOUCH",
+      "Возможность шпонированной отделки"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 21,
+    "source_printed_pages": "42–43",
+    "image": {
+      "alt": "Кухня РИМИ Конкретта",
+      "src": "assets/kitchens-modern/rimi-6d40733dcaa34b73-1600w.webp",
+      "srcset": "assets/kitchens-modern/rimi-6d40733dcaa34b73-560w.webp 560w, assets/kitchens-modern/rimi-6d40733dcaa34b73-1600w.webp 1600w",
+      "width": "1600",
+      "height": "896",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/sovremennye_kukhni/749/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-modern/rimi-6d40733dcaa34b73-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-6d40733dcaa34b73-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 26634
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-6d40733dcaa34b73-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 147646
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-62858b7856a79d8a-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-62858b7856a79d8a-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 26742
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-62858b7856a79d8a-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 158174
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-dd7659d3153a727a-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-dd7659d3153a727a-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 27902
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-dd7659d3153a727a-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 159358
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-055a6d93121ecd80-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-055a6d93121ecd80-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 26306
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-055a6d93121ecd80-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 144308
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-43b5f10921c8ae1e-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-43b5f10921c8ae1e-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 35408
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-43b5f10921c8ae1e-1600w.webp",
+            "width": 1600,
+            "height": 1800,
+            "bytes": 201892
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-e73024851427248f-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-e73024851427248f-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 49882
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-e73024851427248f-1600w.webp",
+            "width": 1600,
+            "height": 1800,
+            "bytes": 344520
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-3c4398fba1fe6138-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-3c4398fba1fe6138-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 21676
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-3c4398fba1fe6138-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 129996
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-c32f21a80e9740da-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-c32f21a80e9740da-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 39498
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-c32f21a80e9740da-1600w.webp",
+            "width": 1600,
+            "height": 1800,
+            "bytes": 269232
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-7dddd19cb6e7f81a-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-7dddd19cb6e7f81a-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 45070
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-7dddd19cb6e7f81a-1600w.webp",
+            "width": 1600,
+            "height": 1800,
+            "bytes": 313804
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "esenta",
+    "name": "Эсента",
+    "collection": "modern",
+    "subtitle": "Стеклянные фасады и акцентные ниши",
+    "description": "«Эсента» строится на сочетании стеклянных фасадов в алюминиевом профиле и акцентных ниш. Подсветка выделяет содержимое витрин и глубину композиции. Варианты фасадов включают гладкое стекло и рифлёное стекло Shelbi.",
+    "features": [
+      "Стеклянные фасады в алюминиевом профиле",
+      "Гладкое или рифлёное стекло Shelbi",
+      "Акцентные ниши и подсветка витрин"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 27,
+    "source_printed_pages": "54–55",
+    "image": {
+      "alt": "Кухня РИМИ Эсента",
+      "src": "assets/kitchens-modern/rimi-3c5f37cba1a04b56-1600w.webp",
+      "srcset": "assets/kitchens-modern/rimi-3c5f37cba1a04b56-560w.webp 560w, assets/kitchens-modern/rimi-3c5f37cba1a04b56-1600w.webp 1600w",
+      "width": "1600",
+      "height": "1000",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/sovremennye_kukhni/1448/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-modern/rimi-3c5f37cba1a04b56-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-3c5f37cba1a04b56-560w.webp",
+            "width": 560,
+            "height": 350,
+            "bytes": 26956
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-3c5f37cba1a04b56-1600w.webp",
+            "width": 1600,
+            "height": 1000,
+            "bytes": 170060
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-61d1a5709578a448-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-61d1a5709578a448-560w.webp",
+            "width": 560,
+            "height": 350,
+            "bytes": 26698
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-61d1a5709578a448-1600w.webp",
+            "width": 1600,
+            "height": 1001,
+            "bytes": 146860
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-487c88bbc1f121ab-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-487c88bbc1f121ab-560w.webp",
+            "width": 560,
+            "height": 350,
+            "bytes": 24546
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-487c88bbc1f121ab-1600w.webp",
+            "width": 1600,
+            "height": 1000,
+            "bytes": 142750
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-0877885cd2fadf1d-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-0877885cd2fadf1d-560w.webp",
+            "width": 560,
+            "height": 700,
+            "bytes": 42596
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-0877885cd2fadf1d-1600w.webp",
+            "width": 1600,
+            "height": 2000,
+            "bytes": 268074
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-88089c829153066f-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-88089c829153066f-560w.webp",
+            "width": 560,
+            "height": 700,
+            "bytes": 31212
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-88089c829153066f-1600w.webp",
+            "width": 1600,
+            "height": 2000,
+            "bytes": 171562
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-71e144cec4df71cb-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-71e144cec4df71cb-560w.webp",
+            "width": 560,
+            "height": 700,
+            "bytes": 39718
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-71e144cec4df71cb-1600w.webp",
+            "width": 1600,
+            "height": 2000,
+            "bytes": 263888
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-0a7c73a2d28463ae-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-0a7c73a2d28463ae-560w.webp",
+            "width": 560,
+            "height": 700,
+            "bytes": 26976
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-0a7c73a2d28463ae-1600w.webp",
+            "width": 1600,
+            "height": 2000,
+            "bytes": 136104
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-2615861a0ac16ad2-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-2615861a0ac16ad2-560w.webp",
+            "width": 560,
+            "height": 280,
+            "bytes": 22052
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-2615861a0ac16ad2-1600w.webp",
+            "width": 1600,
+            "height": 800,
+            "bytes": 143588
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-dd12af5a6f299f72-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-dd12af5a6f299f72-560w.webp",
+            "width": 560,
+            "height": 280,
+            "bytes": 21912
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-dd12af5a6f299f72-1600w.webp",
+            "width": 1600,
+            "height": 800,
+            "bytes": 139660
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-ce402fc4849f7cdc-1500w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-ce402fc4849f7cdc-560w.webp",
+            "width": 560,
+            "height": 560,
+            "bytes": 25352
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-ce402fc4849f7cdc-1500w.webp",
+            "width": 1500,
+            "height": 1500,
+            "bytes": 130700
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "novara",
+    "name": "Новара",
+    "collection": "modern",
+    "subtitle": "Интегрированная ручка и глубина цвета",
+    "description": "В «Новаре» простые формы дополнены интегрированной ручкой. Эмаль и стекло создают выразительную глубину цвета фасадов. Открывание без выступающих деталей поддерживает лаконичный рисунок кухонного пространства.",
+    "features": [
+      "Интегрированная ручка",
+      "Сочетание эмали и стекла",
+      "Прямые линии и простые формы"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 40,
+    "source_printed_pages": "80–81",
+    "image": {
+      "alt": "Кухня РИМИ Новара",
+      "src": "assets/kitchens-modern/rimi-9f0f39d56f69dd1b-1600w.webp",
+      "srcset": "assets/kitchens-modern/rimi-9f0f39d56f69dd1b-560w.webp 560w, assets/kitchens-modern/rimi-9f0f39d56f69dd1b-1600w.webp 1600w",
+      "width": "1600",
+      "height": "978",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/sovremennye_kukhni/764/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-modern/rimi-9f0f39d56f69dd1b-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-9f0f39d56f69dd1b-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 30926
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-9f0f39d56f69dd1b-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 208916
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-33a87827845470e8-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-33a87827845470e8-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 21190
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-33a87827845470e8-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 179364
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-a9cb3100613f8bac-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-a9cb3100613f8bac-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 16238
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-a9cb3100613f8bac-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 152092
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-6ca85c4fdd604e3b-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-6ca85c4fdd604e3b-560w.webp",
+            "width": 560,
+            "height": 560,
+            "bytes": 34956
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-6ca85c4fdd604e3b-1600w.webp",
+            "width": 1600,
+            "height": 1600,
+            "bytes": 341312
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-b15ccf52e46a1a57-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-b15ccf52e46a1a57-560w.webp",
+            "width": 560,
+            "height": 560,
+            "bytes": 10390
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-b15ccf52e46a1a57-1600w.webp",
+            "width": 1600,
+            "height": 1600,
+            "bytes": 75848
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-81d5c18975e172b8-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-81d5c18975e172b8-560w.webp",
+            "width": 560,
+            "height": 560,
+            "bytes": 38686
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-81d5c18975e172b8-1600w.webp",
+            "width": 1600,
+            "height": 1600,
+            "bytes": 325842
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-a9234df75570e98d-1500w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-a9234df75570e98d-560w.webp",
+            "width": 560,
+            "height": 280,
+            "bytes": 17364
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-a9234df75570e98d-1500w.webp",
+            "width": 1500,
+            "height": 750,
+            "bytes": 89850
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-800598f1f43a37b4-1500w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-800598f1f43a37b4-560w.webp",
+            "width": 560,
+            "height": 280,
+            "bytes": 11518
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-800598f1f43a37b4-1500w.webp",
+            "width": 1500,
+            "height": 750,
+            "bytes": 97848
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-8debea1cb9459146-750w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-8debea1cb9459146-560w.webp",
+            "width": 560,
+            "height": 1120,
+            "bytes": 46890
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-8debea1cb9459146-750w.webp",
+            "width": 750,
+            "height": 1500,
+            "bytes": 88936
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "shika",
+    "name": "Шика",
+    "collection": "modern",
+    "subtitle": "Тонкая рамка и скрытая ручка",
+    "description": "Особенность «Шики» — тонкое рамочное обрамление фасада и встроенная ручка, которая не выступает на передний план. Производитель предлагает разные варианты окраски. На фотографиях можно рассмотреть рисунок рамки и сочетания отделок.",
+    "features": [
+      "Тонкая рамка фасада",
+      "Интегрированная скрытая ручка",
+      "Разные варианты окраски"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 58,
+    "source_printed_pages": "116–117",
+    "image": {
+      "alt": "Кухня РИМИ Шика",
+      "src": "assets/kitchens-modern/rimi-bef7f35a4d647b95-1600w.webp",
+      "srcset": "assets/kitchens-modern/rimi-bef7f35a4d647b95-560w.webp 560w, assets/kitchens-modern/rimi-bef7f35a4d647b95-1600w.webp 1600w",
+      "width": "1600",
+      "height": "1120",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/sovremennye_kukhni/754/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-modern/rimi-bef7f35a4d647b95-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-bef7f35a4d647b95-560w.webp",
+            "width": 560,
+            "height": 392,
+            "bytes": 23384
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-bef7f35a4d647b95-1600w.webp",
+            "width": 1600,
+            "height": 1120,
+            "bytes": 206742
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-2795535069bd0cfc-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-2795535069bd0cfc-560w.webp",
+            "width": 560,
+            "height": 315,
+            "bytes": 20440
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-2795535069bd0cfc-1600w.webp",
+            "width": 1600,
+            "height": 901,
+            "bytes": 117152
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-383a52537053e744-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-383a52537053e744-560w.webp",
+            "width": 560,
+            "height": 315,
+            "bytes": 22108
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-383a52537053e744-1600w.webp",
+            "width": 1600,
+            "height": 901,
+            "bytes": 125682
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-1cc68920a26c22af-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-1cc68920a26c22af-560w.webp",
+            "width": 560,
+            "height": 315,
+            "bytes": 22132
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-1cc68920a26c22af-1600w.webp",
+            "width": 1600,
+            "height": 901,
+            "bytes": 139268
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-e5586df74aa51409-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-e5586df74aa51409-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 33842
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-e5586df74aa51409-1600w.webp",
+            "width": 1600,
+            "height": 1800,
+            "bytes": 257688
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-60bf10e80edc22b3-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-60bf10e80edc22b3-560w.webp",
+            "width": 560,
+            "height": 315,
+            "bytes": 12144
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-60bf10e80edc22b3-1600w.webp",
+            "width": 1600,
+            "height": 901,
+            "bytes": 105446
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-bf5195ee6be0ef80-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-bf5195ee6be0ef80-560w.webp",
+            "width": 560,
+            "height": 315,
+            "bytes": 18916
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-bf5195ee6be0ef80-1600w.webp",
+            "width": 1600,
+            "height": 901,
+            "bytes": 115128
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "florida",
+    "name": "Флорида",
+    "collection": "modern",
+    "subtitle": "Минимализм и фрезерованная ручка J",
+    "description": "У «Флориды» ручка J фрезеруется по всей ширине фасада. Такое решение позволяет использовать нестандартные размеры дверей и сохранять спокойный рисунок мебели. Коллекция рассчитана на единое пространство кухни, столовой и гостиной.",
+    "features": [
+      "Ручка J по ширине фасада",
+      "Возможность нестандартных размеров",
+      "Минималистичная геометрия"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
+    "source_pdf_page": 62,
+    "source_printed_pages": "124–125",
+    "image": {
+      "alt": "Кухня РИМИ Флорида",
+      "src": "assets/kitchens-modern/rimi-2d357e08c9aa13e2-1600w.webp",
+      "srcset": "assets/kitchens-modern/rimi-2d357e08c9aa13e2-560w.webp 560w, assets/kitchens-modern/rimi-2d357e08c9aa13e2-1600w.webp 1600w",
+      "width": "1600",
+      "height": "978",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/sovremennye_kukhni/1219/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-modern/rimi-2d357e08c9aa13e2-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-2d357e08c9aa13e2-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 18772
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-2d357e08c9aa13e2-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 137382
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-bec8a4bdfb5738b6-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-bec8a4bdfb5738b6-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 16852
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-bec8a4bdfb5738b6-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 118558
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-d676e2951eab2945-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-d676e2951eab2945-560w.webp",
+            "width": 560,
+            "height": 560,
+            "bytes": 12128
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-d676e2951eab2945-1600w.webp",
+            "width": 1600,
+            "height": 1600,
+            "bytes": 95470
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-27bef41abdcda454-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-27bef41abdcda454-560w.webp",
+            "width": 560,
+            "height": 560,
+            "bytes": 20126
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-27bef41abdcda454-1600w.webp",
+            "width": 1600,
+            "height": 1600,
+            "bytes": 167788
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-5e89c3952000b94e-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-5e89c3952000b94e-560w.webp",
+            "width": 560,
+            "height": 560,
+            "bytes": 25182
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-5e89c3952000b94e-1600w.webp",
+            "width": 1600,
+            "height": 1600,
+            "bytes": 172860
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-2f51a819bf26fa19-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-2f51a819bf26fa19-560w.webp",
+            "width": 560,
+            "height": 631,
+            "bytes": 37748
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-2f51a819bf26fa19-1600w.webp",
+            "width": 1600,
+            "height": 1803,
+            "bytes": 210596
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-e76a45b4248579ec-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-e76a45b4248579ec-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 25854
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-e76a45b4248579ec-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 166350
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-ed86f455f83ba80a-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-ed86f455f83ba80a-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 23258
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-ed86f455f83ba80a-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 153120
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-3064a2c08a598880-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-3064a2c08a598880-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 12930
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-3064a2c08a598880-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 83084
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-df771c21c5cbcf7d-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-df771c21c5cbcf7d-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 27634
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-df771c21c5cbcf7d-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 187790
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-5f2326cd6760cfeb-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-5f2326cd6760cfeb-560w.webp",
+            "width": 560,
+            "height": 631,
+            "bytes": 42726
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-5f2326cd6760cfeb-1600w.webp",
+            "width": 1600,
+            "height": 1803,
+            "bytes": 236704
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-a4dd9dd09da7917c-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-a4dd9dd09da7917c-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 22696
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-a4dd9dd09da7917c-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 191082
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-b0e07c3335829eee-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-b0e07c3335829eee-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 13658
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-b0e07c3335829eee-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 94158
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "miami",
     "name": "Майами",
     "collection": "modern",
-    "subtitle": "Стеклянные фасады и цвет",
-    "description": "В модели «Майами» верхние шкафы со стеклянными фасадами обрамляют пространство хранения. В каталожной версии образ дополняют металлизированный оттенок эмали и стеклянные полки. Для модели представлена широкая цветовая палитра.",
+    "subtitle": "Лаконичные фасады и профиль GOLA",
+    "description": "«Майами» предлагает сдержанные фасады без сложного декора и разные сочетания материалов, оттенков и фактур. Вместо выступающих ручек используется алюминиевый профиль GOLA. Его можно окрасить в контрастный цвет и сделать акцентом кухни.",
     "features": [
-      "Стеклянные фасады верхних шкафов",
-      "Стеклянные полки",
-      "Выбор цветовых решений"
+      "Фасады без сложного декора",
+      "Алюминиевый профиль GOLA",
+      "Возможность акцентной окраски профиля"
     ],
     "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
     "source_pdf_page": 81,
     "source_printed_pages": "162–163",
     "image": {
       "alt": "Кухня РИМИ Майами",
-      "loading": "lazy",
-      "src": "assets/rimi-catalog-miami-1280w.webp",
-      "srcset": "assets/rimi-catalog-miami-640w.webp 640w, assets/rimi-catalog-miami-960w.webp 960w, assets/rimi-catalog-miami-1280w.webp 1280w",
-      "sizes": "(max-width: 750px) 88vw, 43vw",
-      "width": "1280",
-      "height": "723",
-      "decoding": "async"
-    }
+      "src": "assets/kitchens-modern/rimi-3f115626752b4bd0-1600w.webp",
+      "srcset": "assets/kitchens-modern/rimi-3f115626752b4bd0-560w.webp 560w, assets/kitchens-modern/rimi-3f115626752b4bd0-1600w.webp 1600w",
+      "width": "1600",
+      "height": "896",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/sovremennye_kukhni/760/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-modern/rimi-3f115626752b4bd0-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-3f115626752b4bd0-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 12740
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-3f115626752b4bd0-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 71754
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-717e56880631ceb2-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-717e56880631ceb2-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 14038
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-717e56880631ceb2-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 60340
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-ac186c43a48181c4-1536w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-ac186c43a48181c4-560w.webp",
+            "width": 560,
+            "height": 631,
+            "bytes": 15236
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-ac186c43a48181c4-1536w.webp",
+            "width": 1536,
+            "height": 1731,
+            "bytes": 77054
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-83cb5550d5cb6edd-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-83cb5550d5cb6edd-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 10598
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-83cb5550d5cb6edd-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 61826
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-34db1178903d28f4-1536w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-34db1178903d28f4-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 24036
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-34db1178903d28f4-1536w.webp",
+            "width": 1536,
+            "height": 1728,
+            "bytes": 110008
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-11c906b65b9c3b51-1536w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-11c906b65b9c3b51-560w.webp",
+            "width": 560,
+            "height": 612,
+            "bytes": 22798
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-11c906b65b9c3b51-1536w.webp",
+            "width": 1536,
+            "height": 1679,
+            "bytes": 92512
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "miami-curved",
-    "name": "Майами — радиусные фасады",
+    "name": "Майами (криволинейные фасады)",
     "collection": "modern",
-    "subtitle": "Плавные линии острова",
-    "description": "Этот вариант «Майами» отличается криволинейными фасадами и эмалевой отделкой. Столешница плавно переходит в остров, объединяя части кухни в одну композицию. Компактные ниши добавляют открытое хранение.",
+    "subtitle": "Плавные формы и профиль GOLA",
+    "description": "Версия «Майами» с криволинейными фасадами сохраняет лаконичность основной коллекции и добавляет плавные линии. Материалы, фактуры и цвета можно сочетать в общей композиции. Алюминиевый профиль GOLA заменяет выступающие ручки и может стать цветовым акцентом.",
     "features": [
-      "Радиусные фасады",
-      "Эмалевая отделка",
-      "Остров с компактными нишами"
+      "Криволинейные фасады",
+      "Профиль GOLA вместо выступающих ручек",
+      "Сочетания цветов и фактур"
     ],
     "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
     "source_pdf_page": 85,
     "source_printed_pages": "170–171",
     "image": {
-      "alt": "Кухня РИМИ Майами — радиусные фасады",
-      "loading": "lazy",
-      "src": "assets/rimi-catalog-miami-curved-1280w.webp",
-      "srcset": "assets/rimi-catalog-miami-curved-640w.webp 640w, assets/rimi-catalog-miami-curved-960w.webp 960w, assets/rimi-catalog-miami-curved-1280w.webp 1280w",
-      "sizes": "(max-width: 750px) 88vw, 43vw",
-      "width": "1280",
-      "height": "723",
-      "decoding": "async"
-    }
+      "alt": "Кухня РИМИ Майами (криволинейные фасады)",
+      "src": "assets/kitchens-modern/rimi-0276c788d65cf596-1600w.webp",
+      "srcset": "assets/kitchens-modern/rimi-0276c788d65cf596-560w.webp 560w, assets/kitchens-modern/rimi-0276c788d65cf596-1600w.webp 1600w",
+      "width": "1600",
+      "height": "928",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/sovremennye_kukhni/761/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-modern/rimi-0276c788d65cf596-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-0276c788d65cf596-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 11768
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-0276c788d65cf596-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 72824
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-10126edd160e83c1-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-10126edd160e83c1-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 9318
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-10126edd160e83c1-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 42980
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-53314766c3bc2fc0-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-53314766c3bc2fc0-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 16278
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-53314766c3bc2fc0-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 90150
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-76e9e585487d6795-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-76e9e585487d6795-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 8098
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-76e9e585487d6795-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 29404
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-0070e13f0b5bef01-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-0070e13f0b5bef01-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 14588
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-0070e13f0b5bef01-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 69674
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-31721060889331f5-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-31721060889331f5-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 12570
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-31721060889331f5-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 63166
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-180b0db6482fbae7-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-180b0db6482fbae7-560w.webp",
+            "width": 560,
+            "height": 280,
+            "bytes": 4746
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-180b0db6482fbae7-1600w.webp",
+            "width": 1600,
+            "height": 800,
+            "bytes": 21610
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-eabf7d274c3cc2f8-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-eabf7d274c3cc2f8-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 13960
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-eabf7d274c3cc2f8-1600w.webp",
+            "width": 1600,
+            "height": 977,
+            "bytes": 58788
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-e5df55870b7723ae-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-e5df55870b7723ae-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 13978
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-e5df55870b7723ae-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 61352
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-e11ec0d7658efc1b-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-e11ec0d7658efc1b-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 10838
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-e11ec0d7658efc1b-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 63626
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-6e7e1b7e84019f50-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-6e7e1b7e84019f50-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 7880
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-6e7e1b7e84019f50-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 37314
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-64c558137d02afba-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-64c558137d02afba-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 14740
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-64c558137d02afba-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 69854
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-c7e33a8dd19ac839-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-c7e33a8dd19ac839-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 11340
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-c7e33a8dd19ac839-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 65544
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "ora",
     "name": "Ора",
     "collection": "modern",
-    "subtitle": "Спокойная геометрия",
-    "description": "«Ора» — модель с лаконичной геометрией и минимумом декоративных деталей. В каталоге предусмотрены матовая и глянцевая отделки в различных цветах. Цвет и характер поверхности помогают выбрать настроение кухни.",
+    "subtitle": "Матовые и глянцевые отделки",
+    "description": "«Ора» доступна в матовой и глянцевой отделке с разными оттенками. В показанном варианте гладкие поверхности дополнены рельефными фасадами «Примавера», а стеновая панель выполнена с эмалевой отделкой. Контраст фактур оживляет сдержанную геометрию кухни.",
     "features": [
-      "Минималистичный дизайн",
-      "Матовая или глянцевая отделка",
-      "Различные цветовые решения"
+      "Матовые и глянцевые варианты",
+      "Сочетание с рельефом Примавера",
+      "Эмалевая отделка стеновой панели"
     ],
     "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
     "source_pdf_page": 96,
     "source_printed_pages": "192–193",
     "image": {
       "alt": "Кухня РИМИ Ора",
-      "loading": "lazy",
-      "src": "assets/rimi-catalog-ora-1280w.webp",
-      "srcset": "assets/rimi-catalog-ora-640w.webp 640w, assets/rimi-catalog-ora-960w.webp 960w, assets/rimi-catalog-ora-1280w.webp 1280w",
-      "sizes": "(max-width: 750px) 88vw, 43vw",
-      "width": "1280",
-      "height": "723",
-      "decoding": "async"
-    }
+      "src": "assets/kitchens-modern/rimi-1472bfa4590e177f-1600w.webp",
+      "srcset": "assets/kitchens-modern/rimi-1472bfa4590e177f-560w.webp 560w, assets/kitchens-modern/rimi-1472bfa4590e177f-1600w.webp 1600w",
+      "width": "1600",
+      "height": "1124",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/sovremennye_kukhni/759/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-modern/rimi-1472bfa4590e177f-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-1472bfa4590e177f-560w.webp",
+            "width": 560,
+            "height": 393,
+            "bytes": 19568
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-1472bfa4590e177f-1600w.webp",
+            "width": 1600,
+            "height": 1124,
+            "bytes": 99612
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-b92017ca7af398d4-1136w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-b92017ca7af398d4-560w.webp",
+            "width": 560,
+            "height": 631,
+            "bytes": 33644
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-b92017ca7af398d4-1136w.webp",
+            "width": 1136,
+            "height": 1280,
+            "bytes": 102110
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-b2bb6e10966d8e23-1136w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-b2bb6e10966d8e23-560w.webp",
+            "width": 560,
+            "height": 631,
+            "bytes": 54192
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-b2bb6e10966d8e23-1136w.webp",
+            "width": 1136,
+            "height": 1280,
+            "bytes": 234214
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-2e8c41adf727f039-1136w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-2e8c41adf727f039-560w.webp",
+            "width": 560,
+            "height": 631,
+            "bytes": 17678
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-2e8c41adf727f039-1136w.webp",
+            "width": 1136,
+            "height": 1280,
+            "bytes": 52614
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-b8a7e80bfd28ae40-1136w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-b8a7e80bfd28ae40-560w.webp",
+            "width": 560,
+            "height": 631,
+            "bytes": 36038
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-b8a7e80bfd28ae40-1136w.webp",
+            "width": 1136,
+            "height": 1280,
+            "bytes": 105964
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-c278ac490c15e663-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-c278ac490c15e663-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 17746
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-c278ac490c15e663-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 149342
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-63395218fc7583e2-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-63395218fc7583e2-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 20692
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-63395218fc7583e2-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 133162
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-2204bd50681a8c96-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-2204bd50681a8c96-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 13942
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-2204bd50681a8c96-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 76744
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-fb40842e1c914680-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-fb40842e1c914680-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 11256
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-fb40842e1c914680-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 63656
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-d5c75dbdfda1a284-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-d5c75dbdfda1a284-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 18114
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-d5c75dbdfda1a284-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 103536
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-62abeda667d15513-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-62abeda667d15513-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 17530
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-62abeda667d15513-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 97482
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-654a05a339e4492d-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-654a05a339e4492d-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 14560
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-654a05a339e4492d-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 88730
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-0569adc1635b5810-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-0569adc1635b5810-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 12894
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-0569adc1635b5810-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 68910
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-1fe450bb7fafda19-1136w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-1fe450bb7fafda19-560w.webp",
+            "width": 560,
+            "height": 631,
+            "bytes": 29002
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-1fe450bb7fafda19-1136w.webp",
+            "width": 1136,
+            "height": 1280,
+            "bytes": 100624
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-9d930723ed99653c-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-9d930723ed99653c-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 11774
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-9d930723ed99653c-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 69110
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "kristali",
     "name": "Кристали",
     "collection": "modern",
-    "subtitle": "Стекло и чистота линий",
-    "description": "В основе «Кристали» — стеклянные фасады с глянцевой поверхностью. Прямые линии и плоские поверхности формируют строгую геометрию; накладные ручки в этой композиции отсутствуют.",
+    "subtitle": "Стеклянные фасады и профиль GOLA",
+    "description": "В «Кристали» фасады из просветлённого незакалённого стекла сочетаются с алюминиевым профилем GOLA. Стекло подчёркивает современный характер кухни, а варианты планировки позволяют адаптировать композицию к разным помещениям.",
     "features": [
-      "Стеклянные фасады",
-      "Глянцевая поверхность",
-      "Без накладных ручек"
+      "Просветлённое незакалённое стекло",
+      "Алюминиевый профиль GOLA",
+      "Варианты планировки под помещение"
     ],
     "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
     "source_pdf_page": 100,
     "source_printed_pages": "200–201",
     "image": {
       "alt": "Кухня РИМИ Кристали",
-      "loading": "lazy",
-      "src": "assets/rimi-catalog-kristali-1280w.webp",
-      "srcset": "assets/rimi-catalog-kristali-640w.webp 640w, assets/rimi-catalog-kristali-960w.webp 960w, assets/rimi-catalog-kristali-1280w.webp 1280w",
-      "sizes": "(max-width: 750px) 88vw, 43vw",
-      "width": "1280",
-      "height": "723",
-      "decoding": "async"
-    }
+      "src": "assets/kitchens-modern/rimi-1a97a415beb4ebe0-1600w.webp",
+      "srcset": "assets/kitchens-modern/rimi-1a97a415beb4ebe0-560w.webp 560w, assets/kitchens-modern/rimi-1a97a415beb4ebe0-1600w.webp 1600w",
+      "width": "1600",
+      "height": "930",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/sovremennye_kukhni/752/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-modern/rimi-1a97a415beb4ebe0-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-1a97a415beb4ebe0-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 24542
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-1a97a415beb4ebe0-1600w.webp",
+            "width": 1600,
+            "height": 930,
+            "bytes": 136274
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-9b06d0c3238ea654-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-9b06d0c3238ea654-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 24092
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-9b06d0c3238ea654-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 120970
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-06066ee5332d73dc-1138w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-06066ee5332d73dc-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 34846
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-06066ee5332d73dc-1138w.webp",
+            "width": 1138,
+            "height": 1280,
+            "bytes": 131876
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-39d97002301563f5-1138w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-39d97002301563f5-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 36304
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-39d97002301563f5-1138w.webp",
+            "width": 1138,
+            "height": 1280,
+            "bytes": 130120
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-d27cc7b7ef74a771-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-d27cc7b7ef74a771-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 14774
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-d27cc7b7ef74a771-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 79340
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-492d2aaf9ead5b4b-1138w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-492d2aaf9ead5b4b-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 38624
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-492d2aaf9ead5b4b-1138w.webp",
+            "width": 1138,
+            "height": 1280,
+            "bytes": 143130
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "kanti",
     "name": "Канти",
     "collection": "modern",
-    "subtitle": "Рамка в современном интерьере",
-    "description": "Тонкая рамка фасадов «Канти» сочетает классические пропорции с современной геометрией. Простые формы позволяют вписать модель как в сдержанный классический интерьер, так и в современное пространство.",
+    "subtitle": "Прямые линии и тонкая рамка",
+    "description": "«Канти» выделяется фасадом с тонким рамочным обрамлением. Прямые линии и сдержанный декор оставляют основное внимание цвету и пропорциям кухни. Источником образа коллекции для производителя стал одноимённый винный бренд.",
     "features": [
-      "Тонкая рамка фасадов",
-      "Чёткая геометрия",
-      "Сочетание классических и современных пропорций"
+      "Фасад с тонкой рамкой",
+      "Прямая геометрия",
+      "Разные дизайнерские сочетания"
     ],
     "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
     "source_pdf_page": 105,
     "source_printed_pages": "210–211",
     "image": {
       "alt": "Кухня РИМИ Канти",
-      "loading": "lazy",
-      "src": "assets/rimi-catalog-kanti-1280w.webp",
-      "srcset": "assets/rimi-catalog-kanti-640w.webp 640w, assets/rimi-catalog-kanti-960w.webp 960w, assets/rimi-catalog-kanti-1280w.webp 1280w",
-      "sizes": "(max-width: 750px) 88vw, 43vw",
-      "width": "1280",
-      "height": "723",
-      "decoding": "async"
-    }
+      "src": "assets/kitchens-modern/rimi-eb2de3d00ba26a13-1600w.webp",
+      "srcset": "assets/kitchens-modern/rimi-eb2de3d00ba26a13-560w.webp 560w, assets/kitchens-modern/rimi-eb2de3d00ba26a13-1600w.webp 1600w",
+      "width": "1600",
+      "height": "901",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/sovremennye_kukhni/1217/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-modern/rimi-eb2de3d00ba26a13-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-eb2de3d00ba26a13-560w.webp",
+            "width": 560,
+            "height": 315,
+            "bytes": 27734
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-eb2de3d00ba26a13-1600w.webp",
+            "width": 1600,
+            "height": 901,
+            "bytes": 154272
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-379fb3df76236bb1-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-379fb3df76236bb1-560w.webp",
+            "width": 560,
+            "height": 315,
+            "bytes": 22556
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-379fb3df76236bb1-1600w.webp",
+            "width": 1600,
+            "height": 901,
+            "bytes": 145338
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-c9ef6831029d6d5a-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-c9ef6831029d6d5a-560w.webp",
+            "width": 560,
+            "height": 315,
+            "bytes": 20832
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-c9ef6831029d6d5a-1600w.webp",
+            "width": 1600,
+            "height": 901,
+            "bytes": 127588
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-4c7443e17cb910a5-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-4c7443e17cb910a5-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 60628
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-4c7443e17cb910a5-1600w.webp",
+            "width": 1600,
+            "height": 1800,
+            "bytes": 393162
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-0f0cd4e73e901203-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-0f0cd4e73e901203-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 24874
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-0f0cd4e73e901203-1600w.webp",
+            "width": 1600,
+            "height": 898,
+            "bytes": 144674
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-b1811659fc906cae-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-b1811659fc906cae-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 31642
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-b1811659fc906cae-1600w.webp",
+            "width": 1600,
+            "height": 1800,
+            "bytes": 250682
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-3e63f41732e4fe21-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-3e63f41732e4fe21-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 18448
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-3e63f41732e4fe21-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 92814
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-205ea1c3ca5442e9-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-205ea1c3ca5442e9-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 18258
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-205ea1c3ca5442e9-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 98310
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-48345e2ede470f09-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-48345e2ede470f09-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 15226
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-48345e2ede470f09-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 84946
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-166f234f08de3ecb-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-166f234f08de3ecb-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 13958
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-166f234f08de3ecb-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 77684
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-15b4e77a17d51722-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-15b4e77a17d51722-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 8114
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-15b4e77a17d51722-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 35558
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-0c7a092db54f1d22-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-0c7a092db54f1d22-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 17212
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-0c7a092db54f1d22-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 89360
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-2d89d397bd5496f4-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-2d89d397bd5496f4-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 14244
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-2d89d397bd5496f4-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 82522
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-b93c831ff4c69163-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-b93c831ff4c69163-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 11686
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-b93c831ff4c69163-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 75012
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-7ef4aff76a2c1830-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-7ef4aff76a2c1830-560w.webp",
+            "width": 560,
+            "height": 560,
+            "bytes": 12216
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-7ef4aff76a2c1830-1600w.webp",
+            "width": 1600,
+            "height": 1600,
+            "bytes": 47044
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "nizza",
-    "name": "Ницца",
+    "name": "Ницца NEW",
     "collection": "modern",
-    "subtitle": "Профиль GOLA и выбор покрытий",
-    "description": "«Ницца» отличается встроенным алюминиевым профилем GOLA и отсутствием накладных ручек. В каталоге представлены фасады с акриловым, глянцевым или матовым пластиковым покрытием, в том числе с древесными декорами.",
+    "subtitle": "Геометрия и широкий выбор декоров",
+    "description": "«Ницца NEW» сочетает чёткую геометрию с разными покрытиями фасадов. Производитель предлагает акрил, глянцевый и матовый пластик. В палитре есть однотонные решения, древесные рисунки и фантазийные декоры.",
     "features": [
-      "Алюминиевый профиль GOLA",
-      "Без накладных ручек",
-      "Акриловые и пластиковые покрытия"
+      "Акриловые покрытия",
+      "Глянцевый или матовый пластик",
+      "Однотонные, древесные и фантазийные декоры"
     ],
     "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
     "source_pdf_page": 115,
     "source_printed_pages": "230–231",
     "image": {
-      "alt": "Кухня РИМИ Ницца",
-      "loading": "lazy",
-      "src": "assets/rimi-catalog-nizza-1280w.webp",
-      "srcset": "assets/rimi-catalog-nizza-640w.webp 640w, assets/rimi-catalog-nizza-960w.webp 960w, assets/rimi-catalog-nizza-1280w.webp 1280w",
-      "sizes": "(max-width: 750px) 88vw, 43vw",
-      "width": "1280",
-      "height": "723",
-      "decoding": "async"
-    }
+      "alt": "Кухня РИМИ Ницца NEW",
+      "src": "assets/kitchens-modern/rimi-25b38975bf5da3a9-1600w.webp",
+      "srcset": "assets/kitchens-modern/rimi-25b38975bf5da3a9-560w.webp 560w, assets/kitchens-modern/rimi-25b38975bf5da3a9-1600w.webp 1600w",
+      "width": "1600",
+      "height": "970",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/sovremennye_kukhni/758/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-modern/rimi-25b38975bf5da3a9-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-25b38975bf5da3a9-560w.webp",
+            "width": 560,
+            "height": 340,
+            "bytes": 19386
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-25b38975bf5da3a9-1600w.webp",
+            "width": 1600,
+            "height": 970,
+            "bytes": 106612
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-6671c2f10122e448-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-6671c2f10122e448-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 16790
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-6671c2f10122e448-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 127826
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-e87f4ce8adf97144-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-e87f4ce8adf97144-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 13168
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-e87f4ce8adf97144-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 71674
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-622c5e9cc14d9c1e-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-622c5e9cc14d9c1e-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 18366
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-622c5e9cc14d9c1e-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 97488
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-527cca6a8775e580-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-527cca6a8775e580-560w.webp",
+            "width": 560,
+            "height": 313,
+            "bytes": 17962
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-527cca6a8775e580-1600w.webp",
+            "width": 1600,
+            "height": 895,
+            "bytes": 68662
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-4eb05f08c64ece71-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-4eb05f08c64ece71-560w.webp",
+            "width": 560,
+            "height": 315,
+            "bytes": 18744
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-4eb05f08c64ece71-1600w.webp",
+            "width": 1600,
+            "height": 899,
+            "bytes": 96806
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-6850b1797d02d940-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-6850b1797d02d940-560w.webp",
+            "width": 560,
+            "height": 317,
+            "bytes": 15006
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-6850b1797d02d940-1600w.webp",
+            "width": 1600,
+            "height": 904,
+            "bytes": 79338
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-0981a2f6209ca755-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-0981a2f6209ca755-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 22028
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-0981a2f6209ca755-1600w.webp",
+            "width": 1600,
+            "height": 1800,
+            "bytes": 147336
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-649c2899fa9721e4-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-649c2899fa9721e4-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 21698
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-649c2899fa9721e4-1600w.webp",
+            "width": 1600,
+            "height": 1800,
+            "bytes": 139474
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-2db1edebbcca75e1-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-2db1edebbcca75e1-560w.webp",
+            "width": 560,
+            "height": 631,
+            "bytes": 31752
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-2db1edebbcca75e1-1600w.webp",
+            "width": 1600,
+            "height": 1803,
+            "bytes": 264642
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "time",
     "name": "Тайм",
     "collection": "modern",
-    "subtitle": "Древесные фактуры и стекло",
-    "description": "В «Тайме» фасады с древесной фактурой сочетаются со стеклом в алюминиевой рамке и профилем GOLA. Индустриальный характер модели поддерживают рациональная планировка и выразительные материалы.",
+    "subtitle": "Минимализм и разнообразие оттенков",
+    "description": "«Тайм» — лаконичная коллекция современного направления. Модель выпускается в разных цветовых решениях: можно выбрать однотонный вариант, древесную фактуру или фантазийный декор. Отделку и планировку согласуем с вашим пространством.",
     "features": [
-      "Древесные фактуры фасадов",
-      "Стекло в алюминиевой рамке",
-      "Профиль GOLA"
+      "Сдержанный современный дизайн",
+      "Однотонные цветовые решения",
+      "Древесные и фантазийные декоры"
     ],
     "source_pdf": "Генеральный Каталог РИМИ 2024 Современные модели-сжатый.pdf",
     "source_pdf_page": 124,
     "source_printed_pages": "248–249",
     "image": {
       "alt": "Кухня РИМИ Тайм",
-      "loading": "lazy",
-      "src": "assets/rimi-catalog-time-1280w.webp",
-      "srcset": "assets/rimi-catalog-time-640w.webp 640w, assets/rimi-catalog-time-960w.webp 960w, assets/rimi-catalog-time-1280w.webp 1280w",
-      "sizes": "(max-width: 750px) 88vw, 43vw",
-      "width": "1280",
-      "height": "723",
-      "decoding": "async"
-    }
+      "src": "assets/kitchens-modern/rimi-b47ff7fcb62d595e-1600w.webp",
+      "srcset": "assets/kitchens-modern/rimi-b47ff7fcb62d595e-560w.webp 560w, assets/kitchens-modern/rimi-b47ff7fcb62d595e-1600w.webp 1600w",
+      "width": "1600",
+      "height": "896",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/sovremennye_kukhni/751/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-modern/rimi-b47ff7fcb62d595e-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-b47ff7fcb62d595e-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 23098
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-b47ff7fcb62d595e-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 127390
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-6be52eb90b7b947a-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-6be52eb90b7b947a-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 17924
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-6be52eb90b7b947a-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 125482
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-327feed47195c803-1511w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-327feed47195c803-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 39800
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-327feed47195c803-1511w.webp",
+            "width": 1511,
+            "height": 1700,
+            "bytes": 202978
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-93f3fd3364a3e4c1-1511w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-93f3fd3364a3e4c1-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 42602
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-93f3fd3364a3e4c1-1511w.webp",
+            "width": 1511,
+            "height": 1700,
+            "bytes": 281410
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-0bc3e62a96c1b381-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-0bc3e62a96c1b381-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 50280
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-0bc3e62a96c1b381-1600w.webp",
+            "width": 1600,
+            "height": 1800,
+            "bytes": 269754
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-68cad31f60be5642-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-68cad31f60be5642-560w.webp",
+            "width": 560,
+            "height": 390,
+            "bytes": 26160
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-68cad31f60be5642-1600w.webp",
+            "width": 1600,
+            "height": 1113,
+            "bytes": 151096
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-9c6e52553eb37e4f-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-9c6e52553eb37e4f-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 21984
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-9c6e52553eb37e4f-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 125064
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-863765afed522835-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-863765afed522835-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 25878
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-863765afed522835-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 152620
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-3cb70b7ce2663bd6-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-3cb70b7ce2663bd6-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 23700
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-3cb70b7ce2663bd6-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 136590
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-5e9f8cc4616b1e71-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-5e9f8cc4616b1e71-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 26426
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-5e9f8cc4616b1e71-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 175296
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-0d02e191285f1296-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-0d02e191285f1296-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 28086
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-0d02e191285f1296-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 197920
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-70e62990c3c01913-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-70e62990c3c01913-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 53148
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-70e62990c3c01913-1600w.webp",
+            "width": 1600,
+            "height": 1800,
+            "bytes": 379980
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-5882732ccbab4520-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-5882732ccbab4520-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 41632
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-5882732ccbab4520-1600w.webp",
+            "width": 1600,
+            "height": 1800,
+            "bytes": 266162
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "nikol",
+    "name": "Николь",
+    "collection": "modern",
+    "subtitle": "Неоклассика с современными деталями",
+    "description": "У «Николь» фрезерованные фасады сочетаются с современными вариантами отделки. Доступны матовая и полуматовая эмаль, а также PET-мембрана. Возможна композиция без видимых ручек; стеклянные витрины Verona добавляют закрытым шкафам визуальную лёгкость.",
+    "features": [
+      "Фрезерованные фасады",
+      "Эмаль или PET-мембрана",
+      "Варианты без видимых ручек и витрины Verona"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
+    "source_pdf_page": 58,
+    "source_printed_pages": "116–117",
+    "image": {
+      "alt": "Кухня РИМИ Николь",
+      "src": "assets/kitchens-modern/rimi-e0ee3d449b5a1cc2-1600w.webp",
+      "srcset": "assets/kitchens-modern/rimi-e0ee3d449b5a1cc2-560w.webp 560w, assets/kitchens-modern/rimi-e0ee3d449b5a1cc2-1600w.webp 1600w",
+      "width": "1600",
+      "height": "978",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/sovremennye_kukhni/1211/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-modern/rimi-e0ee3d449b5a1cc2-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-e0ee3d449b5a1cc2-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 18046
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-e0ee3d449b5a1cc2-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 97492
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-b0ca48e9e3d437b8-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-b0ca48e9e3d437b8-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 18974
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-b0ca48e9e3d437b8-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 94924
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-648fd732f0d36109-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-648fd732f0d36109-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 17418
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-648fd732f0d36109-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 101826
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-7b38780a707adb33-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-7b38780a707adb33-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 20822
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-7b38780a707adb33-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 114656
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-d716480399ab38fb-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-d716480399ab38fb-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 10198
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-d716480399ab38fb-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 51864
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-37e6bb9443648e3f-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-37e6bb9443648e3f-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 13654
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-37e6bb9443648e3f-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 55384
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-88751d916ad26f4b-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-88751d916ad26f4b-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 14896
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-88751d916ad26f4b-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 73374
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-b0c30e3b7ad9d2aa-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-b0c30e3b7ad9d2aa-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 19788
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-b0c30e3b7ad9d2aa-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 101532
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-2039d5b1407f66ba-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-2039d5b1407f66ba-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 16102
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-2039d5b1407f66ba-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 74658
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-2c5fffe913d8f6ae-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-2c5fffe913d8f6ae-560w.webp",
+            "width": 560,
+            "height": 342,
+            "bytes": 23926
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-2c5fffe913d8f6ae-1600w.webp",
+            "width": 1600,
+            "height": 978,
+            "bytes": 114024
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-4687ebfaf74f66d5-1536w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-4687ebfaf74f66d5-560w.webp",
+            "width": 560,
+            "height": 560,
+            "bytes": 18556
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-4687ebfaf74f66d5-1536w.webp",
+            "width": 1536,
+            "height": 1536,
+            "bytes": 84642
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "avenue",
+    "name": "Авеню",
+    "collection": "modern",
+    "subtitle": "Рамочные фасады и открытые стеллажи",
+    "description": "В «Авеню» винтажные мотивы соединены с современной практичностью. Прямые рамочные фасады задают геометрию, а открытые стеллажи облегчают композицию. Полки могут быть настенными, встроенными в модули или отдельными высокими конструкциями.",
+    "features": [
+      "Прямые рамочные фасады",
+      "Открытые стеллажи",
+      "Настенные и отдельно стоящие полки"
+    ],
+    "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
+    "source_pdf_page": 67,
+    "source_printed_pages": "134–135",
+    "image": {
+      "alt": "Кухня РИМИ Авеню",
+      "src": "assets/kitchens-modern/rimi-2648ec5ba0909cbe-1600w.webp",
+      "srcset": "assets/kitchens-modern/rimi-2648ec5ba0909cbe-560w.webp 560w, assets/kitchens-modern/rimi-2648ec5ba0909cbe-1600w.webp 1600w",
+      "width": "1600",
+      "height": "896",
+      "decoding": "async",
+      "loading": "lazy"
+    },
+    "source_page": "https://rimi-mebel.ru/catalog/sovremennye_kukhni/1218/",
+    "gallery": [
+      {
+        "image": "assets/kitchens-modern/rimi-2648ec5ba0909cbe-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-2648ec5ba0909cbe-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 36266
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-2648ec5ba0909cbe-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 207726
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-6b0fc3cd8e5b3a58-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-6b0fc3cd8e5b3a58-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 36854
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-6b0fc3cd8e5b3a58-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 223476
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-955940e81af8c956-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-955940e81af8c956-560w.webp",
+            "width": 560,
+            "height": 329,
+            "bytes": 37984
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-955940e81af8c956-1600w.webp",
+            "width": 1600,
+            "height": 941,
+            "bytes": 254910
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-647be127bc771837-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-647be127bc771837-560w.webp",
+            "width": 560,
+            "height": 329,
+            "bytes": 38238
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-647be127bc771837-1600w.webp",
+            "width": 1600,
+            "height": 941,
+            "bytes": 262030
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-65766b09aa97284f-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-65766b09aa97284f-560w.webp",
+            "width": 560,
+            "height": 314,
+            "bytes": 34112
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-65766b09aa97284f-1600w.webp",
+            "width": 1600,
+            "height": 896,
+            "bytes": 194220
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-c0078727f4e6324f-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-c0078727f4e6324f-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 33594
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-c0078727f4e6324f-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 245776
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-55750c3afd229013-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-55750c3afd229013-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 31776
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-55750c3afd229013-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 192070
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-459ac8210dd9c6be-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-459ac8210dd9c6be-560w.webp",
+            "width": 560,
+            "height": 325,
+            "bytes": 27434
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-459ac8210dd9c6be-1600w.webp",
+            "width": 1600,
+            "height": 928,
+            "bytes": 163682
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-641e551a975c6c85-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-641e551a975c6c85-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 44518
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-641e551a975c6c85-1600w.webp",
+            "width": 1600,
+            "height": 1800,
+            "bytes": 300602
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-8f2424fd80b5ca26-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-8f2424fd80b5ca26-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 59506
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-8f2424fd80b5ca26-1600w.webp",
+            "width": 1600,
+            "height": 1800,
+            "bytes": 422180
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-64aced0bc24b93bb-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-64aced0bc24b93bb-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 55238
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-64aced0bc24b93bb-1600w.webp",
+            "width": 1600,
+            "height": 1800,
+            "bytes": 386274
+          }
+        ]
+      },
+      {
+        "image": "assets/kitchens-modern/rimi-11e97f1fdd7059ea-1600w.webp",
+        "variants": [
+          {
+            "path": "assets/kitchens-modern/rimi-11e97f1fdd7059ea-560w.webp",
+            "width": 560,
+            "height": 630,
+            "bytes": 31270
+          },
+          {
+            "path": "assets/kitchens-modern/rimi-11e97f1fdd7059ea-1600w.webp",
+            "width": 1600,
+            "height": 1800,
+            "bytes": 195290
+          }
+        ]
+      }
+    ]
   },
   {
     "slug": "monticelli",
@@ -573,56 +4313,6 @@
       "loading": "lazy",
       "src": "assets/rimi-catalog-devenport-1280w.webp",
       "srcset": "assets/rimi-catalog-devenport-640w.webp 640w, assets/rimi-catalog-devenport-960w.webp 960w, assets/rimi-catalog-devenport-1280w.webp 1280w",
-      "sizes": "(max-width: 750px) 88vw, 43vw",
-      "width": "1280",
-      "height": "723",
-      "decoding": "async"
-    }
-  },
-  {
-    "slug": "nikol",
-    "name": "Николь",
-    "collection": "classic",
-    "subtitle": "Неоклассика в спокойной палитре",
-    "description": "«Николь» предлагает современное прочтение неоклассики. Для фасадов в каталоге предусмотрены матовая и полуматовая эмаль либо PET-мембрана. Спокойные оттенки позволяют сочетать кухню с яркими или нейтральными деталями интерьера.",
-    "features": [
-      "Неоклассические формы",
-      "Матовая или полуматовая эмаль",
-      "Вариант отделки PET-мембраной"
-    ],
-    "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
-    "source_pdf_page": 58,
-    "source_printed_pages": "116–117",
-    "image": {
-      "alt": "Кухня РИМИ Николь",
-      "loading": "lazy",
-      "src": "assets/rimi-catalog-nikol-1280w.webp",
-      "srcset": "assets/rimi-catalog-nikol-640w.webp 640w, assets/rimi-catalog-nikol-960w.webp 960w, assets/rimi-catalog-nikol-1280w.webp 1280w",
-      "sizes": "(max-width: 750px) 88vw, 43vw",
-      "width": "1280",
-      "height": "723",
-      "decoding": "async"
-    }
-  },
-  {
-    "slug": "avenue",
-    "name": "Авеню",
-    "collection": "classic",
-    "subtitle": "Рамочные фасады и открытые стеллажи",
-    "description": "«Авеню» сочетает прямые рамочные фасады с открытыми стеллажами «Шейд». Стеллажи представлены как настенные полки, части модулей и самостоятельные высокие конструкции.",
-    "features": [
-      "Прямые рамочные фасады",
-      "Открытые стеллажи «Шейд»",
-      "Настенные и высокие конструкции"
-    ],
-    "source_pdf": "Генеральный Каталог РИМИ 2024 Классические модели_compressed (1).pdf",
-    "source_pdf_page": 67,
-    "source_printed_pages": "134–135",
-    "image": {
-      "alt": "Кухня РИМИ Авеню",
-      "loading": "lazy",
-      "src": "assets/rimi-catalog-avenue-1280w.webp",
-      "srcset": "assets/rimi-catalog-avenue-640w.webp 640w, assets/rimi-catalog-avenue-960w.webp 960w, assets/rimi-catalog-avenue-1280w.webp 1280w",
       "sizes": "(max-width: 750px) 88vw, 43vw",
       "width": "1280",
       "height": "723",
