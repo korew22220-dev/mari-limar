@@ -1,15 +1,17 @@
-/* Showroom photograph on the contacts opening screen. */
+/* Fixed showroom backdrop; page content scrolls in front of it. */
+.ml-contact-page{isolation:isolate}
+.ml-contact-page main,.ml-contact-page footer{position:relative;z-index:1}
 .ml-contact-page .cb-photo-heading{
-  position:relative;isolation:isolate;width:100%;margin:0;
+  position:relative;width:100%;margin:0;
   min-height: min(780px,calc(100svh - var(--ml-header-height,88px)));
   display:flex;align-items:flex-end;padding:clamp(32px,5vw,72px) 7%;
-  color:#fff;overflow:hidden;background:#473d32;
+  color:#fff;overflow:hidden;background:transparent;
 }
-.cb-heading-photo,.cb-heading-photo img{position:absolute;inset:0;width:100%;height:100%}
-.cb-heading-photo{z-index:-2}
+.cb-heading-photo{position:fixed;inset:0;z-index:0;display:block;pointer-events:none;background:#473d32}
+.cb-heading-photo img{position:absolute;inset:0;width:100%;height:100%}
 .cb-heading-photo img{object-fit:cover;object-position:center 42%}
-.cb-photo-heading::before{
-  content:"";position:absolute;inset:0;z-index:-1;
+.cb-heading-photo::after{
+  content:"";position:absolute;inset:0;
   background:linear-gradient(to bottom,transparent 45%,rgba(0,0,0,.76) 100%);
 }
 .ml-contact-page .cb-heading-content{width:100%;max-width:1320px;margin-inline:auto}
@@ -26,4 +28,21 @@
   .ml-contact-page .cb-photo-heading .cb-heading-row p{font-size:14px;max-width:360px}
   .ml-contact-page .cb-photo-heading .overline{font-size:9px;letter-spacing:.12em}
   .ml-contact-page .cb-connect{padding-top:32px}
+}
+
+/* Translucent surfaces keep the fixed photograph visible around the content. */
+.ml-contact-page .cb-connect,.ml-contact-page .cb-request{
+  padding:clamp(24px,3.5vw,48px);margin-bottom:32px;
+  border:1px solid rgba(255,255,255,.35);border-radius:20px;
+  background:rgba(248,245,239,.93);color:#201c19;
+  --cb-muted:#615a53;--cb-line:rgba(0,0,0,.16);
+  --pf-muted:var(--cb-muted);--pf-line:var(--cb-line);
+}
+html[data-ml-theme=dark] .ml-contact-page :is(.cb-connect,.cb-request){
+  background:rgba(16,16,16,.87);color:#f0e9df;
+  border-color:rgba(255,255,255,.18);
+  --cb-muted:#c6c0b8;--cb-line:rgba(255,255,255,.18);
+}
+@media(max-width:700px){
+  .ml-contact-page .cb-connect,.ml-contact-page .cb-request{padding:24px 20px;margin-bottom:24px}
 }
