@@ -32,3 +32,7 @@ html:root body .ml-drawer__contact.ml-drawer__contact{transition:none}}
 
 /* The drawer action uses the same single pill as the other calls to action. */
 html:root body .ml-drawer__contact .ml-drawer__contact-icon{display:none}
+
+/* Compact floating palette control; the primary action buttons keep their size. */
+html:root body .ml-theme-toggle.ml-theme-toggle{min-height:44px;padding:9px 14px;gap:7px;font-size:10px;line-height:1.4;letter-spacing:.04em}
+html:root body .ml-theme-toggle svg{width:17px;height:17px}

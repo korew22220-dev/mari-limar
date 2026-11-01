@@ -5,7 +5,7 @@ body.ml-home.ml-home-refresh main>.section,body.ml-home.ml-home-refresh main>.da
 .ml-home-refresh .display{font-size:clamp(38px,4.4vw,66px);margin-block:20px;line-height:1.1}
 .ml-home-refresh .overline{font-size:10px;letter-spacing:.16em}
 .ml-home-refresh .hero{height:88svh;min-height:660px;max-height:860px}
-.ml-home-refresh .hero-inner{bottom:12%}
+.ml-home-refresh .hero-inner{bottom:8%}
 .ml-home-refresh .hm-hero-kicker{font-size:10px;line-height:1.7;letter-spacing:.14em;text-transform:uppercase;margin-bottom:22px;max-width:650px}
 .ml-home-refresh .hero-bottom>p{max-width:580px;font-size:17px;line-height:1.7}
 .ml-home-refresh .ml-directions__grid{margin-top:28px;gap:25px}
@@ -79,7 +79,7 @@ html[data-ml-theme=dark] .ml-home-refresh .hm-contact{background:#111}
 @media(max-width:700px){
 body.ml-home.ml-home-refresh main>.section,body.ml-home.ml-home-refresh main>.dark-section{padding:40px 7%}
 .ml-home-refresh .hero{height:94svh;min-height:640px;max-height:880px}
-.ml-home-refresh .hero-inner{bottom:13%;left:7%;right:7%}
+.ml-home-refresh .hero-inner{bottom:10%;left:7%;right:7%}
 .ml-home-refresh .hm-hero-kicker{font-size:9px;letter-spacing:.1em;max-width:36ch;margin-bottom:18px}
 .ml-home-refresh .hero-bottom>p{font-size:15px;max-width:34ch}
 .ml-home-refresh .display{font-size:clamp(36px,8.7vw,48px);margin-block:18px}
