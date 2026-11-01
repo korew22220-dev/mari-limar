@@ -1,0 +1,11 @@
+/* A still photograph replaces the kitchen video. */
+.kh-photo-hero{position:relative;overflow:hidden;background:#292620}
+.kh-photo-hero__image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.kh-photo-hero::after{content:none;display:none}
+.kh-photo-hero .hero-content{position:absolute;left:7%;right:7%;bottom:clamp(70px,10svh,110px);max-width:650px;text-shadow:0 2px 14px #0009}
+.kh-photo-hero .eyebrow{font-size:10px;line-height:1.6;letter-spacing:.12em;margin:0 0 14px}
+.kh-photo-hero h1{font-size:clamp(42px,5vw,68px);line-height:1.05;letter-spacing:-.025em;margin:0 0 20px}
+.kh-photo-hero .hero-row{display:block}
+.kh-photo-hero .hero-row p{font-size:15px;line-height:1.6;max-width:44ch;margin:0 0 22px}
+.kh-photo-hero .ml-hero-actions{display:flex;flex-direction:row;align-items:center;flex-wrap:wrap;gap:12px 18px}
+@media(max-width:700px){.kh-photo-hero .hero-content{bottom:80px}.kh-photo-hero h1{font-size:42px;margin-bottom:16px}.kh-photo-hero .eyebrow{font-size:9px}.kh-photo-hero .hero-row p{font-size:14px;margin-bottom:18px}.kh-photo-hero__image{object-position:48% center}}

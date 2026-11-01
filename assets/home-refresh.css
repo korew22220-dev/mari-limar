@@ -106,3 +106,12 @@ body.ml-home.ml-home-refresh main>.section,body.ml-home.ml-home-refresh main>.da
 .ml-home-refresh .hm-contact-map{height:290px}
 }
 @media(prefers-reduced-motion:reduce){.ml-home-refresh .hm-project-image img{transition:none}}
+
+/* Compact first-screen copy, below the title embedded in the video. */
+.ml-home.ml-home-refresh .hero-inner{max-width:760px}
+.ml-home.ml-home-refresh .hero h1.ml-home-title{font-size:clamp(34px,4.2vw,58px);line-height:1.1;letter-spacing:-.025em;margin:0 0 18px}
+.ml-home-refresh .hm-hero-kicker{font-size:9px;line-height:1.5;letter-spacing:.1em;margin-bottom:12px}
+.ml-home.ml-home-refresh .hero-bottom>p{font-size:14px;line-height:1.6;max-width:43ch;margin-bottom:18px}
+.ml-home .hero .ml-hero-actions{gap:12px 20px}
+.ml-home .ml-hero-secondary{font-size:13px;min-height:44px}
+@media(max-width:700px){.ml-home.ml-home-refresh .hero h1.ml-home-title{font-size:clamp(30px,7.3vw,40px);margin-bottom:16px}.ml-home-refresh .hm-hero-kicker{font-size:8px;margin-bottom:10px}.ml-home.ml-home-refresh .hero-bottom>p{font-size:13px;max-width:34ch;margin-bottom:16px}}

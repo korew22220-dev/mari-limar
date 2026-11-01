@@ -5,7 +5,7 @@
  var topics={cost:'Узнать стоимость кухни',project:'Обсудить проект',details:'Узнать подробнее',visit:'Записаться в шоурум',expertise:'Заказать экспертизу мебели'};
  function phoneError(value){var digits=String(value).replace(/\D/g,'');return digits.length<7||digits.length>15||!/^\+?[\d\s().-]+$/.test(String(value))?'Проверьте номер телефона: укажите от 7 до 15 цифр.':'';}
  function formatEnquiry(data){
-  var lines=['Здравствуйте! Обращение с сайта MARI LIMAR.','Тема: '+(topics[data.topic]||topics.project)];
+  var lines=['Здравствуйте! Обращение с сайта Марли Лимарт.','Тема: '+(topics[data.topic]||topics.project)];
   if(data.model)lines.push('Модель: '+data.model);
   if(data.context&&data.context!==data.model)lines.push('Раздел: '+data.context);
   lines.push('Имя: '+data.name.trim(),'Телефон: '+data.phone.trim());
@@ -13,9 +13,15 @@
   if(data.source)lines.push('Страница: '+data.source);
   return lines.join('\n');
  }
- function messageLinks(message){return {whatsapp:'https://wa.me/'+phone+'?text='+encodeURIComponent(message),telegram:'https://t.me/+'+phone};}
- if(typeof module==='object'&&module.exports)module.exports={formatEnquiry:formatEnquiry,messageLinks:messageLinks,phoneError:phoneError};
- if(typeof window!=='undefined')window.MariLead={formatEnquiry:formatEnquiry,messageLinks:messageLinks,phoneError:phoneError};
+ function messageLinks(message){return {whatsapp:'https://wa.me/'+phone+'?text='+encodeURIComponent(message),telegram:'https://t.me/+'+phone,max:'https://web.max.ru/'};}
+ function messenger(channel,message){
+  var links=messageLinks(message||'');
+  if(channel==='whatsapp')return {href:links.whatsapp,label:'Открыть WhatsApp',hint:'В WhatsApp текст обращения подставится автоматически.',readyHint:'Откройте WhatsApp и отправьте подготовленное сообщение в чат студии.'};
+  if(channel==='telegram')return {href:links.telegram,label:'Открыть Telegram',hint:'Для Telegram скопируйте готовый текст и вставьте его в чат.',readyHint:'Скопируйте текст, откройте Telegram и отправьте его в чат студии.'};
+  return {href:links.max,label:'Открыть MAX',hint:'Для MAX скопируйте готовый текст и найдите студию по номеру +7 (918) 402-99-32.',readyHint:'Скопируйте текст. В MAX найдите контакт +7 (918) 402-99-32 и вставьте сообщение в чат. Если поиск по номеру недоступен, выберите другой мессенджер.'};
+ }
+ if(typeof module==='object'&&module.exports)module.exports={formatEnquiry:formatEnquiry,messageLinks:messageLinks,phoneError:phoneError,messenger:messenger};
+ if(typeof window!=='undefined')window.MariLead={formatEnquiry:formatEnquiry,messageLinks:messageLinks,phoneError:phoneError,messenger:messenger};
  if(typeof document==='undefined')return;
  var dialog=document.getElementById('ml-lead-dialog'),form=document.getElementById('ml-lead-form');
  var tools=document.getElementById('ml-contact-tools'),fab=document.getElementById('ml-contact-fab'),tray=document.getElementById('ml-contact-tray');
@@ -38,11 +44,11 @@
  var doneButton=document.getElementById('ml-lead-done');if(doneButton)doneButton.addEventListener('click',function(){dialog.close();});
  tools.hidden=false;
  function setTray(open,restore){tray.hidden=!open;fab.setAttribute('aria-expanded',String(open));if(!open&&restore)fab.focus({preventScroll:true});}
- function channelHint(){document.getElementById('ml-lead-channel-hint').textContent=fields.channel.value==='telegram'?'Для Telegram скопируйте готовый текст и вставьте его в чат.':'В WhatsApp текст обращения подставится автоматически.';}
+ function channelHint(){document.getElementById('ml-lead-channel-hint').textContent=messenger(fields.channel.value,'').hint;}
  function edit(){form.hidden=false;ready.hidden=true;if(delivered)delivered.hidden=true;copyStatus.textContent='';}
  function openForm(trigger){
   if(typeof dialog.showModal!=='function')return false;
-  previousFocus=tools.contains(trigger)?fab:trigger;model=trigger.dataset.mlModel||'';context=trigger.dataset.mlContext||document.title.replace(/ — MARI LIMAR$/,'');
+  previousFocus=tools.contains(trigger)?fab:trigger;model=trigger.dataset.mlModel||'';context=trigger.dataset.mlContext||document.title.replace(/ — (MARI LIMAR|Марли Лимарт)$/,'');
   fields.topic.value=topics[trigger.dataset.mlLead]?trigger.dataset.mlLead:'project';
   contextNode.textContent=model||context;contextNode.hidden=!contextNode.textContent;
   document.getElementById('ml-lead-title').textContent=fields.topic.value==='cost'?'Рассчитаем вашу кухню':fields.topic.value==='visit'?'Встретимся в шоуруме':fields.topic.value==='expertise'?'Обсудим экспертизу мебели':'Обсудим вашу задачу';
@@ -88,9 +94,9 @@
    return;
   }
   var message=formatEnquiry(data);
-  var links=messageLinks(message),telegram=fields.channel.value==='telegram';
-  preview.value=message;chat.href=telegram?links.telegram:links.whatsapp;chat.textContent=telegram?'Открыть Telegram':'Открыть WhatsApp';
-  document.getElementById('ml-lead-ready-hint').textContent=telegram?'Скопируйте текст, откройте Telegram и отправьте его в чат студии.':'Откройте WhatsApp и отправьте подготовленное сообщение в чат студии.';
+  var selectedChannel=messenger(fields.channel.value,message);
+  preview.value=message;chat.href=selectedChannel.href;chat.textContent=selectedChannel.label;
+  document.getElementById('ml-lead-ready-hint').textContent=selectedChannel.readyHint;
   copyStatus.textContent='';form.hidden=true;ready.hidden=false;
   document.getElementById('ml-lead-ready-title').focus({preventScroll:true});
  });

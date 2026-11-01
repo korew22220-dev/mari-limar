@@ -52,12 +52,15 @@ test('blocked autoplay and media error preserve visible fallback',async()=>{
 test('late playing event cannot reveal video after reduced motion was enabled',()=>{
  const s=setup();s.motion.matches=true;s.motion.change();s.events.playing();assert.equal(s.classes.size,0);assert.ok(s.video.paused);
 });
-test('HTML reserves hero through existing CSS, includes responsive no-JS poster and safe native attributes',()=>{
+test('kitchens use a responsive collection photo, compact correct branding and no video downloads',()=>{
  const html=fs.readFileSync(path.join(root,'kitchens.html'),'utf8');
- assert.match(html,/<picture class="kh-video-hero__poster"/);
- assert.match(html,/<source media="\(max-width: 767px\)"/);
- const tag=html.match(/<video\b[^>]+>/s)[0];assert.doesNotMatch(tag,/(?<!-)\bsrc=|\bcontrols\b/);
- for(const attr of ['autoplay','muted','loop','playsinline','preload="metadata"'])assert.ok(tag.includes(attr));
- const shared=fs.readFileSync(path.join(root,'assets/site.js'),'utf8');assert.ok(shared.includes("video:not([data-kitchen-hero-video])"));
- for(const file of ['kitchens-rimi-desktop.mp4','kitchens-rimi-mobile.mp4','kitchens-rimi-desktop-poster.webp','kitchens-rimi-mobile-poster.webp'])assert.ok(fs.existsSync(path.join(root,'assets/videos',file)));
+ assert.match(html,/<section class="hero kh-photo-hero"/);
+ assert.doesNotMatch(html,/<video\b|kitchen-hero-video\.(js|css)|MARI LIMAR — KITCHEN DESIGN/);
+ assert.match(html,/МАРЛИ ЛИМАРТ · КУХНИ НА ЗАКАЗ/);
+ const tag=html.match(/<img class="kh-photo-hero__image"[^>]+>/)[0];
+ assert.match(tag,/fetchpriority="high"/);assert.match(tag,/sizes="100vw"/);
+ const candidates=tag.match(/srcset="([^"]+)"/)[1].split(', ');
+ assert.ok(candidates.length>=2);
+ for(const candidate of candidates)assert.ok(fs.existsSync(path.join(root,candidate.split(' ')[0])));
+ assert.match(html,/assets\/kitchen-photo-hero\.css/);
 });

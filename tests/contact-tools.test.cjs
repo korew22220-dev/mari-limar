@@ -111,3 +111,23 @@ test('failed delivery preserves the draft and offers working messenger recovery'
  await h.nodes['ml-lead-fallback'].fire('click');await h.nodes['ml-lead-form'].fire('submit');
  assert.equal(h.nodes['ml-lead-ready'].hidden,false);assert.match(h.nodes['ml-lead-message'].value,/Остров и встроенная техника/);
 });
+
+test('MAX prepares the studio enquiry with explicit contact-search steps and no false delivery claim',async()=>{
+ const h=harness();h.fields.channel.value='max';await h.click(h.trigger());
+ assert.match(h.nodes['ml-lead-channel-hint'].textContent,/MAX.*\+7 \(918\) 402-99-32/);
+ await h.nodes['ml-lead-form'].fire('submit');
+ assert.equal(h.nodes['ml-lead-open-chat'].href,'https://web.max.ru/');
+ assert.equal(h.nodes['ml-lead-open-chat'].textContent,'Открыть MAX');
+ assert.match(h.nodes['ml-lead-ready-hint'].textContent,/найдите контакт \+7 \(918\) 402-99-32/);
+ assert.match(h.nodes['ml-lead-message'].value,/сайта Марли Лимарт/);
+ assert.ok(h.nodes['ml-lead-message'].value.includes('Кухня «Луна»'));
+ await h.nodes['ml-lead-copy'].fire('click');assert.equal(h.copied(),h.nodes['ml-lead-message'].value);
+});
+test('every site form lists MAX as its selected first messenger',()=>{
+ for(const name of fs.readdirSync(root).filter(n=>n.endsWith('.html'))){
+  const s=fs.readFileSync(path.join(root,name),'utf8');
+  const selects=[...s.matchAll(/<select\b[^>]*name="channel"[^>]*>([\s\S]*?)<\/select>/g)];
+  assert.ok(selects.length,name);
+  for(const select of selects){assert.match(select[1],/^<option value="max" selected>MAX<\/option>/,name);assert.ok(select[1].includes('value="whatsapp"'));assert.ok(select[1].includes('value="telegram"'));}
+ }
+});

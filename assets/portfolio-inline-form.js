@@ -18,11 +18,11 @@
     fields.namedItem('phone').removeAttribute('aria-invalid');
     phoneError.textContent = '';
   });
-  fields.namedItem('channel').addEventListener('change', () => {
-    channelHint.textContent = fields.namedItem('channel').value === 'telegram'
-      ? 'Для Telegram скопируйте готовый текст и вставьте его в чат студии.'
-      : 'В WhatsApp текст подставится автоматически. Вы отправите его сами.';
-  });
+  function updateChannelHint() {
+    channelHint.textContent = api.messenger(fields.namedItem('channel').value, '').hint;
+  }
+  fields.namedItem('channel').addEventListener('change', updateChannelHint);
+  updateChannelHint();
   form.addEventListener('submit', event => {
     event.preventDefault();
     const name = fields.namedItem('name'), phone = fields.namedItem('phone');
@@ -34,13 +34,10 @@
     if (error) { phone.setAttribute('aria-invalid', 'true'); phone.reportValidity(); phone.focus(); return; }
     if (!form.reportValidity()) return;
     message.value = api.formatEnquiry({name:name.value, phone:phone.value, comment:fields.namedItem('comment').value, topic:form.dataset.leadTopic || 'project', context:form.dataset.leadContext || 'Портфолио — обсуждение проекта', model:'', source:location.origin + location.pathname});
-    const links = api.messageLinks(message.value);
-    const telegram = fields.namedItem('channel').value === 'telegram';
-    chat.href = telegram ? links.telegram : links.whatsapp;
-    chat.textContent = telegram ? 'Открыть Telegram' : 'Открыть WhatsApp';
-    document.getElementById('pf-request-ready-hint').textContent = telegram
-      ? 'Скопируйте текст, откройте Telegram и отправьте его в чат студии.'
-      : 'Откройте WhatsApp и отправьте подготовленное сообщение в чат студии.';
+    const selectedChannel = api.messenger(fields.namedItem('channel').value, message.value);
+    chat.href = selectedChannel.href;
+    chat.textContent = selectedChannel.label;
+    document.getElementById('pf-request-ready-hint').textContent = selectedChannel.readyHint;
     form.hidden = true;
     ready.hidden = false;
     copyStatus.textContent = '';
