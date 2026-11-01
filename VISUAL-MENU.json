@@ -1,0 +1,144 @@
+{
+  "menus": {
+    "kitchens.html": [
+      "kitchens",
+      "Кухни",
+      "27 коллекций для вашего интерьера.",
+      "Все коллекции",
+      "kitchens.html#catalog",
+      [
+        [
+          "Современные кухни",
+          "kitchens.html?collection=modern#catalog",
+          "assets/kitchens-modern/rimi-36caebb12acac35c-560w.webp"
+        ],
+        [
+          "Классические кухни",
+          "kitchens.html?collection=classic#catalog",
+          "assets/kitchens-classic/rimi-0d2a3b4ac807068c-560w.webp"
+        ]
+      ]
+    ],
+    "wardrobes.html": [
+      "wardrobes",
+      "Гардеробные",
+      "Хранение, продуманное под пространство.",
+      "Весь каталог",
+      "wardrobes.html#wd-gallery",
+      [
+        [
+          "Открытые системы",
+          "wardrobe-open.html",
+          "assets/wardrobes/rimi-wardrobe-4efed65981e424-640w.webp"
+        ],
+        [
+          "Фасадные гардеробные",
+          "wardrobe-primavera.html",
+          "assets/wardrobes/rimi-primavera-01-640w.webp"
+        ]
+      ]
+    ],
+    "architecture-design.html": [
+      "architecture",
+      "Архитектура и дизайн",
+      "От планировки до деталей интерьера.",
+      "О направлении",
+      "architecture-design.html",
+      [
+        [
+          "Архитектура",
+          "architecture-design.html#architecture",
+          "assets/portfolio/concept-20261031-04-640w.webp"
+        ],
+        [
+          "Дизайн интерьеров",
+          "architecture-design.html#interiors",
+          "assets/architecture-interior-hero-20261031-480w.webp"
+        ]
+      ]
+    ],
+    "portfolio.html": [
+      "portfolio",
+      "Портфолио",
+      "Архитектура, интерьеры и кухни.",
+      "Вся подборка",
+      "portfolio.html#gallery",
+      [
+        [
+          "Архитектура",
+          "portfolio.html?category=architecture#gallery",
+          "assets/portfolio/concept-20261031-04-640w.webp"
+        ],
+        [
+          "Интерьеры",
+          "portfolio.html?category=interior#gallery",
+          "assets/portfolio/concept-20261031-01-640w.webp"
+        ],
+        [
+          "Кухни",
+          "portfolio.html?category=kitchen#gallery",
+          "assets/portfolio/concept-20261031-05-640w.webp"
+        ]
+      ]
+    ],
+    "expertise.html": [
+      "expertise",
+      "Экспертиза мебели",
+      "Проверка качества и заключение.",
+      "Об экспертизе",
+      "expertise.html",
+      [
+        [
+          "Что проверяем",
+          "expertise.html#checks",
+          "assets/expertise-drawer-640w.webp"
+        ],
+        [
+          "Сертификаты эксперта",
+          "expertise.html#certificates",
+          "assets/expertise-check-materials-960w.webp"
+        ]
+      ]
+    ],
+    "about.html": [
+      "about",
+      "О студии",
+      "Марли Лимарт — архитектура и мебель.",
+      "О студии",
+      "about.html",
+      [
+        [
+          "Наш подход",
+          "about.html#studio",
+          "assets/photo-1600607687920-4e2a09cf159d.webp"
+        ],
+        [
+          "Марина Литовкина",
+          "about.html#marina",
+          "assets/marina-litovkina.webp"
+        ]
+      ]
+    ],
+    "blog.html": [
+      "blog",
+      "Блог",
+      "О планировке, материалах и мебели.",
+      "Все статьи",
+      "blog.html#articles",
+      [
+        [
+          "Планировка кухни",
+          "blog-kitchen-planning.html",
+          "assets/kitchens-modern/rimi-36caebb12acac35c-560w.webp"
+        ],
+        [
+          "Материалы интерьера",
+          "blog-interior-materials.html",
+          "assets/expertise-check-materials-960w.webp"
+        ]
+      ]
+    ]
+  },
+  "reference": "https://silverhome.design/",
+  "implementation": "Original local implementation; local studio images and routes."
+}
