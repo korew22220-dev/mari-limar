@@ -1,6 +1,7 @@
-/* Shared controls. Header navigation and the drawer retain their own design. */
+/* Shared controls, including the project action in the navigation drawer. */
 html:root body .ml-button.ml-button,
-html:root body .ml-theme-toggle.ml-theme-toggle{
+html:root body .ml-theme-toggle.ml-theme-toggle,
+html:root body .ml-drawer__contact.ml-drawer__contact{
  display:inline-flex;align-items:center;justify-content:center;gap:9px;
  box-sizing:border-box;min-height:50px;max-width:100%;padding:13px 24px;
  border:1px solid #AB936E;border-radius:999px;background:#80653C;color:#FFFFFF;
@@ -10,11 +11,13 @@ html:root body .ml-theme-toggle.ml-theme-toggle{
  transition:background-color .2s,color .2s,border-color .2s;
 }
 html:root body .ml-button.ml-button:hover,
-html:root body .ml-theme-toggle.ml-theme-toggle:hover{
+html:root body .ml-theme-toggle.ml-theme-toggle:hover,
+html:root body .ml-drawer__contact.ml-drawer__contact:hover{
  background:#6C532E;color:#FFFFFF;border-color:#A58B61;transform:none;box-shadow:none;
 }
 html:root body .ml-button.ml-button:focus-visible,
-html:root body .ml-theme-toggle.ml-theme-toggle:focus-visible{
+html:root body .ml-theme-toggle.ml-theme-toggle:focus-visible,
+html:root body .ml-drawer__contact.ml-drawer__contact:focus-visible{
  outline:2px solid #9A7D4F;outline-offset:4px;
 }
 /* Filters use the same shape and typography, with a clear selected state. */
@@ -22,5 +25,10 @@ html:root body .ml-button.ml-button[aria-pressed=false]{background:transparent;c
 html:root body .ml-button.ml-button[aria-pressed=false]:hover{background:#80653C;color:#FFFFFF;border-color:#AB936E}
 html:root body .ml-button.ml-button[aria-pressed=true]{background:#80653C;color:#FFFFFF;border-color:#AB936E}
 html:root body .ml-button.ml-button:disabled{opacity:.45;cursor:not-allowed}
-@media(max-width:600px){html:root body .ml-button.ml-button,html:root body .ml-theme-toggle.ml-theme-toggle{min-height:48px;padding:12px 20px;font-size:11px}}
-@media(prefers-reduced-motion:reduce){html:root body .ml-button.ml-button,html:root body .ml-theme-toggle.ml-theme-toggle{transition:none}}
+@media(max-width:600px){html:root body .ml-button.ml-button,html:root body .ml-theme-toggle.ml-theme-toggle,
+html:root body .ml-drawer__contact.ml-drawer__contact{min-height:48px;padding:12px 20px;font-size:11px}}
+@media(prefers-reduced-motion:reduce){html:root body .ml-button.ml-button,html:root body .ml-theme-toggle.ml-theme-toggle,
+html:root body .ml-drawer__contact.ml-drawer__contact{transition:none}}
+
+/* The drawer action uses the same single pill as the other calls to action. */
+html:root body .ml-drawer__contact .ml-drawer__contact-icon{display:none}

@@ -4,7 +4,9 @@
 html:root body .ml-hero-actions .ml-button{margin:0}
 .ml-contact-tools[hidden],.ml-contact-tray[hidden],.ml-lead-dialog [hidden]{display:none!important}
 .ml-contact-tools{position:fixed;right:max(20px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom));z-index:46}
-html:root body .ml-contact-fab.ml-button{gap:10px;box-shadow:0 3px 15px #0002}
+html:root body .ml-contact-fab.ml-button{width:56px;height:56px;min-height:56px;padding:0;gap:0;border-radius:50%;box-shadow:0 3px 15px #0002}
+.ml-contact-fab>span{display:none}
+.ml-contact-fab.ml-button>svg{width:26px;height:26px}
 .ml-contact-fab svg,.ml-lead-close svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.5;flex-shrink:0}
 .ml-contact-tray{position:absolute;right:0;bottom:calc(100% + 12px);width:310px;max-width:calc(100vw - 40px);max-height:calc(100svh - 110px);overflow:auto;overscroll-behavior:contain;padding:22px;border:1px solid #99897566;background:#f3efe8;color:#211d19;border-radius:20px;box-shadow:0 8px 30px #0002;display:flex;flex-direction:column;gap:12px}
 .ml-contact-tray__title{font:400 23px/1.3 Italiana,Georgia,serif;margin:0 0 4px}
@@ -39,6 +41,7 @@ html[data-ml-theme=dark] :is(.ml-lead-dialog,.ml-contact-tray){background:#111;c
 html[data-ml-theme=dark] .ml-lead-dialog :is(input,textarea,select){background:#080808;color:#f0e9df}
 html[data-ml-theme=dark] .ml-lead-dialog .ml-lead-error{color:#f4b5a9}
 @media(max-width:650px){
+ html:root body .ml-contact-fab.ml-button{width:52px;height:52px;min-height:52px;padding:0}
  .ml-contact-tools{right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom))}
  body:has(.ml-contact-tools) .ml-theme-toggle{left:max(12px,env(safe-area-inset-left));right:auto}
  .ml-contact-tray{max-width:calc(100vw - 24px);max-height:calc(100svh - 100px)}
@@ -47,10 +50,6 @@ html[data-ml-theme=dark] .ml-lead-dialog .ml-lead-error{color:#f4b5a9}
  .ml-lead-fields{grid-template-columns:1fr;gap:0}
  .ml-lead-ready-actions{flex-direction:column}
  .ml-hero-actions{flex-direction:row;flex-wrap:wrap}
-}
-@media(max-width:380px){
- .ml-contact-fab span{display:none}
- html:root body .ml-contact-fab.ml-button{width:52px;min-height:52px;padding:13px}
 }
 @media(prefers-reduced-motion:reduce){.ml-contact-tools *,.ml-lead-dialog *{scroll-behavior:auto;transition:none!important}}
 /* The studio's verified statement replaces the missing portrait placeholder. */
