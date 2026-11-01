@@ -42,8 +42,8 @@ function harness(options={}){
  function frames(){for(let i=0;i<4&&raf.length;i++){const q=raf.splice(0);q.forEach(f=>f());}}
  return {click,run,frames,rootClasses,navigations,timers,storage,curtain,reduced,winEvents,nodes,animations,get io(){return io;},get vtCalls(){return vtCalls;}};
 }
-test('all twelve internal HTML routes navigate through native location.assign',()=>{
- for(const name of ['index.html','kitchens.html','architecture-design.html','portfolio.html','expertise.html','about.html','contacts.html','blog.html','blog-kitchen-planning.html','blog-interior-materials.html','blog-furniture-architecture.html','blog-furniture-check.html']){
+test('main sections and wardrobe pages navigate through native location.assign',()=>{
+ for(const name of ['index.html','kitchens.html','wardrobe-barona.html','wardrobe-florida.html','wardrobe-kanti.html','wardrobe-lange.html','wardrobe-neo-long.html','wardrobe-novara.html','wardrobe-open.html','wardrobe-primavera.html','wardrobe-progma-handle.html','wardrobe-progma.html','wardrobes.html','architecture-design.html','portfolio.html','expertise.html','about.html','contacts.html','blog.html','blog-kitchen-planning.html','blog-interior-materials.html','blog-furniture-architecture.html','blog-furniture-check.html']){
   const h=harness();const same=name==='index.html';assert.equal(h.click('https://studio.test/mari-limar/'+name).prevented,!same);h.run(380);assert.equal(h.navigations.length,same?0:1);
  }
 });
