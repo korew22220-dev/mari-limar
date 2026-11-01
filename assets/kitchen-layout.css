@@ -1,0 +1,12 @@
+/* Balanced introduction, scoped to the Kitchens page. */
+#approach.kitchen-approach{padding-block:56px}
+#approach .display{font-size:clamp(32px,4vw,52px);line-height:1.12;margin:20px 0 28px;letter-spacing:-.025em}
+#approach .intro{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:6%;align-items:center}
+#approach .intro-photo{height:auto;margin:0;overflow:hidden}
+#approach .intro-photo img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+#approach .copy{padding:0;max-width:440px;min-width:0}
+#approach .copy p{font-size:15px;line-height:1.75;margin:0 0 16px}
+.kitchen-approach-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px 20px;margin-top:24px}
+.kitchen-approach-link{display:inline-flex;align-items:center;gap:10px;min-height:44px;color:inherit;font-size:13px;text-decoration:underline;text-underline-offset:5px}
+.kitchen-approach-link:focus-visible{outline:2px solid #9a7d4f;outline-offset:4px}
+@media(max-width:700px){#approach.kitchen-approach{padding-block:40px}#approach .intro{grid-template-columns:1fr;gap:24px}#approach .display{font-size:clamp(32px,7vw,42px);margin:16px 0 24px}#approach .copy{max-width:100%}#approach .copy p{font-size:14px;line-height:1.7}.kitchen-approach-actions{margin-top:20px}}
