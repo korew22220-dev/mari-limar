@@ -6,3 +6,6 @@
 #approach .intro-photo{grid-column:1;grid-row:2;margin-top:0}
 #approach .copy{grid-column:2;grid-row:2;align-self:center;padding-top:0;min-width:0}
 @media(max-width:700px){#approach.kitchen-approach{padding-block:40px}#approach .intro{grid-template-columns:1fr;gap:24px}#approach .intro>div:first-child{display:block}#approach .intro .display,#approach .intro-photo,#approach .copy{grid-column:auto;grid-row:auto}#approach .intro-photo{margin-top:25px}#approach .copy{padding:0}}
+
+/* Catalogue details stay visible in equal landscape frames. */
+.materials .materials-grid img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
