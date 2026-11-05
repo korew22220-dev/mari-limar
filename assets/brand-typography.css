@@ -38,3 +38,66 @@ html:root body .ml-drawer__bottom .ml-theme-toggle.ml-theme-toggle:hover{backgro
 @media(max-width:340px){html body .head{padding-inline:12px;gap:6px}html body .head .menu-btn{padding-inline:11px}html body .head .ml-logo{width:130px}}
 
 @media(max-width:360px){html body .materials .display{font-size:36px}}
+
+/* Readable lockup, consistent headings and a tighter editorial rhythm. */
+html:root body{--ml-section-gap:clamp(40px,4vw,56px)}
+html body .ml-logo{aspect-ratio:656/224;-webkit-mask-image:url('marli-limart-logo-readable.svg');mask-image:url('marli-limart-logo-readable.svg')}
+html:root body main :is(h1,h2) em{font-size:inherit!important;font-style:inherit!important;font-weight:inherit!important;line-height:inherit!important;letter-spacing:inherit;display:inline}
+html:root body:not(.ml-article-page):not(.ml-blog-page) main h2{line-height:1.06}
+html:root body main :is(h2.display,.ab-section h2,.ml-model-request h2){margin-block:20px 18px}
+html:root body main :is(.overline,.eyebrow){margin-bottom:16px}
+html:root body.ml-home.ml-home-refresh .hm-hero-kicker{font-size:14px;line-height:1.5;letter-spacing:.06em;max-width:52ch;margin-bottom:14px}
+html:root body.ml-home.ml-home-refresh .hero-bottom>p{font-size:18px;line-height:1.55;max-width:44ch;margin-bottom:20px}
+html:root body.ml-architecture-page .arch-hero .hero-content>.eyebrow{display:inline-block;font-size:14px;line-height:1.5;letter-spacing:.06em;max-width:48ch;padding:6px 10px;margin-bottom:0;background:#080808bf;color:#fff;text-shadow:none}
+html:root body.ml-architecture-page .arch-hero h1{line-height:1;margin-block:20px}
+html:root body.ml-architecture-page .arch-hero-actions{margin-top:20px}
+html:root body main>:is(.section,.dark-section,.catalog){padding-block:var(--ml-section-gap)}
+html:root body.ml-home.ml-home-refresh main>:is(.section,.dark-section,.hm-contact){padding-block:var(--ml-section-gap)}
+html:root body main>.feature{padding-bottom:var(--ml-section-gap)}
+html:root body main>.feature.alt{padding-top:var(--ml-section-gap)}
+html:root body main .catalog-head .display{margin:0 0 18px}
+html:root body main .catalog-head{margin-bottom:24px;gap:20px}
+html:root body main .model-select{margin:0 0 24px}
+html:root body main :is(.ab-section,.arch-section,.arch-gallery,.ml-compare,.ex-section){padding-block:var(--ml-section-gap)}
+html:root body main .arch-directions{padding-top:0}
+html:root body main .ex-faq{padding-block:32px}
+html:root body main :is(.ml-model-intro,.ml-model-description,.ml-model-request){padding-block:40px}
+html:root body .ml-kitchen-model{padding-top:var(--ml-header-height,88px)}
+html:root body main .ml-model-intro{padding-top:24px}
+html:root body main .ml-model-crumbs{margin-bottom:24px}
+html:root body main .ml-model-heading{margin-bottom:24px}
+html:root body.wd-detail-page .wd-product{padding-top:calc(var(--ml-header-height,88px) + 24px)}
+html:root body main .wd-back{margin-bottom:20px}
+html:root body.ml-contact-page .cb-photo-heading{min-height:min(660px,calc(90svh - var(--ml-header-height,88px)))}
+html:root body.ml-blog-page .cb-section{padding-block:40px}
+html:root body.ml-blog-page .cb-articles{padding-top:0}
+html:root body.ml-article-page .cb-article-end{padding-block:32px}
+@media(max-width:700px){
+ html:root body{--ml-section-gap:32px}
+ html body .head .ml-logo{width:clamp(140px,42vw,180px)}
+ html:root body.ml-home.ml-home-refresh .hero{height:92svh;min-height:520px;max-height:780px}
+ html:root body.ml-home.ml-home-refresh .hero-inner{bottom:7%}
+ html:root body.ml-home.ml-home-refresh .hero-bottom>p{font-size:16px;line-height:1.55;max-width:42ch;margin-bottom:18px}
+ html:root body.ml-home.ml-home-refresh .hm-hero-kicker{font-size:13px;max-width:46ch;margin-bottom:12px}
+ html:root body.ml-architecture-page .arch-hero .hero-content>.eyebrow{font-size:13px;letter-spacing:.045em}
+ html:root body.ml-architecture-page .arch-hero h1{margin-block:16px}
+ html:root body main :is(.ml-model-intro,.ml-model-description,.ml-model-request){padding-block:32px}
+ html:root body main .ml-model-intro{padding-top:24px}
+ html:root body main :is(.wd-model-grid,.blog-grid){row-gap:24px}
+ html:root body main .wd-product-layout{row-gap:24px}
+ html:root body.ml-contact-page .cb-photo-heading{min-height:max(400px,calc(82svh - var(--ml-header-height,80px)))}
+ html:root body.ml-blog-page .cb-section{padding-block:28px}
+ html:root body.ml-blog-page .cb-articles{padding-top:0}
+ html:root body.ml-article-page .cb-article-end{padding-block:28px}
+ html:root body>footer{padding-top:28px;padding-bottom:28px}
+}
+@media(max-width:340px){html body .head .ml-logo{width:140px}}
+
+/* Let the larger logo fit the navigation without clipping its descriptor. */
+html:root body>.head{height:auto;min-height:88px;padding-block:8px}
+@media(max-width:700px){html:root body>.head{min-height:80px;padding-block:8px}}
+@media(max-width:340px){html:root body>.head{min-height:74px}}
+
+/* Hero labels stay readable at the same scale across the main sections. */
+html:root body main :is(.hero,.ab-hero,.pf-hero,.cb-photo-heading,.ex-hero) :is(.eyebrow,.overline){font-size:13px;line-height:1.5;letter-spacing:.06em}
+html:root body.ml-architecture-page>.head:not(.ml-header-scrolled){background:#080808bf}
