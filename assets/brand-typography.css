@@ -1,6 +1,9 @@
-@font-face{font-family:Manrope;src:url('fonts/manrope-variable.ttf') format('truetype');font-style:normal;font-weight:200 800;font-display:swap}
-/* Manrope: open-source Cyrillic typography; local font, unchanged vector wordmark. */
-body,body *{font-family:Manrope,Arial,sans-serif!important}
+@font-face{font-family:Stem;src:url('fonts/Stem-Light.woff2') format('woff2');font-style:normal;font-weight:300;font-display:swap}
+@font-face{font-family:Stem;src:url('fonts/Stem-SemiLight.woff2') format('woff2');font-style:normal;font-weight:350 400;font-display:swap}
+@font-face{font-family:Stem;src:url('fonts/Stem-Medium.woff2') format('woff2');font-style:normal;font-weight:500;font-display:swap}
+@font-face{font-family:Stem;src:url('fonts/Stem-Bold.woff2') format('woff2');font-style:normal;font-weight:700;font-display:swap}
+/* Stem: Cyrillic typography from the supplied font archive; local font, unchanged vector wordmark. */
+body,body *{font-family:Stem,Arial,sans-serif!important}
 body{font-weight:400}
 body :is(button,.ml-button,.menu-btn){font-weight:500}
 html body .brand{display:inline-flex;align-items:center;flex-shrink:0;line-height:1;letter-spacing:0}
@@ -102,15 +105,15 @@ html:root body main :is(.hero,.ab-hero,.pf-hero,.cb-photo-heading,.ex-hero) :is(
 html:root body.ml-architecture-page>.head:not(.ml-header-scrolled){background:#080808bf}
 
 /* A single Cyrillic family keeps display headings and body text consistent. */
-html:root body :is(p,li,dt,dd,td,th,figcaption,label,input,textarea,select,button,.ml-button,.ml-drawer__contact,.ml-theme-toggle),html:root body :is(p,li,dt,dd,td,th,figcaption,label,button,.ml-button,.ml-drawer__contact,.ml-theme-toggle) *{font-family:Manrope,Arial,sans-serif!important}
+html:root body :is(p,li,dt,dd,td,th,figcaption,label,input,textarea,select,button,.ml-button,.ml-drawer__contact,.ml-theme-toggle),html:root body :is(p,li,dt,dd,td,th,figcaption,label,button,.ml-button,.ml-drawer__contact,.ml-theme-toggle) *{font-family:Stem,Arial,sans-serif!important}
 html:root body main p{font-size:17px!important;line-height:1.65!important;font-weight:400!important}
 html:root body main :is(li,dt,dd){font-size:16px;line-height:1.65;font-weight:400}
-html:root body main :is(h1,h2,h3),html:root body main :is(h1,h2,h3) *{font-family:Manrope,Arial,sans-serif!important}
+html:root body main :is(h1,h2,h3),html:root body main :is(h1,h2,h3) *{font-family:Stem,Arial,sans-serif!important}
 html:root body main p:is(.blog-meta,.ml-journal-category,.pf-kind,.ml-model-source,.wd-model-source,.wd-gallery-source){font-size:13px!important;line-height:1.5!important}
 html:root body main p:is(.pf-request-hint,.pf-request-intro,.catalog-note,.notice,.ex-note,.wd-product-note){font-size:14px!important;line-height:1.6!important}
 html:root body :is(.ml-button,.ml-drawer__contact){font-size:15px!important;font-weight:500!important;letter-spacing:0!important;text-transform:none!important;line-height:1.4}
 html:root body .ml-button:not(.ml-contact-fab):not(.ml-lead-close){min-height:48px}
-html:root body .menu-btn{font-family:Manrope,Arial,sans-serif!important;font-size:13px;font-weight:500;letter-spacing:.02em}
+html:root body .menu-btn{font-family:Stem,Arial,sans-serif!important;font-size:13px;font-weight:500;letter-spacing:.02em}
 html:root body .ml-theme-toggle{font-size:13px!important;font-weight:500!important;letter-spacing:0;text-transform:none}
 html:root body :is(input,textarea,select){font-size:16px}
 html:root body .ml-lead-dialog :is(p,label){font-size:15px;line-height:1.6}
@@ -118,7 +121,7 @@ html:root body .ml-lead-dialog :is(.ml-lead-hint,.ml-lead-error){font-size:14px}
 html:root body.ml-home.ml-home-refresh .hero-bottom>p{font-size:18px!important}
 html:root body footer{flex-wrap:wrap;row-gap:22px}
 html:root body footer .ml-legal-links{flex:0 0 100%;display:flex;align-items:center;flex-wrap:wrap;gap:12px 26px;padding-top:18px;border-top:1px solid #99897555}
-html:root body footer .ml-legal-links a{font-family:Manrope,Arial,sans-serif!important;font-size:14px;line-height:1.5;letter-spacing:0;text-transform:none;text-decoration:underline;text-underline-offset:4px;min-height:32px;display:inline-flex;align-items:center}
+html:root body footer .ml-legal-links a{font-family:Stem,Arial,sans-serif!important;font-size:14px;line-height:1.5;letter-spacing:0;text-transform:none;text-decoration:underline;text-underline-offset:4px;min-height:32px;display:inline-flex;align-items:center}
 html:root body .hm-contact-map{height:auto;overflow:hidden}
 html:root body .ml-route-card{display:flex;flex-direction:column;margin:0;min-width:0;background:#ece8e0;color:#211d19;border-radius:16px;overflow:hidden}
 html:root body .ml-route-card>img{display:block;width:100%;height:auto;aspect-ratio:5/3;object-fit:contain}
@@ -128,7 +131,7 @@ html:root body .ml-route-meta .ml-route-address{font-size:17px!important;font-we
 html:root body .ml-route-meta .ml-route-entry{font-size:15px!important}
 html:root body .ml-route-actions{display:flex;gap:10px;flex-wrap:wrap}
 html:root body .ml-route-actions a{font-size:14px!important}
-html:root body .ml-route-attribution{font-family:Manrope,Arial,sans-serif!important;font-size:12px;line-height:1.5;color:#514a41;text-decoration:underline;text-underline-offset:3px}
+html:root body .ml-route-attribution{font-family:Stem,Arial,sans-serif!important;font-size:12px;line-height:1.5;color:#514a41;text-decoration:underline;text-underline-offset:3px}
 html:root body .cb-map.ml-route-card{min-height:0;align-self:start;flex:none}
 html:root body.ml-data-page .cb-section{max-width:900px}
 html:root body.ml-data-page .cb-article-content h2{font-size:28px;line-height:1.2;margin:32px 0 16px}
@@ -143,7 +146,7 @@ html:root body.ml-data-page .ml-data-status{min-height:26px;font-size:15px!impor
  html:root body.ml-data-page .ml-data-table :is(th,td){padding-inline:6px;font-size:14px}
 }
 
-html:root body footer>a:not(.brand),html:root body footer>span{font-family:Manrope,Arial,sans-serif!important;font-size:14px;line-height:1.5;letter-spacing:0;text-transform:none}
+html:root body footer>a:not(.brand),html:root body footer>span{font-family:Stem,Arial,sans-serif!important;font-size:14px;line-height:1.5;letter-spacing:0;text-transform:none}
 
 /* Consent is a separate, unticked choice before opening a messenger. */
 html:root body :is(.ml-lead-dialog,.pf-request) .ml-data-consent{display:flex;flex-direction:row;align-items:flex-start;gap:11px;margin:18px 0 8px;font-size:14px!important;line-height:1.55}
