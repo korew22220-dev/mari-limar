@@ -108,7 +108,7 @@
       });
     },{threshold:.08,rootMargin:'0px 0px -3% 0px'});
     targets.forEach(function(el){
-      if(el.tagName==='IMG'||el.closest('.ml-compare,.dialog')||el.classList.contains('sr-only')||el.closest('.sr-only'))return;
+      if(el.tagName==='IMG'||el.closest('[data-process-chain],.ml-compare,.dialog')||el.classList.contains('sr-only')||el.closest('.sr-only'))return;
       if(el.tagName==='P'&&el.querySelector('.ml-button'))return;
       var kind=/^H[1-3]$/.test(el.tagName)?'heading':el.classList.contains('ml-button')?'button':el.matches('.overline,.eyebrow')?'label':'copy';
       var card=el.closest(cardSelector),index=0;

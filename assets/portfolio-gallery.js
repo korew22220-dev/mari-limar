@@ -7,28 +7,23 @@
   const projects = JSON.parse(data.textContent);
   const cards = [...root.querySelectorAll('.port-card')];
   const categories = [...root.querySelectorAll('#category-filters button')];
-  const statuses = [...root.querySelectorAll('#status-filters button')];
   const count = document.getElementById('result-count');
   const empty = document.getElementById('empty');
-  let category = 'all', status = 'all';
+  let category = 'all';
   function applyFilters() {
     let visible = 0;
     cards.forEach(card => {
-      card.hidden = !((category === 'all' || card.dataset.category === category) && (status === 'all' || card.dataset.status === status));
+      card.hidden = !(category === 'all' || card.dataset.category === category);
       if (!card.hidden) visible++;
     });
     categories.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.category === category)));
-    statuses.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.status === status)));
     count.textContent = 'Показано: ' + visible;
     empty.hidden = visible > 0;
     empty.style.display = visible ? 'none' : 'block';
-    document.getElementById('empty-description').textContent = status === 'realized'
-      ? 'Фотографии реализованных объектов пока не опубликованы. В подборке доступны концепции и визуализации.'
-      : 'Для этого сочетания направления и статуса пока нет материалов. Попробуйте изменить фильтры.';
+    document.getElementById('empty-description').textContent = 'В этом направлении пока нет материалов. Выберите другое направление.';
   }
   categories.forEach(button => button.addEventListener('click', () => { category = button.dataset.category; applyFilters(); }));
-  statuses.forEach(button => button.addEventListener('click', () => { status = button.dataset.status; applyFilters(); }));
-  document.getElementById('portfolio-reset').addEventListener('click', () => { category = status = 'all'; applyFilters(); categories[0].focus({preventScroll:true}); });
+  document.getElementById('portfolio-reset').addEventListener('click', () => { category = 'all'; applyFilters(); categories[0].focus({preventScroll:true}); });
   const dialog = document.getElementById('project-dialog');
   const close = document.getElementById('dialog-close');
   let lastFocus = null, previousOverflow = '', inactive = [];
