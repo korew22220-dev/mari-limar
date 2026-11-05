@@ -1,0 +1,5 @@
+.ml-article-page .ml-longform{padding-top:6px}
+.ml-article-page .article-body .ml-inline-figure{margin:32px 0 42px;max-width:100%;padding:0}
+.ml-article-page .ml-inline-figure img{display:block;width:100%;height:auto;max-height:720px;object-fit:contain}
+.ml-article-page .ml-inline-figure figcaption{font-size:13px;line-height:1.65;color:var(--cb-muted);margin-top:12px;padding-bottom:14px;border-bottom:1px solid var(--cb-line)}
+@media(max-width:700px){.ml-article-page .article-body .ml-inline-figure{margin:26px 0 32px}.ml-article-page .ml-inline-figure figcaption{font-size:12px}.ml-article-page .ml-inline-figure img{max-height:none}}

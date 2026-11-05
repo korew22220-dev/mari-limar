@@ -1,0 +1,87 @@
+{
+  "updated": "2026-11-05",
+  "notes": "Catalog images are RIMI collection illustrations, not claimed as studio-built projects. Two Pexels photographs are hosted locally; original sources retained here; no external article hyperlinks.",
+  "articles": [
+    {
+      "path": "blog-interior-textures.html",
+      "title": "Новая роскошь в интерьере: почему фактуры становятся важнее декора",
+      "images": [
+        {
+          "asset": "assets/kitchens-modern/rimi-6d40733dcaa34b73-1600w.webp",
+          "caption": "«Конкретта», РИМИ. Древесные поверхности, стеклянные витрины и гладкие фасады создают контраст фактур.",
+          "alt": "Кухня РИМИ Конкретта: сочетание древесных поверхностей, стекла и гладких фасадов",
+          "source": "RIMI catalog; existing collection asset",
+          "kind": "catalog"
+        },
+        {
+          "asset": "assets/blog/texture-material-samples-1600w.webp",
+          "caption": "Разные поверхности в близкой палитре. Фото: tiago alves / Pexels.",
+          "alt": "Образцы отделок и текстиля в близких оттенках на деревянном столе",
+          "source": "https://www.pexels.com/photo/close-up-of-fabric-samples-lying-on-a-desk-19328891/",
+          "kind": "photo"
+        },
+        {
+          "asset": "assets/blog/wood-finish-samples-1600w.webp",
+          "caption": "Сравнение древесных декоров по оттенку и рисунку. Фото: Gerzon Piñata / Pexels.",
+          "alt": "Сравнение трёх образцов древесных декоров по цвету и рисунку",
+          "source": "https://www.pexels.com/photo/close-up-of-a-woman-holding-wood-samples-24366011/",
+          "kind": "photo"
+        }
+      ]
+    },
+    {
+      "path": "blog-deep-interior-colors.html",
+      "title": "Бордовый, шоколадный, оливковый: как использовать глубокие цвета в современном интерьере",
+      "images": [
+        {
+          "asset": "assets/kitchens-modern/rimi-2615861a0ac16ad2-1600w.webp",
+          "caption": "«Эсента», РИМИ. Винный оттенок фасадов и рельефной поверхности острова сочетается с золотистым обрамлением и нейтральной обстановкой.",
+          "alt": "Кухня РИМИ Эсента с винными фасадами и золотистым обрамлением",
+          "source": "RIMI catalog; existing collection asset",
+          "kind": "catalog"
+        },
+        {
+          "asset": "assets/kitchens-modern/rimi-25b38975bf5da3a9-1600w.webp",
+          "caption": "«Ницца NEW», РИМИ. Глубокие коричневые оттенки древесных поверхностей связывают кухню и столовую.",
+          "alt": "Кухня РИМИ Ницца NEW: тёмная древесная отделка кухни и столовой",
+          "source": "RIMI catalog; existing collection asset",
+          "kind": "catalog"
+        },
+        {
+          "asset": "assets/kitchens-modern/rimi-3c5f37cba1a04b56-1600w.webp",
+          "caption": "«Эсента», РИМИ. Приглушённые зелёные фасады рядом со светлым полом, стеклом и мягкой обивкой. Окончательный оттенок выбирают по образцу.",
+          "alt": "Кухня РИМИ Эсента с приглушёнными зелёными фасадами",
+          "source": "RIMI catalog; existing collection asset",
+          "kind": "catalog"
+        }
+      ]
+    },
+    {
+      "path": "blog-furniture-as-architecture.html",
+      "title": "Мебель становится архитектурой: скрытые кухни, встроенное хранение и цельное пространство",
+      "images": [
+        {
+          "asset": "assets/kitchens-modern/rimi-2d357e08c9aa13e2-1600w.webp",
+          "caption": "«Флорида», РИМИ. Кухня, столовая и гостиная связаны общей композицией и материалами.",
+          "alt": "Кухня РИМИ Флорида в общем пространстве со столовой и гостиной",
+          "source": "RIMI catalog; existing collection asset",
+          "kind": "catalog"
+        },
+        {
+          "asset": "assets/kitchens-modern/rimi-b141989f5db4f479-1600w.webp",
+          "caption": "«Прогма», РИМИ. Закрытые центральные дверцы скрывают рабочую нишу.",
+          "alt": "Кухня РИМИ Прогма: центральные дверцы рабочей ниши закрыты",
+          "source": "RIMI catalog; existing collection asset",
+          "kind": "catalog"
+        },
+        {
+          "asset": "assets/kitchens-modern/rimi-1adb01f682b5aa1a-1600w.webp",
+          "caption": "Та же композиция «Прогма», РИМИ, с открытой рабочей нишей: мойка, чайник, чашки и рабочая поверхность. Вид с другого ракурса.",
+          "alt": "Кухня РИМИ Прогма: центральная рабочая ниша открыта",
+          "source": "RIMI catalog; existing collection asset",
+          "kind": "catalog"
+        }
+      ]
+    }
+  ]
+}
