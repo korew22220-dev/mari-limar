@@ -19,8 +19,8 @@ function harness({clipboard=true,native=true,direct=null,endpoint=''}={}){
   contains(target){return this===target||target.parent===this;}
  }
  for(const id of ['ml-lead-dialog','ml-lead-form','ml-contact-tools','ml-contact-fab','ml-contact-tray','ml-lead-context','ml-lead-ready','ml-lead-message','ml-lead-open-chat','ml-lead-copy-status','ml-lead-phone-error','ml-lead-title','ml-lead-channel-hint','ml-lead-ready-hint','ml-lead-ready-title','ml-lead-copy','ml-lead-edit','ml-lead-submit','ml-lead-send-error','ml-lead-fallback','ml-lead-delivered','ml-lead-delivered-title','ml-lead-done','ml-lead-intro','channel-label','close'])new Node(id);
- const fields={};for(const name of ['name','phone','topic','comment','channel'])fields[name]=new Node(name);
- fields.name.value='Саша';fields.phone.value='+7 (918) 123-45-67';fields.channel.value='whatsapp';
+ const fields={};for(const name of ['name','phone','topic','comment','channel','privacyConsent'])fields[name]=new Node(name);
+ fields.privacyConsent.checked=true;fields.name.value='Саша';fields.phone.value='+7 (918) 123-45-67';fields.channel.value='whatsapp';
  const dialog=nodes['ml-lead-dialog'];dialog.open=false;dialog.querySelector=()=>nodes.close;dialog.getBoundingClientRect=()=>({left:20,top:20,right:350,bottom:700});
  if(native)dialog.showModal=()=>{dialog.open=true;};dialog.close=()=>{dialog.open=false;dialog.fire('close');};
  fields.channel.closest=()=>nodes['channel-label'];
@@ -132,3 +132,5 @@ test('every site form lists WhatsApp as its selected first messenger',()=>{
   for(const select of selects){assert.match(select[1],/^<option value="whatsapp" selected>WhatsApp<\/option>/,name);assert.ok(select[1].includes('value="whatsapp"'));assert.ok(select[1].includes('value="telegram"'));}
  }
 });
+
+test('unchecked consent blocks opening messenger and can be corrected',async()=>{const h=harness();await h.click(h.trigger());h.fields.privacyConsent.checked=false;await h.nodes['ml-lead-form'].fire('submit');assert.equal(h.opened.length,0);assert.equal(h.nodes['ml-lead-form'].hidden,false);h.fields.privacyConsent.checked=true;await h.fields.privacyConsent.fire('change');await h.nodes['ml-lead-form'].fire('submit');assert.equal(h.opened.length,1);assert.match(h.nodes['ml-lead-message'].value,/2026-11-05/);assert.match(h.nodes['ml-lead-message'].value,/personal-data-consent.html/);});

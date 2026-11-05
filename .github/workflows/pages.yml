@@ -33,11 +33,30 @@ jobs:
           root = pathlib.Path('_site')
           base = os.environ['SITE_URL'].rstrip('/')
           style_version = hashlib.sha256((root/'assets/brand-typography.css').read_bytes()).hexdigest()[:12]
+          legal_footer = pathlib.Path('components/legal-footer.html').read_text(encoding='utf-8').strip()
+          consent_markup = pathlib.Path('components/data-consent.html').read_text(encoding='utf-8').strip()
+          def add_consent(match):
+              form = match.group(0)
+              if 'name="privacyConsent"' in form:
+                  return form
+              prefix = 'pf-request' if 'id="pf-request-form"' in form else 'ml-lead'
+              markup = consent_markup.replace('__PREFIX__', prefix)
+              updated, count = re.subn(r'(<button\b[^>]*type="submit"[^>]*>)', lambda button: markup + button.group(0), form, count=1)
+              if count != 1:
+                  raise RuntimeError('Missing submit button for ' + prefix)
+              return updated
           urls = []
           for path in sorted(root.glob('*.html')):
               url = base + '/' + ('' if path.name == 'index.html' else path.name)
               urls.append(url)
               text = path.read_text(encoding='utf-8')
+              text = re.sub(r'<form\b[^>]*id="(?:ml-lead-form|pf-request-form)"[^>]*>[\s\S]*?</form>', add_consent, text)
+              text = re.sub(r'assets/contact-tools\.js(?:\?[^\"]*)?', 'assets/contact-tools.js?v=consent-20261105', text)
+              text = re.sub(r'assets/portfolio-inline-form\.js(?:\?[^\"]*)?', 'assets/portfolio-inline-form.js?v=consent-20261105', text)
+              if text.count('</footer>') != 1:
+                  raise RuntimeError('Expected one footer: ' + path.name)
+              if 'class="ml-legal-links"' not in text:
+                  text = text.replace('</footer>', legal_footer + '</footer>')
               text = re.sub(r'assets/brand-typography\.css(?:\?[^\"]*)?', 'assets/brand-typography.css?v=' + style_version, text)
               tags = '<link rel="canonical" href="' + html.escape(url, quote=True) + '"><meta property="og:url" content="' + html.escape(url, quote=True) + '">'
               path.write_text(text.replace('</head>', tags + '</head>'), encoding='utf-8')

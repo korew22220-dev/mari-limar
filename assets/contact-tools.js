@@ -11,6 +11,7 @@
   lines.push('Имя: '+data.name.trim(),'Телефон: '+data.phone.trim());
   if(data.comment.trim())lines.push('Пожелания: '+data.comment.trim());
   if(data.source)lines.push('Страница: '+data.source);
+  if(data.privacyConsent===true)lines.push('Согласие на обработку персональных данных: дано для ответа на обращение.','Редакция согласия: 2026-11-05.','Дата отметки: '+data.consentAt,'Документ: https://korew22220-dev.github.io/mari-limar/personal-data-consent.html');
   return lines.join('\n');
  }
  function messageLinks(message){return {whatsapp:'https://wa.me/'+phone+'?text='+encodeURIComponent(message),telegram:'https://t.me/+'+phone,max:'https://web.max.ru/'};}
@@ -27,6 +28,8 @@
  var tools=document.getElementById('ml-contact-tools'),fab=document.getElementById('ml-contact-fab'),tray=document.getElementById('ml-contact-tray');
  if(!dialog||!form||!tools||!fab||!tray)return;
  var fields={name:form.elements.namedItem('name'),phone:form.elements.namedItem('phone'),topic:form.elements.namedItem('topic'),comment:form.elements.namedItem('comment'),channel:form.elements.namedItem('channel')};
+ var privacyConsent=form.elements.namedItem('privacyConsent');
+ if(privacyConsent)privacyConsent.addEventListener('change',function(){privacyConsent.setCustomValidity('');});
  var contextNode=document.getElementById('ml-lead-context'),ready=document.getElementById('ml-lead-ready');
  var preview=document.getElementById('ml-lead-message'),chat=document.getElementById('ml-lead-open-chat');
  var copyStatus=document.getElementById('ml-lead-copy-status'),phoneStatus=document.getElementById('ml-lead-phone-error');
@@ -93,7 +96,8 @@
   var error=phoneError(fields.phone.value);fields.phone.setCustomValidity(error);phoneStatus.textContent=error;
   if(error){fields.phone.setAttribute('aria-invalid','true');fields.phone.focus();fields.phone.reportValidity();return;}
   if(!form.reportValidity())return;
-  var data={name:fields.name.value,phone:fields.phone.value,topic:fields.topic.value,comment:fields.comment.value,model:model,context:context,source:location.origin+location.pathname,website:form.elements.namedItem('website')?.value||''};
+  if(!privacyConsent||!privacyConsent.checked){if(privacyConsent){privacyConsent.setCustomValidity('Подтвердите согласие на обработку персональных данных.');privacyConsent.reportValidity();privacyConsent.focus();}return;}
+  var data={privacyConsent:true,consentAt:new Date().toISOString(),name:fields.name.value,phone:fields.phone.value,topic:fields.topic.value,comment:fields.comment.value,model:model,context:context,source:location.origin+location.pathname,website:form.elements.namedItem('website')?.value||''};
   if(useDirect){
    sending=true;submitButton.disabled=true;submitButton.textContent='Отправляем…';form.setAttribute('aria-busy','true');sendError.hidden=true;fallbackButton.hidden=true;
    try{

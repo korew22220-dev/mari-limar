@@ -5,6 +5,8 @@
   const api = window.MariLead;
   if (!form || !api) return;
   const fields = form.elements;
+  const privacyConsent = fields.namedItem('privacyConsent');
+  if (privacyConsent) privacyConsent.addEventListener('change', () => privacyConsent.setCustomValidity(''));
   const ready = document.getElementById('pf-request-ready');
   const message = document.getElementById('pf-request-message');
   const phoneError = document.getElementById('pf-request-phone-error');
@@ -34,7 +36,8 @@
     phoneError.textContent = error;
     if (error) { phone.setAttribute('aria-invalid', 'true'); phone.reportValidity(); phone.focus(); return; }
     if (!form.reportValidity()) return;
-    message.value = api.formatEnquiry({name:name.value, phone:phone.value, comment:fields.namedItem('comment').value, topic:form.dataset.leadTopic || 'project', context:form.dataset.leadContext || 'Портфолио — обсуждение проекта', model:'', source:location.origin + location.pathname});
+    if (!privacyConsent || !privacyConsent.checked) { if (privacyConsent) { privacyConsent.setCustomValidity('Подтвердите согласие на обработку персональных данных.'); privacyConsent.reportValidity(); privacyConsent.focus(); } return; }
+    message.value = api.formatEnquiry({privacyConsent:true, consentAt:new Date().toISOString(), name:name.value, phone:phone.value, comment:fields.namedItem('comment').value, topic:form.dataset.leadTopic || 'project', context:form.dataset.leadContext || 'Портфолио — обсуждение проекта', model:'', source:location.origin + location.pathname});
     const selectedChannel = api.messenger(fields.namedItem('channel').value, message.value);
     chat.href = selectedChannel.href;
     chat.textContent = selectedChannel.label;
