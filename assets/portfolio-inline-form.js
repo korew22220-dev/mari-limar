@@ -20,6 +20,7 @@
   });
   function updateChannelHint() {
     channelHint.textContent = api.messenger(fields.namedItem('channel').value, '').hint;
+    form.querySelector('button[type="submit"]').textContent = fields.namedItem('channel').value === 'whatsapp' ? 'Продолжить в WhatsApp' : 'Подготовить сообщение';
   }
   fields.namedItem('channel').addEventListener('change', updateChannelHint);
   updateChannelHint();
@@ -41,7 +42,9 @@
     form.hidden = true;
     ready.hidden = false;
     copyStatus.textContent = '';
+    document.getElementById('pf-request-copy').hidden = fields.namedItem('channel').value === 'whatsapp';
     document.getElementById('pf-request-ready-title').focus({preventScroll:true});
+    if (fields.namedItem('channel').value === 'whatsapp') window.open(selectedChannel.href, '_blank', 'noopener,noreferrer');
   });
   document.getElementById('pf-request-edit').addEventListener('click', () => {
     ready.hidden = true; form.hidden = false; fields.namedItem('name').focus({preventScroll:true});

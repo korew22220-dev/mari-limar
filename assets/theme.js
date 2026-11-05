@@ -27,7 +27,8 @@
       if (event.key === key) { root.dataset.mlTheme = event.newValue === 'dark' ? 'dark' : 'light'; render(); }
     });
     render();
-    document.body.appendChild(button);
+    var menu = document.querySelector('.ml-drawer__bottom');
+    (menu || document.body).appendChild(button);
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, {once:true});
   else init();

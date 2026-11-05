@@ -16,7 +16,7 @@
  function messageLinks(message){return {whatsapp:'https://wa.me/'+phone+'?text='+encodeURIComponent(message),telegram:'https://t.me/+'+phone,max:'https://web.max.ru/'};}
  function messenger(channel,message){
   var links=messageLinks(message||'');
-  if(channel==='whatsapp')return {href:links.whatsapp,label:'Открыть WhatsApp',hint:'В WhatsApp текст обращения подставится автоматически.',readyHint:'Откройте WhatsApp и отправьте подготовленное сообщение в чат студии.'};
+  if(channel==='whatsapp')return {href:links.whatsapp,label:'Открыть WhatsApp с сообщением',hint:'Откроется WhatsApp с готовым текстом. Проверьте сообщение и отправьте его в чат студии.',readyHint:'В WhatsApp подготовлен текст обращения. Отправьте его в чат студии. Если приложение не открылось, нажмите кнопку ниже.'};
   if(channel==='telegram')return {href:links.telegram,label:'Открыть Telegram',hint:'Для Telegram скопируйте готовый текст и вставьте его в чат.',readyHint:'Скопируйте текст, откройте Telegram и отправьте его в чат студии.'};
   return {href:links.max,label:'Открыть MAX',hint:'Для MAX скопируйте готовый текст и найдите студию по номеру +7 (918) 402-99-32.',readyHint:'Скопируйте текст. В MAX найдите контакт +7 (918) 402-99-32 и вставьте сообщение в чат. Если поиск по номеру недоступен, выберите другой мессенджер.'};
  }
@@ -38,13 +38,24 @@
   document.getElementById('ml-lead-intro').textContent=useDirect?'Оставьте имя и телефон — студия получит заявку и свяжется с вами.':'Заполните форму и выберите мессенджер. Сообщение вы отправите в открывшемся чате.';
   fields.channel.closest('label').hidden=useDirect;
   document.getElementById('ml-lead-channel-hint').hidden=useDirect;
-  submitButton.textContent=useDirect?'Отправить заявку':'Подготовить обращение';
+  submitButton.textContent=useDirect?'Отправить заявку':fields.channel.value==='whatsapp'?'Продолжить в WhatsApp':'Подготовить сообщение';
  }
  if(fallbackButton)fallbackButton.addEventListener('click',function(){useDirect=false;directMode();sendError.hidden=true;fallbackButton.hidden=true;});
  var doneButton=document.getElementById('ml-lead-done');if(doneButton)doneButton.addEventListener('click',function(){dialog.close();});
  tools.hidden=false;
+ var toolsHome=document.createComment('Contact controls desktop position');
+ tools.before(toolsHome);
+ var compactHeader=matchMedia('(max-width: 700px)');
+ function placeContactTools(){
+  setTray(false,false);
+  var header=document.querySelector('.head'),menuButton=document.querySelector('#open, #open-menu');
+  if(compactHeader.matches&&header&&menuButton)header.insertBefore(tools,menuButton);
+  else toolsHome.after(tools);
+ }
+ placeContactTools();
+ compactHeader.addEventListener('change',placeContactTools);
  function setTray(open,restore){tray.hidden=!open;fab.setAttribute('aria-expanded',String(open));if(!open&&restore)fab.focus({preventScroll:true});}
- function channelHint(){document.getElementById('ml-lead-channel-hint').textContent=messenger(fields.channel.value,'').hint;}
+ function channelHint(){document.getElementById('ml-lead-channel-hint').textContent=messenger(fields.channel.value,'').hint;if(!useDirect)submitButton.textContent=fields.channel.value==='whatsapp'?'Продолжить в WhatsApp':'Подготовить сообщение';}
  function edit(){form.hidden=false;ready.hidden=true;if(delivered)delivered.hidden=true;copyStatus.textContent='';}
  function openForm(trigger){
   if(typeof dialog.showModal!=='function')return false;
@@ -98,7 +109,9 @@
   preview.value=message;chat.href=selectedChannel.href;chat.textContent=selectedChannel.label;
   document.getElementById('ml-lead-ready-hint').textContent=selectedChannel.readyHint;
   copyStatus.textContent='';form.hidden=true;ready.hidden=false;
+  document.getElementById('ml-lead-copy').hidden=fields.channel.value==='whatsapp';
   document.getElementById('ml-lead-ready-title').focus({preventScroll:true});
+  if(fields.channel.value==='whatsapp')window.open(selectedChannel.href,'_blank','noopener,noreferrer');
  });
  document.getElementById('ml-lead-copy').addEventListener('click',async function(){
   try{

@@ -6,11 +6,12 @@ const root=path.join(__dirname,'..');
 const {formatEnquiry,messageLinks,phoneError}=require('../assets/contact-tools.js');
 const code=fs.readFileSync(path.join(root,'assets/contact-tools.js'),'utf8');
 function harness({clipboard=true,native=true,direct=null,endpoint=''}={}){
- const nodes={},docHandlers={},winHandlers={};let copied='',active;
+ const nodes={},docHandlers={},winHandlers={};let copied='',active,opened=[];
  class Node{
   constructor(id){this.id=id;this.listeners={};this.dataset={};this.attrs={};this.hidden=false;this.value='';this.error='';this.isConnected=true;this.textContent='';nodes[id]=this;}
   addEventListener(type,fn){(this.listeners[type]??=[]).push(fn);}
   async fire(type,event={}){const e={target:this,button:0,defaultPrevented:false,preventDefault(){this.defaultPrevented=true;},...event};for(const cb of this.listeners[type]||[])await cb(e);return e;}
+  before(){} after(){}
   setAttribute(n,v){this.attrs[n]=v;} removeAttribute(n){delete this.attrs[n];}
   setCustomValidity(s){this.error=s;}reportValidity(){return !this.error;}
   focus(){active=this;}select(){this.selected=true;}setSelectionRange(a,b){this.range=[a,b];}
@@ -25,13 +26,13 @@ function harness({clipboard=true,native=true,direct=null,endpoint=''}={}){
  fields.channel.closest=()=>nodes['channel-label'];
  const form=nodes['ml-lead-form'];form.dataset.mlEndpoint=endpoint;form.elements={namedItem:n=>fields[n]};form.reportValidity=()=>Object.values(fields).every(n=>!n.error);
  nodes['ml-contact-tray'].hidden=true;
- const document={title:'Кухни — MARI LIMAR',body:{style:{overflow:'auto'}},getElementById:id=>nodes[id],addEventListener:(n,fn)=>{(docHandlers[n]??=[]).push(fn);}};
- const window={MariEnquiry:direct,addEventListener:(n,fn)=>winHandlers[n]=fn};
+ const document={createComment:()=>({after(){}}),querySelector:()=>null,title:'Кухни — MARI LIMAR',body:{style:{overflow:'auto'}},getElementById:id=>nodes[id],addEventListener:(n,fn)=>{(docHandlers[n]??=[]).push(fn);}};
+ const window={open:(...args)=>opened.push(args),MariEnquiry:direct,addEventListener:(n,fn)=>winHandlers[n]=fn};
  const navigator=clipboard?{clipboard:{writeText:async s=>{copied=s;}}}:{};
- vm.runInNewContext(code,{document,window,navigator,location:{origin:'https://example.com',pathname:'/kitchen-luna.html'}});
+ vm.runInNewContext(code,{matchMedia:()=>({matches:false,addEventListener(){}}),document,window,navigator,location:{origin:'https://example.com',pathname:'/kitchen-luna.html'}});
  async function click(target,options={}){const e={target,button:0,defaultPrevented:false,preventDefault(){this.defaultPrevented=true;},...options};for(const fn of docHandlers.click)await fn(e);return e;}
  function trigger(intent='cost',model='Кухня «Луна»'){const n=new Node('trigger');n.dataset={mlLead:intent,mlModel:model,mlContext:'Коллекции кухонь'};return n;}
- return {nodes,fields,dialog,document,window,click,trigger,active:()=>active,copied:()=>copied,lifecycle:n=>winHandlers[n](),keydown:async e=>{for(const f of docHandlers.keydown)await f(e);}};
+ return {opened,nodes,fields,dialog,document,window,click,trigger,active:()=>active,copied:()=>copied,lifecycle:n=>winHandlers[n](),keydown:async e=>{for(const f of docHandlers.keydown)await f(e);}};
 }
 test('all model enquiries include correct title, topic, contact and page',()=>{
  const models=JSON.parse(fs.readFileSync(path.join(root,'KITCHEN-MODELS.json')));
@@ -54,13 +55,13 @@ test('WhatsApp preparation shows preview and exact encoded message without sendi
  const h=harness();await h.click(h.trigger());await h.nodes['ml-lead-form'].fire('submit');
  assert.ok(h.nodes['ml-lead-form'].hidden);assert.equal(h.nodes['ml-lead-ready'].hidden,false);
  assert.equal(new URL(h.nodes['ml-lead-open-chat'].href).searchParams.get('text'),h.nodes['ml-lead-message'].value);
- assert.equal(h.active(),h.nodes['ml-lead-ready-title']);assert.ok(h.nodes['ml-lead-ready-hint'].textContent.includes('отправьте'));
+ assert.equal(h.active(),h.nodes['ml-lead-ready-title']);assert.match(h.nodes['ml-lead-ready-hint'].textContent,/отправьте/i);assert.equal(h.opened.length,1);assert.equal(h.opened[0][0],h.nodes['ml-lead-open-chat'].href);assert.equal(h.nodes['ml-lead-copy'].hidden,true);
  await h.nodes['ml-lead-edit'].fire('click');assert.equal(h.nodes['ml-lead-form'].hidden,false);assert.equal(h.fields.name.value,'Саша');
 });
 test('Telegram uses studio contact, explicit copy and chat steps',async()=>{
  const h=harness();await h.click(h.trigger('visit',''));h.fields.channel.value='telegram';await h.fields.channel.fire('change');
  assert.ok(h.nodes['ml-lead-channel-hint'].textContent.includes('скопируйте'));await h.nodes['ml-lead-form'].fire('submit');
- assert.equal(h.nodes['ml-lead-open-chat'].href,'https://t.me/+79184029932');assert.ok(h.nodes['ml-lead-ready-hint'].textContent.includes('Скопируйте'));
+ assert.equal(h.opened.length,0);assert.equal(h.nodes['ml-lead-open-chat'].href,'https://t.me/+79184029932');assert.ok(h.nodes['ml-lead-ready-hint'].textContent.includes('Скопируйте'));
  await h.nodes['ml-lead-copy'].fire('click');assert.equal(h.copied(),h.nodes['ml-lead-message'].value);assert.ok(h.nodes['ml-lead-copy-status'].textContent.includes('скопирован'));
 });
 test('clipboard rejection leaves selectable message and recovery instructions',async()=>{
@@ -68,7 +69,7 @@ test('clipboard rejection leaves selectable message and recovery instructions',a
  assert.ok(h.nodes['ml-lead-message'].selected);assert.ok(h.nodes['ml-lead-copy-status'].textContent.includes('вручную'));
 });
 test('invalid input blocks preview, errors clear on input, whitespace-only names rejected',async()=>{
- const h=harness();await h.click(h.trigger());h.fields.phone.value='123';await h.nodes['ml-lead-form'].fire('submit');assert.ok(h.nodes['ml-lead-phone-error'].textContent);assert.equal(h.nodes['ml-lead-form'].hidden,false);
+ const h=harness();await h.click(h.trigger());h.fields.phone.value='123';await h.nodes['ml-lead-form'].fire('submit');assert.equal(h.opened.length,0);assert.ok(h.nodes['ml-lead-phone-error'].textContent);assert.equal(h.nodes['ml-lead-form'].hidden,false);
  h.fields.phone.value='+79184029932';await h.fields.phone.fire('input');assert.equal(h.nodes['ml-lead-phone-error'].textContent,'');
  h.fields.name.value='   ';await h.nodes['ml-lead-form'].fire('submit');assert.ok(h.fields.name.error);
  h.fields.name.value='Марина';await h.fields.name.fire('input');await h.nodes['ml-lead-form'].fire('submit');assert.ok(h.nodes['ml-lead-form'].hidden);
@@ -123,11 +124,11 @@ test('MAX prepares the studio enquiry with explicit contact-search steps and no 
  assert.ok(h.nodes['ml-lead-message'].value.includes('Кухня «Луна»'));
  await h.nodes['ml-lead-copy'].fire('click');assert.equal(h.copied(),h.nodes['ml-lead-message'].value);
 });
-test('every site form lists MAX as its selected first messenger',()=>{
+test('every site form lists WhatsApp as its selected first messenger',()=>{
  for(const name of fs.readdirSync(root).filter(n=>n.endsWith('.html'))){
   const s=fs.readFileSync(path.join(root,name),'utf8');
   const selects=[...s.matchAll(/<select\b[^>]*name="channel"[^>]*>([\s\S]*?)<\/select>/g)];
   assert.ok(selects.length,name);
-  for(const select of selects){assert.match(select[1],/^<option value="max" selected>MAX<\/option>/,name);assert.ok(select[1].includes('value="whatsapp"'));assert.ok(select[1].includes('value="telegram"'));}
+  for(const select of selects){assert.match(select[1],/^<option value="whatsapp" selected>WhatsApp<\/option>/,name);assert.ok(select[1].includes('value="whatsapp"'));assert.ok(select[1].includes('value="telegram"'));}
  }
 });
