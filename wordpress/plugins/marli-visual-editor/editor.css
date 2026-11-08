@@ -1,0 +1,12 @@
+.editor-styles-wrapper .wp-block[data-type="marli/section"]{max-width:1200px!important;width:100%;margin:28px auto;}
+.ml-visual-block{border:1px solid #d5d9de;background:#fff;border-radius:10px;overflow:hidden;}
+.ml-visual-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;border-bottom:1px solid #ddd;font:13px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#252b32;background:#f5f6f8;}
+.ml-visual-bar strong{font-weight:600}.ml-visual-bar span{font-size:12px;color:#69717c;}
+.ml-visual-stage{position:relative;width:100%;overflow:hidden;background:#171714;}
+.ml-visual-stage iframe{display:block;border:0;max-width:none;transform-origin:top left;background:#171714;}
+.ml-visual-hidden .ml-visual-stage{opacity:.4;}
+.ml-visual-media{max-width:100%;height:140px;object-fit:cover;border-radius:6px;display:block;margin:8px 0;}
+.ml-visual-inspector .components-button{margin:4px 4px 10px 0;}
+.ml-visual-empty{padding:20px;color:#555;font-size:13px;background:#f7f7f7;}
+.mlv-top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-bottom:12px}.mlv-top h1{padding:0}.mlv-top p{margin:4px 0}.mlv-layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:16px}.mlv-tools{background:#fff;padding:14px;border:1px solid #ddd;border-radius:8px;height:calc(100vh - 190px);overflow:auto;box-sizing:border-box}.mlv-tools h2{margin-top:4px}.mlv-tools input[type=text]{width:100%;margin:8px 0}.mlv-tools label{display:block;margin-top:12px}.mlv-tools .button{margin:5px 3px 5px 0}.mlv-canvas{height:calc(100vh - 190px);overflow:hidden;border:1px solid #ddd;border-radius:8px;background:#171714}.mlv-canvas iframe{border:0;display:block;max-width:none;transform-origin:top left}.mlv-block-row{display:flex;align-items:center;flex-wrap:wrap;padding:8px 0;border-bottom:1px solid #eee;gap:3px}.mlv-block-name{border:0;background:transparent;color:#1d2327;text-align:left;cursor:pointer;width:100%;padding:4px 0;font-weight:600}.mlv-block-row input{margin-left:auto}#mlv-status{padding:10px;background:#f0f6fc;border-radius:5px}@media(max-width:900px){.mlv-layout{grid-template-columns:180px minmax(0,1fr)}.mlv-top{display:block}.mlv-tools,.mlv-canvas{height:65vh}}@media(max-width:550px){.mlv-layout{grid-template-columns:1fr}.mlv-tools{height:auto;max-height:220px}.mlv-canvas{height:70vh}}
+
