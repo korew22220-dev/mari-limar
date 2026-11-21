@@ -72,3 +72,19 @@ html[data-ml-theme=dark] .ml-portfolio-page .fa-image img{outline-color:#ffffff1
 @media(prefers-reduced-motion:reduce){.ml-portfolio-page .port-cover img{transition:none!important;transform:none!important}}
 
 @media(max-width:360px){.ml-portfolio-page .pf-hero h1{font-size:clamp(44px,14vw,54px)}}
+
+/* A single project can contain a complete, ordered photo series. */
+.ml-portfolio-page .pf-project-media{min-width:0;align-self:center;background:#101010}
+.ml-portfolio-page .pf-project-media .dialog-photo{display:block;width:100%;height:auto;max-height:65dvh;aspect-ratio:3/2;object-fit:contain}
+.ml-portfolio-page .has-photo-gallery .pf-project-media .dialog-photo{height:60dvh;aspect-ratio:auto;max-height:700px}
+.ml-portfolio-page .pf-photo-controls{display:flex;align-items:center;justify-content:center;gap:18px;padding:14px 18px;color:#f3efe8}
+.ml-portfolio-page .pf-photo-controls[hidden],.ml-portfolio-page .pf-photo-room[hidden],.ml-portfolio-page .pf-photo-caption[hidden]{display:none}
+.ml-portfolio-page .pf-photo-controls .ml-button{min-width:48px;min-height:48px;padding:10px 16px}
+.ml-portfolio-page .pf-photo-controls button:disabled{opacity:.4;cursor:default}
+.ml-portfolio-page .pf-photo-caption{margin:0;padding:0 20px 14px;color:#f3efe8;font-size:14px!important;line-height:1.5!important}
+.ml-portfolio-page .pf-photo-room{display:flex;align-items:center;gap:12px;padding:0 20px 20px;color:#f3efe8}
+.ml-portfolio-page .pf-photo-room label{font-size:13px}
+.ml-portfolio-page .pf-photo-room select{min-width:0;max-width:100%;min-height:44px;background:#222;color:#fff;border:1px solid #998975;border-radius:8px;padding:8px;font:inherit}
+@media(max-width:1000px){.ml-portfolio-page .has-photo-gallery .pf-project-media .dialog-photo{height:48dvh;max-height:520px}.ml-portfolio-page .pf-project-media{width:100%}}
+@media(max-width:700px){.ml-portfolio-page .has-photo-gallery .pf-project-media .dialog-photo{height:45dvh;min-height:240px}.ml-portfolio-page .pf-photo-controls{padding:12px}.ml-portfolio-page .pf-photo-caption{padding-inline:16px}.ml-portfolio-page .pf-photo-room{padding-inline:16px;flex-wrap:wrap}.ml-portfolio-page .dialog-close{margin-bottom:-60px}}
+

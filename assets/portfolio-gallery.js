@@ -27,6 +27,27 @@
   const dialog = document.getElementById('project-dialog');
   const close = document.getElementById('dialog-close');
   let lastFocus = null, previousOverflow = '', inactive = [];
+  let currentPhotos = [], photoIndex = 0;
+  const controls = document.getElementById('photo-controls');
+  const caption = document.getElementById('photo-caption');
+  const rooms = document.getElementById('photo-room');
+  const roomSelect = document.getElementById('photo-room-select');
+  function showPhoto(index) {
+    if (!currentPhotos.length) return;
+    photoIndex = Math.max(0, Math.min(index, currentPhotos.length - 1));
+    const photo = currentPhotos[photoIndex], image = document.getElementById('dialog-image');
+    image.removeAttribute('srcset'); image.removeAttribute('sizes');
+    image.src = photo.image; image.alt = photo.alt;
+    image.width = photo.width; image.height = photo.height;
+    document.getElementById('photo-count').textContent = (photoIndex + 1) + ' / ' + currentPhotos.length;
+    caption.textContent = photo.caption;
+    document.getElementById('photo-prev').disabled = photoIndex === 0;
+    document.getElementById('photo-next').disabled = photoIndex === currentPhotos.length - 1;
+    roomSelect.value = String(currentPhotos.findIndex(item => item.group === photo.group));
+  }
+  document.getElementById('photo-prev').addEventListener('click', () => showPhoto(photoIndex - 1));
+  document.getElementById('photo-next').addEventListener('click', () => showPhoto(photoIndex + 1));
+  roomSelect.addEventListener('change', () => showPhoto(Number(roomSelect.value)));
   function closeProject(restoreFocus = true) {
     if (dialog.hidden) return;
     dialog.hidden = true;
@@ -51,6 +72,22 @@
     image.sizes = '(max-width: 1000px) 90vw, 650px';
     image.src = project.image;
     image.alt = project.alt;
+    image.width = project.width; image.height = project.height;
+    currentPhotos = Array.isArray(project.photos) ? project.photos : [];
+    controls.hidden = caption.hidden = rooms.hidden = currentPhotos.length < 2;
+    dialog.classList.toggle('has-photo-gallery', currentPhotos.length > 1);
+    roomSelect.replaceChildren();
+    if (currentPhotos.length) {
+      const seen = new Set();
+      currentPhotos.forEach((photo, index) => {
+        if (seen.has(photo.group)) return;
+        seen.add(photo.group);
+        const option = document.createElement('option');
+        option.value = String(index); option.textContent = photo.group;
+        roomSelect.appendChild(option);
+      });
+      showPhoto(0);
+    }
     document.getElementById('dialog-enquiry').dataset.mlContext = 'Портфолио — ' + project.title;
     previousOverflow = document.body.style.overflow;
     inactive = [...document.body.children].filter(element => element !== dialog && !['SCRIPT','STYLE'].includes(element.tagName)).map(element => [element, element.inert]);
@@ -66,9 +103,14 @@
   dialog.addEventListener('click', event => { if (event.target === dialog) closeProject(); });
   document.addEventListener('keydown', event => {
     if (dialog.hidden) return;
+    if (currentPhotos.length > 1 && !event.target.matches('input,textarea,select,[contenteditable="true"]') && ['ArrowLeft','ArrowRight','Home','End'].includes(event.key)) {
+      event.preventDefault();
+      showPhoto(event.key === 'Home' ? 0 : event.key === 'End' ? currentPhotos.length - 1 : photoIndex + (event.key === 'ArrowLeft' ? -1 : 1));
+    }
     if (event.key === 'Escape') { event.preventDefault(); closeProject(); }
   });
   document.getElementById('dialog-enquiry').addEventListener('click', () => closeProject(false));
   applyFilters();
 })();
+
 
