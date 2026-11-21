@@ -76,6 +76,9 @@
     currentPhotos = Array.isArray(project.photos) ? project.photos : [];
     controls.hidden = caption.hidden = rooms.hidden = currentPhotos.length < 2;
     dialog.classList.toggle('has-photo-gallery', currentPhotos.length > 1);
+    const viewerTitle = document.getElementById('photo-project-title');
+    viewerTitle.hidden = currentPhotos.length < 2;
+    viewerTitle.textContent = project.title;
     roomSelect.replaceChildren();
     if (currentPhotos.length) {
       const seen = new Set();
@@ -112,5 +115,3 @@
   document.getElementById('dialog-enquiry').addEventListener('click', () => closeProject(false));
   applyFilters();
 })();
-
-
