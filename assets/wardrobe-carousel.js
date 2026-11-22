@@ -22,18 +22,18 @@
         strip.scrollLeft = active.offsetLeft + active.offsetWidth - strip.clientWidth;
       }
     }
-    function go(next) {
+    function go(next, instant = false) {
       var target = (next + slides.length) % slides.length;
       track.scrollTo({
         left: target * track.clientWidth,
-        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+        behavior: instant || window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'
       });
       update(target);
     }
-    carousel.querySelector('.wd-carousel-prev').addEventListener('click', function () { go(index - 1); });
-    carousel.querySelector('.wd-carousel-next').addEventListener('click', function () { go(index + 1); });
+    carousel.querySelector('.wd-carousel-prev').addEventListener('click', function (event) { go(index - 1, event.detail === 0); });
+    carousel.querySelector('.wd-carousel-next').addEventListener('click', function (event) { go(index + 1, event.detail === 0); });
     thumbs.forEach(function (thumb, i) {
-      thumb.addEventListener('click', function () { go(i); });
+      thumb.addEventListener('click', function (event) { go(i, event.detail === 0); });
     });
     track.addEventListener('keydown', function (event) {
       var next;
@@ -43,7 +43,7 @@
       else if (event.key === 'End') next = slides.length - 1;
       else return;
       event.preventDefault();
-      go(next);
+      go(next, true);
     });
     track.addEventListener('scroll', function () {
       if (frame) return;

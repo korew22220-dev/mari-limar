@@ -108,7 +108,7 @@ html[data-ml-theme=dark] .ml-portfolio-page .fa-image img{outline-color:#ffffff1
  .ml-portfolio-page .has-photo-gallery .pf-photo-controls .ml-button{min-width:44px;min-height:44px;padding:8px 12px}
  .ml-portfolio-page .has-photo-gallery .pf-photo-room{padding:8px 0 2px}
  .ml-portfolio-page .has-photo-gallery .pf-photo-room label{display:none}
- .ml-portfolio-page .has-photo-gallery .pf-photo-room select{width:100%;font-size:14px;min-height:44px;padding:6px}
+ .ml-portfolio-page .has-photo-gallery .pf-photo-room select{width:100%;font-size:16px;min-height:44px;padding:6px}
  .ml-portfolio-page .has-photo-gallery .pf-photo-caption{font-size:12px!important}
 }
 @media(max-height:480px) and (min-width:701px){

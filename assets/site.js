@@ -59,9 +59,14 @@
     if (e.key !== 'Tab') return;
     const modal = panel.classList.contains('open') ? panel : document.querySelector('#project-dialog.open');
     if (!modal) return;
-    const nodes = [...modal.querySelectorAll('a[href],button:not([disabled]),select,[tabindex="0"]')];
+    const nodes = [...modal.querySelectorAll('a[href],button,input,textarea,select,[tabindex]')].filter(el =>
+      el.tabIndex >= 0 && !el.matches(':disabled') && !el.closest('[hidden],[inert]') &&
+      el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden'
+    );
     const first = nodes[0], last = nodes[nodes.length - 1];
-    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    if (!first) return;
+    if (!modal.contains(document.activeElement)) { e.preventDefault(); first.focus(); }
+    else if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
     else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
   });
   const reveals = document.querySelectorAll('.reveal');

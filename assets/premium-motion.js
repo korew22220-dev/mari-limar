@@ -1,152 +1,29 @@
-/* MARI LIMAR premium motion: no dependencies, no DOM swaps or history rewrites. */
-(function(){
-  'use strict';
-  var root=document.documentElement;
-  var script=document.currentScript;
-  var base=new URL('../',script.src);
-  var key='mari-limar-motion-transfer-v1';
-  var reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
-  var mobile=window.matchMedia('(max-width: 650px)');
-  var pages=new Set(["kitchen-arona.html","kitchen-avenue.html","kitchen-barona.html","kitchen-devenport.html","kitchen-esenta.html","kitchen-fabiana.html","kitchen-ferrata.html","kitchen-florida.html","kitchen-kanti.html","kitchen-konkretta.html","kitchen-kristali.html","kitchen-lange.html","kitchen-luna.html","kitchen-magna.html","kitchen-maranella.html","kitchen-miami-curved.html","kitchen-miami.html","kitchen-monticelli.html","kitchen-nikol.html","kitchen-nizza.html","kitchen-novara.html","kitchen-ora.html","kitchen-primavera.html","kitchen-progma.html","kitchen-shika.html","kitchen-time.html"].concat(["wardrobe-barona.html", "wardrobe-florida.html", "wardrobe-kanti.html", "wardrobe-lange.html", "wardrobe-neo-long.html", "wardrobe-novara.html", "wardrobe-open.html", "wardrobe-primavera.html", "wardrobe-progma-handle.html", "wardrobe-progma.html", "wardrobes.html"]).concat(['index.html','kitchens.html','architecture-design.html','portfolio.html','expertise.html','about.html','contacts.html','blog.html','blog-kitchen-planning.html','blog-interior-materials.html','blog-furniture-architecture.html','blog-furniture-check.html']));
-  var arrival=false, busy=false, curtain=null, observer=null, transfer=null;
-  var navigationTimer=0, recoveryTimer=0, arrivalTimer=0;
-  var running=new Set();
-  var seen=new WeakSet();
-  function clearMarker(){try{sessionStorage.removeItem(key);}catch(_){}}
-  try{
-    var pending=JSON.parse(sessionStorage.getItem(key)||'null');
-    arrival=!!pending&&!reduced.matches&&pending.path===location.pathname&&pending.search===location.search&&Date.now()-pending.time>=0&&Date.now()-pending.time<8000;
-    clearMarker();
-  }catch(_){clearMarker();}
-  if(arrival){
-    root.classList.add('pm-arrival');
-    // Even a failed/aborted document parse cannot leave the curtain in place.
-    arrivalTimer=window.setTimeout(function(){root.classList.remove('pm-arrival','pm-enter');},1200);
-  }
-  function reset(){
-    window.clearTimeout(navigationTimer);window.clearTimeout(recoveryTimer);window.clearTimeout(arrivalTimer);
-    if(transfer){try{transfer.skipTransition();}catch(_){}transfer=null;}
-    root.classList.remove('pm-arrival','pm-enter','pm-exit','pm-vt');
-    busy=false;
-  }
-  function validLink(event){
-    if(event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return null;
-    var anchor=event.target instanceof Element?event.target.closest('a[href]'):null;
-    if(!anchor||anchor.hasAttribute('download')||anchor.hasAttribute('data-no-transition')||anchor.relList.contains('external'))return null;
-    var target=anchor.getAttribute('target');
-    if(target&&target.toLowerCase()!=='_self')return null;
-    var url;
-    try{url=new URL(anchor.href,location.href);}catch(_){return null;}
-    if(url.origin!==location.origin||url.username||url.password||!/^https?:$/.test(url.protocol)||!url.pathname.startsWith(base.pathname))return null;
-    if(url.pathname===location.pathname&&url.search===location.search)return null;
-    var relative=url.pathname.slice(base.pathname.length)||'index.html';
-    if(!pages.has(relative))return null;
-    return url;
-  }
-  function leave(event){
-    if(reduced.matches||!curtain||getComputedStyle(curtain).position!=='fixed')return;
-    var url=validLink(event);
-    if(!url)return;
-    event.preventDefault();
-    if(busy)return;
-    busy=true;
-    var duration=mobile.matches?300:380;
-    try{sessionStorage.setItem(key,JSON.stringify({path:url.pathname,search:url.search,time:Date.now()}));}catch(_){}
-    // Navigation and recovery never depend on the View Transition promise.
-    recoveryTimer=window.setTimeout(function(){reset();clearMarker();},1800);
-    navigationTimer=window.setTimeout(function(){
-      try{location.assign(url.href);}catch(_){reset();clearMarker();}
-    },duration);
-    var cover=function(){root.classList.add('pm-exit');};
-    if(typeof document.startViewTransition==='function'){
-      try{
-        root.classList.add('pm-vt');
-        transfer=document.startViewTransition(cover);
-        transfer.ready.catch(function(){cover();});
-        transfer.finished.catch(function(){});
-      }catch(_){root.classList.remove('pm-vt');cover();}
-    }else cover();
-  }
-  function isVisible(element){
-    if(!element.isConnected||element.closest('[hidden],.dialog,.ml-compare')||!element.getClientRects().length)return false;
-    var rect=element.getBoundingClientRect();
-    return rect.bottom>0&&rect.top<window.innerHeight;
-  }
-  function play(element,kind,delay){
-    if(element.tagName==='IMG'||reduced.matches||typeof element.animate!=='function'||!isVisible(element))return;
-    var small=mobile.matches;
-    var duration=kind==='heading'?(small?720:960):(small?520:700);
-    var distance=kind==='heading'?(small?22:34):(small?14:22);
-    var frames;
-    if(kind==='heading')frames=[{opacity:0,transform:'translateY('+distance+'px)',clipPath:'inset(100% 0 0 0)'},{opacity:1,transform:'translateY(0)',clipPath:'inset(0% 0 0 0)'}];
-    else frames=[{opacity:0,transform:'translateY('+distance+'px)'},{opacity:1,transform:'translateY(0)'}];
-    try{
-      var animation=element.animate(frames,{duration:duration,delay:delay,easing:'cubic-bezier(.16,1,.3,1)',fill:'both'});
-      running.add(animation);
-      animation.finished.then(function(){running.delete(animation);animation.cancel();},function(){running.delete(animation);});
-    }catch(_){/* Visible base styles are the fallback, never a hidden class. */}
-  }
-  function setupScroll(){
-    if(reduced.matches||!('IntersectionObserver' in window)||!Element.prototype.animate)return;
-    var main=document.querySelector('main');
-    if(!main)return;
-    var targets=main.querySelectorAll('.overline,.eyebrow,h1,h2,h3,p,.ml-button');
-    var ranks={label:0,heading:100,copy:220,button:320};
-    var targetsData=new WeakMap();
-    var cardSelector='.ml-direction,.ml-kitchen-preview,.blog-card,.ml-journal-card,.model-card,.port-card,.concept-card,.arch-value,.step,.expertise-item,.contact-option';
-    observer=new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if(!entry.isIntersecting)return;
-        var el=entry.target;
-        // Hidden filters and modal controls stay intact; photos are never observed.
-        if(el.closest('[hidden]'))return;
-        observer.unobserve(el);
-        if(seen.has(el))return;
-        seen.add(el);
-        var data=targetsData.get(el);
-        play(el,data.kind,data.delay);
-      });
-    },{threshold:.08,rootMargin:'0px 0px -3% 0px'});
-    targets.forEach(function(el){
-      if(el.tagName==='IMG'||el.closest('[data-process-chain],.ml-compare,.dialog')||el.classList.contains('sr-only')||el.closest('.sr-only'))return;
-      if(el.tagName==='P'&&el.querySelector('.ml-button'))return;
-      var kind=/^H[1-3]$/.test(el.tagName)?'heading':el.classList.contains('ml-button')?'button':el.matches('.overline,.eyebrow')?'label':'copy';
-      var card=el.closest(cardSelector),index=0;
-      if(card&&card.parentElement)index=Math.max(0,[...card.parentElement.children].filter(function(x){return x.matches(cardSelector);}).indexOf(card));
-      // Stagger columns, without accumulating seconds of delay in long catalogues.
-      var columns=mobile.matches?1:window.innerWidth<1100?2:4;
-      var offset=(index%columns)*90;
-      var delay=Math.round((ranks[kind]+offset)*(mobile.matches?.65:1));
-      if(arrival&&isVisible(el))delay+=mobile.matches?180:260;
-      targetsData.set(el,{kind:kind,delay:delay});observer.observe(el);
-    });
-  }
-  function init(){
-    curtain=document.querySelector('.pm-curtain');
-    if(curtain&&getComputedStyle(curtain).position==='fixed'){
-      curtain.hidden=false;
-      document.addEventListener('click',leave);
-      if(arrival&&!reduced.matches){
-        requestAnimationFrame(function(){requestAnimationFrame(function(){
-          root.classList.add('pm-enter');root.classList.remove('pm-arrival');
-          window.clearTimeout(arrivalTimer);
-          arrivalTimer=window.setTimeout(function(){root.classList.remove('pm-enter');},520);
-        });});
-      }else reset();
-    }else{curtain=null;reset();}
-    setupScroll();
-  }
-  window.addEventListener('pageshow',function(event){if(event.persisted){reset();clearMarker();}});
-  window.addEventListener('pagehide',function(){window.clearTimeout(navigationTimer);window.clearTimeout(recoveryTimer);});
-  function preferenceChanged(){
-    if(!reduced.matches)return;
-    if(observer)observer.disconnect();
-    running.forEach(function(a){a.cancel();});running.clear();
-    // Let an already accepted navigation complete; only skip its animation.
-    if(busy){root.classList.remove('pm-exit','pm-vt');if(transfer)try{transfer.skipTransition();}catch(_){} }
-    else reset();
-  }
-  if(reduced.addEventListener)reduced.addEventListener('change',preferenceChanged);
-  else if(reduced.addListener)reduced.addListener(preferenceChanged);
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
-}());
+/* One first-screen entrance; native links navigate without an artificial delay. */
+(() => {
+ 'use strict';
+ const root=document.documentElement;
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ let entrance=null;
+ function reset(){
+  root.classList.remove('pm-arrival','pm-enter','pm-exit','pm-vt');
+  try{sessionStorage.removeItem('mari-limar-motion-transfer-v1');}catch(_){}
+ }
+ reset();
+ function init(){
+  const curtain=document.querySelector('.pm-curtain');
+  if(curtain)curtain.hidden=true;
+  if(reduced.matches||!Element.prototype.animate)return;
+  const navigation=performance.getEntriesByType('navigation')[0];
+  if(navigation&&navigation.type==='back_forward')return;
+  const title=document.querySelector('main h1');
+  if(!title)return;
+  const copy=title.closest('.hero-inner,.hero-content,.ex-hero-copy,.ab-hero-copy')||title;
+  const rect=copy.getBoundingClientRect();
+  if(rect.bottom<=0||rect.top>=innerHeight)return;
+  entrance=copy.animate([{opacity:0,transform:'translateY(8px)'},{opacity:1,transform:'translateY(0)'}],{duration:300,easing:'cubic-bezier(.16,1,.3,1)'});
+  entrance.finished.then(()=>{entrance=null;},()=>{entrance=null;});
+ }
+ reduced.addEventListener('change',()=>{if(reduced.matches&&entrance)entrance.cancel();});
+ window.addEventListener('pageshow',reset);
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
+})();

@@ -9,7 +9,7 @@ html .ml-drawer .ml-drawer__close{position:static;display:grid;place-items:cente
 .ml-drawer__close svg{width:18px;height:18px;stroke:currentColor;stroke-width:1.4}
 .ml-drawer__nav{display:flex;flex-direction:column;gap:4px}
 html .ml-drawer .ml-drawer__nav a{display:flex;align-items:center;min-height:54px;padding:12px 0;font:400 19px/1.45 Manrope,Arial,sans-serif;letter-spacing:-.015em;color:#f3efe8;transition:color .2s,transform .2s}
-html .ml-drawer .ml-drawer__nav a:hover{color:#c9b8a2;transform:translateX(5px)}
+@media(hover:hover) and (pointer:fine){html .ml-drawer .ml-drawer__nav a:hover{color:#c9b8a2;transform:translateX(5px)}}
 html .ml-drawer .ml-drawer__nav a[aria-current=page]{color:#c9b8a2}
 .ml-drawer__bottom{margin-top:auto;padding-top:50px}
 html .ml-drawer .ml-drawer__contact{display:flex;align-items:center;gap:13px;min-height:48px;font:500 15px/1.5 Manrope,Arial,sans-serif;letter-spacing:0;color:#f3efe8}

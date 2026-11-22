@@ -35,11 +35,11 @@
    active=index;
    slides.forEach(function(slide,i){slide.classList.toggle('kg-active',i===active);});
    gallery.querySelector('.kg-count').textContent=String(active+1).padStart(2,'0')+' / '+String(slides.length).padStart(2,'0');
-   gallery.querySelector('.kg-progress span').style.width=((active+1)/slides.length*100)+'%';
+   gallery.querySelector('.kg-progress span').style.transform='scaleX('+((active+1)/slides.length)+')';
    warmNeighbours();
   }
   function targetLeft(slide){return track.scrollLeft+slide.getBoundingClientRect().left-track.getBoundingClientRect().left;}
-  function go(index,automatic){
+  function go(index,automatic,instant){
    closeDetails(false);
    index=(index+slides.length)%slides.length;
    var token=++navigation;
@@ -50,7 +50,7 @@
     resume('loading');
     if(!ready)return;
     setActive(index);
-    track.scrollTo({left:targetLeft(slides[index]),behavior:reduced.matches?'auto':'smooth'});
+    track.scrollTo({left:targetLeft(slides[index]),behavior:instant||reduced.matches?'instant':'smooth'});
     schedule();
    }
    warm(index);
@@ -99,11 +99,11 @@
    // A focused card may contain selectable, scrollable text; leave its keys alone.
    if(event.target.closest('.kg-detail'))return;
    if(event.key==='ArrowRight'||event.key==='ArrowLeft'){
-    event.preventDefault();go(active+(event.key==='ArrowRight'?1:-1));
+    event.preventDefault();go(active+(event.key==='ArrowRight'?1:-1),false,true);
    }
   });
-  gallery.querySelector('[data-kg-prev]').addEventListener('click',function(){go(active-1);});
-  gallery.querySelector('[data-kg-next]').addEventListener('click',function(){go(active+1);});
+  gallery.querySelector('[data-kg-prev]').addEventListener('click',function(event){go(active-1,false,event.detail===0);});
+  gallery.querySelector('[data-kg-next]').addEventListener('click',function(event){go(active+1,false,event.detail===0);});
   play.addEventListener('click',function(){
    var paused=!reasons.has('manual');
    play.setAttribute('aria-pressed',String(paused));

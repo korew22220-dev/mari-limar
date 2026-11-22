@@ -12,9 +12,9 @@
     selected = index;
     counter.textContent = (index + 1) + ' / ' + links.length;
   }
-  function go(index) {
+  function go(index, instant = false) {
     var target = (index + links.length) % links.length;
-    track.scrollTo({ left: target * track.clientWidth, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    track.scrollTo({ left: target * track.clientWidth, behavior: instant || window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
     update(target);
   }
   function open(carousel, index) {
@@ -53,13 +53,13 @@
     });
   });
   close.addEventListener('click', function () { dialog.close(); });
-  dialog.querySelector('.ml-photo-viewer-prev').addEventListener('click', function () { go(selected - 1); });
-  dialog.querySelector('.ml-photo-viewer-next').addEventListener('click', function () { go(selected + 1); });
+  dialog.querySelector('.ml-photo-viewer-prev').addEventListener('click', function (event) { go(selected - 1, event.detail === 0); });
+  dialog.querySelector('.ml-photo-viewer-next').addEventListener('click', function (event) { go(selected + 1, event.detail === 0); });
   dialog.addEventListener('keydown', function (event) {
-    if (event.key === 'ArrowLeft') { event.preventDefault(); go(selected - 1); }
-    else if (event.key === 'ArrowRight') { event.preventDefault(); go(selected + 1); }
-    else if (event.key === 'Home') { event.preventDefault(); go(0); }
-    else if (event.key === 'End') { event.preventDefault(); go(links.length - 1); }
+    if (event.key === 'ArrowLeft') { event.preventDefault(); go(selected - 1, true); }
+    else if (event.key === 'ArrowRight') { event.preventDefault(); go(selected + 1, true); }
+    else if (event.key === 'Home') { event.preventDefault(); go(0, true); }
+    else if (event.key === 'End') { event.preventDefault(); go(links.length - 1, true); }
     // Escape is handled by the native modal dialog.
   });
   track.addEventListener('scroll', function () {
