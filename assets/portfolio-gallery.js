@@ -32,13 +32,51 @@
   const caption = document.getElementById('photo-caption');
   const rooms = document.getElementById('photo-room');
   const roomSelect = document.getElementById('photo-room-select');
+  const image = document.getElementById('dialog-image');
+  const stage = document.getElementById('photo-stage');
+  const loading = document.getElementById('photo-loading');
+  const error = document.getElementById('photo-error');
+  const retry = document.getElementById('photo-retry');
+  let loadId = 0, selectedPhoto = null;
+  function loadPhoto(photo, retrying = false) {
+    selectedPhoto = photo;
+    const id = ++loadId;
+    stage.setAttribute('aria-busy', 'true');
+    stage.classList.remove('has-error');
+    loading.hidden = false;
+    error.hidden = true;
+    if (retrying) close.focus({preventScroll:true});
+    const pending = new Image();
+    pending.onload = () => {
+      if (id !== loadId) return;
+      image.removeAttribute('srcset');
+      image.removeAttribute('sizes');
+      image.alt = photo.alt;
+      image.width = photo.width;
+      image.height = photo.height;
+      image.src = pending.currentSrc || pending.src;
+      stage.setAttribute('aria-busy', 'false');
+      loading.hidden = true;
+    };
+    pending.onerror = () => {
+      if (id !== loadId) return;
+      stage.setAttribute('aria-busy', 'false');
+      stage.classList.add('has-error');
+      loading.hidden = true;
+      error.hidden = false;
+    };
+    if (photo.srcset && !retrying) {
+      pending.sizes = '(max-width:1000px) 90vw, 650px';
+      pending.srcset = photo.srcset;
+    }
+    pending.src = photo.image + (retrying ? (photo.image.includes('?') ? '&' : '?') + 'retry=' + Date.now() : '');
+  }
+  retry.addEventListener('click', () => { if (selectedPhoto) loadPhoto(selectedPhoto, true); });
   function showPhoto(index) {
     if (!currentPhotos.length) return;
     photoIndex = Math.max(0, Math.min(index, currentPhotos.length - 1));
-    const photo = currentPhotos[photoIndex], image = document.getElementById('dialog-image');
-    image.removeAttribute('srcset'); image.removeAttribute('sizes');
-    image.src = photo.image; image.alt = photo.alt;
-    image.width = photo.width; image.height = photo.height;
+    const photo = currentPhotos[photoIndex];
+    loadPhoto(photo);
     document.getElementById('photo-count').textContent = (photoIndex + 1) + ' / ' + currentPhotos.length;
     caption.textContent = photo.caption;
     document.getElementById('photo-prev').disabled = photoIndex === 0;
@@ -50,6 +88,7 @@
   roomSelect.addEventListener('change', () => showPhoto(Number(roomSelect.value)));
   function closeProject(restoreFocus = true) {
     if (dialog.hidden) return;
+    loadId++;
     dialog.hidden = true;
     dialog.classList.remove('open');
     dialog.setAttribute('aria-hidden', 'true');
@@ -67,12 +106,6 @@
     document.getElementById('dialog-description').textContent = project.description;
     document.getElementById('dialog-status').textContent = 'Статус: ' + project.label;
     document.getElementById('dialog-disclosure').textContent = project.disclosure;
-    const image = document.getElementById('dialog-image');
-    image.srcset = project.srcset;
-    image.sizes = '(max-width: 1000px) 90vw, 650px';
-    image.src = project.image;
-    image.alt = project.alt;
-    image.width = project.width; image.height = project.height;
     currentPhotos = Array.isArray(project.photos) ? project.photos : [];
     controls.hidden = caption.hidden = rooms.hidden = currentPhotos.length < 2;
     dialog.classList.toggle('has-photo-gallery', currentPhotos.length > 1);
@@ -90,7 +123,7 @@
         roomSelect.appendChild(option);
       });
       showPhoto(0);
-    }
+    } else loadPhoto(project);
     document.getElementById('dialog-enquiry').dataset.mlContext = 'Портфолио — ' + project.title;
     previousOverflow = document.body.style.overflow;
     inactive = [...document.body.children].filter(element => element !== dialog && !['SCRIPT','STYLE'].includes(element.tagName)).map(element => [element, element.inert]);

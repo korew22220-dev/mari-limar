@@ -1,5 +1,5 @@
 /* Requested page refinements, November 2026. */
-body #process .ml-process-chain{--chain-accent:#b39a70;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:36px;margin:42px 0 0;padding:0;list-style:none;border:0}
+body #process .ml-process-chain{--chain-accent:#80653c;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:36px;margin:42px 0 0;padding:0;list-style:none;border:0}
 body #process .ml-process-chain>.ml-chain-step{position:relative;min-width:0;border:0;padding:0 0 12px}
 body #process .ml-chain-step>.ml-chain-number{display:grid;place-items:center;width:46px;height:46px;border:1px solid var(--chain-accent);border-radius:50%;font-size:13px;letter-spacing:.08em;color:var(--chain-accent);background:transparent}
 body #process .ml-chain-step:not(:last-child)::after{content:"";position:absolute;top:23px;left:60px;width:calc(100% - 38px);height:1px;background:var(--chain-accent);opacity:.65;transform-origin:left}
@@ -23,3 +23,5 @@ body #journal .ml-journal-more{display:flex;justify-content:center;margin-top:40
 }
 @media(max-width:650px){body #journal .ml-journal-grid{grid-template-columns:1fr;gap:36px}body #journal .ml-journal-more{margin-top:28px}}
 @media(prefers-reduced-motion:reduce){body #process .ml-chain-step{animation:none!important;transition:none!important}}
+
+html[data-ml-theme=dark] body #process .ml-process-chain{--chain-accent:#b39a70}

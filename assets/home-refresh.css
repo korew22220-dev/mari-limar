@@ -1,5 +1,5 @@
 /* Homepage refinement. No changes to shared navigation or the approved kitchen component. */
-.ml-home-refresh{--hm-line:rgba(0,0,0,.16);--hm-muted:#6a635c;--pf-line:var(--hm-line);--pf-muted:var(--hm-muted)}
+.ml-home-refresh{--hm-line:rgba(0,0,0,.16);--hm-muted:#5f584f;--pf-line:var(--hm-line);--pf-muted:var(--hm-muted)}
 html[data-ml-theme=dark] .ml-home-refresh{--hm-line:rgba(255,255,255,.15);--hm-muted:#aaa69f}
 body.ml-home.ml-home-refresh main>.section,body.ml-home.ml-home-refresh main>.dark-section{padding-block:56px}
 .ml-home-refresh .display{font-size:clamp(38px,4.4vw,66px);margin-block:20px;line-height:1.1}
