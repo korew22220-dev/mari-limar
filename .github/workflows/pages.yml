@@ -34,6 +34,9 @@ jobs:
           base = os.environ['SITE_URL'].rstrip('/')
           style_version = hashlib.sha256((root/'assets/brand-typography.css').read_bytes()).hexdigest()[:12]
           legal_footer = pathlib.Path('components/legal-footer.html').read_text(encoding='utf-8').strip()
+          footer = pathlib.Path('components/site-footer.html').read_text(encoding='utf-8').strip()
+          footer = footer.replace('__LEGAL_LINKS__', legal_footer)
+          footer_version = hashlib.sha256((root/'assets/studio-footer.css').read_bytes()).hexdigest()[:12]
           consent_markup = pathlib.Path('components/data-consent.html').read_text(encoding='utf-8').strip()
           def add_consent(match):
               form = match.group(0)
@@ -55,8 +58,8 @@ jobs:
               text = re.sub(r'assets/portfolio-inline-form\.js(?:\?[^\"]*)?', 'assets/portfolio-inline-form.js?v=consent-20261105', text)
               if text.count('</footer>') != 1:
                   raise RuntimeError('Expected one footer: ' + path.name)
-              if 'class="ml-legal-links"' not in text:
-                  text = text.replace('</footer>', legal_footer + '</footer>')
+              text = re.sub(r'<footer\b[^>]*>[\s\S]*?</footer>', lambda _: footer, text, count=1)
+              text = text.replace('</head>', '<link rel="stylesheet" href="assets/studio-footer.css?v=' + footer_version + '"></head>')
               text = re.sub(r'assets/brand-typography\.css(?:\?[^\"]*)?', 'assets/brand-typography.css?v=' + style_version, text)
               tags = '<link rel="canonical" href="' + html.escape(url, quote=True) + '"><meta property="og:url" content="' + html.escape(url, quote=True) + '">'
               path.write_text(text.replace('</head>', tags + '</head>'), encoding='utf-8')
