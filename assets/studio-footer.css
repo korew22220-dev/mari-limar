@@ -70,7 +70,23 @@ html body .ml-studio-footer .ml-logo { width: 100%; }
   color: #f4eee6;
 }
 .ml-studio-footer__contact a.ml-studio-footer__phone { font-size: 20px; }
-.ml-studio-footer__contact p { margin-top: 4px; font-size: 14px; }
+.ml-studio-footer__contact a {
+  align-items: flex-start;
+  gap: 10px;
+  padding-block: 6px;
+}
+.ml-studio-footer__icon {
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  margin-top: .18em;
+  fill: none;
+  stroke: #d8b57e;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.ml-studio-footer__phone span { white-space: nowrap; }
 .ml-studio-footer a:focus-visible { outline: 2px solid #e6c08a; outline-offset: 4px; }
 .ml-studio-footer a:hover { text-decoration: underline; text-underline-offset: 4px; }
 .ml-studio-footer a.ml-studio-footer__cta {
