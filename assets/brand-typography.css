@@ -176,5 +176,7 @@ html:root body .ml-map-mobile{display:none}
 /* Long Russian headings must fit the smallest supported viewport. */
 @media(max-width:360px){
  html:root body.ml-expertise-page #expertise-title{font-size:clamp(36px,11.8vw,42px)}
+ html:root body.ml-expertise-page .ex-intro>*{min-width:0}
+ html:root body.ml-expertise-page .ex-intro .display{font-size:36px;overflow-wrap:anywhere}
  html:root body.ml-article-page main h1{font-size:clamp(26px,8.4vw,30px);overflow-wrap:anywhere}
 }
