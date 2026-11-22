@@ -113,6 +113,8 @@ body.ml-home.ml-home-refresh main>.section,body.ml-home.ml-home-refresh main>.da
   isolation: isolate;
   display: grid;
   align-items: center;
+  width: min(86%, 1320px);
+  margin-inline: auto;
   min-height: clamp(440px, 43vw, 650px);
   background: #17120f;
   color: #f5eee6;
@@ -151,6 +153,7 @@ body.ml-home.ml-home-refresh main>.section,body.ml-home.ml-home-refresh main>.da
   .ml-home-refresh .hm-furniture-panorama {
     grid-template-areas: "copy" "panorama";
     min-height: 0;
+    width: 100%;
   }
   .hm-furniture-panorama__copy { grid-area: copy; padding: 34px 6% 24px; }
   .hm-furniture-panorama__copy h2 { font-size: clamp(35px, 8.7vw, 54px); }
