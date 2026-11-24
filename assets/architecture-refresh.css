@@ -16,13 +16,30 @@
 .ml-architecture-page .arch-hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:18px 26px;margin-top:28px}
 .ml-architecture-page .arch-secondary-link{display:inline-flex;align-items:center;min-height:44px;font:400 12px/1.6 Manrope,Arial,sans-serif;text-decoration:underline;text-underline-offset:6px}
 .ml-architecture-page .arch-hero-caption{position:absolute;z-index:2;right:3%;bottom:24px;color:white;font-size:10px;letter-spacing:.06em;background:#1119;padding:9px 13px;border-radius:999px;max-width:42%;line-height:1.5}
-.ml-architecture-page .arch-intro{display:grid;grid-template-columns:1.15fr .85fr;gap:9%;align-items:start}
-.ml-architecture-page .arch-intro-copy p{max-width:610px;margin:20px 0 0}
-.ml-architecture-page .arch-principles{display:grid;gap:23px;padding-top:8px}
-.ml-architecture-page .arch-principles article{border-top:1px solid var(--arch-rule);padding-top:16px}
-.ml-architecture-page .arch-principles span{font-size:10px;letter-spacing:.13em;color:inherit;opacity:.7}
-.ml-architecture-page .arch-principles h3{font-weight:400;font-size:24px;letter-spacing:-.025em;margin:10px 0 6px}
-.ml-architecture-page .arch-principles p{font-size:13px;line-height:1.75;margin:0;max-width:420px}
+.ml-architecture-page .arch-intro{scroll-margin-top:var(--ml-header-height,90px)}
+.ml-architecture-page .arch-intro-lead{max-width:68ch;margin:0}
+.ml-architecture-page .arch-principles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 32px);
+  margin-top: clamp(24px, 3vw, 42px);
+}
+.ml-architecture-page .arch-principles img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 420 / 283;
+  object-fit: cover;
+}
+.ml-architecture-page .arch-principles h3 {
+  margin: 16px 0 7px;
+  font-size: clamp(21px, 2vw, 30px);
+  line-height: 1.2;
+}
+.ml-architecture-page .arch-principles p { margin: 0; max-width: 39ch; }
+@media (max-width: 700px) {
+  .ml-architecture-page .arch-principles { grid-template-columns: 1fr; gap: 24px; }
+}
 .ml-architecture-page .arch-directions{display:grid;grid-template-columns:1fr 1fr;gap:8%;padding-top:0}
 .ml-architecture-page .arch-directions article{border-top:1px solid var(--arch-rule);padding-top:28px;scroll-margin-top:28px;min-width:0}
 .ml-architecture-page .arch-directions h2{font-weight:300;font-size:clamp(30px,3vw,45px);line-height:1.18;letter-spacing:-.035em;margin:24px 0 18px}
@@ -67,7 +84,6 @@
  .ml-architecture-page .arch-hero .hero-content{width:min(680px,86%)}
  .ml-architecture-page .arch-hero .hero-row p{font-size:14px}
  .ml-architecture-page .arch-hero-actions{gap:8px 16px}
- .ml-architecture-page .arch-intro{gap:6%}
 }
 @media(max-width:700px){
  .ml-architecture-page .arch-section,.ml-architecture-page .arch-section-inner{width:88%}
@@ -83,8 +99,7 @@
  .ml-architecture-page .arch-hero .eyebrow{font-size:9px;max-width:340px}
  .ml-architecture-page .arch-hero-actions{margin-top:22px;gap:8px 18px}
  .ml-architecture-page .arch-hero-caption{font-size:8px;right:6%;bottom:16px;max-width:75%;padding:6px 9px}
- .ml-architecture-page .arch-intro,.ml-architecture-page .arch-directions,.ml-architecture-page .arch-contact{grid-template-columns:1fr;gap:30px}
- .ml-architecture-page .arch-intro-copy p{margin-top:16px}
+ .ml-architecture-page .arch-directions,.ml-architecture-page .arch-contact{grid-template-columns:1fr;gap:30px}
  .ml-architecture-page .arch-principles{gap:18px;padding-top:0}
  .ml-architecture-page .arch-principles article{display:grid;grid-template-columns:85px 1fr;gap:4px 16px;align-items:baseline}
  .ml-architecture-page .arch-principles span{grid-column:1/-1;font-size:9px}
