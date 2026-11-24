@@ -1,15 +1,17 @@
 .ml-architecture-page .arch-project {
+  --project-page-bg: var(--cream);
   position: relative;
   isolation: isolate;
   display: grid;
   align-items: center;
   overflow: hidden;
+  width: 100%;
   aspect-ratio: 2.46;
   min-height: 345px;
   margin-bottom: clamp(24px, 4vw, 64px);
   padding: 0;
-  background: #171512;
-  color: #f1ebe1;
+  background: var(--project-page-bg);
+  color: var(--ink);
   scroll-margin-top: var(--ml-header-height, 90px);
 }
 
@@ -18,7 +20,6 @@
   inset: 0 0 0 auto;
   width: 60.24%;
   overflow: hidden;
-  background: #191612;
 }
 
 .arch-project-image,
@@ -46,7 +47,7 @@
   z-index: 1;
   inset: 0;
   pointer-events: none;
-  background: linear-gradient(90deg, #171512 39%, #171512a8 44%, transparent 54%);
+  background: linear-gradient(90deg, var(--project-page-bg) 39%, transparent 55%);
 }
 
 .arch-project-copy {
@@ -54,7 +55,7 @@
   z-index: 2;
   width: fit-content;
   max-width: 100%;
-  padding: 32px 16px 42px clamp(28px, 4.2vw, 62px);
+  padding: 32px 16px 42px max(7vw, calc((100vw - var(--arch-width)) / 2));
 }
 
 .arch-project-copy::before {
@@ -68,14 +69,14 @@
 
 .ml-architecture-page .arch-project h2 {
   margin: 0;
-  color: #f8f1e7;
+  color: inherit;
   font-size: clamp(37px, 4.85vw, 75px);
   line-height: 1;
 }
 
 .ml-architecture-page .arch-project p {
   margin: clamp(13px, 1.4vw, 23px) 0 clamp(15px, 2.4vw, 36px);
-  color: #e0d8cd;
+  color: inherit;
   line-height: 1.5;
 }
 
@@ -87,7 +88,7 @@
 }
 
 .ml-architecture-page .arch-project .arch-secondary-link {
-  color: #f5ece0;
+  color: inherit;
   text-decoration-color: #a58c6b;
 }
 
@@ -116,7 +117,7 @@
 @media (max-width: 940px) {
   .arch-project-art { width: 65%; }
   .arch-project::after {
-    background: linear-gradient(90deg, #171512 34%, #171512eb 39%, transparent 62%);
+    background: linear-gradient(90deg, var(--project-page-bg) 35%, transparent 62%);
   }
 }
 
@@ -128,7 +129,7 @@
     min-height: 0;
     aspect-ratio: auto;
   }
-  .arch-project-copy { order: -1; padding: 28px 16px 18px; }
+  .arch-project-copy { order: -1; padding: 28px 7% 18px; }
   .arch-project-copy::before { margin-bottom: 18px; width: min(100%, 190px); }
   .ml-architecture-page .arch-project h2 { font-size: clamp(33px, 10vw, 59px); }
   .arch-project-art {
@@ -138,4 +139,12 @@
     aspect-ratio: 512 / 345;
   }
   .arch-project::after { content: none; }
+  .arch-project-art::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 24px;
+    pointer-events: none;
+    background: linear-gradient(var(--project-page-bg), transparent);
+  }
 }
