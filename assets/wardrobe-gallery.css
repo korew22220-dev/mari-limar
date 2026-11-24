@@ -67,3 +67,31 @@
 .wd-carousel-controls[hidden],.wd-carousel-thumbs[hidden]{display:none}
 @media(max-width:900px){.wd-carousel-slide .wd-photo-link{height:min(60svh,520px)}}
 @media(max-width:700px){.wd-carousel-slide .wd-photo-link{height:auto;aspect-ratio:4/3}.wd-carousel-thumb{flex-basis:68px;width:68px;height:54px}}
+
+.wd-storage { scroll-margin-top: var(--ml-header-height, 90px); }
+.ml-wardrobes-page .wd-storage h2 {
+  font-size: clamp(32px, 4.35vw, 66px);
+  overflow-wrap: anywhere;
+}
+.wd-storage__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 32px);
+  margin-top: clamp(24px, 3vw, 48px);
+}
+.wd-storage__grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 444 / 318;
+  object-fit: cover;
+}
+.wd-storage__grid article:last-child img { object-position: center 59%; }
+.ml-wardrobes-page .wd-storage__grid h3 {
+  margin: 16px 0 7px;
+  font-size: clamp(20px, 1.9vw, 28px);
+  line-height: 1.2;
+}
+.wd-storage__grid p { margin: 0; color: var(--ab-muted); }
+@media (max-width: 700px) {
+  .wd-storage__grid { grid-template-columns: 1fr; gap: 26px; }
+}
