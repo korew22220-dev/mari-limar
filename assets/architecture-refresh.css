@@ -71,10 +71,6 @@
 .ml-architecture-page .process .step>span{font-size:12px;opacity:.65}
 .ml-architecture-page .process .step h3{font-size:21px;margin:20px 0 10px}
 .ml-architecture-page .process .step p{font-size:13px;margin:0;line-height:1.8}
-.ml-architecture-page .arch-contact{display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:7%;border-top:1px solid var(--arch-rule);padding-top:54px;padding-bottom:64px}
-.ml-architecture-page .arch-contact .display{margin:22px 0}
-.ml-architecture-page .arch-contact p{max-width:570px;margin-bottom:0}
-.ml-architecture-page .arch-contact .cta-actions{display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:16px}
 .ml-architecture-page footer{padding:40px 7% 110px;gap:24px}
 .ml-architecture-page :is(.arch-secondary-link,.arch-photo-credits summary,.arch-photo-credits a):focus-visible{outline:2px solid #b29874;outline-offset:4px}
 
@@ -99,7 +95,7 @@
  .ml-architecture-page .arch-hero .eyebrow{font-size:9px;max-width:340px}
  .ml-architecture-page .arch-hero-actions{margin-top:22px;gap:8px 18px}
  .ml-architecture-page .arch-hero-caption{font-size:8px;right:6%;bottom:16px;max-width:75%;padding:6px 9px}
- .ml-architecture-page .arch-directions,.ml-architecture-page .arch-contact{grid-template-columns:1fr;gap:30px}
+ .ml-architecture-page .arch-directions{grid-template-columns:1fr;gap:30px}
  .ml-architecture-page .arch-principles{gap:18px;padding-top:0}
  .ml-architecture-page .arch-principles article{display:grid;grid-template-columns:85px 1fr;gap:4px 16px;align-items:baseline}
  .ml-architecture-page .arch-principles span{grid-column:1/-1;font-size:9px}
@@ -126,9 +122,6 @@
  .ml-architecture-page .process .step{padding-top:18px;padding-bottom:20px}
  .ml-architecture-page .process .step h3{font-size:18px;margin-top:14px}
  .ml-architecture-page .process .step p{font-size:12px}
- .ml-architecture-page .arch-contact{padding-top:40px}
- .ml-architecture-page .arch-contact .cta-actions{align-items:flex-start;gap:12px}
- .ml-architecture-page .arch-contact .display{margin-top:18px}
  .ml-architecture-page footer{padding:35px 6% 100px;align-items:flex-start}
  .ml-architecture-page footer .brand{max-width:100%}
 }

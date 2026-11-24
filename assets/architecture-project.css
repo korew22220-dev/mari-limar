@@ -1,0 +1,141 @@
+.ml-architecture-page .arch-project {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+  aspect-ratio: 2.46;
+  min-height: 345px;
+  margin-bottom: clamp(24px, 4vw, 64px);
+  padding: 0;
+  background: #171512;
+  color: #f1ebe1;
+  scroll-margin-top: var(--ml-header-height, 90px);
+}
+
+.arch-project-art {
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 60.24%;
+  overflow: hidden;
+  background: #191612;
+}
+
+.arch-project-image,
+.arch-project-draft {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.arch-project-image { object-fit: cover; }
+.arch-project-draft { opacity: 0; }
+.arch-project-draft path {
+  fill: none;
+  stroke: #d2ad74;
+  stroke-width: .86;
+  vector-effect: non-scaling-stroke;
+}
+.arch-project-draft .guide path { opacity: .47; stroke-width: .7; }
+.arch-project-draft .detail path { stroke: #d7bc94; opacity: .64; }
+
+.arch-project::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, #171512 39%, #171512a8 44%, transparent 54%);
+}
+
+.arch-project-copy {
+  position: relative;
+  z-index: 2;
+  width: fit-content;
+  max-width: 100%;
+  padding: 32px 16px 42px clamp(28px, 4.2vw, 62px);
+}
+
+.arch-project-copy::before {
+  content: "";
+  display: block;
+  width: min(100%, clamp(180px, 26vw, 450px));
+  height: 1px;
+  margin-bottom: clamp(21px, 3.2vw, 52px);
+  background: linear-gradient(90deg, #bba075, #896742);
+}
+
+.ml-architecture-page .arch-project h2 {
+  margin: 0;
+  color: #f8f1e7;
+  font-size: clamp(37px, 4.85vw, 75px);
+  line-height: 1;
+}
+
+.ml-architecture-page .arch-project p {
+  margin: clamp(13px, 1.4vw, 23px) 0 clamp(15px, 2.4vw, 36px);
+  color: #e0d8cd;
+  line-height: 1.5;
+}
+
+.arch-project-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px clamp(12px, 2vw, 30px);
+}
+
+.ml-architecture-page .arch-project .arch-secondary-link {
+  color: #f5ece0;
+  text-decoration-color: #a58c6b;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .arch-project[data-motion="waiting"] .arch-project-image { opacity: 0; }
+  .arch-project[data-motion="playing"] .arch-project-image {
+    animation: arch-project-reveal 920ms ease-out 1220ms both;
+  }
+  .arch-project[data-motion="playing"] .arch-project-draft {
+    animation: arch-project-clear 720ms ease-out 1420ms both;
+  }
+  .arch-project[data-motion="playing"] .arch-project-draft path {
+    stroke-dasharray: 1;
+    animation: arch-project-draw var(--draw-duration) ease-out var(--draw-delay) both;
+  }
+  .arch-project-draft .shell { --draw-duration: 650ms; --draw-delay: 0ms; }
+  .arch-project-draft .guide { --draw-duration: 500ms; --draw-delay: 180ms; }
+  .arch-project-draft .furniture { --draw-duration: 650ms; --draw-delay: 390ms; }
+  .arch-project-draft .detail { --draw-duration: 500ms; --draw-delay: 700ms; }
+}
+
+@keyframes arch-project-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes arch-project-reveal { from { opacity: 0; } to { opacity: 1; } }
+@keyframes arch-project-clear { from { opacity: 1; } to { opacity: 0; } }
+
+@media (max-width: 940px) {
+  .arch-project-art { width: 65%; }
+  .arch-project::after {
+    background: linear-gradient(90deg, #171512 34%, #171512eb 39%, transparent 62%);
+  }
+}
+
+@media (max-width: 700px) {
+  .ml-architecture-page .arch-project {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 0;
+    aspect-ratio: auto;
+  }
+  .arch-project-copy { order: -1; padding: 28px 16px 18px; }
+  .arch-project-copy::before { margin-bottom: 18px; width: min(100%, 190px); }
+  .ml-architecture-page .arch-project h2 { font-size: clamp(33px, 10vw, 59px); }
+  .arch-project-art {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    aspect-ratio: 512 / 345;
+  }
+  .arch-project::after { content: none; }
+}
