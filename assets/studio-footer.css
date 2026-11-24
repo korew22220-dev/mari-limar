@@ -6,7 +6,7 @@ html:root body > .ml-studio-footer {
   padding: 0;
   border: 0;
   color: #f4eee6;
-  background: #151210;
+  background: #111;
   isolation: isolate;
   position: relative;
   text-transform: none;
@@ -22,8 +22,9 @@ html:root body > .ml-studio-footer {
   inset: 0 0 0 auto;
   width: min(39%, 720px);
   z-index: -1;
-  background: linear-gradient(90deg, #151210, #151210cf 49%, #15121012 80%),
-    linear-gradient(0deg, #151210e6, transparent 36%),
+  background: linear-gradient(180deg, #111, #1110 27%),
+    linear-gradient(90deg, #111, #111111cf 49%, #1110 85%),
+    linear-gradient(0deg, #111e, #1110 36%),
     url('studio-footer-walnut.webp') center 82% / cover no-repeat;
 }
 
