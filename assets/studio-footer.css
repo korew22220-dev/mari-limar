@@ -52,8 +52,8 @@ html body .ml-studio-footer .ml-logo { width: 100%; }
 .ml-studio-footer h2 {
   margin: 0 0 12px;
   font-size: 20px;
-  font-weight: 500;
-  letter-spacing: normal;
+  font-weight: 300;
+  letter-spacing: -.035em;
 }
 .ml-studio-footer h2::after {
   content: '';
