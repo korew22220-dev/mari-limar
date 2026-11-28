@@ -32,7 +32,7 @@
   margin: 0;
 }
 
-.pf-case-photos figure:only-child {
+.pf-case-photos :is(figure:only-child, .pf-case-photo-wide) {
   grid-column: 1 / -1;
 }
 
