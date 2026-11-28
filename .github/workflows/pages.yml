@@ -32,6 +32,11 @@ jobs:
           import os, pathlib, html, hashlib, re
           root = pathlib.Path('_site')
           base = os.environ['SITE_URL'].rstrip('/')
+          previous_base = 'https://korew22220-dev.github.io/mari-limar'
+          contact_tools = root / 'assets/contact-tools.js'
+          contact_script = contact_tools.read_text(encoding='utf-8').replace(previous_base + '/', base + '/')
+          contact_tools.write_text(contact_script, encoding='utf-8')
+          contact_version = hashlib.sha256(contact_script.encode('utf-8')).hexdigest()[:12]
           style_version = hashlib.sha256((root/'assets/brand-typography.css').read_bytes()).hexdigest()[:12]
           legal_footer = pathlib.Path('components/legal-footer.html').read_text(encoding='utf-8').strip()
           footer = pathlib.Path('components/site-footer.html').read_text(encoding='utf-8').strip()
@@ -53,8 +58,11 @@ jobs:
               url = base + '/' + ('' if path.name == 'index.html' else path.name)
               urls.append(url)
               text = path.read_text(encoding='utf-8')
+              text = text.replace(previous_base + '/', base + '/')
+              if path.name == 'privacy-policy.html':
+                  text = text.replace(previous_base.split('://', 1)[1], base.split('://', 1)[1])
               text = re.sub(r'<form\b[^>]*id="(?:ml-lead-form|pf-request-form)"[^>]*>[\s\S]*?</form>', add_consent, text)
-              text = re.sub(r'assets/contact-tools\.js(?:\?[^\"]*)?', 'assets/contact-tools.js?v=consent-20261105', text)
+              text = re.sub(r'assets/contact-tools\.js(?:\?[^\"]*)?', 'assets/contact-tools.js?v=' + contact_version, text)
               text = re.sub(r'assets/portfolio-inline-form\.js(?:\?[^\"]*)?', 'assets/portfolio-inline-form.js?v=consent-20261105', text)
               if text.count('</footer>') != 1:
                   raise RuntimeError('Expected one footer: ' + path.name)
